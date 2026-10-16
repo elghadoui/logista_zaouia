@@ -1,0 +1,235 @@
+{
+  "date": "2026-10-16T16:35:45.692761Z",
+  "success": true,
+  "passed": 56,
+  "failed": 0,
+  "productionAccess": false,
+  "httpScope": "H\u00F4te Kestrel \u00E9ph\u00E9m\u00E8re loopback, vrais endpoints/services, identit\u00E9s synth\u00E9tiques. Authentification cookie inchang\u00E9e non r\u00E9ex\u00E9cut\u00E9e.",
+  "assemblySha256": "1A769EDF1E1964431FB03367DBA8D54A6B4300455F0C59969A864949DF13121B",
+  "results": [
+    {
+      "name": "Audit import\u00E9 : quatre dossiers et quatre bons de quai",
+      "passed": true
+    },
+    {
+      "name": "Poids net enregistr\u00E9 distinct du commercial et pes\u00E9",
+      "passed": true
+    },
+    {
+      "name": "21 palettes d\u00E9clar\u00E9es, pas les 31 palettes cr\u00E9\u00E9es",
+      "passed": true
+    },
+    {
+      "name": "Audit codmaj 0 : aucun export officiel, client destination confirm\u00E9",
+      "passed": true
+    },
+    {
+      "name": "Agr\u00E9gats journaliers, ISO, vari\u00E9t\u00E9s et destinations r\u00E9concili\u00E9s",
+      "passed": true
+    },
+    {
+      "name": "Filtre vari\u00E9t\u00E9",
+      "passed": true
+    },
+    {
+      "name": "Filtre destination",
+      "passed": true
+    },
+    {
+      "name": "Filtre emballage",
+      "passed": true
+    },
+    {
+      "name": "Recherche SQL param\u00E9tr\u00E9e",
+      "passed": true
+    },
+    {
+      "name": "Calibre : 756 colis r\u00E9els, net non ventil\u00E9 NULL",
+      "passed": true
+    },
+    {
+      "name": "\u00C9tat technique 2 sans r\u00E9sultat, aucune confirmation invent\u00E9e",
+      "passed": true
+    },
+    {
+      "name": "D\u00E9tail dossier en lecture seule",
+      "passed": true
+    },
+    {
+      "name": "Bornes de p\u00E9riode inclusives",
+      "passed": true
+    },
+    {
+      "name": "Ann\u00E9e ISO 53 pr\u00E9serv\u00E9e",
+      "passed": true
+    },
+    {
+      "name": "Station locale strictement born\u00E9e",
+      "passed": true
+    },
+    {
+      "name": "Consolidation sans collision des num\u00E9ros dossier",
+      "passed": true
+    },
+    {
+      "name": "Comparaison archives r\u00E9elles configur\u00E9es, dur\u00E9e \u00E9quivalente",
+      "passed": true
+    },
+    {
+      "name": "Campagnes incompatibles refus\u00E9es",
+      "passed": true
+    },
+    {
+      "name": "Poids NULL et palette n\u00E9gative ne deviennent jamais z\u00E9ro",
+      "passed": true
+    },
+    {
+      "name": "Cl\u00E9 de bon de quai ambigu\u00EB : agr\u00E9gats suspendus",
+      "passed": true
+    },
+    {
+      "name": "Source absente : total consolid\u00E9 indisponible",
+      "passed": true
+    },
+    {
+      "name": "Export incomplet refus\u00E9",
+      "passed": true
+    },
+    {
+      "name": "Pagination stable 25 puis 9, aucun doublon",
+      "passed": true
+    },
+    {
+      "name": "Tri num\u00E9rique du poids",
+      "passed": true
+    },
+    {
+      "name": "Statuts 0/1/2/9 distincts sans compter les deux BDQ comme deux dossiers",
+      "passed": true
+    },
+    {
+      "name": "Poids officiel pdscom uniquement codmaj 2, sans net secondaire",
+      "passed": true
+    },
+    {
+      "name": "Graphiques officiels quotidien/ISO/client/pays/vari\u00E9t\u00E9 r\u00E9concili\u00E9s",
+      "passed": true
+    },
+    {
+      "name": "Filtre statut 0 sans contamination des exports",
+      "passed": true
+    },
+    {
+      "name": "Filtre statut 1 sans contamination des exports",
+      "passed": true
+    },
+    {
+      "name": "Filtre statut 2 sans contamination des exports",
+      "passed": true
+    },
+    {
+      "name": "Filtre statut -1 sans contamination des exports",
+      "passed": true
+    },
+    {
+      "name": "Libell\u00E9s m\u00E9tier et informations de transport",
+      "passed": true
+    },
+    {
+      "name": "Statut NULL jamais consid\u00E9r\u00E9 exp\u00E9di\u00E9",
+      "passed": true
+    },
+    {
+      "name": "Consolidation officielle : 15478 kg, deux dossiers distincts entre stations",
+      "passed": true
+    },
+    {
+      "name": "Comparaison archives officielle pdscom et statuts identiques",
+      "passed": true
+    },
+    {
+      "name": "SQL statut NULL : dossier visible inconnu mais non export\u00E9",
+      "passed": true
+    },
+    {
+      "name": "Filtre calibre ne substitue jamais palette_d au poids officiel BDQ",
+      "passed": true
+    },
+    {
+      "name": "Poids officiel NULL reste indisponible, aucun repli pdsnet",
+      "passed": true
+    },
+    {
+      "name": "Consultation Export autoris\u00E9e",
+      "passed": true
+    },
+    {
+      "name": "Module absent refus\u00E9",
+      "passed": true
+    },
+    {
+      "name": "Station et exercice non attribu\u00E9s refus\u00E9s",
+      "passed": true
+    },
+    {
+      "name": "Tri et pagination invalides refus\u00E9s",
+      "passed": true
+    },
+    {
+      "name": "Excel typ\u00E9, 24 colonnes et pas de formule",
+      "passed": true
+    },
+    {
+      "name": "HTTP anonyme refus\u00E9",
+      "passed": true
+    },
+    {
+      "name": "HTTP module Export sans droit refus\u00E9",
+      "passed": true
+    },
+    {
+      "name": "HTTP vrai contrat de lecture et net audit",
+      "passed": true
+    },
+    {
+      "name": "HTTP officiel codmaj 2 et pdscom avec d\u00E9tail filtr\u00E9",
+      "passed": true
+    },
+    {
+      "name": "HTTP export statut 1 sans contamination",
+      "passed": true
+    },
+    {
+      "name": "HTTP sources sans duplication de toutes les lignes brutes",
+      "passed": true
+    },
+    {
+      "name": "HTTP autre station non autoris\u00E9e refus\u00E9e",
+      "passed": true
+    },
+    {
+      "name": "HTTP param\u00E8tres SQL libres et r\u00E9p\u00E9t\u00E9s refus\u00E9s",
+      "passed": true
+    },
+    {
+      "name": "HTTP aucune mutation",
+      "passed": true
+    },
+    {
+      "name": "HTTP Excel et type MIME",
+      "passed": true
+    },
+    {
+      "name": "HTTP Excel interdit sans permission",
+      "passed": true
+    },
+    {
+      "name": "Donn\u00E9es audit inchang\u00E9es apr\u00E8s lectures/Excel/HTTP",
+      "passed": true
+    },
+    {
+      "name": "Drencher et SQL010/011 inchang\u00E9s",
+      "passed": true
+    }
+  ]
+}

@@ -1,0 +1,993 @@
+[
+  {
+    "name": "declaration_verger",
+    "keys": [
+      "id"
+    ],
+    "label": "refver_reel",
+    "columns": [
+      {
+        "name": "refver_reel",
+        "definition": "int(11) DEFAULT NULL"
+      },
+      {
+        "name": "refver_nreel",
+        "definition": "int(11) NOT NULL"
+      },
+      {
+        "name": "codvar",
+        "definition": "int(11) NOT NULL"
+      },
+      {
+        "name": "refstat",
+        "definition": "int(11) NOT NULL"
+      },
+      {
+        "name": "id",
+        "definition": "int(11) NOT NULL AUTO_INCREMENT"
+      }
+    ],
+    "ddl": "CREATE TABLE IF NOT EXISTS `declaration_verger` (\r\n  `refver_reel` int(11) DEFAULT NULL,\r\n  `refver_nreel` int(11) NOT NULL,\r\n  `codvar` int(11) NOT NULL,\r\n  `refstat` int(11) NOT NULL,\r\n  `id` int(11) NOT NULL AUTO_INCREMENT,\r\n  PRIMARY KEY (`id`)\r\n) ENGINE=MyISAM AUTO_INCREMENT=296 DEFAULT CHARSET=utf8 COLLATE=utf8_bin;"
+  },
+  {
+    "name": "partenaire",
+    "keys": [
+      "ref"
+    ],
+    "label": "nom",
+    "columns": [
+      {
+        "name": "ref",
+        "definition": "bigint(20) DEFAULT NULL"
+      },
+      {
+        "name": "nom",
+        "definition": "char(60) DEFAULT NULL"
+      },
+      {
+        "name": "type",
+        "definition": "char(15) DEFAULT NULL"
+      },
+      {
+        "name": "rue",
+        "definition": "char(100) DEFAULT NULL"
+      },
+      {
+        "name": "adresse",
+        "definition": "char(255) DEFAULT NULL"
+      },
+      {
+        "name": "ville",
+        "definition": "char(30) DEFAULT NULL"
+      },
+      {
+        "name": "pays",
+        "definition": "char(30) DEFAULT NULL"
+      },
+      {
+        "name": "codpay",
+        "definition": "int(11) DEFAULT NULL"
+      },
+      {
+        "name": "cp",
+        "definition": "char(10) DEFAULT NULL"
+      },
+      {
+        "name": "tel",
+        "definition": "char(17) DEFAULT NULL"
+      },
+      {
+        "name": "fax",
+        "definition": "char(17) DEFAULT NULL"
+      },
+      {
+        "name": "plafond",
+        "definition": "int(11) DEFAULT NULL"
+      },
+      {
+        "name": "tauxfact",
+        "definition": "decimal(16,2) DEFAULT NULL"
+      },
+      {
+        "name": "unitefact",
+        "definition": "char(25) DEFAULT NULL"
+      },
+      {
+        "name": "rep",
+        "definition": "char(30) DEFAULT NULL"
+      },
+      {
+        "name": "coment",
+        "definition": "char(50) DEFAULT NULL"
+      },
+      {
+        "name": "lier",
+        "definition": "char(1) DEFAULT '1'"
+      },
+      {
+        "name": "codgrp",
+        "definition": "varchar(4) DEFAULT NULL"
+      }
+    ],
+    "ddl": "CREATE TABLE IF NOT EXISTS `partenaire` (\r\n  `ref` bigint(20) DEFAULT NULL,\r\n  `nom` char(60) DEFAULT NULL,\r\n  `type` char(15) DEFAULT NULL,\r\n  `rue` char(100) DEFAULT NULL,\r\n  `adresse` char(255) DEFAULT NULL,\r\n  `ville` char(30) DEFAULT NULL,\r\n  `pays` char(30) DEFAULT NULL,\r\n  `codpay` int(11) DEFAULT NULL,\r\n  `cp` char(10) DEFAULT NULL,\r\n  `tel` char(17) DEFAULT NULL,\r\n  `fax` char(17) DEFAULT NULL,\r\n  `plafond` int(11) DEFAULT NULL,\r\n  `tauxfact` decimal(16,2) DEFAULT NULL,\r\n  `unitefact` char(25) DEFAULT NULL,\r\n  `rep` char(30) DEFAULT NULL,\r\n  `coment` char(50) DEFAULT NULL,\r\n  `lier` char(1) DEFAULT '1',\r\n  `codgrp` varchar(4) DEFAULT NULL,\r\n  UNIQUE KEY `ix154_1` (`ref`)\r\n) ENGINE=InnoDB DEFAULT CHARSET=latin1;"
+  },
+  {
+    "name": "destination",
+    "keys": [
+      "coddes"
+    ],
+    "label": "vildes",
+    "columns": [
+      {
+        "name": "coddes",
+        "definition": "smallint(6) DEFAULT NULL"
+      },
+      {
+        "name": "vildes",
+        "definition": "char(100) DEFAULT NULL"
+      },
+      {
+        "name": "codpay",
+        "definition": "smallint(6) DEFAULT NULL"
+      },
+      {
+        "name": "lier",
+        "definition": "char(1) DEFAULT '1'"
+      },
+      {
+        "name": "adresse",
+        "definition": "varchar(250) DEFAULT NULL"
+      },
+      {
+        "name": "adresse2",
+        "definition": "varchar(250) DEFAULT NULL"
+      },
+      {
+        "name": "nomFact",
+        "definition": "varchar(150) DEFAULT NULL"
+      }
+    ],
+    "ddl": "CREATE TABLE IF NOT EXISTS `destination` (\r\n  `coddes` smallint(6) DEFAULT NULL,\r\n  `vildes` char(100) DEFAULT NULL,\r\n  `codpay` smallint(6) DEFAULT NULL,\r\n  `lier` char(1) DEFAULT '1',\r\n  `adresse` varchar(250) DEFAULT NULL,\r\n  `adresse2` varchar(250) DEFAULT NULL,\r\n  `nomFact` varchar(150) DEFAULT NULL,\r\n  UNIQUE KEY `ix106_1` (`coddes`),\r\n  KEY `idx_destination_coddes` (`coddes`),\r\n  KEY `idx_destination_codpay` (`codpay`)\r\n) ENGINE=InnoDB DEFAULT CHARSET=latin1;"
+  },
+  {
+    "name": "pays",
+    "keys": [
+      "codpay"
+    ],
+    "label": "nompay",
+    "columns": [
+      {
+        "name": "codpay",
+        "definition": "smallint(6) NOT NULL DEFAULT '0'"
+      },
+      {
+        "name": "nompay",
+        "definition": "char(20) NOT NULL DEFAULT ''"
+      },
+      {
+        "name": "abrpay",
+        "definition": "char(8) NOT NULL DEFAULT ''"
+      },
+      {
+        "name": "coddev",
+        "definition": "char(3) DEFAULT NULL"
+      },
+      {
+        "name": "codmar",
+        "definition": "smallint(6) DEFAULT NULL"
+      }
+    ],
+    "ddl": "CREATE TABLE IF NOT EXISTS `pays` (\r\n  `codpay` smallint(6) NOT NULL DEFAULT '0',\r\n  `nompay` char(20) NOT NULL DEFAULT '',\r\n  `abrpay` char(8) NOT NULL DEFAULT '',\r\n  `coddev` char(3) DEFAULT NULL,\r\n  `codmar` smallint(6) DEFAULT NULL,\r\n  PRIMARY KEY (`codpay`),\r\n  KEY `idx_pays_codpay` (`codpay`)\r\n) ENGINE=InnoDB DEFAULT CHARSET=latin1;"
+  },
+  {
+    "name": "grpemb",
+    "keys": [
+      "codgre"
+    ],
+    "label": "nomgre",
+    "columns": [
+      {
+        "name": "codgre",
+        "definition": "smallint(6) DEFAULT NULL"
+      },
+      {
+        "name": "nomgre",
+        "definition": "char(20) DEFAULT NULL"
+      }
+    ],
+    "ddl": "CREATE TABLE IF NOT EXISTS `grpemb` (\r\n  `codgre` smallint(6) DEFAULT NULL,\r\n  `nomgre` char(20) DEFAULT NULL\r\n) ENGINE=InnoDB DEFAULT CHARSET=latin1;"
+  },
+  {
+    "name": "groupart",
+    "keys": [
+      "codgrp"
+    ],
+    "label": "type",
+    "columns": [
+      {
+        "name": "codgrp",
+        "definition": "smallint(6) DEFAULT NULL"
+      },
+      {
+        "name": "type",
+        "definition": "char(20) DEFAULT NULL"
+      },
+      {
+        "name": "codgre",
+        "definition": "smallint(6) DEFAULT NULL"
+      }
+    ],
+    "ddl": "CREATE TABLE IF NOT EXISTS `groupart` (\r\n  `codgrp` smallint(6) DEFAULT NULL,\r\n  `type` char(20) DEFAULT NULL,\r\n  `codgre` smallint(6) DEFAULT NULL,\r\n  UNIQUE KEY `ix344_1` (`codgrp`)\r\n) ENGINE=InnoDB DEFAULT CHARSET=latin1;"
+  },
+  {
+    "name": "defaut",
+    "keys": [
+      "coddef"
+    ],
+    "label": "intdef",
+    "columns": [
+      {
+        "name": "coddef",
+        "definition": "smallint(5) unsigned NOT NULL DEFAULT '0'"
+      },
+      {
+        "name": "intdef",
+        "definition": "char(30) DEFAULT NULL"
+      },
+      {
+        "name": "famdef",
+        "definition": "char(25) DEFAULT NULL"
+      },
+      {
+        "name": "catdef",
+        "definition": "char(25) DEFAULT NULL"
+      },
+      {
+        "name": "lier",
+        "definition": "char(1) DEFAULT '1'"
+      },
+      {
+        "name": "culture",
+        "definition": "int(11) DEFAULT '0'"
+      }
+    ],
+    "ddl": "CREATE TABLE IF NOT EXISTS `defaut` (\r\n  `coddef` smallint(5) unsigned NOT NULL DEFAULT '0',\r\n  `intdef` char(30) DEFAULT NULL,\r\n  `famdef` char(25) DEFAULT NULL,\r\n  `catdef` char(25) DEFAULT NULL,\r\n  `lier` char(1) DEFAULT '1',\r\n  `culture` int(11) DEFAULT '0',\r\n  PRIMARY KEY (`coddef`)\r\n) ENGINE=InnoDB DEFAULT CHARSET=latin1;"
+  },
+  {
+    "name": "typeecart",
+    "keys": [
+      "codtype"
+    ],
+    "label": "destype",
+    "columns": [
+      {
+        "name": "codtype",
+        "definition": "int(10) unsigned NOT NULL DEFAULT '0'"
+      },
+      {
+        "name": "destype",
+        "definition": "char(35) DEFAULT NULL"
+      },
+      {
+        "name": "lier",
+        "definition": "char(1) DEFAULT NULL"
+      }
+    ],
+    "ddl": "CREATE TABLE IF NOT EXISTS `typeecart` (\r\n  `codtype` int(10) unsigned NOT NULL DEFAULT '0',\r\n  `destype` char(35) DEFAULT NULL,\r\n  `lier` char(1) DEFAULT NULL,\r\n  PRIMARY KEY (`codtype`)\r\n) ENGINE=InnoDB DEFAULT CHARSET=latin1;"
+  },
+  {
+    "name": "reception",
+    "keys": [
+      "numrec"
+    ],
+    "label": "numrec",
+    "columns": [
+      {
+        "name": "numrec",
+        "definition": "int(11) NOT NULL DEFAULT '0'"
+      },
+      {
+        "name": "refsta",
+        "definition": "smallint(6) DEFAULT NULL"
+      },
+      {
+        "name": "codvar",
+        "definition": "smallint(6) DEFAULT NULL"
+      },
+      {
+        "name": "varrec",
+        "definition": "smallint(6) DEFAULT NULL"
+      },
+      {
+        "name": "refver",
+        "definition": "int(11) DEFAULT NULL"
+      },
+      {
+        "name": "numveh",
+        "definition": "varchar(20) DEFAULT NULL"
+      },
+      {
+        "name": "numcai",
+        "definition": "int(11) DEFAULT NULL"
+      },
+      {
+        "name": "numtrs",
+        "definition": "int(11) DEFAULT NULL"
+      },
+      {
+        "name": "numbl",
+        "definition": "int(11) DEFAULT NULL"
+      },
+      {
+        "name": "dterec",
+        "definition": "date DEFAULT NULL"
+      },
+      {
+        "name": "herrec",
+        "definition": "varchar(5) DEFAULT NULL"
+      },
+      {
+        "name": "dtecue",
+        "definition": "date DEFAULT NULL"
+      },
+      {
+        "name": "hercue",
+        "definition": "varchar(5) DEFAULT NULL"
+      },
+      {
+        "name": "typcai",
+        "definition": "smallint(6) DEFAULT NULL"
+      },
+      {
+        "name": "nbrcai",
+        "definition": "int(11) DEFAULT NULL"
+      },
+      {
+        "name": "nbrpal",
+        "definition": "int(11) DEFAULT NULL"
+      },
+      {
+        "name": "pdspes",
+        "definition": "decimal(10,2) DEFAULT NULL"
+      },
+      {
+        "name": "brurec",
+        "definition": "decimal(10,2) DEFAULT NULL"
+      },
+      {
+        "name": "tarrec",
+        "definition": "decimal(10,2) DEFAULT NULL"
+      },
+      {
+        "name": "netrec",
+        "definition": "decimal(10,2) DEFAULT NULL"
+      },
+      {
+        "name": "moycai",
+        "definition": "decimal(6,2) DEFAULT NULL"
+      },
+      {
+        "name": "coment",
+        "definition": "varchar(25) DEFAULT NULL"
+      },
+      {
+        "name": "certif",
+        "definition": "char(3) DEFAULT NULL"
+      },
+      {
+        "name": "codmaj",
+        "definition": "char(1) DEFAULT NULL"
+      },
+      {
+        "name": "numbou",
+        "definition": "int(10) unsigned DEFAULT '0'"
+      },
+      {
+        "name": "codaff",
+        "definition": "smallint(5) unsigned DEFAULT '0'"
+      },
+      {
+        "name": "pdsech",
+        "definition": "decimal(10,2) DEFAULT '0.00'"
+      },
+      {
+        "name": "nbrfru",
+        "definition": "smallint(5) unsigned DEFAULT '0'"
+      },
+      {
+        "name": "tmprec",
+        "definition": "decimal(10,2) DEFAULT '0.00'"
+      },
+      {
+        "name": "numr",
+        "definition": "int(10) unsigned DEFAULT '0'"
+      },
+      {
+        "name": "numpes",
+        "definition": "int(11) DEFAULT '0'"
+      },
+      {
+        "name": "numord",
+        "definition": "int(11) DEFAULT '0'"
+      },
+      {
+        "name": "numcaisor",
+        "definition": "int(11) DEFAULT '0'"
+      },
+      {
+        "name": "nbrcailiv",
+        "definition": "int(11) DEFAULT '0'"
+      },
+      {
+        "name": "nbrpalliv",
+        "definition": "int(11) DEFAULT '0'"
+      },
+      {
+        "name": "codtrj",
+        "definition": "int(11) DEFAULT '0'"
+      },
+      {
+        "name": "listpar",
+        "definition": "varchar(50) DEFAULT NULL"
+      },
+      {
+        "name": "comagri",
+        "definition": "varchar(50) DEFAULT NULL"
+      },
+      {
+        "name": "affect",
+        "definition": "smallint(6) DEFAULT NULL"
+      },
+      {
+        "name": "typetrns",
+        "definition": "char(1) DEFAULT 'K'"
+      },
+      {
+        "name": "mttrans",
+        "definition": "double DEFAULT '0'"
+      },
+      {
+        "name": "dttare",
+        "definition": "date DEFAULT '0000-00-00'"
+      },
+      {
+        "name": "pese",
+        "definition": "char(1) DEFAULT '0'"
+      },
+      {
+        "name": "pdsNet",
+        "definition": "double DEFAULT '0'"
+      },
+      {
+        "name": "etatpal",
+        "definition": "varchar(50) DEFAULT NULL"
+      },
+      {
+        "name": "decisiondef",
+        "definition": "varchar(50) DEFAULT NULL"
+      },
+      {
+        "name": "decisionbrx",
+        "definition": "varchar(50) DEFAULT NULL"
+      },
+      {
+        "name": "refverreel",
+        "definition": "int(11) DEFAULT NULL"
+      }
+    ],
+    "ddl": "CREATE TABLE IF NOT EXISTS `reception` (\r\n  `numrec` int(11) NOT NULL DEFAULT '0',\r\n  `refsta` smallint(6) DEFAULT NULL,\r\n  `codvar` smallint(6) DEFAULT NULL,\r\n  `varrec` smallint(6) DEFAULT NULL,\r\n  `refver` int(11) DEFAULT NULL,\r\n  `numveh` varchar(20) DEFAULT NULL,\r\n  `numcai` int(11) DEFAULT NULL,\r\n  `numtrs` int(11) DEFAULT NULL,\r\n  `numbl` int(11) DEFAULT NULL,\r\n  `dterec` date DEFAULT NULL,\r\n  `herrec` varchar(5) DEFAULT NULL,\r\n  `dtecue` date DEFAULT NULL,\r\n  `hercue` varchar(5) DEFAULT NULL,\r\n  `typcai` smallint(6) DEFAULT NULL,\r\n  `nbrcai` int(11) DEFAULT NULL,\r\n  `nbrpal` int(11) DEFAULT NULL,\r\n  `pdspes` decimal(10,2) DEFAULT NULL,\r\n  `brurec` decimal(10,2) DEFAULT NULL,\r\n  `tarrec` decimal(10,2) DEFAULT NULL,\r\n  `netrec` decimal(10,2) DEFAULT NULL,\r\n  `moycai` decimal(6,2) DEFAULT NULL,\r\n  `coment` varchar(25) DEFAULT NULL,\r\n  `certif` char(3) DEFAULT NULL,\r\n  `codmaj` char(1) DEFAULT NULL,\r\n  `numbou` int(10) unsigned DEFAULT '0',\r\n  `codaff` smallint(5) unsigned DEFAULT '0',\r\n  `pdsech` decimal(10,2) DEFAULT '0.00',\r\n  `nbrfru` smallint(5) unsigned DEFAULT '0',\r\n  `tmprec` decimal(10,2) DEFAULT '0.00',\r\n  `numr` int(10) unsigned DEFAULT '0',\r\n  `numpes` int(11) DEFAULT '0',\r\n  `numord` int(11) DEFAULT '0',\r\n  `numcaisor` int(11) DEFAULT '0',\r\n  `nbrcailiv` int(11) DEFAULT '0',\r\n  `nbrpalliv` int(11) DEFAULT '0',\r\n  `codtrj` int(11) DEFAULT '0',\r\n  `listpar` varchar(50) DEFAULT NULL,\r\n  `comagri` varchar(50) DEFAULT NULL,\r\n  `affect` smallint(6) DEFAULT NULL,\r\n  `typetrns` char(1) DEFAULT 'K',\r\n  `mttrans` double DEFAULT '0',\r\n  `dttare` date DEFAULT '0000-00-00',\r\n  `pese` char(1) DEFAULT '0',\r\n  `pdsNet` double DEFAULT '0',\r\n  `etatpal` varchar(50) DEFAULT NULL,\r\n  `decisiondef` varchar(50) DEFAULT NULL,\r\n  `decisionbrx` varchar(50) DEFAULT NULL,\r\n  `refverreel` int(11) DEFAULT NULL,\r\n  PRIMARY KEY (`numrec`),\r\n  KEY `idx_dterec_refver` (`dterec`,`refver`),\r\n  KEY `idx_numrec` (`numrec`)\r\n) ENGINE=InnoDB DEFAULT CHARSET=latin1;"
+  },
+  {
+    "name": "caisserie",
+    "keys": [
+      "numcai"
+    ],
+    "label": "numcai",
+    "columns": [
+      {
+        "name": "numcai",
+        "definition": "int(11) NOT NULL DEFAULT '0'"
+      },
+      {
+        "name": "refsta",
+        "definition": "smallint(6) DEFAULT NULL"
+      },
+      {
+        "name": "numrec",
+        "definition": "int(10) unsigned DEFAULT '0'"
+      },
+      {
+        "name": "numtrf",
+        "definition": "int(10) unsigned DEFAULT '0'"
+      },
+      {
+        "name": "refver",
+        "definition": "smallint(6) DEFAULT NULL"
+      },
+      {
+        "name": "numveh",
+        "definition": "char(20) DEFAULT NULL"
+      },
+      {
+        "name": "dtecai",
+        "definition": "date DEFAULT NULL"
+      },
+      {
+        "name": "typcai",
+        "definition": "smallint(6) DEFAULT NULL"
+      },
+      {
+        "name": "nbrcai",
+        "definition": "int(11) DEFAULT NULL"
+      },
+      {
+        "name": "nbrpal",
+        "definition": "int(11) DEFAULT NULL"
+      },
+      {
+        "name": "typmvt",
+        "definition": "char(1) DEFAULT NULL"
+      },
+      {
+        "name": "refadh",
+        "definition": "smallint(6) DEFAULT NULL"
+      },
+      {
+        "name": "numord",
+        "definition": "int(11) DEFAULT '0'"
+      },
+      {
+        "name": "numtrs",
+        "definition": "int(11) DEFAULT '0'"
+      },
+      {
+        "name": "codvar",
+        "definition": "smallint(6) DEFAULT '0'"
+      },
+      {
+        "name": "codtrj",
+        "definition": "int(11) DEFAULT '0'"
+      }
+    ],
+    "ddl": "CREATE TABLE IF NOT EXISTS `caisserie` (\r\n  `numcai` int(11) NOT NULL DEFAULT '0',\r\n  `refsta` smallint(6) DEFAULT NULL,\r\n  `numrec` int(10) unsigned DEFAULT '0',\r\n  `numtrf` int(10) unsigned DEFAULT '0',\r\n  `refver` smallint(6) DEFAULT NULL,\r\n  `numveh` char(20) DEFAULT NULL,\r\n  `dtecai` date DEFAULT NULL,\r\n  `typcai` smallint(6) DEFAULT NULL,\r\n  `nbrcai` int(11) DEFAULT NULL,\r\n  `nbrpal` int(11) DEFAULT NULL,\r\n  `typmvt` char(1) DEFAULT NULL,\r\n  `refadh` smallint(6) DEFAULT NULL,\r\n  `numord` int(11) DEFAULT '0',\r\n  `numtrs` int(11) DEFAULT '0',\r\n  `codvar` smallint(6) DEFAULT '0',\r\n  `codtrj` int(11) DEFAULT '0',\r\n  PRIMARY KEY (`numcai`)\r\n) ENGINE=InnoDB DEFAULT CHARSET=latin1;"
+  },
+  {
+    "name": "versement",
+    "keys": [
+      "numver"
+    ],
+    "label": "numver",
+    "columns": [
+      {
+        "name": "numver",
+        "definition": "int(11) NOT NULL DEFAULT '0'"
+      },
+      {
+        "name": "typver",
+        "definition": "char(15) DEFAULT NULL"
+      },
+      {
+        "name": "codvar",
+        "definition": "smallint(6) DEFAULT NULL"
+      },
+      {
+        "name": "refver",
+        "definition": "smallint(6) DEFAULT NULL"
+      },
+      {
+        "name": "datver",
+        "definition": "date DEFAULT NULL"
+      },
+      {
+        "name": "effectif",
+        "definition": "int(11) DEFAULT NULL"
+      },
+      {
+        "name": "debver",
+        "definition": "char(5) DEFAULT NULL"
+      },
+      {
+        "name": "finver",
+        "definition": "char(5) DEFAULT '00:00'"
+      },
+      {
+        "name": "nbrcai",
+        "definition": "int(11) DEFAULT NULL"
+      },
+      {
+        "name": "pdsver",
+        "definition": "decimal(10,2) DEFAULT '0.00'"
+      },
+      {
+        "name": "pdseca",
+        "definition": "decimal(10,2) DEFAULT '0.00'"
+      },
+      {
+        "name": "pdsexp",
+        "definition": "decimal(10,2) DEFAULT '0.00'"
+      },
+      {
+        "name": "pdscom",
+        "definition": "decimal(10,2) DEFAULT '0.00'"
+      },
+      {
+        "name": "pdspro",
+        "definition": "decimal(10,2) DEFAULT '0.00'"
+      },
+      {
+        "name": "freeca",
+        "definition": "decimal(10,2) DEFAULT '0.00'"
+      },
+      {
+        "name": "freexp",
+        "definition": "decimal(10,2) DEFAULT '0.00'"
+      },
+      {
+        "name": "frecon",
+        "definition": "decimal(10,2) DEFAULT '0.00'"
+      },
+      {
+        "name": "observ",
+        "definition": "char(30) DEFAULT NULL"
+      },
+      {
+        "name": "codmaj",
+        "definition": "int(11) DEFAULT NULL"
+      },
+      {
+        "name": "natver",
+        "definition": "char(20) DEFAULT NULL"
+      },
+      {
+        "name": "pdsspr",
+        "definition": "decimal(10,2) DEFAULT '0.00'"
+      },
+      {
+        "name": "pdsvpr",
+        "definition": "decimal(10,2) DEFAULT '0.00'"
+      },
+      {
+        "name": "numcire",
+        "definition": "int(11) DEFAULT NULL"
+      },
+      {
+        "name": "qtetrt",
+        "definition": "decimal(10,2) DEFAULT NULL"
+      },
+      {
+        "name": "refsta",
+        "definition": "smallint(6) DEFAULT NULL"
+      },
+      {
+        "name": "numrev",
+        "definition": "int(10) unsigned DEFAULT '0'"
+      },
+      {
+        "name": "nbrEmb",
+        "definition": "int(11) DEFAULT '0'"
+      },
+      {
+        "name": "nbrEmp",
+        "definition": "int(11) DEFAULT '0'"
+      },
+      {
+        "name": "nbrH",
+        "definition": "double DEFAULT NULL"
+      },
+      {
+        "name": "MoyOuv",
+        "definition": "double DEFAULT NULL"
+      },
+      {
+        "name": "MoyPerm",
+        "definition": "double DEFAULT NULL"
+      },
+      {
+        "name": "nbrHp",
+        "definition": "double DEFAULT NULL"
+      },
+      {
+        "name": "prkg",
+        "definition": "double DEFAULT NULL"
+      },
+      {
+        "name": "nbrHjr",
+        "definition": "double DEFAULT NULL"
+      },
+      {
+        "name": "prxvers",
+        "definition": "double DEFAULT NULL"
+      },
+      {
+        "name": "refreel",
+        "definition": "int(11) DEFAULT '0'"
+      }
+    ],
+    "ddl": "CREATE TABLE IF NOT EXISTS `versement` (\r\n  `numver` int(11) NOT NULL DEFAULT '0',\r\n  `typver` char(15) DEFAULT NULL,\r\n  `codvar` smallint(6) DEFAULT NULL,\r\n  `refver` smallint(6) DEFAULT NULL,\r\n  `datver` date DEFAULT NULL,\r\n  `effectif` int(11) DEFAULT NULL,\r\n  `debver` char(5) DEFAULT NULL,\r\n  `finver` char(5) DEFAULT '00:00',\r\n  `nbrcai` int(11) DEFAULT NULL,\r\n  `pdsver` decimal(10,2) DEFAULT '0.00',\r\n  `pdseca` decimal(10,2) DEFAULT '0.00',\r\n  `pdsexp` decimal(10,2) DEFAULT '0.00',\r\n  `pdscom` decimal(10,2) DEFAULT '0.00',\r\n  `pdspro` decimal(10,2) DEFAULT '0.00',\r\n  `freeca` decimal(10,2) DEFAULT '0.00',\r\n  `freexp` decimal(10,2) DEFAULT '0.00',\r\n  `frecon` decimal(10,2) DEFAULT '0.00',\r\n  `observ` char(30) DEFAULT NULL,\r\n  `codmaj` int(11) DEFAULT NULL,\r\n  `natver` char(20) DEFAULT NULL,\r\n  `pdsspr` decimal(10,2) DEFAULT '0.00',\r\n  `pdsvpr` decimal(10,2) DEFAULT '0.00',\r\n  `numcire` int(11) DEFAULT NULL,\r\n  `qtetrt` decimal(10,2) DEFAULT NULL,\r\n  `refsta` smallint(6) DEFAULT NULL,\r\n  `numrev` int(10) unsigned DEFAULT '0',\r\n  `nbrEmb` int(11) DEFAULT '0',\r\n  `nbrEmp` int(11) DEFAULT '0',\r\n  `nbrH` double DEFAULT NULL,\r\n  `MoyOuv` double DEFAULT NULL,\r\n  `MoyPerm` double DEFAULT NULL,\r\n  `nbrHp` double DEFAULT NULL,\r\n  `prkg` double DEFAULT NULL,\r\n  `nbrHjr` double DEFAULT NULL,\r\n  `prxvers` double DEFAULT NULL,\r\n  `refreel` int(11) DEFAULT '0',\r\n  PRIMARY KEY (`numver`),\r\n  KEY `idx_versement_numver` (`numver`),\r\n  KEY `idx_versement_codvar` (`codvar`)\r\n) ENGINE=InnoDB DEFAULT CHARSET=latin1;"
+  },
+  {
+    "name": "dossier",
+    "keys": [
+      "numdos"
+    ],
+    "label": "numdos",
+    "columns": [
+      {
+        "name": "numdos",
+        "definition": "int(11) NOT NULL DEFAULT '0'"
+      },
+      {
+        "name": "refexp",
+        "definition": "smallint(6) DEFAULT NULL"
+      },
+      {
+        "name": "reftm",
+        "definition": "smallint(6) DEFAULT NULL"
+      },
+      {
+        "name": "refte",
+        "definition": "smallint(6) DEFAULT NULL"
+      },
+      {
+        "name": "coddes",
+        "definition": "smallint(6) DEFAULT NULL"
+      },
+      {
+        "name": "reftrp",
+        "definition": "smallint(6) DEFAULT NULL"
+      },
+      {
+        "name": "refgrp",
+        "definition": "int(11) DEFAULT NULL"
+      },
+      {
+        "name": "dtedep",
+        "definition": "date DEFAULT NULL"
+      },
+      {
+        "name": "dtearr",
+        "definition": "date DEFAULT NULL"
+      },
+      {
+        "name": "numper",
+        "definition": "int(11) DEFAULT NULL"
+      },
+      {
+        "name": "numcmr",
+        "definition": "char(10) DEFAULT NULL"
+      },
+      {
+        "name": "coddev",
+        "definition": "char(3) DEFAULT NULL"
+      },
+      {
+        "name": "cours",
+        "definition": "decimal(16,4) DEFAULT NULL"
+      },
+      {
+        "name": "herdep",
+        "definition": "char(5) DEFAULT NULL"
+      },
+      {
+        "name": "montan",
+        "definition": "decimal(16,2) DEFAULT NULL"
+      },
+      {
+        "name": "typtrp",
+        "definition": "char(2) DEFAULT NULL"
+      },
+      {
+        "name": "vildep",
+        "definition": "char(30) DEFAULT NULL"
+      },
+      {
+        "name": "numrem",
+        "definition": "char(15) DEFAULT NULL"
+      },
+      {
+        "name": "numtra",
+        "definition": "char(15) DEFAULT NULL"
+      },
+      {
+        "name": "hfrg",
+        "definition": "int(11) DEFAULT NULL"
+      },
+      {
+        "name": "tcharg",
+        "definition": "int(11) DEFAULT NULL"
+      },
+      {
+        "name": "nomchf",
+        "definition": "char(50) DEFAULT NULL"
+      },
+      {
+        "name": "numtel",
+        "definition": "char(15) DEFAULT NULL"
+      },
+      {
+        "name": "docdou",
+        "definition": "char(10) DEFAULT NULL"
+      },
+      {
+        "name": "traction",
+        "definition": "char(15) DEFAULT NULL"
+      },
+      {
+        "name": "numplo",
+        "definition": "char(30) DEFAULT NULL"
+      },
+      {
+        "name": "codmaj",
+        "definition": "smallint(6) DEFAULT NULL"
+      },
+      {
+        "name": "destk",
+        "definition": "char(1) DEFAULT NULL"
+      },
+      {
+        "name": "portdech",
+        "definition": "int(11) DEFAULT NULL"
+      },
+      {
+        "name": "numfac",
+        "definition": "varchar(50) DEFAULT '0'"
+      },
+      {
+        "name": "fret",
+        "definition": "varchar(50) DEFAULT 'PREPAID'"
+      },
+      {
+        "name": "client",
+        "definition": "varchar(50) DEFAULT 'PREPAID'"
+      },
+      {
+        "name": "mnlettre",
+        "definition": "varchar(255) DEFAULT ''"
+      },
+      {
+        "name": "EACCE",
+        "definition": "varchar(50) DEFAULT ''"
+      },
+      {
+        "name": "remarq",
+        "definition": "varchar(250) DEFAULT ''"
+      },
+      {
+        "name": "dtdepsta",
+        "definition": "date DEFAULT NULL"
+      }
+    ],
+    "ddl": "CREATE TABLE IF NOT EXISTS `dossier` (\r\n  `numdos` int(11) NOT NULL DEFAULT '0',\r\n  `refexp` smallint(6) DEFAULT NULL,\r\n  `reftm` smallint(6) DEFAULT NULL,\r\n  `refte` smallint(6) DEFAULT NULL,\r\n  `coddes` smallint(6) DEFAULT NULL,\r\n  `reftrp` smallint(6) DEFAULT NULL,\r\n  `refgrp` int(11) DEFAULT NULL,\r\n  `dtedep` date DEFAULT NULL,\r\n  `dtearr` date DEFAULT NULL,\r\n  `numper` int(11) DEFAULT NULL,\r\n  `numcmr` char(10) DEFAULT NULL,\r\n  `coddev` char(3) DEFAULT NULL,\r\n  `cours` decimal(16,4) DEFAULT NULL,\r\n  `herdep` char(5) DEFAULT NULL,\r\n  `montan` decimal(16,2) DEFAULT NULL,\r\n  `typtrp` char(2) DEFAULT NULL,\r\n  `vildep` char(30) DEFAULT NULL,\r\n  `numrem` char(15) DEFAULT NULL,\r\n  `numtra` char(15) DEFAULT NULL,\r\n  `hfrg` int(11) DEFAULT NULL,\r\n  `tcharg` int(11) DEFAULT NULL,\r\n  `nomchf` char(50) DEFAULT NULL,\r\n  `numtel` char(15) DEFAULT NULL,\r\n  `docdou` char(10) DEFAULT NULL,\r\n  `traction` char(15) DEFAULT NULL,\r\n  `numplo` char(30) DEFAULT NULL,\r\n  `codmaj` smallint(6) DEFAULT NULL,\r\n  `destk` char(1) DEFAULT NULL,\r\n  `portdech` int(11) DEFAULT NULL,\r\n  `numfac` varchar(50) DEFAULT '0',\r\n  `fret` varchar(50) DEFAULT 'PREPAID',\r\n  `client` varchar(50) DEFAULT 'PREPAID',\r\n  `mnlettre` varchar(255) DEFAULT '',\r\n  `EACCE` varchar(50) DEFAULT '',\r\n  `remarq` varchar(250) DEFAULT '',\r\n  `dtdepsta` date DEFAULT NULL,\r\n  PRIMARY KEY (`numdos`),\r\n  KEY `idx_dossier_numdos` (`numdos`),\r\n  KEY `idx_dossier_coddes` (`coddes`)\r\n) ENGINE=InnoDB DEFAULT CHARSET=latin1;"
+  },
+  {
+    "name": "ecart_e",
+    "keys": [
+      "numpal"
+    ],
+    "label": "numpal",
+    "columns": [
+      {
+        "name": "numpal",
+        "definition": "int(10) unsigned NOT NULL DEFAULT '0'"
+      },
+      {
+        "name": "dtepal",
+        "definition": "date NOT NULL DEFAULT '0000-00-00'"
+      },
+      {
+        "name": "caipal",
+        "definition": "smallint(6) NOT NULL DEFAULT '0'"
+      },
+      {
+        "name": "codvar",
+        "definition": "smallint(6) NOT NULL DEFAULT '0'"
+      },
+      {
+        "name": "codtype",
+        "definition": "smallint(6) NOT NULL DEFAULT '0'"
+      },
+      {
+        "name": "tarpal",
+        "definition": "int(11) NOT NULL DEFAULT '0'"
+      },
+      {
+        "name": "pdspes",
+        "definition": "int(11) NOT NULL DEFAULT '0'"
+      },
+      {
+        "name": "pdsfru",
+        "definition": "int(11) NOT NULL DEFAULT '0'"
+      },
+      {
+        "name": "etat",
+        "definition": "char(1) NOT NULL DEFAULT ''"
+      },
+      {
+        "name": "frigo",
+        "definition": "char(1) DEFAULT NULL"
+      },
+      {
+        "name": "typorg",
+        "definition": "char(1) DEFAULT NULL"
+      },
+      {
+        "name": "numorg",
+        "definition": "int(10) unsigned DEFAULT NULL"
+      },
+      {
+        "name": "numvnt",
+        "definition": "int(10) unsigned DEFAULT NULL"
+      },
+      {
+        "name": "refsta1",
+        "definition": "smallint(6) DEFAULT NULL"
+      },
+      {
+        "name": "refsta2",
+        "definition": "smallint(6) DEFAULT NULL"
+      },
+      {
+        "name": "numtrf",
+        "definition": "int(11) DEFAULT '0'"
+      },
+      {
+        "name": "pdEpis",
+        "definition": "int(11) DEFAULT NULL"
+      }
+    ],
+    "ddl": "CREATE TABLE IF NOT EXISTS `ecart_e` (\r\n  `numpal` int(10) unsigned NOT NULL DEFAULT '0',\r\n  `dtepal` date NOT NULL DEFAULT '0000-00-00',\r\n  `caipal` smallint(6) NOT NULL DEFAULT '0',\r\n  `codvar` smallint(6) NOT NULL DEFAULT '0',\r\n  `codtype` smallint(6) NOT NULL DEFAULT '0',\r\n  `tarpal` int(11) NOT NULL DEFAULT '0',\r\n  `pdspes` int(11) NOT NULL DEFAULT '0',\r\n  `pdsfru` int(11) NOT NULL DEFAULT '0',\r\n  `etat` char(1) NOT NULL DEFAULT '',\r\n  `frigo` char(1) DEFAULT NULL,\r\n  `typorg` char(1) DEFAULT NULL,\r\n  `numorg` int(10) unsigned DEFAULT NULL,\r\n  `numvnt` int(10) unsigned DEFAULT NULL,\r\n  `refsta1` smallint(6) DEFAULT NULL,\r\n  `refsta2` smallint(6) DEFAULT NULL,\r\n  `numtrf` int(11) DEFAULT '0',\r\n  `pdEpis` int(11) DEFAULT NULL,\r\n  PRIMARY KEY (`numpal`)\r\n) ENGINE=InnoDB DEFAULT CHARSET=latin1;"
+  },
+  {
+    "name": "ecart_d",
+    "keys": [
+      "numpal",
+      "numpre",
+      "numver",
+      "codtype"
+    ],
+    "label": "numpal",
+    "columns": [
+      {
+        "name": "numpal",
+        "definition": "int(11) NOT NULL DEFAULT '0'"
+      },
+      {
+        "name": "numpre",
+        "definition": "int(11) NOT NULL DEFAULT '0'"
+      },
+      {
+        "name": "numver",
+        "definition": "int(11) NOT NULL DEFAULT '0'"
+      },
+      {
+        "name": "refver",
+        "definition": "smallint(6) NOT NULL DEFAULT '0'"
+      },
+      {
+        "name": "codtype",
+        "definition": "smallint(6) NOT NULL DEFAULT '0'"
+      },
+      {
+        "name": "nbrcai",
+        "definition": "int(11) NOT NULL DEFAULT '0'"
+      },
+      {
+        "name": "pdsfru",
+        "definition": "decimal(12,3) NOT NULL DEFAULT '0.000'"
+      },
+      {
+        "name": "pdVent",
+        "definition": "double DEFAULT '0'"
+      },
+      {
+        "name": "pdpesev",
+        "definition": "double DEFAULT '0'"
+      },
+      {
+        "name": "pdEpis",
+        "definition": "int(11) DEFAULT NULL"
+      }
+    ],
+    "ddl": "CREATE TABLE IF NOT EXISTS `ecart_d` (\r\n  `numpal` int(11) NOT NULL DEFAULT '0',\r\n  `numpre` int(11) NOT NULL DEFAULT '0',\r\n  `numver` int(11) NOT NULL DEFAULT '0',\r\n  `refver` smallint(6) NOT NULL DEFAULT '0',\r\n  `codtype` smallint(6) NOT NULL DEFAULT '0',\r\n  `nbrcai` int(11) NOT NULL DEFAULT '0',\r\n  `pdsfru` decimal(12,3) NOT NULL DEFAULT '0.000',\r\n  `pdVent` double DEFAULT '0',\r\n  `pdpesev` double DEFAULT '0',\r\n  `pdEpis` int(11) DEFAULT NULL,\r\n  PRIMARY KEY (`numpal`,`numpre`,`numver`,`codtype`)\r\n) ENGINE=InnoDB DEFAULT CHARSET=latin1;"
+  }
+]

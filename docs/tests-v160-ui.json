@@ -1,0 +1,48 @@
+{
+  "date": "2026-10-16T16:36:00.939Z",
+  "passed": 10,
+  "failed": 0,
+  "scope": "Composants réels React/Mantine en SSR; pas de captures navigateur.",
+  "results": [
+    {
+      "name": "Page Export intégrée avec quatre KPI et unités enregistrées",
+      "passed": true
+    },
+    {
+      "name": "Aucun export réel ou client fictivement certifié",
+      "passed": true
+    },
+    {
+      "name": "Détails lisibles et export Excel présents",
+      "passed": true
+    },
+    {
+      "name": "Filtres repliables, période et calibre présents",
+      "passed": true
+    },
+    {
+      "name": "Choix net/palettes/colis sans mélange d’unités",
+      "passed": true
+    },
+    {
+      "name": "Source manquante visible sans total garanti",
+      "passed": true
+    },
+    {
+      "name": "État vide sans observation fabriquée",
+      "passed": true
+    },
+    {
+      "name": "ISO : tonnes et palettes avec axes et infobulles corrects",
+      "passed": true
+    },
+    {
+      "name": "Menu Export respecte le droit existant",
+      "passed": true
+    },
+    {
+      "name": "Pas de mutation frontend Export",
+      "passed": true
+    }
+  ]
+}

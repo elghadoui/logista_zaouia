@@ -1,0 +1,192 @@
+{
+  "date": "2026-10-09T00:35:25.584Z",
+  "db": "vitasouss_recette_drencher_63cec80a207e4487b05011b47525e3dd",
+  "contextId": 88,
+  "host": "127.0.0.1",
+  "port": 33307,
+  "productionAccess": false,
+  "passed": 45,
+  "failed": 0,
+  "results": [
+    {
+      "name": "Migration administrative additive et idempotente",
+      "passed": true
+    },
+    {
+      "name": "logista explicitement Production",
+      "passed": true
+    },
+    {
+      "name": "Activation Recette impossible pour logista",
+      "passed": true
+    },
+    {
+      "name": "Nettoyage impossible pour logista sans ouvrir la base",
+      "passed": true
+    },
+    {
+      "name": "Base neuve non automatiquement classifiée Recette",
+      "passed": true
+    },
+    {
+      "name": "Nettoyage impossible avant inscription",
+      "passed": true
+    },
+    {
+      "name": "Confirmation activation requise",
+      "passed": true
+    },
+    {
+      "name": "Activation explicite et identité liée au contexte",
+      "passed": true
+    },
+    {
+      "name": "Réactivation refusée",
+      "passed": true
+    },
+    {
+      "name": "Recette réservée aux Admin même si contexte attribué",
+      "passed": true
+    },
+    {
+      "name": "Appel direct nettoyage non-Admin refusé",
+      "passed": true
+    },
+    {
+      "name": "Versions précédentes consultables avec dosages exacts",
+      "passed": true
+    },
+    {
+      "name": "Produit désactivé sans perdre les versions",
+      "passed": true
+    },
+    {
+      "name": "Programme désactivable même avec un produit inactif",
+      "passed": true
+    },
+    {
+      "name": "Programme actif refuse produit inactif",
+      "passed": true
+    },
+    {
+      "name": "Filtre mouvements par bon et produit",
+      "passed": true
+    },
+    {
+      "name": "Poids confirmé kg inscrit dans les nouveaux cycles",
+      "passed": true
+    },
+    {
+      "name": "Stock réel corrigé avant suppression",
+      "passed": true
+    },
+    {
+      "name": "Aperçu détaillé ciblé et restitution de stock exacts",
+      "passed": true
+    },
+    {
+      "name": "Aperçu sans suppression ni modification de stock",
+      "passed": true
+    },
+    {
+      "name": "Motif obligatoire",
+      "passed": true
+    },
+    {
+      "name": "Confirmation incorrecte refusée",
+      "passed": true
+    },
+    {
+      "name": "CSRF nettoyage requis",
+      "passed": true
+    },
+    {
+      "name": "Aperçu périmé après modification refusé",
+      "passed": true
+    },
+    {
+      "name": "Cycle validé de recette supprimé et stock entièrement restitué",
+      "passed": true
+    },
+    {
+      "name": "Palettes libérées et autre brouillon conservé",
+      "passed": true
+    },
+    {
+      "name": "Consommations du cycle supprimées, entrée magasin conservée",
+      "passed": true
+    },
+    {
+      "name": "Double nettoyage même ticket refusé",
+      "passed": true
+    },
+    {
+      "name": "Suppression brouillon sans restitution fictive",
+      "passed": true
+    },
+    {
+      "name": "Identifiants non réattribués après nettoyage",
+      "passed": true
+    },
+    {
+      "name": "Remise zéro cycles/stock garde produits et programmes",
+      "passed": true
+    },
+    {
+      "name": "Nettoyage programmes et produits avec intégrité",
+      "passed": true
+    },
+    {
+      "name": "Historiques administratifs survivent au reset",
+      "passed": true
+    },
+    {
+      "name": "Identité Recette conservée après reset",
+      "passed": true
+    },
+    {
+      "name": "Deux confirmations simultanées : un seul nettoyage appliqué",
+      "passed": true
+    },
+    {
+      "name": "Aperçu expiré refusé",
+      "passed": true
+    },
+    {
+      "name": "Tables historiques de Logista identiques avant/après",
+      "passed": true
+    },
+    {
+      "name": "Journal préparé réconcilié par reçu sans répéter nettoyage",
+      "passed": true
+    },
+    {
+      "name": "Dépendance inconnue ou cascade bloque tout nettoyage",
+      "passed": true
+    },
+    {
+      "name": "Cascade ajoutée sur une table Drencher connue également bloquée",
+      "passed": true
+    },
+    {
+      "name": "FK dans une autre base, même sans SELECT dessus, bloque nettoyage",
+      "passed": true
+    },
+    {
+      "name": "Sans inspection globale des FK aucune suppression possible",
+      "passed": true
+    },
+    {
+      "name": "Marqueur altéré bloque le mode et toute suppression",
+      "passed": true
+    },
+    {
+      "name": "Données existantes jamais automatiquement requalifiées",
+      "passed": true
+    },
+    {
+      "name": "Production n’a aucune inscription Recette",
+      "passed": true
+    }
+  ]
+}

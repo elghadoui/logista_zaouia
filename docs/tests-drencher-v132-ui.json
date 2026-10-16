@@ -1,0 +1,36 @@
+{
+  "date": "2026-10-14T00:47:40.888Z",
+  "passed": 7,
+  "failed": 0,
+  "scope": "Rendu réel React/Mantine en SSR ; pas d’interaction DOM ni navigateur.",
+  "results": [
+    {
+      "name": "Table produits : MA et visibilité lisibles",
+      "passed": true
+    },
+    {
+      "name": "Produit MA absent sans invention",
+      "passed": true
+    },
+    {
+      "name": "Actions directes Activer et Désactiver",
+      "passed": true
+    },
+    {
+      "name": "Versions antérieures restent consultables",
+      "passed": true
+    },
+    {
+      "name": "Action administrative de suppression disponible",
+      "passed": true
+    },
+    {
+      "name": "Action administrative désactivée archive",
+      "passed": true
+    },
+    {
+      "name": "Éditeur soumis utilise correction qualité, pas brouillon",
+      "passed": true
+    }
+  ]
+}

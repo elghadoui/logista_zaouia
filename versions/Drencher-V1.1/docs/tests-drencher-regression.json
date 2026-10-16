@@ -1,0 +1,576 @@
+{
+  "date": "2026-10-08T21:11:58.276Z",
+  "sourceDb": "vitasouss_test_v141_src_1791493611732",
+  "targetDb": "vitasouss_test_v141_dst_1791493611732",
+  "host": "127.0.0.1",
+  "port": 33307,
+  "data": "DDL réel et données entièrement synthétiques ; aucun accès production",
+  "passed": 141,
+  "failed": 0,
+  "results": [
+    {
+      "name": "Version V1.4.1 compilée",
+      "passed": true
+    },
+    {
+      "name": "Matrice Admin 30 modules dont Drencher",
+      "passed": true
+    },
+    {
+      "name": "Consultation conserve uniquement la lecture",
+      "passed": true
+    },
+    {
+      "name": "CSRF exigé pour les CRUD",
+      "passed": true
+    },
+    {
+      "name": "Rôle Consultation ne modifie pas",
+      "passed": true
+    },
+    {
+      "name": "Rôle Consultation ne supprime pas",
+      "passed": true
+    },
+    {
+      "name": "Destination utilisée : pays protégé",
+      "passed": true
+    },
+    {
+      "name": "Destination utilisée : désignation et adresses corrigibles",
+      "passed": true
+    },
+    {
+      "name": "Destination utilisée : suppression bloquée",
+      "passed": true
+    },
+    {
+      "name": "Identifiant destination immutable",
+      "passed": true
+    },
+    {
+      "name": "Destination inutilisée : pays corrigeable",
+      "passed": true
+    },
+    {
+      "name": "Destination : pays absent refusé",
+      "passed": true
+    },
+    {
+      "name": "Pays utilisé uniquement par partenaire reste modifiable",
+      "passed": true
+    },
+    {
+      "name": "Pays destination : tout changement bloqué",
+      "passed": true
+    },
+    {
+      "name": "Pays destination : suppression bloquée",
+      "passed": true
+    },
+    {
+      "name": "Pays partenaire : suppression bloquée",
+      "passed": true
+    },
+    {
+      "name": "Partenaire utilisé 10 : type protégé",
+      "passed": true
+    },
+    {
+      "name": "Partenaire utilisé 11 : type protégé",
+      "passed": true
+    },
+    {
+      "name": "Partenaire utilisé 12 : type protégé",
+      "passed": true
+    },
+    {
+      "name": "Partenaire utilisé 13 : type protégé",
+      "passed": true
+    },
+    {
+      "name": "Partenaire utilisé 14 : type protégé",
+      "passed": true
+    },
+    {
+      "name": "Partenaire utilisé : coordonnées et pays corrigibles",
+      "passed": true
+    },
+    {
+      "name": "Code rep ne référence pas partenaire.ref",
+      "passed": true
+    },
+    {
+      "name": "Partenaire inutilisé : type corrigeable",
+      "passed": true
+    },
+    {
+      "name": "Partenaire utilisé palette.codexp : suppression bloquée",
+      "passed": true
+    },
+    {
+      "name": "Partenaire inutilisé : suppression permise",
+      "passed": true
+    },
+    {
+      "name": "Marché CHAR(2) : valeur SU acceptée",
+      "passed": true
+    },
+    {
+      "name": "Marché CHAR(2) : autre valeur acceptée",
+      "passed": true
+    },
+    {
+      "name": "Marché : valeur trop longue refusée",
+      "passed": true
+    },
+    {
+      "name": "Marché utilisé : suppression bloquée",
+      "passed": true
+    },
+    {
+      "name": "Pays affiche le nom du marché",
+      "passed": true
+    },
+    {
+      "name": "Groupes articles affichent famille",
+      "passed": true
+    },
+    {
+      "name": "Groupe utilisé : modification bloquée",
+      "passed": true
+    },
+    {
+      "name": "Groupe utilisé : suppression bloquée",
+      "passed": true
+    },
+    {
+      "name": "Article tpalette : toute modification bloquée",
+      "passed": true
+    },
+    {
+      "name": "Article tpalette : suppression bloquée",
+      "passed": true
+    },
+    {
+      "name": "Article inutilisé : relation modifiable",
+      "passed": true
+    },
+    {
+      "name": "Défaut agréage : intitulé protégé",
+      "passed": true
+    },
+    {
+      "name": "Défaut agréage : famille protégée",
+      "passed": true
+    },
+    {
+      "name": "Défaut agréage : suppression bloquée",
+      "passed": true
+    },
+    {
+      "name": "Défaut libre : culture et famille corrigeables",
+      "passed": true
+    },
+    {
+      "name": "Création défaut contrôlée",
+      "passed": true
+    },
+    {
+      "name": "Défaut : lier et catdef imposés à 1",
+      "passed": true
+    },
+    {
+      "name": "Défaut : champs techniques API refusés",
+      "passed": true
+    },
+    {
+      "name": "Défaut : culture absente refusée",
+      "passed": true
+    },
+    {
+      "name": "Combo famille contient les valeurs distinctes",
+      "passed": true
+    },
+    {
+      "name": "Type écart utilisé : modification bloquée",
+      "passed": true
+    },
+    {
+      "name": "Type écart utilisé : suppression bloquée",
+      "passed": true
+    },
+    {
+      "name": "Type écart libre : modification permise",
+      "passed": true
+    },
+    {
+      "name": "Déclaration utilisée : changement station ne contourne pas le blocage",
+      "passed": true
+    },
+    {
+      "name": "Déclaration utilisée : suppression bloquée",
+      "passed": true
+    },
+    {
+      "name": "Déclaration autre station : trois correspondances ne bloquent pas",
+      "passed": true
+    },
+    {
+      "name": "Déclaration libre : quatre valeurs modifiables",
+      "passed": true
+    },
+    {
+      "name": "Déclaration réel égal déclaré autorisée",
+      "passed": true
+    },
+    {
+      "name": "Déclaration doublon refusée",
+      "passed": true
+    },
+    {
+      "name": "Déclaration doublon en modification refusé",
+      "passed": true
+    },
+    {
+      "name": "Déclaration station absente refusée",
+      "passed": true
+    },
+    {
+      "name": "Déclaration original utilisée : modification API directe refusée",
+      "passed": true
+    },
+    {
+      "name": "Déclaration libre : suppression autorisée",
+      "passed": true
+    },
+    {
+      "name": "CRUD destination : création identifiant explicite",
+      "passed": true
+    },
+    {
+      "name": "CRUD destination : doublon identifiant refusé",
+      "passed": true
+    },
+    {
+      "name": "CRUD destination : modification référence inutilisée",
+      "passed": true
+    },
+    {
+      "name": "CRUD destination : suppression référence inutilisée",
+      "passed": true
+    },
+    {
+      "name": "CRUD partenaire : création identifiant explicite",
+      "passed": true
+    },
+    {
+      "name": "CRUD partenaire : doublon identifiant refusé",
+      "passed": true
+    },
+    {
+      "name": "CRUD partenaire : modification référence inutilisée",
+      "passed": true
+    },
+    {
+      "name": "CRUD partenaire : suppression référence inutilisée",
+      "passed": true
+    },
+    {
+      "name": "CRUD pays : création identifiant explicite",
+      "passed": true
+    },
+    {
+      "name": "CRUD pays : doublon identifiant refusé",
+      "passed": true
+    },
+    {
+      "name": "CRUD pays : modification référence inutilisée",
+      "passed": true
+    },
+    {
+      "name": "CRUD pays : suppression référence inutilisée",
+      "passed": true
+    },
+    {
+      "name": "CRUD marche : création identifiant explicite",
+      "passed": true
+    },
+    {
+      "name": "CRUD marche : doublon identifiant refusé",
+      "passed": true
+    },
+    {
+      "name": "CRUD marche : modification référence inutilisée",
+      "passed": true
+    },
+    {
+      "name": "CRUD marche : suppression référence inutilisée",
+      "passed": true
+    },
+    {
+      "name": "CRUD grpemb : création identifiant explicite",
+      "passed": true
+    },
+    {
+      "name": "CRUD grpemb : doublon identifiant refusé",
+      "passed": true
+    },
+    {
+      "name": "CRUD grpemb : modification référence inutilisée",
+      "passed": true
+    },
+    {
+      "name": "CRUD grpemb : suppression référence inutilisée",
+      "passed": true
+    },
+    {
+      "name": "CRUD groupart : création identifiant explicite",
+      "passed": true
+    },
+    {
+      "name": "CRUD groupart : doublon identifiant refusé",
+      "passed": true
+    },
+    {
+      "name": "CRUD groupart : modification référence inutilisée",
+      "passed": true
+    },
+    {
+      "name": "CRUD groupart : suppression référence inutilisée",
+      "passed": true
+    },
+    {
+      "name": "CRUD defaut : création identifiant explicite",
+      "passed": true
+    },
+    {
+      "name": "CRUD defaut : doublon identifiant refusé",
+      "passed": true
+    },
+    {
+      "name": "CRUD defaut : modification référence inutilisée",
+      "passed": true
+    },
+    {
+      "name": "CRUD defaut : suppression référence inutilisée",
+      "passed": true
+    },
+    {
+      "name": "CRUD typeecart : création identifiant explicite",
+      "passed": true
+    },
+    {
+      "name": "CRUD typeecart : doublon identifiant refusé",
+      "passed": true
+    },
+    {
+      "name": "CRUD typeecart : modification référence inutilisée",
+      "passed": true
+    },
+    {
+      "name": "CRUD typeecart : suppression référence inutilisée",
+      "passed": true
+    },
+    {
+      "name": "Identifiant grpemb ambigu protège toutes écritures",
+      "passed": true
+    },
+    {
+      "name": "Identifiant nul protège toutes écritures",
+      "passed": true
+    },
+    {
+      "name": "État périmé refusé",
+      "passed": true
+    },
+    {
+      "name": "Injection SQL dans une relation refusée",
+      "passed": true
+    },
+    {
+      "name": "Dépendance supplémentaire détectée avant suppression",
+      "passed": true
+    },
+    {
+      "name": "Clé étrangère avec cascade : suppression bloquée",
+      "passed": true
+    },
+    {
+      "name": "Aucune cascade exécutée",
+      "passed": true
+    },
+    {
+      "name": "Table dépendante manquante protège écriture",
+      "passed": true
+    },
+    {
+      "name": "Protection formulaire reflète API : pays bloqué, adresse permise",
+      "passed": true
+    },
+    {
+      "name": "Formulaire propose seulement une route autorisée",
+      "passed": true
+    },
+    {
+      "name": "Préparation formulaire sans écriture DIAF",
+      "passed": true
+    },
+    {
+      "name": "Aperçu liste désignation et adresses autorisées",
+      "passed": true
+    },
+    {
+      "name": "Application après confirmation",
+      "passed": true
+    },
+    {
+      "name": "DIAF conserve identifiant maître",
+      "passed": true
+    },
+    {
+      "name": "Application répétée bloquée",
+      "passed": true
+    },
+    {
+      "name": "Pays destination : synchronisation protégée sur cible",
+      "passed": true
+    },
+    {
+      "name": "DIAF : pays utilisé dans destination bloque synchronisation",
+      "passed": true
+    },
+    {
+      "name": "DIAF : groupe utilisé bloque synchronisation",
+      "passed": true
+    },
+    {
+      "name": "Ordre dépendances : destination refusée avant pays",
+      "passed": true
+    },
+    {
+      "name": "Ordre dépendances : pays refusé avant marché",
+      "passed": true
+    },
+    {
+      "name": "Ordre dépendances : réplication marche",
+      "passed": true
+    },
+    {
+      "name": "Ordre dépendances : réplication pays",
+      "passed": true
+    },
+    {
+      "name": "Ordre dépendances : réplication destination",
+      "passed": true
+    },
+    {
+      "name": "Marché/pays/destination : mêmes identifiants",
+      "passed": true
+    },
+    {
+      "name": "Ordre dépendances : article refusé avant famille",
+      "passed": true
+    },
+    {
+      "name": "Ordre dépendances : réplication grpemb",
+      "passed": true
+    },
+    {
+      "name": "Ordre dépendances : réplication groupart",
+      "passed": true
+    },
+    {
+      "name": "Comparaison détecte conflit libellé autre code",
+      "passed": true
+    },
+    {
+      "name": "Conflit interdit réplication",
+      "passed": true
+    },
+    {
+      "name": "Null libellé ne crée pas un faux conflit",
+      "passed": true
+    },
+    {
+      "name": "Comparaison clé nulle : ambiguïté explicite",
+      "passed": true
+    },
+    {
+      "name": "Partenaire BIGINT créé sans perte",
+      "passed": true
+    },
+    {
+      "name": "Partenaire BIGINT API renvoie chaîne exacte",
+      "passed": true
+    },
+    {
+      "name": "BIGINT transmis exactement à DIAF",
+      "passed": true
+    },
+    {
+      "name": "Comparaison ne modifie ni ne supprime DIAF",
+      "passed": true
+    },
+    {
+      "name": "Échec DIAF : application non confirmée proprement",
+      "passed": true
+    },
+    {
+      "name": "Échec DIAF : ZAOUIA conservé",
+      "passed": true
+    },
+    {
+      "name": "Reprise contrôlée après retour DIAF",
+      "passed": true
+    },
+    {
+      "name": "Connexion DIAF indisponible : erreur propre",
+      "passed": true
+    },
+    {
+      "name": "Connexion DIAF indisponible : erreur journalisée et reprenable",
+      "passed": true
+    },
+    {
+      "name": "Connexion DIAF indisponible : maître conservé",
+      "passed": true
+    },
+    {
+      "name": "Connexion DIAF rétablie : reprise après aperçu",
+      "passed": true
+    },
+    {
+      "name": "Changement permissions révoque session",
+      "passed": true
+    },
+    {
+      "name": "API directe module refusé",
+      "passed": true
+    },
+    {
+      "name": "Comparaison respecte permission du référentiel",
+      "passed": true
+    },
+    {
+      "name": "Synchronisation formulaire respecte permission",
+      "passed": true
+    },
+    {
+      "name": "Assistant toujours en lecture seule",
+      "passed": true
+    },
+    {
+      "name": "Migration permissions idempotente",
+      "passed": true
+    },
+    {
+      "name": "Archives bloquent créations",
+      "passed": true
+    },
+    {
+      "name": "DIAF CRUD direct toujours interdit",
+      "passed": true
+    }
+  ]
+}

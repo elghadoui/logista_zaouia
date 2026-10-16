@@ -1,0 +1,140 @@
+{
+  "date": "2026-10-15T18:07:28.5870795Z",
+  "passed": 33,
+  "failed": 0,
+  "realOpenAiCalls": 0,
+  "results": [
+    {
+      "name": "Provider non configuré",
+      "passed": true
+    },
+    {
+      "name": "Non configuré sans requête réseau",
+      "passed": true
+    },
+    {
+      "name": "Clé invalide : erreur publique sans corps ni secret",
+      "passed": true
+    },
+    {
+      "name": "Timeout OpenAI",
+      "passed": true
+    },
+    {
+      "name": "Outil interdit",
+      "passed": true
+    },
+    {
+      "name": "Aucune exécution d'outil interdit",
+      "passed": true
+    },
+    {
+      "name": "SQL arbitraire refusé",
+      "passed": true
+    },
+    {
+      "name": "Limitation du nombre d'appels",
+      "passed": true
+    },
+    {
+      "name": "Maximum exact d'exécutions",
+      "passed": true
+    },
+    {
+      "name": "Mutation interdite INSERT",
+      "passed": true
+    },
+    {
+      "name": "Mutation interdite UPDATE",
+      "passed": true
+    },
+    {
+      "name": "Mutation interdite DELETE",
+      "passed": true
+    },
+    {
+      "name": "Mutation interdite ALTER",
+      "passed": true
+    },
+    {
+      "name": "Mutation interdite DROP",
+      "passed": true
+    },
+    {
+      "name": "Mutation interdite sync",
+      "passed": true
+    },
+    {
+      "name": "Argument SQL injecté refusé",
+      "passed": true
+    },
+    {
+      "name": "Argument de contexte non autorisé",
+      "passed": true
+    },
+    {
+      "name": "Date invalide",
+      "passed": true
+    },
+    {
+      "name": "Endpoint officiel fixe 0",
+      "passed": true
+    },
+    {
+      "name": "store false / modèle serveur 0",
+      "passed": true
+    },
+    {
+      "name": "Clé exclusivement en en-tête 0",
+      "passed": true
+    },
+    {
+      "name": "Fonctions strictes seulement 0",
+      "passed": true
+    },
+    {
+      "name": "Endpoint officiel fixe 1",
+      "passed": true
+    },
+    {
+      "name": "store false / modèle serveur 1",
+      "passed": true
+    },
+    {
+      "name": "Clé exclusivement en en-tête 1",
+      "passed": true
+    },
+    {
+      "name": "Fonctions strictes seulement 1",
+      "passed": true
+    },
+    {
+      "name": "Résultat relié au call_id",
+      "passed": true
+    },
+    {
+      "name": "Tool calling puis réponse avec tokens cumulés",
+      "passed": true
+    },
+    {
+      "name": "Limite contexte avant envoi",
+      "passed": true
+    },
+    {
+      "name": "Conversation isolée par utilisateur",
+      "passed": true
+    },
+    {
+      "name": "Conversation isolée par exercice",
+      "passed": true
+    },
+    {
+      "name": "Nouvelle conversation efface le précédent historique",
+      "passed": true
+    },
+    {
+      "name": "Timeout englobe l'outil",
+      "passed": true
+    }
+  ]
+}

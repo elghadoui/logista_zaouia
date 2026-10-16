@@ -1,0 +1,144 @@
+{
+  "date": "2026-10-16T16:35:19.013Z",
+  "passed": 34,
+  "failed": 0,
+  "scope": "Composants réels en SSR ; aucune interaction navigateur revendiquée.",
+  "results": [
+    {
+      "name": "Réceptions : vrai composant Mantine, indicateurs et recherche",
+      "passed": true
+    },
+    {
+      "name": "Choix des contextes et consolidation visibles",
+      "passed": true
+    },
+    {
+      "name": "Archive autorisée sélectionnable et aucune archive inventée",
+      "passed": true
+    },
+    {
+      "name": "Graphique accessible, détail et export Excel présents",
+      "passed": true
+    },
+    {
+      "name": "Filtres catégories et groupes produits présents",
+      "passed": true
+    },
+    {
+      "name": "Caisserie : quatre indicateurs compacts et limites de solde visibles",
+      "passed": true
+    },
+    {
+      "name": "Flux E/S par type, quantités séparées et aucun faux solde",
+      "passed": true
+    },
+    {
+      "name": "Source absente visible sans afficher de faux zéro",
+      "passed": true
+    },
+    {
+      "name": "Sidebar respecte permission Réceptions sans Caisserie",
+      "passed": true
+    },
+    {
+      "name": "Navigation Drencher historique conservée",
+      "passed": true
+    },
+    {
+      "name": "Filtres repliés par défaut et commande accessible",
+      "passed": true
+    },
+    {
+      "name": "V1.5.1 affiche une rangée compacte de quatre KPI et un graphique SVG sans NaN",
+      "passed": true
+    },
+    {
+      "name": "Variation E−S par type et absence de dette inventée",
+      "passed": true
+    },
+    {
+      "name": "Variation invalide indiquée à vérifier sans inventer de solde",
+      "passed": true
+    },
+    {
+      "name": "Administration conserve les contextes masqués et permet leur réactivation",
+      "passed": true
+    },
+    {
+      "name": "Inventaire accessible dans administration, sans nouvel accès opérateur",
+      "passed": true
+    },
+    {
+      "name": "Comparaison et formulaires : cible masquée retirée sans ajout de route",
+      "passed": true
+    },
+    {
+      "name": "Ancienne sélection masquée remplacée par une cible visible seulement",
+      "passed": true
+    },
+    {
+      "name": "Aucune cible si la liste visible est indisponible",
+      "passed": true
+    },
+    {
+      "name": "Répartition négative suspendue sans pourcentage trompeur",
+      "passed": true
+    },
+    {
+      "name": "Courbe quotidienne garde les dates manquantes en rupture",
+      "passed": true
+    },
+    {
+      "name": "Graphique ISO combiné : unités, axes, légendes et valeurs réelles",
+      "passed": true
+    },
+    {
+      "name": "Poids manquant sans barre zéro ; semaines ISO absentes sans interpolation",
+      "passed": true
+    },
+    {
+      "name": "Caisserie filtrée : quantité déplacée et mouvements, aucun vocabulaire de stock",
+      "passed": true
+    },
+    {
+      "name": "Caisserie sans type : mouvements seuls, aucun total de types mélangés",
+      "passed": true
+    },
+    {
+      "name": "Graphique Caisserie compare les quantités E/S et affiche S−E dans l’infobulle",
+      "passed": true
+    },
+    {
+      "name": "Quantités de caisses cachées sans type sélectionné",
+      "passed": true
+    },
+    {
+      "name": "Situation producteur affiche les soldes et palettes séparées",
+      "passed": true
+    },
+    {
+      "name": "Typographie agrandie, contraste renforcé et responsive bureau/tablette/mobile",
+      "passed": true
+    },
+    {
+      "name": "Graphiques calibrés à la largeur réelle de leur panneau",
+      "passed": true
+    },
+    {
+      "name": "Libellés français conservés sans altération d’encodage",
+      "passed": true
+    },
+    {
+      "name": "Masquage autre station retire aussi son archive comparative",
+      "passed": true
+    },
+    {
+      "name": "Retrait archive principale retire l’archive associée",
+      "passed": true
+    },
+    {
+      "name": "Comparaison complète conserve ses quatre contextes",
+      "passed": true
+    }
+  ]
+}

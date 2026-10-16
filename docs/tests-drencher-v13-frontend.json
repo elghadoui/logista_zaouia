@@ -1,0 +1,52 @@
+{
+  "date": "2026-10-09T14:42:41.663Z",
+  "browserInteractive": false,
+  "passed": 11,
+  "failed": 0,
+  "results": [
+    {
+      "name": "Trois actions F04 réelles Mantine",
+      "passed": true
+    },
+    {
+      "name": "Bouton stock Impressions et états intégré",
+      "passed": true
+    },
+    {
+      "name": "URL API avec contexte et session correcte",
+      "passed": true
+    },
+    {
+      "name": "Identité PDF et contenu reçus sans transformation",
+      "passed": true
+    },
+    {
+      "name": "Erreur permission lisible",
+      "passed": true
+    },
+    {
+      "name": "Connexion HTML jamais présentée comme PDF",
+      "passed": true
+    },
+    {
+      "name": "Panne propre sans exception technique",
+      "passed": true
+    },
+    {
+      "name": "Annulation du téléchargement conservée",
+      "passed": true
+    },
+    {
+      "name": "Même PDF temporaire pour aperçu export et impression",
+      "passed": true
+    },
+    {
+      "name": "Révocation Blob et annulation au démontage",
+      "passed": true
+    },
+    {
+      "name": "Cinq documents et filtres adaptés",
+      "passed": true
+    }
+  ]
+}

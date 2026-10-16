@@ -1,0 +1,58 @@
+{
+  "date": "2026-10-14T17:27:23.461Z",
+  "success": true,
+  "database": "vitasouss_test_dr1321_73c3ce82f6a748eabaf4a18a37253d28",
+  "host": "127.0.0.1",
+  "port": 33307,
+  "productionAccess": false,
+  "results": [
+    {
+      "name": "Hicham seul droit saisie crée son brouillon réel",
+      "passed": true
+    },
+    {
+      "name": "Hicham modifie son brouillon en API",
+      "passed": true
+    },
+    {
+      "name": "Édition de son brouillon visible",
+      "passed": true
+    },
+    {
+      "name": "Brouillon autre auteur modification refusée",
+      "passed": true
+    },
+    {
+      "name": "Brouillon autre auteur soumission refusée",
+      "passed": true
+    },
+    {
+      "name": "Propriétaire peut soumettre son brouillon",
+      "passed": true
+    },
+    {
+      "name": "Après soumission son propre brouillon est verrouillé",
+      "passed": true
+    },
+    {
+      "name": "Aucune écriture sur stock pour consommations réelles zéro",
+      "passed": true
+    },
+    {
+      "name": "Ajouter absent : création POST refusée",
+      "passed": true
+    },
+    {
+      "name": "PUT cycles/0 ne contourne pas Ajouter",
+      "passed": true
+    },
+    {
+      "name": "PUT cycle négatif refusé",
+      "passed": true
+    },
+    {
+      "name": "Aucun cycle créé par contournement",
+      "passed": true
+    }
+  ]
+}

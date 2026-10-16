@@ -1,0 +1,236 @@
+{
+  "date": "2026-10-08T16:56:31.164Z",
+  "db": "vitasouss_test_drencher_1791478585318",
+  "contextId": 64,
+  "host": "127.0.0.1",
+  "port": 33307,
+  "data": "DDL fourni et données synthétiques exclusivement",
+  "passed": 56,
+  "failed": 0,
+  "results": [
+    {
+      "name": "Migration métier idempotente, 10 tables InnoDB",
+      "passed": true
+    },
+    {
+      "name": "Droits opérateur : qualité/gestion refusées",
+      "passed": true
+    },
+    {
+      "name": "Exercice non attribué refusé",
+      "passed": true
+    },
+    {
+      "name": "DIAF refusé même à Admin",
+      "passed": true
+    },
+    {
+      "name": "Produits communs créés via API",
+      "passed": true
+    },
+    {
+      "name": "Référence produit en double refusée",
+      "passed": true
+    },
+    {
+      "name": "Unité immuable",
+      "passed": true
+    },
+    {
+      "name": "Bon magasin doublon refusé",
+      "passed": true
+    },
+    {
+      "name": "Péremption incohérente refusée",
+      "passed": true
+    },
+    {
+      "name": "Pagination d’un lot de 160 palettes",
+      "passed": true
+    },
+    {
+      "name": "Relations labels réception/variété/verger/adhérent",
+      "passed": true
+    },
+    {
+      "name": "Valeurs relationnelles nulles affichables",
+      "passed": true
+    },
+    {
+      "name": "Palettes autre station exclues",
+      "passed": true
+    },
+    {
+      "name": "Archive non modifiable",
+      "passed": true
+    },
+    {
+      "name": "Consultation non modifiable",
+      "passed": true
+    },
+    {
+      "name": "CSRF obligatoire",
+      "passed": true
+    },
+    {
+      "name": "Palettes dupliquées refusées",
+      "passed": true
+    },
+    {
+      "name": "Palette station étrangère refusée",
+      "passed": true
+    },
+    {
+      "name": "Répartition fabricant incohérente refusée",
+      "passed": true
+    },
+    {
+      "name": "Brouillon sans sortie de stock",
+      "passed": true
+    },
+    {
+      "name": "Quatre valeurs distinctes et calcul exact",
+      "passed": true
+    },
+    {
+      "name": "Écarts et deux lots fabricants conservés",
+      "passed": true
+    },
+    {
+      "name": "Sélection multi-lots conservée",
+      "passed": true
+    },
+    {
+      "name": "Dosage ancien cycle non rétroactif",
+      "passed": true
+    },
+    {
+      "name": "Nouveau cycle version périmée refusée",
+      "passed": true
+    },
+    {
+      "name": "Soumission sans sortie de stock",
+      "passed": true
+    },
+    {
+      "name": "Opérateur ne valide pas",
+      "passed": true
+    },
+    {
+      "name": "Validation déduit uniquement le réel par lot",
+      "passed": true
+    },
+    {
+      "name": "Double validation refusée sans nouveau déstockage",
+      "passed": true
+    },
+    {
+      "name": "Palette signalée déjà traitée",
+      "passed": true
+    },
+    {
+      "name": "Palette validée dans un autre cycle bloquée",
+      "passed": true
+    },
+    {
+      "name": "Stock insuffisant annule toute la transaction",
+      "passed": true
+    },
+    {
+      "name": "Correction motif obligatoire",
+      "passed": true
+    },
+    {
+      "name": "Correction sans droit qualité refusée",
+      "passed": true
+    },
+    {
+      "name": "Correction palettes validées inchangées",
+      "passed": true
+    },
+    {
+      "name": "Correction restitue puis consomme avec bilan cohérent",
+      "passed": true
+    },
+    {
+      "name": "Historique immutable et ancienne consommation visible",
+      "passed": true
+    },
+    {
+      "name": "Correction concurrente périmée refusée",
+      "passed": true
+    },
+    {
+      "name": "Produit hors programme visible et tracé",
+      "passed": true
+    },
+    {
+      "name": "Deux validations simultanées : une seule appliquée",
+      "passed": true
+    },
+    {
+      "name": "Soumission incomplète refusée",
+      "passed": true
+    },
+    {
+      "name": "Historique filtre statut/palette/date",
+      "passed": true
+    },
+    {
+      "name": "Tableau de bord et mouvements accessibles",
+      "passed": true
+    },
+    {
+      "name": "Tables historiques strictement inchangées",
+      "passed": true
+    },
+    {
+      "name": "Aucune route suppression/synchronisation Drencher",
+      "passed": true
+    },
+    {
+      "name": "Assistant toujours disponible indépendamment",
+      "passed": true
+    },
+    {
+      "name": "Lecture Consultation conservée",
+      "passed": true
+    },
+    {
+      "name": "Quantité négative refusée",
+      "passed": true
+    },
+    {
+      "name": "Précision supérieure à six décimales refusée",
+      "passed": true
+    },
+    {
+      "name": "Lot fabricant appartenant à un autre produit refusé",
+      "passed": true
+    },
+    {
+      "name": "Utilisation réelle conservée même en brouillon",
+      "passed": true
+    },
+    {
+      "name": "Modifier un cycle en attente le remet en brouillon",
+      "passed": true
+    },
+    {
+      "name": "Correction insuffisante intégralement annulée",
+      "passed": true
+    },
+    {
+      "name": "Déclencheur inattendu bloque le module",
+      "passed": true
+    },
+    {
+      "name": "Type SQL incompatible bloque le module",
+      "passed": true
+    },
+    {
+      "name": "Schéma restauré et tables historiques inchangées",
+      "passed": true
+    }
+  ]
+}

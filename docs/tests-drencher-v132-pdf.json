@@ -1,0 +1,164 @@
+{
+  "passed": 39,
+  "failed": 0,
+  "browserInteractive": false,
+  "productionAccess": false,
+  "results": [
+    {
+      "name": "simple : rendu identique à présentation validée",
+      "passed": true
+    },
+    {
+      "name": "simple : une page sans débordement",
+      "passed": true
+    },
+    {
+      "name": "complexe : rendu identique à présentation validée",
+      "passed": true
+    },
+    {
+      "name": "complexe : une page sans débordement",
+      "passed": true
+    },
+    {
+      "name": "stock : rendu identique à présentation validée",
+      "passed": true
+    },
+    {
+      "name": "stock : une page sans débordement",
+      "passed": true
+    },
+    {
+      "name": "fiche : rendu identique à présentation validée",
+      "passed": true
+    },
+    {
+      "name": "fiche : une page sans débordement",
+      "passed": true
+    },
+    {
+      "name": "entrees : rendu identique à présentation validée",
+      "passed": true
+    },
+    {
+      "name": "entrees : une page sans débordement",
+      "passed": true
+    },
+    {
+      "name": "consommations : rendu identique à présentation validée",
+      "passed": true
+    },
+    {
+      "name": "consommations : une page sans débordement",
+      "passed": true
+    },
+    {
+      "name": "mouvements : rendu identique à présentation validée",
+      "passed": true
+    },
+    {
+      "name": "mouvements : une page sans débordement",
+      "passed": true
+    },
+    {
+      "name": "Valeurs historiques physiques inchangées",
+      "passed": true
+    },
+    {
+      "name": "REEL : type de quantité explicite",
+      "passed": true
+    },
+    {
+      "name": "REEL : matière active imprimée",
+      "passed": true
+    },
+    {
+      "name": "REEL : aucune matière active masquée",
+      "passed": true
+    },
+    {
+      "name": "REEL : aucune ligne ni total produit masqué",
+      "passed": true
+    },
+    {
+      "name": "REEL : dimensions A4 paysage",
+      "passed": true
+    },
+    {
+      "name": "REEL : quantité principale correspond à la valeur historisée",
+      "passed": true
+    },
+    {
+      "name": "REEL : texte contenu dans la page",
+      "passed": true
+    },
+    {
+      "name": "THEORIQUE : type de quantité explicite",
+      "passed": true
+    },
+    {
+      "name": "THEORIQUE : matière active imprimée",
+      "passed": true
+    },
+    {
+      "name": "THEORIQUE : aucune matière active masquée",
+      "passed": true
+    },
+    {
+      "name": "THEORIQUE : aucune ligne ni total produit masqué",
+      "passed": true
+    },
+    {
+      "name": "THEORIQUE : dimensions A4 paysage",
+      "passed": true
+    },
+    {
+      "name": "THEORIQUE : quantité principale correspond à la valeur historisée",
+      "passed": true
+    },
+    {
+      "name": "THEORIQUE : texte contenu dans la page",
+      "passed": true
+    },
+    {
+      "name": "MACHINE : type de quantité explicite",
+      "passed": true
+    },
+    {
+      "name": "MACHINE : matière active imprimée",
+      "passed": true
+    },
+    {
+      "name": "MACHINE : aucune matière active masquée",
+      "passed": true
+    },
+    {
+      "name": "MACHINE : aucune ligne ni total produit masqué",
+      "passed": true
+    },
+    {
+      "name": "MACHINE : dimensions A4 paysage",
+      "passed": true
+    },
+    {
+      "name": "MACHINE : quantité principale correspond à la valeur historisée",
+      "passed": true
+    },
+    {
+      "name": "MACHINE : texte contenu dans la page",
+      "passed": true
+    },
+    {
+      "name": "Tous produits masqués : aucun nom dans formulaire ni annexe",
+      "passed": true
+    },
+    {
+      "name": "Volume : pagination et annexes conservées",
+      "passed": true
+    },
+    {
+      "name": "Volume : type machine sur toutes pages",
+      "passed": true
+    }
+  ]
+}

@@ -1,0 +1,351 @@
+{
+  "date": "2026-10-07T23:23:15.160Z",
+  "baseline": "versions/V1.4",
+  "files": [
+    {
+      "path": "backend/Application/ComparisonService.cs",
+      "status": "Modified",
+      "sha256": "911EF39675E93AADEFD7AE679C3C2BBBB7085A80608C790D7896D3DBF2508C67"
+    },
+    {
+      "path": "backend/Application/ComplementaryRules.cs",
+      "status": "Added",
+      "sha256": "C63EC2D9649C0B4191F34DE9AC678AA56327BAA3A2D5F5BB04AA787CA7DAA8CD"
+    },
+    {
+      "path": "backend/Application/ComplementaryService.cs",
+      "status": "Modified",
+      "sha256": "7F81F3E1E2DC561B0C7A4D536D15E37FFC023CE70128ADFF49D111EB4072C1B8"
+    },
+    {
+      "path": "backend/Application/Models.cs",
+      "status": "Modified",
+      "sha256": "928E0C64EBABE56314C6F9EAF8E215E68EBB835F67F11CFD2F7078CA1EE8C5F8"
+    },
+    {
+      "path": "backend/Application/PermissionService.cs",
+      "status": "Modified",
+      "sha256": "7C0AF6F6F9C422FFA81D6344A9C7B98F0E37BC7F62250FFCCAC84CEF777CADD7"
+    },
+    {
+      "path": "backend/Application/PilotService.cs",
+      "status": "Modified",
+      "sha256": "8535A5CDC0ACA75A558197BB5C4282E27994D3F5F5BF36F332172FEC68544291"
+    },
+    {
+      "path": "backend/Application/ReferentialService.cs",
+      "status": "Modified",
+      "sha256": "3E7BD4BF423B658FE7A359042B8D7E09959981C58258474839F889F5AA7459D8"
+    },
+    {
+      "path": "backend/Application/RelationService.cs",
+      "status": "Modified",
+      "sha256": "59A6DB9CB8C597AE5EC94D6F605BA4B6C890F50DFFF4FE7AEB9EB56CFB803E8F"
+    },
+    {
+      "path": "backend/Application/SchemaGuard.cs",
+      "status": "Modified",
+      "sha256": "C07A78CDDDE38857B89E6D122726CCE26EAC537D3C77028D1BCB55E4B7F65A00"
+    },
+    {
+      "path": "backend/Application/SyncService.cs",
+      "status": "Modified",
+      "sha256": "09757A677CC76D0A1DB6E7C2EF237DA5367AA52EEE51573AE2C1FF740DCB84B0"
+    },
+    {
+      "path": "backend/pilot-schema.json",
+      "status": "Modified",
+      "sha256": "84314C1E294D24444ED2BF436D4E62C68F4CF2F1CFE72830C5E005345FF06D9A"
+    },
+    {
+      "path": "backend/Program.cs",
+      "status": "Modified",
+      "sha256": "B2A20CD093D64852884560CEFFBFD808A45EEEDB053AFB4E2EE65053B64BD32B"
+    },
+    {
+      "path": "backend/Vitasouss.Api.csproj",
+      "status": "Modified",
+      "sha256": "26D456B3EA82D83BEE3A59C900E138C20AA9C559DF0EAABED8EFC8D5E9FBEEEA"
+    },
+    {
+      "path": "frontend/package-lock.json",
+      "status": "Modified",
+      "sha256": "3E0B7D06974577E16ACA7E51CBEA92D2F326EA0675E73E9FB48F6E25375D638E"
+    },
+    {
+      "path": "frontend/package.json",
+      "status": "Modified",
+      "sha256": "EE28C35C9164BC619C7AC4EF441E0A91841AC108FBB08DEAB10CC5DF3E7F94B8"
+    },
+    {
+      "path": "frontend/src/api.ts",
+      "status": "Modified",
+      "sha256": "DC24F4E02A04CF277099EF8BDE1D0105EA47BB649BC1EE89465FF05A3074F3C0"
+    },
+    {
+      "path": "frontend/src/App.tsx",
+      "status": "Modified",
+      "sha256": "818E87E74DA7F1EEAA0FA09251DB5F0E3CBD57730FA18EF7F4362E5844F02CAE"
+    },
+    {
+      "path": "frontend/src/comparisonContract.ts",
+      "status": "Added",
+      "sha256": "2B061F41967411C054F9CC258BDDBBCE46D895BDD11869975B375631BF07F077"
+    },
+    {
+      "path": "frontend/src/ComplementaryPanel.tsx",
+      "status": "Modified",
+      "sha256": "A3BB3AA9D00A0CF62E5E4FF5D5B654572FDFC7BF7E1389BF9772DFBE17789D4F"
+    },
+    {
+      "path": "frontend/src/FormSyncOffer.tsx",
+      "status": "Added",
+      "sha256": "E6B2B1B9A5D5458FEF21D57AA6E147B804F86A10EF99E2832E7C183F1D2AAFD8"
+    },
+    {
+      "path": "frontend/src/navigation.ts",
+      "status": "Added",
+      "sha256": "4969DE150FC14682E08F58F4EE045D39B180A8BA6B0B2184DB59312374683494"
+    },
+    {
+      "path": "frontend/src/PageErrorBoundary.tsx",
+      "status": "Added",
+      "sha256": "24964026DE890C46E282C4A0065387A090BD5B72C1AE162788DA8097C61C4297"
+    },
+    {
+      "path": "frontend/src/Permissions.tsx",
+      "status": "Modified",
+      "sha256": "02675882ADF7D77125A13C32511610B2F05F5085E7784B75EB7B2108ACFD5A65"
+    },
+    {
+      "path": "frontend/src/RecordView.tsx",
+      "status": "Modified",
+      "sha256": "BC071F20A602C9CF70BF5DCC6591A65C4C481159961F4199C7BB87F2B09A4FF6"
+    },
+    {
+      "path": "frontend/src/ReferentialComparison.tsx",
+      "status": "Modified",
+      "sha256": "B5C8D28313E39DDCA81639E82B7BD92D9E9A24681E8281A5A7CF1001A3B63DA4"
+    },
+    {
+      "path": "frontend/src/Sidebar.module.css",
+      "status": "Added",
+      "sha256": "FECED0EF26AD1FFCBA44FD861649587C08C32D1DF965731C806B9321EDC789AA"
+    },
+    {
+      "path": "frontend/src/Sidebar.tsx",
+      "status": "Added",
+      "sha256": "3097600625FDC612A26716AB997CBF88FDA1BE1073EC0540F3384B14B296576B"
+    },
+    {
+      "path": "frontend/src/style-modules.d.ts",
+      "status": "Added",
+      "sha256": "C4387A8B3A19464901AD321D481B8A0D4EE5F963411E68273F98D180F2FE4641"
+    },
+    {
+      "path": "frontend/src/style.css",
+      "status": "Modified",
+      "sha256": "AFC97C7F8FB4D677858EA6D629540BCBF51AAF450D596E2B4EE53254CC5A4A42"
+    },
+    {
+      "path": "frontend/src/SyncReview.tsx",
+      "status": "Modified",
+      "sha256": "3F5F28E3F5538791C381E95CB55AA3B46CC4CEE7FDAD8CA16D549B01C02B95FF"
+    },
+    {
+      "path": "frontend/tsconfig.tsbuildinfo",
+      "status": "Modified",
+      "sha256": "32C30D5302CCF9B13B7EE47EE44FC58A3CEF7616D1E4EA6AAECED107491D0BDF"
+    },
+    {
+      "path": "sql/003_permissions_v141.sql",
+      "status": "Added",
+      "sha256": "9B81CFCA6E7A47F2122740E90FEE6D0BFB584DEE14274B8A7690C3B72AF69E73"
+    },
+    {
+      "path": "tools/audit-schema-v141.mjs",
+      "status": "Added",
+      "sha256": "4AA27932A3393CD234F8C3E961F4B6EF94B48F7B354BD4EF49B84A4B5CEC4B59"
+    },
+    {
+      "path": "tools/integrate-sidebar-v141.mjs",
+      "status": "Added",
+      "sha256": "F3D121DEDCC7A62D622A84D9B801C64A497BFC2AAB6E03F7B31CCD822E0930A6"
+    },
+    {
+      "path": "tools/pack-v141.ps1",
+      "status": "Added",
+      "sha256": "325488B4AF61AC180AEADACFE3ED53FFB8D7583D8F78A2E9ED9C6ED0605D5D44"
+    },
+    {
+      "path": "tools/prepare-v141-metadata.mjs",
+      "status": "Added",
+      "sha256": "39F9BB4ADC0C9E374D6FBF405F76981CD59708ADB9A1F2065CF1A3795692C0CB"
+    },
+    {
+      "path": "tools/render-sidebar-proposal.ps1",
+      "status": "Added",
+      "sha256": "BF58627D82E146BEC9B71288CDDC02854EEDF91CF78E2D7151414CDB5EB71659"
+    },
+    {
+      "path": "tools/report-v141.mjs",
+      "status": "Added",
+      "sha256": "DE5B40456A4CAA68293841C6E963E60DFC704CDA10EB3810EEDC979E5A05CFA6"
+    },
+    {
+      "path": "tools/verify-api-v141.mjs",
+      "status": "Added",
+      "sha256": "126FDEB807BE6B87D8978A9D1E1FF5F8FC90955FD3DF23A732B72F6C4AA8973B"
+    },
+    {
+      "path": "tools/verify-boards-v141.mjs",
+      "status": "Added",
+      "sha256": "A02782274C97BB9480F625EC37AADEBD92CFD45368AC3D3EB0A010EE34BBE109"
+    },
+    {
+      "path": "tools/verify-frontend-v141.mjs",
+      "status": "Added",
+      "sha256": "53032A2BC63BDAB4ADFD95531F452EEB94FC72124BBD41EC7EF85DB3FCF5AA05"
+    },
+    {
+      "path": "tools/verify-package-v141.ps1",
+      "status": "Added",
+      "sha256": "D4D816A134BDF16B8BC6871647DDC0103B5B66471B295987D999265F9C30B6F2"
+    },
+    {
+      "path": "docs/api-verification-v11.json",
+      "status": "Modified",
+      "sha256": "3A68A136EB046169C80665298CE64E4333DACCDC4B3B38D526FD7E54641214A4"
+    },
+    {
+      "path": "docs/api-verification-v12.json",
+      "status": "Modified",
+      "sha256": "A03188E14ED8E5AEA07FEF7EDA917BAE63CA60ACB59C33BF304C0150F71BA937"
+    },
+    {
+      "path": "docs/api-verification-v121.json",
+      "status": "Modified",
+      "sha256": "027075B5992C409817700F5F6BC9F970E8AED9E65B439B5D3C34EEDF4D9DC8C5"
+    },
+    {
+      "path": "docs/api-verification-v141.json",
+      "status": "Added",
+      "sha256": "D2E8043CA600AC8B771BB4CB217F33DD3733EB13129A68F780E9EBF046AF376D"
+    },
+    {
+      "path": "docs/assistant-http-verification-v141.json",
+      "status": "Added",
+      "sha256": "6AF7AEB99BBDFEFA834689FF34A3B9434ACC73DFCF80C26BD9F22CCCA4ECD8BC"
+    },
+    {
+      "path": "docs/assistant-http-verification.json",
+      "status": "Modified",
+      "sha256": "6AF7AEB99BBDFEFA834689FF34A3B9434ACC73DFCF80C26BD9F22CCCA4ECD8BC"
+    },
+    {
+      "path": "docs/assistant-verification-v141.json",
+      "status": "Added",
+      "sha256": "C3A791346A0C7945633EA5697FCC223D78C1DA2BBC78F25A31036317F04E234B"
+    },
+    {
+      "path": "docs/AUDIT-V1.4.1.md",
+      "status": "Added",
+      "sha256": "918EC5F9B6C03B6032D72C7E9586F197DE352E0A50971BA904260AA1EC176F29"
+    },
+    {
+      "path": "docs/boards-verification-v141.json",
+      "status": "Added",
+      "sha256": "7ACBC28A644D4586FD0024C833ADC06308331AB9E3BD766E1ED066322ED4A960"
+    },
+    {
+      "path": "docs/comparison-core-verification-v141.json",
+      "status": "Added",
+      "sha256": "34BF21E2A3F6481FF37DD0CFB1540B6605C96AAA275AFB445EA22F7C184BF2B9"
+    },
+    {
+      "path": "docs/comparison-verification-v12.json",
+      "status": "Modified",
+      "sha256": "34BF21E2A3F6481FF37DD0CFB1540B6605C96AAA275AFB445EA22F7C184BF2B9"
+    },
+    {
+      "path": "docs/core-verification-v141.json",
+      "status": "Added",
+      "sha256": "9E27D7FAD488EFCDA12F996E4F31DA889CDABD4A4753A0364C9554B0BF781738"
+    },
+    {
+      "path": "docs/CORRECTIONS-V1.4.1.md",
+      "status": "Added",
+      "sha256": "C1D0147A991771A73A99427C2733A066DF7EF278016C17A2C9843073D4E9EF44"
+    },
+    {
+      "path": "docs/frontend-verification-v141.json",
+      "status": "Added",
+      "sha256": "17A2E3F2CDEB7D4B12179D5584F703A4B60D7B97696AC1F35E7E740792F7CA30"
+    },
+    {
+      "path": "docs/MISE-A-JOUR-V1.4.1.md",
+      "status": "Added",
+      "sha256": "DCF3FC6D5A0BC6072A28F503AAD3C2E9C6F31266A90586367A2DAC7517EE5771"
+    },
+    {
+      "path": "docs/operations-core-verification-v141.json",
+      "status": "Added",
+      "sha256": "A03188E14ED8E5AEA07FEF7EDA917BAE63CA60ACB59C33BF304C0150F71BA937"
+    },
+    {
+      "path": "docs/payload-verification-v141.json",
+      "status": "Added",
+      "sha256": "04053F17FD09B903B20D5A6AC9FC0F4F0BB1706DA20B7C469762829F5E48459A"
+    },
+    {
+      "path": "docs/POINTS-A-VALIDER-V1.4.1.md",
+      "status": "Added",
+      "sha256": "36735B4B172C6B23EA351F806271FC48E381DEF7B520E40E5D4E0AF8B0802B40"
+    },
+    {
+      "path": "docs/presentation-verification-v141.json",
+      "status": "Added",
+      "sha256": "3A68A136EB046169C80665298CE64E4333DACCDC4B3B38D526FD7E54641214A4"
+    },
+    {
+      "path": "docs/receipt-protection-verification-v141.json",
+      "status": "Added",
+      "sha256": "027075B5992C409817700F5F6BC9F970E8AED9E65B439B5D3C34EEDF4D9DC8C5"
+    },
+    {
+      "path": "docs/REGLES-METIER-V1.4.1.md",
+      "status": "Added",
+      "sha256": "55DF46605235EB31CAB0D9C08391B0600FAAFA5BBCB6CDC8EC699FCD9E5DA51E"
+    },
+    {
+      "path": "docs/schema-audit-v141.json",
+      "status": "Added",
+      "sha256": "58CD482759BEB8B19068956E62AA4111039B143484FD8D76E1AFC65F4C5B966B"
+    },
+    {
+      "path": "docs/SIDEBAR-V1.4.1-PROPOSITION.md",
+      "status": "Added",
+      "sha256": "EACFF1CC0F063F582F3A83AAF5B4A2513D9577C8116C21C04CA4FC1BA0F5A81D"
+    },
+    {
+      "path": "docs/sidebar-v141-maquette.html",
+      "status": "Added",
+      "sha256": "3B65ACB2627951B03712862AC48385DCD30120BB7F2582F336FF0C35C8F2BD8E"
+    },
+    {
+      "path": "docs/sidebar-v141-proposition.png",
+      "status": "Added",
+      "sha256": "9C5CE73EA106AE058EFD0BCE45B9E5012A734947726A84DEFC29C8833DC3CB8E"
+    },
+    {
+      "path": "docs/SYNCHRONISATION-V1.4.1.md",
+      "status": "Added",
+      "sha256": "3F1E4DBAEF2DA30E7CC26C5C189018F8479CC002032E51BA938E01B256937E20"
+    },
+    {
+      "path": "docs/VERIFICATION-V1.4.1.md",
+      "status": "Added",
+      "sha256": "88025560463404E0B99B92395D5FC36B24E9893FAC1279990D45AF21BE45CCEB"
+    }
+  ]
+}

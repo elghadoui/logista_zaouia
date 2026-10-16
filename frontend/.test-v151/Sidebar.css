@@ -1,0 +1,118 @@
+/* frontend/src/Sidebar.module.css */
+.Sidebar_root {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  background: #123e2c;
+  color: #f0f5ec;
+}
+.Sidebar_brand {
+  padding: 22px 18px 14px;
+  flex-shrink: 0;
+  min-height: 84px;
+}
+.Sidebar_mark {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 12px;
+  color: white;
+  background: #174c3c;
+  flex-shrink: 0;
+}
+.Sidebar_scroll {
+  flex: 1;
+  min-height: 0;
+  padding: 0 12px;
+}
+.Sidebar_group {
+  width: 100%;
+  border-radius: 10px;
+  margin: 3px 0;
+  color: #d9e9da;
+}
+.Sidebar_group[data-active] {
+  background: #355d43;
+  color: #f5ffe9;
+}
+.Sidebar_children {
+  margin: 2px 0 12px 20px;
+  padding-left: 12px;
+  border-left: 1px solid #42644e;
+}
+.Sidebar_item {
+  border-radius: 8px;
+  margin: 2px 0;
+  font-size: 13px;
+}
+.Sidebar_item[data-active] {
+  background: #355d43;
+  color: #f5ffe9;
+  font-weight: 650;
+}
+.Sidebar_compact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 0;
+}
+.Sidebar_compactButton {
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+}
+.Sidebar_compactButton[data-active] {
+  background: #355d43;
+  color: #f5ffe9;
+}
+.Sidebar_footer {
+  padding: 14px 16px;
+  border-top: 1px solid #345640;
+  flex-shrink: 0;
+  background: inherit;
+}
+.Sidebar_section {
+  font-size: 9px;
+  letter-spacing: 1.5px;
+  color: #adbfac;
+  padding: 14px 10px 6px;
+}
+.Sidebar_popover {
+  width: 260px;
+  max-height: 75dvh;
+  overflow-y: auto;
+  padding: 10px;
+}
+@media (prefers-reduced-motion: reduce) {
+  .Sidebar_root * {
+    transition: none !important;
+    animation: none !important;
+  }
+}
+.Sidebar_root .mantine-NavLink-root {
+  color: #dcead9;
+}
+.Sidebar_root .mantine-NavLink-root:hover {
+  background: #295239;
+  color: white;
+}
+.Sidebar_root .mantine-ActionIcon-root {
+  color: #d5e8cd;
+}
+.Sidebar_root .mantine-Text-root[data-variant] {
+  color: #b5c9b0;
+}
+.Sidebar_root .mantine-Text-root {
+  --mantine-color-dimmed: #b5c9b0;
+}
+.Sidebar_popover .Sidebar_item {
+  color: light-dark(#233c34, #d6e6dc);
+}
+.Sidebar_popover .Sidebar_item[data-active] {
+  background: light-dark(#e5f2e9, #29483a);
+  color: light-dark(#174c3c, #b3dbc1);
+}

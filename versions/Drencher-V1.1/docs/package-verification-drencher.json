@@ -1,0 +1,14 @@
+{
+  "date": "2026-10-08T17:03:54.7051091Z",
+  "version": "1.4.1 + Drencher V1 MVP",
+  "archive": "C:\\logista_zaouia\\VITASOUSS-V1.4.1-DRENCHER-V1-IIS.zip",
+  "sha256": "566A19F5A92C77685FAB4EE582FA76B05EA427DB00971095E0EF71D1A78E4D35",
+  "entries": 31,
+  "configurationsExcluded": true,
+  "secretsExcluded": true,
+  "fakeMarkersPreserved": true,
+  "assemblyMatches": true,
+  "indexedAssetsPresent": true,
+  "simulation": "C:\\logista_zaouia\\.test-data\\update-drencher-df5f7ede61cd459f93975e6143996746",
+  "productionDeploy": false
+}

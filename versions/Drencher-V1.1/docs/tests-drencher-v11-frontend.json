@@ -1,0 +1,100 @@
+{
+  "date": "2026-10-08T21:28:44.218Z",
+  "passed": 23,
+  "failed": 0,
+  "scope": "Rendu réel React/Mantine serveur ; pas de capture ni interaction navigateur.",
+  "results": [
+    {
+      "name": "Onglet Programmes conservé lors du remontage après enregistrement",
+      "passed": true
+    },
+    {
+      "name": "Tableau produits avec références, noms, unités et statuts",
+      "passed": true
+    },
+    {
+      "name": "Recherche et filtre produit accessibles",
+      "passed": true
+    },
+    {
+      "name": "Actions produit ajouter, modifier, désactiver et réactiver",
+      "passed": true
+    },
+    {
+      "name": "Actions produit désactivées sans autorisation",
+      "passed": true
+    },
+    {
+      "name": "Liste vide produits affiche un message utile",
+      "passed": true
+    },
+    {
+      "name": "Tableau programmes affiche nom, version et statut",
+      "passed": true
+    },
+    {
+      "name": "Consultation des versions et modification disponibles",
+      "passed": true
+    },
+    {
+      "name": "Recherche et filtre programme accessibles",
+      "passed": true
+    },
+    {
+      "name": "Liste vide programmes affiche un message utile",
+      "passed": true
+    },
+    {
+      "name": "Stock agrégé par produit conserve les unités",
+      "passed": true
+    },
+    {
+      "name": "Lots fabricants et dates séparés des stocks produits",
+      "passed": true
+    },
+    {
+      "name": "Recherche, disponibilité et filtre mouvements accessibles",
+      "passed": true
+    },
+    {
+      "name": "Réception est une action claire",
+      "passed": true
+    },
+    {
+      "name": "Réception non autorisée désactivée",
+      "passed": true
+    },
+    {
+      "name": "Production annonce suppressions désactivées",
+      "passed": true
+    },
+    {
+      "name": "Recette propose nettoyage individuel et remises à zéro distinctes",
+      "passed": true
+    },
+    {
+      "name": "Recette annonce conservation des traces administratives",
+      "passed": true
+    },
+    {
+      "name": "Base isolée exige activation explicite",
+      "passed": true
+    },
+    {
+      "name": "Poids kg converti en tonnage dans impression existante",
+      "passed": true
+    },
+    {
+      "name": "Ancien cycle sans unité garde avertissement sans rétroactivité",
+      "passed": true
+    },
+    {
+      "name": "Nouveau cycle strictement inchangé",
+      "passed": true
+    },
+    {
+      "name": "Impression existante inchangée",
+      "passed": true
+    }
+  ]
+}

@@ -1,0 +1,269 @@
+{
+  "testedAt": "2026-10-06T22:10:51.674Z",
+  "mysql": "5.7.44",
+  "base": "http://127.0.0.1:5080/api",
+  "sourceDb": "vitasouss_test_v13_src_1791324645578",
+  "targetDb": "vitasouss_test_v13_dst_1791324645578",
+  "results": [
+    {
+      "name": "Version pilote 1.3",
+      "passed": true
+    },
+    {
+      "name": "Catalogue V1.2.1 conservé",
+      "passed": true
+    },
+    {
+      "name": "Huit référentiels complémentaires",
+      "passed": true
+    },
+    {
+      "name": "Filtres combinés liste et KPI identiques",
+      "passed": true
+    },
+    {
+      "name": "Filtres et pagination cohérents",
+      "passed": true
+    },
+    {
+      "name": "Filtres et recherche cohérents",
+      "passed": true
+    },
+    {
+      "name": "Filtre SQL arbitraire interdit",
+      "passed": true
+    },
+    {
+      "name": "Filtres JSON invalides refusés",
+      "passed": true
+    },
+    {
+      "name": "Liste pilote declaration_verger : volume SQL réel",
+      "passed": true
+    },
+    {
+      "name": "Liste pilote partenaire : volume SQL réel",
+      "passed": true
+    },
+    {
+      "name": "Liste pilote destination : volume SQL réel",
+      "passed": true
+    },
+    {
+      "name": "Liste pilote pays : volume SQL réel",
+      "passed": true
+    },
+    {
+      "name": "Liste pilote grpemb : volume SQL réel",
+      "passed": true
+    },
+    {
+      "name": "Liste pilote groupart : volume SQL réel",
+      "passed": true
+    },
+    {
+      "name": "Liste pilote defaut : volume SQL réel",
+      "passed": true
+    },
+    {
+      "name": "Liste pilote typeecart : volume SQL réel",
+      "passed": true
+    },
+    {
+      "name": "Bigint partenaire sans perte de précision",
+      "passed": true
+    },
+    {
+      "name": "Partenaire : libellé modifié avec bigint exact",
+      "passed": true
+    },
+    {
+      "name": "destination : modification de libellé sur clé unique",
+      "passed": true
+    },
+    {
+      "name": "groupart : modification de libellé sur clé unique",
+      "passed": true
+    },
+    {
+      "name": "Déclaration MyISAM : lecture protégée",
+      "passed": true
+    },
+    {
+      "name": "Groupes sans clé unique : écriture protégée",
+      "passed": true
+    },
+    {
+      "name": "Pilote : Consultation ne modifie pas",
+      "passed": true
+    },
+    {
+      "name": "Pilote : archive ne modifie pas",
+      "passed": true
+    },
+    {
+      "name": "Pilote : CSRF obligatoire",
+      "passed": true
+    },
+    {
+      "name": "Pays : modification de libellé contrôlée",
+      "passed": true
+    },
+    {
+      "name": "Nouveau référentiel : réconciliation du journal existante",
+      "passed": true
+    },
+    {
+      "name": "Pays : ancien snapshot refusé",
+      "passed": true
+    },
+    {
+      "name": "Pays : relations non validées immuables",
+      "passed": true
+    },
+    {
+      "name": "Types écart : création avec clé explicite",
+      "passed": true
+    },
+    {
+      "name": "Partenaire : identifiant bigint hors limites refusé",
+      "passed": true
+    },
+    {
+      "name": "Libellé vide : refus avant écriture",
+      "passed": true
+    },
+    {
+      "name": "Nouvelle suppression : protégée côté API",
+      "passed": true
+    },
+    {
+      "name": "Déclencheurs masqués : écriture protégée",
+      "passed": true
+    },
+    {
+      "name": "Archive sans table : non disponible sans panne",
+      "passed": true
+    },
+    {
+      "name": "Dashboard receptions : total SQL et détail paginé",
+      "passed": true
+    },
+    {
+      "name": "Dashboard caisserie : total SQL et détail paginé",
+      "passed": true
+    },
+    {
+      "name": "Dashboard versements : total SQL et détail paginé",
+      "passed": true
+    },
+    {
+      "name": "Dashboard export : total SQL et détail paginé",
+      "passed": true
+    },
+    {
+      "name": "Dashboard ecarts : total SQL et détail paginé",
+      "passed": true
+    },
+    {
+      "name": "Dashboard : période et évolution cohérentes",
+      "passed": true
+    },
+    {
+      "name": "Dashboard : filtre verger réel",
+      "passed": true
+    },
+    {
+      "name": "Dashboard : date invalide refusée",
+      "passed": true
+    },
+    {
+      "name": "Dashboard : module inconnu refusé",
+      "passed": true
+    },
+    {
+      "name": "Comparaison appliquée : Consultation refusée",
+      "passed": true
+    },
+    {
+      "name": "Comparaison appliquée : archive refusée",
+      "passed": true
+    },
+    {
+      "name": "Comparaison appliquée : CSRF obligatoire",
+      "passed": true
+    },
+    {
+      "name": "Comparaison : demande durable sans écriture source",
+      "passed": true
+    },
+    {
+      "name": "Comparaison : DIAF inchangé avant confirmation",
+      "passed": true
+    },
+    {
+      "name": "Comparaison : patch sans refsta",
+      "passed": true
+    },
+    {
+      "name": "Comparaison : UPDATE DIAF confirmé, refsta local préservé",
+      "passed": true
+    },
+    {
+      "name": "Comparaison : ancien aperçu cible refusé",
+      "passed": true
+    },
+    {
+      "name": "Comparaison : création sûre préparée, pas implicite",
+      "passed": true
+    },
+    {
+      "name": "Création DIAF : aperçu explicite sans refsta",
+      "passed": true
+    },
+    {
+      "name": "Création DIAF : identité explicite conservée",
+      "passed": true
+    },
+    {
+      "name": "Création dépendante : protégée sans demande aveugle",
+      "passed": true
+    },
+    {
+      "name": "Comparaison : sous-variété MyISAM sans PK protégée",
+      "passed": true
+    },
+    {
+      "name": "File : opérations comparaison journalisées",
+      "passed": true
+    },
+    {
+      "name": "Assistant sans provider : état sûr et build fonctionnel",
+      "passed": true
+    },
+    {
+      "name": "Assistant : outil adhérent contrôlé",
+      "passed": true
+    },
+    {
+      "name": "Assistant : parcelles liées et limite SQL",
+      "passed": true
+    },
+    {
+      "name": "Assistant : SQL libre refusé",
+      "passed": true
+    },
+    {
+      "name": "Assistant : contexte non attribué refusé",
+      "passed": true
+    },
+    {
+      "name": "Assistant : chat non configuré explicite",
+      "passed": true
+    },
+    {
+      "name": "Aucune mutation reception_d",
+      "passed": true
+    }
+  ]
+}

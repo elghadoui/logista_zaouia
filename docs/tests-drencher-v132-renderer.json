@@ -1,0 +1,78 @@
+{
+  "date": "2026-10-14T00:47:35.3199437Z",
+  "productionAccess": false,
+  "mysqlWrites": 0,
+  "assemblySha256": "A74A04E366EA38C8188D68D2C3A0206874BC524A9DF2F6AFE222BC2A2642DE8A",
+  "passed": 17,
+  "failed": 0,
+  "results": [
+    {
+      "name": "Ancien instantan\u00E9 : produits visibles par d\u00E9faut, MA absente",
+      "passed": true
+    },
+    {
+      "name": "Ancien contrat fiche produit : visible par d\u00E9faut",
+      "passed": true
+    },
+    {
+      "name": "Aucune mutation des quatre quantit\u00E9s ou param\u00E8tres par g\u00E9n\u00E9ration",
+      "passed": true
+    },
+    {
+      "name": "Compression palettes fid\u00E8le",
+      "passed": true
+    },
+    {
+      "name": "Arrondi m\u00E9tier six d\u00E9cimales",
+      "passed": true
+    },
+    {
+      "name": "Stock diff\u00E9rentiel s\u00E9quence 3",
+      "passed": true
+    },
+    {
+      "name": "Stock diff\u00E9rentiel s\u00E9quence 2.5",
+      "passed": true
+    },
+    {
+      "name": "Stock diff\u00E9rentiel s\u00E9quence 4",
+      "passed": true
+    },
+    {
+      "name": "Stock diff\u00E9rentiel s\u00E9quence 3",
+      "passed": true
+    },
+    {
+      "name": "Stock diff\u00E9rentiel s\u00E9quence 0",
+      "passed": true
+    },
+    {
+      "name": "Rejeu m\u00EAme consommation : delta nul",
+      "passed": true
+    },
+    {
+      "name": "Changement lot : restitution source et sortie destination",
+      "passed": true
+    },
+    {
+      "name": "Stock insuffisant refus\u00E9",
+      "passed": true
+    },
+    {
+      "name": "Restitution excessive historique refus\u00E9e",
+      "passed": true
+    },
+    {
+      "name": "Capacit\u00E9 DECIMAL18,6 prot\u00E9g\u00E9e",
+      "passed": true
+    },
+    {
+      "name": "Pr\u00E9cision micro-unit\u00E9s pr\u00E9serv\u00E9e",
+      "passed": true
+    },
+    {
+      "name": "Plusieurs lots : conservation des quantit\u00E9s",
+      "passed": true
+    }
+  ]
+}

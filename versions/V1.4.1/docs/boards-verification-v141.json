@@ -1,0 +1,73 @@
+{
+  "date": "2026-10-07T23:03:57.770Z",
+  "sourceDb": "vitasouss_test_v141_src_1791412554981",
+  "data": "Données synthétiques du test V1.4.1",
+  "passed": 16,
+  "failed": 0,
+  "results": [
+    {
+      "name": "Opérations receptions : cardinalité réelle",
+      "passed": true
+    },
+    {
+      "name": "Opérations caisserie : cardinalité réelle",
+      "passed": true
+    },
+    {
+      "name": "Opérations versements : cardinalité réelle",
+      "passed": true
+    },
+    {
+      "name": "Opérations export : cardinalité réelle",
+      "passed": true
+    },
+    {
+      "name": "Opérations ecarts : cardinalité réelle",
+      "passed": true
+    },
+    {
+      "name": "Période inclusive des réceptions",
+      "passed": true
+    },
+    {
+      "name": "Réception affiche le verger réel par son nom",
+      "passed": true
+    },
+    {
+      "name": "Dossier affiche exportateur et transitaire",
+      "passed": true
+    },
+    {
+      "name": "Dossier affiche transporteurs",
+      "passed": true
+    },
+    {
+      "name": "Famille de défaut demeure un texte libre",
+      "passed": true
+    },
+    {
+      "name": "Culture de défaut affiche son nom",
+      "passed": true
+    },
+    {
+      "name": "Famille vide ne devient pas une fausse relation absente",
+      "passed": true
+    },
+    {
+      "name": "Contrainte SQL supplémentaire : UPDATE cascade refusé",
+      "passed": true
+    },
+    {
+      "name": "Aucun UPDATE cascade exécuté",
+      "passed": true
+    },
+    {
+      "name": "Visibilité partielle du schéma : écriture protégée",
+      "passed": true
+    },
+    {
+      "name": "Contexte utilisé identifié",
+      "passed": true
+    }
+  ]
+}

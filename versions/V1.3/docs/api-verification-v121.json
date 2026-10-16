@@ -1,0 +1,209 @@
+{
+  "testedAt": "2026-10-06T21:48:03.173Z",
+  "mysql": "5.7.44",
+  "base": "http://127.0.0.1:5080/api",
+  "fixtureDatabase": "vitasouss_test_v121_1791323270377",
+  "receiptRule": "refpar + numcul + refver, toutes stations, même exercice",
+  "results": [
+    {
+      "name": "Version livrée 1.2.1",
+      "passed": true
+    },
+    {
+      "name": "Réceptions : tuple complet et 2 références toutes stations",
+      "passed": true
+    },
+    {
+      "name": "Message métier réceptions compréhensible",
+      "passed": true
+    },
+    {
+      "name": "Même refpar, autre culture : suppression autorisée",
+      "passed": true
+    },
+    {
+      "name": "Même refpar et culture, autre verger : suppression autorisée",
+      "passed": true
+    },
+    {
+      "name": "API directe : parcelle réception refusée",
+      "passed": true
+    },
+    {
+      "name": "Parcelle protégée conservée",
+      "passed": true
+    },
+    {
+      "name": "Parcelle libre : suppression individuelle autorisée",
+      "passed": true
+    },
+    {
+      "name": "Lot : clés en double refusées",
+      "passed": true
+    },
+    {
+      "name": "Lot : vide refusé",
+      "passed": true
+    },
+    {
+      "name": "Lot : items null refusés",
+      "passed": true
+    },
+    {
+      "name": "Précontrôle : clés null refusées",
+      "passed": true
+    },
+    {
+      "name": "Lot : adhérents interdits",
+      "passed": true
+    },
+    {
+      "name": "Lot : 26 lignes refusées",
+      "passed": true
+    },
+    {
+      "name": "Lot : Consultation refusée",
+      "passed": true
+    },
+    {
+      "name": "Précontrôle : Consultation refusée",
+      "passed": true
+    },
+    {
+      "name": "Lot : archive refusée",
+      "passed": true
+    },
+    {
+      "name": "Lot : CSRF requis",
+      "passed": true
+    },
+    {
+      "name": "Lot : confirmation requise",
+      "passed": true
+    },
+    {
+      "name": "Précontrôle : snapshots complets par fiche",
+      "passed": true
+    },
+    {
+      "name": "Lot 100 % libre : 2 suppressions confirmées",
+      "passed": true
+    },
+    {
+      "name": "Lot libre : données réellement supprimées",
+      "passed": true
+    },
+    {
+      "name": "Lot mixte : 1 supprimée, 1 refusée",
+      "passed": true
+    },
+    {
+      "name": "Lot mixte : raison et clé exactes",
+      "passed": true
+    },
+    {
+      "name": "Lot mixte : protégé conservé, libre supprimé",
+      "passed": true
+    },
+    {
+      "name": "Lot entièrement protégé : résultat explicite sans suppression",
+      "passed": true
+    },
+    {
+      "name": "Vergers : lot partiel sans cascade",
+      "passed": true
+    },
+    {
+      "name": "Vergers : lot entièrement libre supprimé",
+      "passed": true
+    },
+    {
+      "name": "Snapshot obsolète : refus individuel, lot poursuit",
+      "passed": true
+    },
+    {
+      "name": "Producteur : vergers détectés et message explicite",
+      "passed": true
+    },
+    {
+      "name": "Producteur : API directe refuse les dépendances",
+      "passed": true
+    },
+    {
+      "name": "Producteur : autre table refadh détectée",
+      "passed": true
+    },
+    {
+      "name": "Producteur : autre référence interdit suppression",
+      "passed": true
+    },
+    {
+      "name": "Producteur : Consultation interdite",
+      "passed": true
+    },
+    {
+      "name": "Producteur : archive interdite",
+      "passed": true
+    },
+    {
+      "name": "Producteur : confirmation obligatoire",
+      "passed": true
+    },
+    {
+      "name": "Producteur : CSRF obligatoire",
+      "passed": true
+    },
+    {
+      "name": "Producteur sans dépendance : suppression confirmée",
+      "passed": true
+    },
+    {
+      "name": "Journal : producteur supprimé tracé",
+      "passed": true
+    },
+    {
+      "name": "Journal : refus réception tracé",
+      "passed": true
+    },
+    {
+      "name": "Journal : refus producteur tracé",
+      "passed": true
+    },
+    {
+      "name": "Journal : état obsolète tracé",
+      "passed": true
+    },
+    {
+      "name": "Suppressions : aucun travail DIAF créé",
+      "passed": true
+    },
+    {
+      "name": "reception_d : toutes données de fixture intactes",
+      "passed": true
+    },
+    {
+      "name": "reception_d : compte applicatif ne peut pas supprimer",
+      "passed": true
+    },
+    {
+      "name": "reception_d originale : aucune donnée modifiée",
+      "passed": true
+    },
+    {
+      "name": "KPI après suppressions : adherent",
+      "passed": true
+    },
+    {
+      "name": "KPI après suppressions : verger",
+      "passed": true
+    },
+    {
+      "name": "KPI après suppressions : parcelle",
+      "passed": true
+    },
+    {
+      "name": "Clés complètes : clé parcelle incomplète refusée",
+      "passed": true
+    }
+  ]
+}

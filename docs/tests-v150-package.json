@@ -1,0 +1,67 @@
+{
+  "passed": 15,
+  "failed": 0,
+  "productionDeploy": false,
+  "results": [
+    {
+      "name": "Archive IIS intègre",
+      "passed": true
+    },
+    {
+      "name": "Correctif additif : sept fichiers uniquement",
+      "passed": true
+    },
+    {
+      "name": "Configurations et clés exclues",
+      "passed": true
+    },
+    {
+      "name": "Aucun SQL de migration dans update",
+      "passed": true
+    },
+    {
+      "name": "Aucun PDF ou ressource F04 remplacé",
+      "passed": true
+    },
+    {
+      "name": "DLL principale seulement, dépendances existantes conservées",
+      "passed": true
+    },
+    {
+      "name": "DLL livrée identique à la DLL testée",
+      "passed": true
+    },
+    {
+      "name": "Manifeste complet exact",
+      "passed": true
+    },
+    {
+      "name": "Guides audit, calculs, limites, mise à jour et tests présents",
+      "passed": true
+    },
+    {
+      "name": "Statut HTTP honnête et Drencher conservé",
+      "passed": true
+    },
+    {
+      "name": "Aucune clé OpenAI dans les fichiers texte",
+      "passed": true
+    },
+    {
+      "name": "Simulation de copie préserve IIS, DP, MySQL et OpenAI fictifs",
+      "passed": true
+    },
+    {
+      "name": "Sources complètes application et tests",
+      "passed": true
+    },
+    {
+      "name": "Sources sans bases importées, binaires locaux ou configurations privées",
+      "passed": true
+    },
+    {
+      "name": "Drencher livré dans les sources identique au départ",
+      "passed": true
+    }
+  ]
+}

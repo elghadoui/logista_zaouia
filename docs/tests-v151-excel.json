@@ -1,0 +1,46 @@
+{
+  "passed": 10,
+  "failed": 0,
+  "results": [
+    {
+      "name": "Service et HTTP V1.5.1 : classeurs Excel ouverts sans réparation",
+      "passed": true
+    },
+    {
+      "name": "Service et HTTP V1.5.1 : 213 lignes de données",
+      "passed": true
+    },
+    {
+      "name": "Service et HTTP V1.5.1 : somme officielle 1809096 kg",
+      "passed": true
+    },
+    {
+      "name": "Service et HTTP V1.5.1 : dates Excel natives",
+      "passed": true
+    },
+    {
+      "name": "Service et HTTP V1.5.1 : en-tête figé et filtres",
+      "passed": true
+    },
+    {
+      "name": "Service et HTTP V1.5.1 : aucune formule injectée",
+      "passed": true
+    },
+    {
+      "name": "HTTP situation Excel : producteur 75 et six quantités exactes",
+      "passed": true
+    },
+    {
+      "name": "HTTP situation Excel : total caisses et palettes réconcilié",
+      "passed": true
+    },
+    {
+      "name": "HTTP situation Excel : balances S moins E sur chaque ligne",
+      "passed": true
+    },
+    {
+      "name": "HTTP situation Excel : aucune formule et colonnes numériques",
+      "passed": true
+    }
+  ]
+}

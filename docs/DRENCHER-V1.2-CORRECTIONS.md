@@ -1,0 +1,11 @@
+# Drencher V1.2 — changements et limites
+
+- Contrat DATE/DATETIME MySQL normalisé explicitement, plutôt que modifier les options de connexion ou les données. Défense frontend pour chaînes, objets MySqlDateTime, dates absentes et impossibles. Recherche des `.slice()` de dates : Stock, impression, programmes et dates de réception pilote corrigés ; les `.slice()` restants de pagination/tableaux et d'initiales sont légitimes.
+- Réservation SQL unique de palette dès le brouillon, par base/exercice. Protection API en création/modification/soumission/validation et contrôle de concurrence ; message palette/cycle/état.
+- Diagnostic des instantanés existants avant initialisation. Arbitrage manuel Admin uniquement sur les non-validés, motif/confirmation, nouvelle révision et aucune suppression automatique. Un brouillon vidé doit être complété avant soumission.
+- Fenêtre dédiée de sélection : filtres réels, pagination serveur 25/50, sélection entre pages/réceptions, sélection page et lot global via API, disponibilité et propriétaires. Le lot global retourne identifiants et résumé, pas toutes les lignes de métadonnées au navigateur. Réservation effective à l'enregistrement, avec recontrôle des conflits entre sélection et sauvegarde.
+- Résumé compact par variété, producteur/adhérent et verger, poids kg et nombre de réceptions. Poids manquant signalé, jamais inventé.
+- Recette V1.1 conservée : les réservations sont incluses dans les aperçus/empreintes et libérées lors des nettoyages ; état d'initialisation, historiques administratifs et reçus restent présents. Aucune suppression de test dans logista.
+- Calculs produits/eaux, déduction du réel après qualité, programmes versionnés, protections validés, permissions et secrets conservés. Seule la section palettes du Nouveau cycle a été remplacée ; les sections cycle/programme/eaux/produits/observations restent issues de V1.1.
+
+Limites conservées du MVP : maximum 2000 palettes/cycle, 30 produits et 30 lots fabricants/produit ; fin le même jour. Aucun nouveau module, aucun pilotage machine, aucune synchronisation Drencher DIAF. Aucune recette visuelle navigateur revendiquée ; elle reste à effectuer en station selon la fiche opérateur.

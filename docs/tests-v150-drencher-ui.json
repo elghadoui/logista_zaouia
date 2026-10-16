@@ -1,0 +1,64 @@
+{
+  "date": "2026-10-15T18:00:27.316Z",
+  "passed": 14,
+  "failed": 0,
+  "scope": "Vrais composants React/Mantine rendus en SSR, données synthétiques, aucun navigateur ou MySQL.",
+  "results": [
+    {
+      "name": "Hicham : vrai bouton Nouveau cycle actif",
+      "passed": true
+    },
+    {
+      "name": "Hicham : aucun accès gestion des programmes via ancien droit groupé",
+      "passed": true
+    },
+    {
+      "name": "Admin peut cocher Ajouter saisie Gestionnaire",
+      "passed": true
+    },
+    {
+      "name": "Admin peut cocher Modifier saisie Gestionnaire",
+      "passed": true
+    },
+    {
+      "name": "Consultation reste grisée",
+      "passed": true
+    },
+    {
+      "name": "Voir requis avant attribution",
+      "passed": true
+    },
+    {
+      "name": "Suppression saisie reste grisée",
+      "passed": true
+    },
+    {
+      "name": "Opérateur : aucun bouton Ajouter/Modifier/Activer programme",
+      "passed": true
+    },
+    {
+      "name": "Mbark : gestion programme active",
+      "passed": true
+    },
+    {
+      "name": "Mbark : droits programme ne donnent pas gestion produits",
+      "passed": true
+    },
+    {
+      "name": "Samira : gestion programme active",
+      "passed": true
+    },
+    {
+      "name": "Samira : droits programme ne donnent pas gestion produits",
+      "passed": true
+    },
+    {
+      "name": "Qualité sans droit saisie : Nouveau cycle désactivé",
+      "passed": true
+    },
+    {
+      "name": "Admin conserve Nouveau cycle",
+      "passed": true
+    }
+  ]
+}

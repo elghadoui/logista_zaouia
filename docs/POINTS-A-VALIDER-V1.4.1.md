@@ -1,0 +1,9 @@
+# Points restant à valider
+
+1. **Recette visuelle réelle** : le contrôle automatique a refusé l’accès navigateur à http://127.0.0.1:5080, en raison d’une préférence utilisateur enregistrée. Le design a été validé et le rendu React serveur testé, mais responsive, interactions, focus, animations et captures de l’application finale ne sont pas déclarés validés. Réautoriser cet accès pour poursuivre l’observation, ou effectuer la checklist visuelle sur une installation de recette VM-APPS.
+2. **Schémas et droits des VM** : le schéma fourni et MySQL local ont été vérifiés ; les serveurs de production n’ont pas été interrogés. Confirmer les types/présences/privilèges ciblés dans les exercices réels. Une incompatibilité bloque l’écriture concernée.
+3. **Porteurs de codes sans relation formelle** : schema-audit-v141.json liste les candidats. Une suppression peut être bloquée par un code trouvé dans une table non confirmée ; faire valider sa signification par le métier/DBA avant de modifier cette protection. Ne pas supprimer ou renuméroter les données pour contourner le blocage.
+4. **Déclarations interstations** : la synchronisation reste protégée faute d’identité métier interstations confirmée ; le CRUD local et la protection réception sur quatre valeurs sont implémentés. Refstat est une référence existante dans la base autorisée ; elle ne change pas les droits/contextes de l’utilisateur.
+5. **Activation existante OpenAI sur VM** : clé, modèle et identité sont conservés ; vérifier le service déjà configuré en recette, sans communiquer la clé. Les tests livrés n’appellent pas l’API réelle et ne génèrent pas de coût OpenAI.
+
+Le paquet est compilé et destiné à la recette. Ces points doivent être levés avant de considérer l’installation de production validée. Aucun déploiement automatique n’a été effectué.

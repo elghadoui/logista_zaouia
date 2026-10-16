@@ -1,0 +1,13 @@
+{
+  "date": "2026-10-08T21:17:32.495Z",
+  "database": "vitasouss_recette_drencher_7424db69ba164180b000c6f32352de03",
+  "contextId": 82,
+  "label": "RECETTE DRENCHER V1.1 - donnees synthetiques",
+  "host": "127.0.0.1",
+  "port": 33307,
+  "palettes": 164,
+  "lot1": 160,
+  "lot2": 4,
+  "cycles": 0,
+  "production": false
+}

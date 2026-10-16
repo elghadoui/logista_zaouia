@@ -1,0 +1,48 @@
+{
+  "date": "2026-10-15T18:11:55.513Z",
+  "passed": 10,
+  "failed": 0,
+  "scope": "Composants réels en SSR ; aucune interaction navigateur revendiquée.",
+  "results": [
+    {
+      "name": "Réceptions : vrai composant Mantine, indicateurs et recherche",
+      "passed": true
+    },
+    {
+      "name": "Choix des contextes et consolidation visibles",
+      "passed": true
+    },
+    {
+      "name": "Archive autorisée sélectionnable et aucune archive inventée",
+      "passed": true
+    },
+    {
+      "name": "Graphique accessible, détail et export Excel présents",
+      "passed": true
+    },
+    {
+      "name": "Filtres catégories et groupes produits présents",
+      "passed": true
+    },
+    {
+      "name": "Trois besoins caisserie distincts et limites explicites",
+      "passed": true
+    },
+    {
+      "name": "Historique par type et quantités sans faux solde",
+      "passed": true
+    },
+    {
+      "name": "Total incomplet visible sans écran blanc",
+      "passed": true
+    },
+    {
+      "name": "Sidebar respecte permission Réceptions sans Caisserie",
+      "passed": true
+    },
+    {
+      "name": "Navigation Drencher historique conservée",
+      "passed": true
+    }
+  ]
+}

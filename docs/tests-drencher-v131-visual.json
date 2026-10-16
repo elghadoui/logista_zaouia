@@ -1,0 +1,210 @@
+{
+  "passed": 48,
+  "failed": 0,
+  "counts": {
+    "F04-V06-V1.3.1-SIMPLE": 1,
+    "F04-V06-V1.3.1-COMPLEXE": 1,
+    "F04-V06-V1.3.1-VOLUME-TEST": 8,
+    "stock-renderer-v131-test": 1,
+    "stock-renderer-v13-baseline": 1
+  },
+  "excelExport": "Microsoft Excel COM; original opened ReadOnly and closed without save",
+  "pixelStockComparison": true,
+  "mysqlWrites": 0,
+  "browserInteractive": false,
+  "physicalPrint": false,
+  "results": [
+    {
+      "name": "F04-V06-V1.3.1-SIMPLE : format A4 paysage",
+      "passed": true
+    },
+    {
+      "name": "F04-V06-V1.3.1-SIMPLE : référence et pagination sur toutes les pages",
+      "passed": true
+    },
+    {
+      "name": "F04-V06-V1.3.1-SIMPLE : données d’essai clairement identifiées",
+      "passed": true
+    },
+    {
+      "name": "F04-V06-V1.3.1-COMPLEXE : format A4 paysage",
+      "passed": true
+    },
+    {
+      "name": "F04-V06-V1.3.1-COMPLEXE : référence et pagination sur toutes les pages",
+      "passed": true
+    },
+    {
+      "name": "F04-V06-V1.3.1-COMPLEXE : données d’essai clairement identifiées",
+      "passed": true
+    },
+    {
+      "name": "F04-V06-V1.3.1-VOLUME-TEST : format A4 paysage",
+      "passed": true
+    },
+    {
+      "name": "F04-V06-V1.3.1-VOLUME-TEST : référence et pagination sur toutes les pages",
+      "passed": true
+    },
+    {
+      "name": "F04-V06-V1.3.1-VOLUME-TEST : données d’essai clairement identifiées",
+      "passed": true
+    },
+    {
+      "name": "stock-renderer-v131-test : format A4 paysage",
+      "passed": true
+    },
+    {
+      "name": "stock-renderer-v13-baseline : format A4 paysage",
+      "passed": true
+    },
+    {
+      "name": "Cycle simple cinq palettes / un produit = une page",
+      "passed": true
+    },
+    {
+      "name": "Cycle complexe 164 palettes / quatre produits = une page",
+      "passed": true
+    },
+    {
+      "name": "F04-V06-V1.3.1-SIMPLE : quatre quantités et deux visas sur la fiche",
+      "passed": true
+    },
+    {
+      "name": "F04-V06-V1.3.1-SIMPLE : palette exacte, pas d’annexe forcée",
+      "passed": true
+    },
+    {
+      "name": "F04-V06-V1.3.1-COMPLEXE : quatre quantités et deux visas sur la fiche",
+      "passed": true
+    },
+    {
+      "name": "F04-V06-V1.3.1-COMPLEXE : palette exacte, pas d’annexe forcée",
+      "passed": true
+    },
+    {
+      "name": "Totaux kg / tonnes, quatre unités, écarts et lot périmé",
+      "passed": true
+    },
+    {
+      "name": "Pas de conformité automatique et ingrédients absents explicités",
+      "passed": true
+    },
+    {
+      "name": "Volume : plusieurs formulaires et annexe uniquement pour les débordements",
+      "passed": true
+    },
+    {
+      "name": "Volume : aucun dernier groupe ni produit omis",
+      "passed": true
+    },
+    {
+      "name": "Volume : observation longue conservée sans troncature",
+      "passed": true
+    },
+    {
+      "name": "Rendu état de stock V1.3 identique pixel par pixel",
+      "passed": true
+    },
+    {
+      "name": "Source métier préservée : backend/Application/DrencherService.cs",
+      "passed": true
+    },
+    {
+      "name": "Source métier préservée : backend/Application/DrencherCycles.cs",
+      "passed": true
+    },
+    {
+      "name": "Source métier préservée : backend/Application/DrencherReservations.cs",
+      "passed": true
+    },
+    {
+      "name": "Source métier préservée : backend/Application/DrencherRecette.cs",
+      "passed": true
+    },
+    {
+      "name": "Source métier préservée : backend/Application/DrencherPaletteSelection.cs",
+      "passed": true
+    },
+    {
+      "name": "Source métier préservée : backend/Application/DrencherModels.cs",
+      "passed": true
+    },
+    {
+      "name": "Source métier préservée : frontend/src/DrencherEditor.tsx",
+      "passed": true
+    },
+    {
+      "name": "Source métier préservée : frontend/src/DrencherPalettePicker.tsx",
+      "passed": true
+    },
+    {
+      "name": "Source métier préservée : frontend/src/DrencherProducts.tsx",
+      "passed": true
+    },
+    {
+      "name": "Source métier préservée : frontend/src/DrencherPrograms.tsx",
+      "passed": true
+    },
+    {
+      "name": "Source métier préservée : frontend/src/DrencherRecette.tsx",
+      "passed": true
+    },
+    {
+      "name": "Source métier préservée : frontend/src/DrencherReservationAdmin.tsx",
+      "passed": true
+    },
+    {
+      "name": "Source métier préservée : frontend/src/DrencherManagement.tsx",
+      "passed": true
+    },
+    {
+      "name": "Source métier préservée : backend/Application/AssistantService.cs",
+      "passed": true
+    },
+    {
+      "name": "Source métier préservée : backend/Application/OpenAiAssistantProvider.cs",
+      "passed": true
+    },
+    {
+      "name": "Source métier préservée : backend/Infrastructure/Connections.cs",
+      "passed": true
+    },
+    {
+      "name": "Source métier préservée : backend/Application/ComplementaryService.cs",
+      "passed": true
+    },
+    {
+      "name": "Source métier préservée : backend/Application/ComplementaryRules.cs",
+      "passed": true
+    },
+    {
+      "name": "Source métier préservée : backend/Application/SyncService.cs",
+      "passed": true
+    },
+    {
+      "name": "Source métier préservée : backend/Application/PermissionService.cs",
+      "passed": true
+    },
+    {
+      "name": "JavaScript livré V1.3 inchangé",
+      "passed": true
+    },
+    {
+      "name": "Page HTML livrée V1.3 inchangée",
+      "passed": true
+    },
+    {
+      "name": "Lecture et calcul des cinq états de stock strictement inchangés",
+      "passed": true
+    },
+    {
+      "name": "Classeur original intact : F04 MPS-01 Suivi du traitement au niveau du drencher V05 (2).xlsx",
+      "passed": true
+    },
+    {
+      "name": "Classeur original intact : l'état Clémentine Oranges 2026 2026.xlsx",
+      "passed": true
+    }
+  ]
+}

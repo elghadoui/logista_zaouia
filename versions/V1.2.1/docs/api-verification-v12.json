@@ -1,0 +1,191 @@
+{
+  "testedAt": "2026-10-06T16:57:10.545Z",
+  "mysql": "5.7.44",
+  "base": "http://127.0.0.1:5080/api",
+  "results": [
+    {
+      "name": "Consultation : transfert refusé",
+      "passed": true
+    },
+    {
+      "name": "Archive : transfert refusé",
+      "passed": true
+    },
+    {
+      "name": "Transfert : CSRF requis",
+      "passed": true
+    },
+    {
+      "name": "Nouvel adhérent inexistant refusé",
+      "passed": true
+    },
+    {
+      "name": "Gestionnaire : transfert réel A → B",
+      "passed": true
+    },
+    {
+      "name": "Transfert : refver et autres données conservés",
+      "passed": true
+    },
+    {
+      "name": "Transfert : parcelles et clés inchangées",
+      "passed": true
+    },
+    {
+      "name": "Transfert : journal utilisateur/date/contexte/avant/après",
+      "passed": true
+    },
+    {
+      "name": "Transfert : source obsolète refusée",
+      "passed": true
+    },
+    {
+      "name": "DIAF : aucune écriture implicite",
+      "passed": true
+    },
+    {
+      "name": "DIAF : transfert préparé, refsta exclu",
+      "passed": true
+    },
+    {
+      "name": "DIAF : transfert confirmé et refsta conservé",
+      "passed": true
+    },
+    {
+      "name": "KPI adherent : total SQL",
+      "passed": true
+    },
+    {
+      "name": "KPI adherent : indépendants de la pagination",
+      "passed": true
+    },
+    {
+      "name": "KPI verger : total SQL",
+      "passed": true
+    },
+    {
+      "name": "KPI verger : indépendants de la pagination",
+      "passed": true
+    },
+    {
+      "name": "KPI parcelle : total SQL",
+      "passed": true
+    },
+    {
+      "name": "KPI parcelle : indépendants de la pagination",
+      "passed": true
+    },
+    {
+      "name": "KPI adhérents : totaux complets, lignes orphelines incluses",
+      "passed": true
+    },
+    {
+      "name": "KPI adhérents : moyenne sur relations réelles",
+      "passed": true
+    },
+    {
+      "name": "KPI parcelles : somme, moyenne, variétés et cultures SQL",
+      "passed": true
+    },
+    {
+      "name": "KPI filtrés : toutes les parcelles du verger",
+      "passed": true
+    },
+    {
+      "name": "KPI adhérent : relation transférée et superficie SQL",
+      "passed": true
+    },
+    {
+      "name": "KPI vergers : surface déclarée et moyenne SQL",
+      "passed": true
+    },
+    {
+      "name": "KPI destination : contexte DIAF indépendant",
+      "passed": true
+    },
+    {
+      "name": "Suppression : Consultation refusée",
+      "passed": true
+    },
+    {
+      "name": "Suppression : archive refusée",
+      "passed": true
+    },
+    {
+      "name": "Suppression : CSRF requis",
+      "passed": true
+    },
+    {
+      "name": "Suppression : confirmation finale requise",
+      "passed": true
+    },
+    {
+      "name": "Suppression : snapshot incomplet refusé",
+      "passed": true
+    },
+    {
+      "name": "Verger isolé : aperçu autorisé",
+      "passed": true
+    },
+    {
+      "name": "Verger sans dépendance : suppression réelle",
+      "passed": true
+    },
+    {
+      "name": "Suppression réussie : audit durable",
+      "passed": true
+    },
+    {
+      "name": "Parcelle isolée : aperçu autorisé",
+      "passed": true
+    },
+    {
+      "name": "Parcelle sans dépendance : suppression réelle",
+      "passed": true
+    },
+    {
+      "name": "Clé étrangère à nom différent : suppression bloquée",
+      "passed": true
+    },
+    {
+      "name": "Cascade historique : aucune donnée dépendante supprimée",
+      "passed": true
+    },
+    {
+      "name": "Verger avec parcelle : refus sans cascade",
+      "passed": true
+    },
+    {
+      "name": "Contrôle initial sans dépendance",
+      "passed": true
+    },
+    {
+      "name": "Dépendance ajoutée après aperçu : refus par revérification",
+      "passed": true
+    },
+    {
+      "name": "Alias idpar : parcelle conservée",
+      "passed": true
+    },
+    {
+      "name": "Tentative bloquée : journal tracé",
+      "passed": true
+    },
+    {
+      "name": "Autres référentiels : suppression toujours désactivée",
+      "passed": true
+    },
+    {
+      "name": "Archive ancienne : superficie absente non inventée",
+      "passed": true
+    },
+    {
+      "name": "KPI archive : total SQL réel",
+      "passed": true
+    },
+    {
+      "name": "Données métier et volumes restaurés après tests",
+      "passed": true
+    }
+  ]
+}

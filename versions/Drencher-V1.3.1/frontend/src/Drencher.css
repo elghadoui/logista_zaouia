@@ -1,0 +1,54 @@
+.dr-print table {
+  font-size: 12px;
+}
+.dr-revision {
+  padding: 8px 0;
+  border-bottom: 1px solid var(--mantine-color-default-border);
+}
+@media print {
+  body {
+    background: white !important;
+    color: black !important;
+  }
+  .mantine-AppShell-header,
+  .mantine-AppShell-navbar,
+  .workspace-footer,
+  .dr-no-print,
+  .mantine-Notifications-root {
+    display: none !important;
+  }
+  .mantine-AppShell-main {
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+  .dr-print {
+    font-size: 10pt;
+    color: black;
+  }
+  .dr-print table {
+    width: 100%;
+    font-size: 9pt;
+    border-collapse: collapse;
+  }
+  .dr-print th,
+  .dr-print td {
+    border: 1px solid #aaa;
+    padding: 5px;
+  }
+  .dr-print tr,
+  .dr-revision {
+    break-inside: avoid;
+  }
+  .dr-print thead {
+    display: table-header-group;
+  }
+  .mantine-Paper-root {
+    border: 0 !important;
+    padding: 0 !important;
+    box-shadow: none !important;
+  }
+  @page {
+    size: A4 landscape;
+    margin: 12mm;
+  }
+}

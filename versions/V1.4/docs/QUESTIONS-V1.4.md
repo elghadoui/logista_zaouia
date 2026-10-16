@@ -1,0 +1,15 @@
+# Questions / opérations protégées — V1.4
+
+Ces points protègent des opérations particulières ; ils n’empêchent ni la livraison ni la consultation des autres modules.
+
+1. **Usage d’une déclaration par une réception** : fournir le code du programme desktop ou une règle SQL métier vérifiée précisant la relation entre reception(refver,refverreel,codvar,refsta) et declaration_verger(refver_reel,refver_nreel,codvar,refstat,id). La modification et la suppression restent bloquées pour toutes les déclarations ; aucun prédicat de quatre colonnes n’est supposé.
+2. **Identité interstations d’une déclaration** : id est technique et auto-incrémenté. Valider une éventuelle identité métier constituée des vergers/variété/station locale avant de proposer sa réplication. La V1.4 ne synchronise pas ces déclarations et n’écrase aucun refstat.
+3. **Cartographie des suppressions** : valider table par table les dépendances complètes de partenaire, destination, pays, groupart, defaut et typeecart (dossiers, réceptions, versements, palettes, export et autres programmes). Suppressions bloquées ; création et libellés restent opérationnels sous réserve de schéma/identifiants/déclencheurs validés.
+4. **partenaire.codgrp** : VARCHAR(4), contre SMALLINT pour groupart.codgrp. Relation non prouvée ; aucune sélection inventée. Les colonnes structurelles non interprétées restent masquées dans les formulaires métier et conservées dans les snapshots API.
+5. **Station historique** : le dump nommé ZAOUIA conserve une station DIAF/7702 tandis que les vergers portent historiquement refsta=7816. Ne pas normaliser. Pour la création d’une déclaration, la station choisie doit exister sans ambiguïté dans station. Valider le mapping réel du programme desktop avant tout élargissement.
+6. **Déclencheurs** : si un trigger existe ou si son inspection est impossible, la nouvelle écriture concernée reste protégée. Le DBA peut refuser TRIGGER : consultation disponible. Une inspection est nécessaire, car MySQL 5.7 masque les triggers sans ce privilège.
+7. **Doublons/nulls grpemb** : le pilote V1.3 possédait volontairement deux lignes codgre=1 dans les fixtures. Les vraies données doivent être contrôlées ; toute ambiguïté bloque les écritures de ce référentiel. Aucun doublon de production n’a été corrigé automatiquement, aucune PK/FK ajoutée.
+8. **Mêmes libellés, codes différents** : le rapprochement case/espaces détecté est un signal de conflit. Aucun renommage/fusion/remappage historique automatique n’est proposé. L’administrateur doit identifier la réalité métier et les usages avant une correction, qui nécessite une version ultérieure pour les changements structurels.
+9. **Recette réelle** : la compilation et les tests utilisent des copies locales. La validation visuelle dans le navigateur, l’installation IIS/DPAPI sous svc_vitasouss et un vrai appel OpenAI restent à réaliser sur l’environnement de validation autorisé. Aucune clé réelle utilisée ici.
+
+Le défaut/type d’écart ne reçoit pas d’interprétation métier nouvelle des unités, tonnages ou catégories. Les modules opérationnels et l’assistant restent en lecture seule.

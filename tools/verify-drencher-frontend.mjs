@@ -1,0 +1,45 @@
+import assert from 'node:assert/strict';
+import {readFileSync,writeFileSync,mkdirSync,rmSync} from 'node:fs';
+import {execFileSync} from 'node:child_process';
+import {createRequire} from 'node:module';
+import path from 'node:path';
+const require=createRequire(path.resolve('frontend/package.json'));
+const {build}=require('esbuild'),React=require('react'),{renderToStaticMarkup}=require('react-dom/server'),{MantineProvider}=require('@mantine/core');
+const dir=path.resolve('frontend/.test-drencher');mkdirSync(dir,{recursive:true});writeFileSync(path.join(dir,'package.json'),'{"type":"commonjs"}');
+const results=[];const check=(name,ok)=>{assert.ok(ok,name);results.push({name,passed:true});console.log('PASS '+name);};
+await build({entryPoints:['frontend/src/DrencherEditor.tsx','frontend/src/DrencherPrint.tsx','frontend/src/DrencherManagement.tsx','frontend/src/Drencher.tsx','frontend/src/drencherTypes.ts','frontend/src/navigation.ts'],bundle:true,platform:'node',format:'cjs',outdir:dir,external:['react','react-dom','@mantine/core','@mantine/hooks'],loader:{'.css':'empty'}});
+const {DrencherEditor}=require(path.join(dir,'DrencherEditor.js')),{DrencherPrint}=require(path.join(dir,'DrencherPrint.js')),{DrencherManagement}=require(path.join(dir,'DrencherManagement.js')),{Drencher}=require(path.join(dir,'Drencher.js')),{amount}=require(path.join(dir,'drencherTypes.js')),{navigation}=require(path.join(dir,'navigation.js'));
+function render(component){return renderToStaticMarkup(React.createElement(MantineProvider,null,component));}
+try {
+ const fixture=JSON.parse(readFileSync('docs/tests-drencher-api.json','utf8'));assert.match(fixture.db,/^vitasouss_test_drencher_\d+$/);
+ const mysql=path.resolve('.local-mysql/mysql-5.7.44-winx64/bin/mysql.exe');
+ const text=execFileSync(mysql,['--host=127.0.0.1','--port=33307','--user=root','--batch','--raw','--skip-column-names'],{input:`SELECT contenu FROM ${fixture.db}.vit_dr_revision WHERE cycle_id=1 ORDER BY version DESC LIMIT 1;`,encoding:'utf8',env:{...process.env,MYSQL_PWD:''}}).trim();
+ const snapshot=JSON.parse(text),detail={id:1,version:4,statut:'Validé',auteur:'OP DEMO',dateCreation:'2026-10-08T08:00:00',dateValidation:'2026-10-08T09:00:00',validateur:'QUALITE DEMO',revisions:[{version:4,action:'Correction',motif:'Correction tracée',auteur:'QUALITE DEMO',dateCreation:'2026-10-08T10:00:00',snapshot},{version:1,action:'Enregistrement',motif:'',auteur:'OP DEMO',dateCreation:'2026-10-08T08:00:00',snapshot:{...snapshot,produits:snapshot.produits.map(p=>({...p,reel:2.7}))}}]};
+ const catalog={produits:[{id:1,reference:'DEMO-A',nom:'PRODUIT DEMO A',unite:'L',actif:true}],programmes:[{id:1,version:1,nom:'PROGRAMME DEMO',actif:true,produits:[{produitId:1,dose:2.5}]}],lots:[{id:1,produitId:1,lot:'FAB-A-1',solde:10,peremption:null,nom:'PRODUIT DEMO A',unite:'L'},{id:2,produitId:1,lot:'FAB-A-2',solde:10,peremption:null,nom:'PRODUIT DEMO A',unite:'L'}],unitePoids:''};
+ check('Calcul initial et final exact et arrondi à six décimales',amount(1200,2.5)===3&&amount(1000,2.5)===2.5&&amount(1,0.123456)===0.000123);
+ let html=render(React.createElement(DrencherEditor,{path:'/test',catalog,onCancel:()=>{},onSaved:()=>{}}));
+ check('Écran opérateur unique avec eaux et lots',html.includes('Nouveau cycle')&&html.includes('Eau initiale')&&html.includes('Eau totale consommée')&&html.includes('Toutes les palettes du lot'));
+ check('Recherche réception et pagination disponibles',html.includes('Lot réception')&&html.includes('Recherche')&&html.includes('Sélection multi-lots'));
+ html=render(React.createElement(DrencherEditor,{path:'/test',catalog,initial:detail,onCancel:()=>{},onSaved:()=>{}}));
+ check('Quatre colonnes et champs machine/réel indépendants',html.includes('Initial calculé')&&html.includes('Final théorique')&&html.includes('aria-label="Machine PRODUIT DEMO A"')&&html.includes('aria-label="Réel PRODUIT DEMO A"'));
+ check('Plusieurs lots fabricants visibles',html.includes('FAB-A-1')&&html.includes('FAB-A-2'));
+ check('Correction qualité impose motif dans l’interface',html.includes('Motif obligatoire de correction')&&html.includes('palettes conservées'));
+ check('Produit supplémentaire sélectionnable',html.includes('Produit supplémentaire réellement utilisé'));
+ html=render(React.createElement(DrencherPrint,{detail}));
+ check('Impression groupée avec eau, dosages, lots et validation',html.includes('Suivi Drencher')&&html.includes('FAB-A-1')&&html.includes('QUALITE DEMO')&&html.includes('1000 L'));
+ check('Impression conserve les anciennes consommations révisées',html.includes('Historique conservé')&&html.includes('Correction tracée')&&html.includes('2,7'));
+ check('Poids sans unité ne devient pas un tonnage inventé',html.includes('unité/poids à confirmer'));
+ check('Modèle F04 non fourni annoncé',html.includes('modèle original non fourni'));
+ const nullSnapshot={...snapshot,palettes:[{...snapshot.palettes[0],variete:null,verger:null,adherent:null,poids:null}],produits:snapshot.produits.map(p=>({...p,machine:null,reel:null,ecartMachine:null,ecartTheorique:null}))};
+ check('Relations et consommations nulles rendues sans erreur',render(React.createElement(DrencherPrint,{detail:{...detail,revisions:[{...detail.revisions[0],snapshot:nullSnapshot}]}})).includes('Enregistrement')===false);
+ const extras={...snapshot,produits:[{...snapshot.produits[0],horsProgramme:true,doseModifiee:true,lots:[{...snapshot.produits[0].lots[0],peremption:'2025-01-01'}]}]};
+ html=render(React.createElement(DrencherPrint,{detail:{...detail,revisions:[{...detail.revisions[0],snapshot:extras}]}}));
+ check('Hors programme, dosage modifié et lot périmé signalés',html.includes('HORS PROGRAMME')&&html.includes('DOSE MODIFIÉE')&&html.includes('PÉRIMÉ'));
+ html=render(React.createElement(DrencherManagement,{path:'/test',catalog,canAdd:false,canModify:false,refresh:()=>{}}));
+ check('Stock et bon de transfert présents, écriture désactivée sans droits',html.includes('Bon magasin')&&html.includes('Mouvements de stock')&&html.includes('disabled'));
+ html=render(React.createElement(Drencher,{context:{id:1,station:'DIAF',label:'TEST',readOnly:false}}));
+ check('Interface DIAF explique la restriction',html.includes('uniquement pour ZAOUIA'));
+ check('Entrée Drencher opérationnelle sans changer sa route',navigation.find(g=>g.id==='drencher').items[0].key==='drencher'&&!navigation.find(g=>g.id==='drencher').future);
+ const css=readFileSync('frontend/src/Drencher.css','utf8');check('Impression multipage avec en-têtes répétés',css.includes('@media print')&&css.includes('table-header-group')&&css.includes('break-inside'));
+ writeFileSync('docs/tests-drencher-frontend.json',JSON.stringify({date:new Date().toISOString(),passed:results.length,failed:0,scope:'Rendu réel React/Mantine serveur et calculs. Aucun test visuel navigateur ni interaction DOM.',results},null,2));
+} finally {if(!dir.startsWith(path.resolve('frontend')+path.sep)||path.basename(dir)!=='.test-drencher')throw Error('Nettoyage hors dossier de test refusé');rmSync(dir,{recursive:true,force:true});}

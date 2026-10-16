@@ -1,0 +1,13 @@
+{
+  "date": "2026-10-08T16:58:16.184Z",
+  "database": "vitasouss_demo_drencher_1791478695336",
+  "contextId": 67,
+  "label": "DEMO DRENCHER V1 - donnees synthetiques",
+  "host": "127.0.0.1",
+  "port": 33307,
+  "palettes": 164,
+  "lot1": 160,
+  "lot2": 4,
+  "cycles": 0,
+  "production": false
+}

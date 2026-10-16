@@ -1,0 +1,63 @@
+{
+  "passed": 14,
+  "failed": 0,
+  "productionDeploy": false,
+  "results": [
+    {
+      "name": "IIS archive intègre",
+      "passed": true
+    },
+    {
+      "name": "Sept fichiers additifs uniquement",
+      "passed": true
+    },
+    {
+      "name": "Configurations, clés et secrets exclus",
+      "passed": true
+    },
+    {
+      "name": "Aucun SQL métier, migration nouvelle ou PDF dans update",
+      "passed": true
+    },
+    {
+      "name": "DLL livrée identique à la DLL testée",
+      "passed": true
+    },
+    {
+      "name": "Manifeste de sept empreintes exactes",
+      "passed": true
+    },
+    {
+      "name": "Audit, tests, guide et indicateurs présents",
+      "passed": true
+    },
+    {
+      "name": "Statut candidat et limites métier explicites",
+      "passed": true
+    },
+    {
+      "name": "Simulation additive préserve les fichiers protégés",
+      "passed": true
+    },
+    {
+      "name": "Sources intègres et modules Export/tests présents",
+      "passed": true
+    },
+    {
+      "name": "Sources sans configuration privée ou base importée",
+      "passed": true
+    },
+    {
+      "name": "Drencher et documents sources identiques",
+      "passed": true
+    },
+    {
+      "name": "IIS empreinte externe exacte",
+      "passed": true
+    },
+    {
+      "name": "SOURCES empreinte externe exacte",
+      "passed": true
+    }
+  ]
+}

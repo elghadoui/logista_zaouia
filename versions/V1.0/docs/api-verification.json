@@ -1,0 +1,141 @@
+{
+  "mysql": "5.7.44",
+  "data": "Copie locale du dump fourni",
+  "results": [
+    {
+      "name": "Authentification administrateur",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Secrets absents des réponses",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Schéma réel : clé parcelle composée",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Dashboard sur les données du dump",
+      "passed": true,
+      "detail": "{\"adherent\":78,\"verger\":119,\"parcelle\":1014,\"variete\":53}"
+    },
+    {
+      "name": "Tri SQL non autorisé refusé",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Pagination adhérents",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Fiche verger et champs historiques",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Archive bloquée côté serveur",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Jeton CSRF obligatoire",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Clé historique immuable",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Suppression physique refusée",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Sous-variétés filtrées par codvar",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Sous-variété d’une autre variété refusée",
+      "passed": true,
+      "detail": "La sous-variété doit appartenir à la variété choisie et être unique."
+    },
+    {
+      "name": "ZAOUIA enregistré et synchronisation journalisée",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "DIAF ne change pas silencieusement",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Conflit de consultation refusé",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "DIAF inaccessible : source conservée, attente visible",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Aperçu DIAF exclut refsta",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Application DIAF : modification et conservation refsta",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Valeurs métier restaurées après test",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Parcelle : écriture avec clé composée et dates historiques",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Parcelle : superficie hors précision SQL refusée",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Parcelle : clé partielle refusée",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Audit avant/après et utilisateur",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Dates du journal sérialisées pour le frontend",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Consultation : écriture interdite",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Contexte sans attribution : accès interdit",
+      "passed": true,
+      "detail": ""
+    }
+  ]
+}

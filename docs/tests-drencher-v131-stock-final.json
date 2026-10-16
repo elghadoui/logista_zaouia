@@ -1,0 +1,31 @@
+{
+  "passed": 5,
+  "failed": 0,
+  "results": [
+    {
+      "name": "État stock identique pixel par pixel à V1.3",
+      "passed": true,
+      "pages": 1
+    },
+    {
+      "name": "État fiche identique pixel par pixel à V1.3",
+      "passed": true,
+      "pages": 1
+    },
+    {
+      "name": "État entrees identique pixel par pixel à V1.3",
+      "passed": true,
+      "pages": 1
+    },
+    {
+      "name": "État consommations identique pixel par pixel à V1.3",
+      "passed": true,
+      "pages": 1
+    },
+    {
+      "name": "État mouvements identique pixel par pixel à V1.3",
+      "passed": true,
+      "pages": 1
+    }
+  ]
+}

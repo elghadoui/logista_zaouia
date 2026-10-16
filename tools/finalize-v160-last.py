@@ -1,0 +1,3 @@
+from pathlib import Path
+p=Path('tests/ExportV160Tests/Program.cs');s=p.read_text(encoding='utf-8-sig').replace('new(){Calibre=1},admin);Check("Filtre calibre ne substitue jamais palette_d au poids officiel BDQ",calOfficial.Rows.Length==0||calOfficial.Rows.All(r=>r.CommercialKg is null))','new(){Calibre=3,Status=2},admin);Check("Filtre calibre ne substitue jamais palette_d au poids officiel BDQ",calOfficial.Rows.Length==1&&calOfficial.ConfirmedNetKg is null&&calOfficial.Official.Packages==3360&&calOfficial.Rows.All(r=>r.CommercialKg is null))');p.write_text(s,encoding='utf-8')
+p=Path('backend/Application/ExportAnalyticsService.cs');s=p.read_text(encoding='utf-8-sig').replace("'Destination inconnue'","'Client inconnu'");p.write_text(s,encoding='utf-8')

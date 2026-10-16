@@ -1,0 +1,229 @@
+{
+  "version": "1.3",
+  "baseline": "versions/V1.2.1",
+  "generatedAt": "2026-10-06T22:12:54.9198735Z",
+  "files": [
+    {
+      "path": "README.md",
+      "status": "Modified",
+      "sha256": "15B1198071A5EECF2DC1ED33D1B7C3642B0CB25431C49F0CDCAF706B3197DE95",
+      "previousSha256": "E445BE82726958AB857B70704502E00A3A811E12190DEECDFEAEE5C981093CF4"
+    },
+    {
+      "path": "CHANGELOG.md",
+      "status": "Modified",
+      "sha256": "FE3DA270B6622BA6BBBAD51C086B81758559197D7BEE572CBA99CB14459DB49E",
+      "previousSha256": "BB9414C2B43E0F6ECCE28D8E948A5522FB522260CFA91D5A79285CF299818E2E"
+    },
+    {
+      "path": "MIGRATIONS-PROPOSEES-V1.3.sql",
+      "status": "Added",
+      "sha256": "765B8E244E67AFDF1D97E71AC7BB1C91F00ABDBBC854C54F40FE133F7807D8EE",
+      "previousSha256": null
+    },
+    {
+      "path": "backend/pilot-schema.json",
+      "status": "Added",
+      "sha256": "27EDB4BB03C23AA290870C3EF61646745BF2653C925E955C861920B75CCEF1BF",
+      "previousSha256": null
+    },
+    {
+      "path": "backend/Program.cs",
+      "status": "Modified",
+      "sha256": "39B54E8540EBE410D2EDBCEBBA713908053CAAC4E8FD4B9AF482580050F24B25",
+      "previousSha256": "85D59DFED2A4C5BDAD62047859567017D686DD4323048E0A25DBD0469500E039"
+    },
+    {
+      "path": "backend/Vitasouss.Api.csproj",
+      "status": "Modified",
+      "sha256": "1FDBA366368991869B959AA4286C42082CFE9422CBD40CD01AEA8DCE2B83EA37",
+      "previousSha256": "C0C0BF4EB90C3B1C4F500B74A18E632BE3574C7064BD25A9662D8CE61FB30A1E"
+    },
+    {
+      "path": "backend/Application/AssistantService.cs",
+      "status": "Added",
+      "sha256": "480289C6A9EDDD311D321014CCBB35D27C4B668745EACCE707BACF3D0DC3B495",
+      "previousSha256": null
+    },
+    {
+      "path": "backend/Application/KpiService.cs",
+      "status": "Modified",
+      "sha256": "661F945F531EA64173172D70E35F4BC7D5C3785EF1E87D42A7E413626934A6B1",
+      "previousSha256": "AB27DCEC69A9F9C1E4A113D37E26D47091AE38A862C52E45A8D41BD0CCCC267D"
+    },
+    {
+      "path": "backend/Application/ListFilters.cs",
+      "status": "Added",
+      "sha256": "835F57694A674C61DF170552EF7ED0195B93DA901516405BBFDD7EDC25A3A066",
+      "previousSha256": null
+    },
+    {
+      "path": "backend/Application/Models.cs",
+      "status": "Modified",
+      "sha256": "8C15340273EC3F453DA4F7DA59ED870427A6E3E131C1CDAB4003F5CC97A1A260",
+      "previousSha256": "97EFE24A4937A2F32C66D1A9259238423BF7369946C3C9DA0051EE6574BA9FD8"
+    },
+    {
+      "path": "backend/Application/PilotService.cs",
+      "status": "Added",
+      "sha256": "67519352397AF3A12ECA45339AA86ADDD91A0D23D3B4DA7B410984646ABAE7A5",
+      "previousSha256": null
+    },
+    {
+      "path": "backend/Application/ReferentialService.cs",
+      "status": "Modified",
+      "sha256": "F4EFDF28DC46FA9DBFDAF4C0FDC0B64464235508E821B4B2B98BF541B2C9FE0C",
+      "previousSha256": "69374A4C490C8E75D712AEFCE7B602D026365CF941D8D12ED23EC92E40E675B3"
+    },
+    {
+      "path": "backend/Application/SyncService.cs",
+      "status": "Modified",
+      "sha256": "6860B0FF77EBA81C6EEAC7CDFA9B537349D091B19AE8723C5434303033467A46",
+      "previousSha256": "4AB3E40E7EA1E2199FC5C5882688B6A59934F214DD882631F132ABA8068E081F"
+    },
+    {
+      "path": "frontend/package-lock.json",
+      "status": "Modified",
+      "sha256": "84D6F0B184D7E94F2024F928CB650F706595873929E1CA4773750BE0C610E32F",
+      "previousSha256": "A8FE5C921ED7D832FB12490EC35C0D2DD03AC5C4506FE63F407675848EA0BADB"
+    },
+    {
+      "path": "frontend/package.json",
+      "status": "Modified",
+      "sha256": "726AF097AE8200AA8CD8A7F990E7D2E8B5D9A273298229EDB1E657B981BC0548",
+      "previousSha256": "50471C10F874B0424C59D93C1D8DEF0E53FA3B198279D949F34D2CCDF02ACEB2"
+    },
+    {
+      "path": "frontend/src/App.tsx",
+      "status": "Modified",
+      "sha256": "BBBE33DDDA64A2178BB26F8FB80123039463AFD63A053C3BF239FF2844F160CB",
+      "previousSha256": "D895C73BEF37312A5C98F61551B342980A9F445A2D33CF7BEA77509AC01B56C4"
+    },
+    {
+      "path": "frontend/src/ComparisonApply.tsx",
+      "status": "Added",
+      "sha256": "12798C80A41399A21F88967B988033158B8F840657F8B9ED19CD3AAAB2156EB4",
+      "previousSha256": null
+    },
+    {
+      "path": "frontend/src/Dashboard.tsx",
+      "status": "Modified",
+      "sha256": "4B3D3220CFD5B463218BC6B248E79610FF8AF9CD5E7AC737F995DF45ACC4432C",
+      "previousSha256": "D68362261CF8ECE1E5C1D05F41BB1AFF9AC888C10054042F95C125E9E2FDD8D7"
+    },
+    {
+      "path": "frontend/src/EntityList.tsx",
+      "status": "Modified",
+      "sha256": "149C0AB2CCEF457419883E652CA2139EA8CD6EB1E4E2EF96B47B00475CE43BC4",
+      "previousSha256": "7AE88B292DE52F2C2D4DB0A0B0C4D8D1C48FFD78D546D20708E92B87DA888B4A"
+    },
+    {
+      "path": "frontend/src/JournalSync.tsx",
+      "status": "Modified",
+      "sha256": "8C58489E3751F6DD06594F0BAB4D2E9D2F8DA203AF7122FE30F669E03437E921",
+      "previousSha256": "76B3435755FCEF48F37D750A3165C60F3913734C79A213CCEAA584744F4ED634"
+    },
+    {
+      "path": "frontend/src/ListControls.tsx",
+      "status": "Added",
+      "sha256": "07907B721EE08E70E775B694EEC0744363A2A6805C2783617EB98BF699CDAF81",
+      "previousSha256": null
+    },
+    {
+      "path": "frontend/src/ListKpis.tsx",
+      "status": "Modified",
+      "sha256": "FD4730100032CDFE6B9095B9D62A29A214F2658F7813E96CBD1AE9D576D5F198",
+      "previousSha256": "6A697903322C9842F8B0EE8BBAF9A9F579828FB5E5B42ABC406320BE589F01C7"
+    },
+    {
+      "path": "frontend/src/PilotViews.tsx",
+      "status": "Added",
+      "sha256": "B109A8FCC34730E2081869BB8A07C8C212394BBA7EB3743C8C79BCA449E35975",
+      "previousSha256": null
+    },
+    {
+      "path": "frontend/src/ReferentialComparison.tsx",
+      "status": "Modified",
+      "sha256": "C1817376ED126C83DAE914A0750EAFF32BE2B89D4B7547DFB9298E6B0797E543",
+      "previousSha256": "1401E298B05FF2548776462899584CD5BD12F5094ABCEEFE4728D6100B1ED863"
+    },
+    {
+      "path": "tools/pack.ps1",
+      "status": "Modified",
+      "sha256": "A69659035361FD83BB8B9784C7E415DD97D42CD574F41DECAF45DA16193A7AA9",
+      "previousSha256": "3A5929DBF23E73A7FC0D8966A28AC2C4EC821E690FD81D93B5FDDB079C4C70B3"
+    },
+    {
+      "path": "tools/verify-api-v121.mjs",
+      "status": "Modified",
+      "sha256": "581A5C4DC72ED26C198F8EFC8AA9504185AB5DC61B1467A398A8926918A87508",
+      "previousSha256": "D02EB9EBA32AD8C6EB7AB2E7F55383D14F3ED18CB7B065FAB153A86902D96FA3"
+    },
+    {
+      "path": "tools/verify-api-v13.mjs",
+      "status": "Added",
+      "sha256": "06C12ACF20BB9913E9D293E700159961839DFE39B798E8BC4A5110622FF1FD8A",
+      "previousSha256": null
+    },
+    {
+      "path": "docs/api-verification-v11.json",
+      "status": "Modified",
+      "sha256": "6122F09B948C99768DBC026F2395105C81CFCBF26A8F5F5C22597D2E6B9A408C",
+      "previousSha256": "5115252F3564CD9AA358F8498D90BDD60D238E21A2DE1916842D1C7462AD1289"
+    },
+    {
+      "path": "docs/api-verification-v12.json",
+      "status": "Modified",
+      "sha256": "A42F9C8CA84D58A3439E04077417B42556B929C19CCFBF5AF8FD608D6063A7AC",
+      "previousSha256": "4119B486CA9328E05C3D9922A8E9AB462B5EC879D071C665350A55D641571ACF"
+    },
+    {
+      "path": "docs/api-verification-v121.json",
+      "status": "Modified",
+      "sha256": "C4EF00523BEF727426E0FF9ACD9DCBCB084F12FD6C712540E7B70FC50CFF8F72",
+      "previousSha256": "4076B3E98DADB0FB865DFDDD78FCC78081EB85E0CE7454FC5EDA79907FA7EB31"
+    },
+    {
+      "path": "docs/api-verification-v13.json",
+      "status": "Added",
+      "sha256": "B99DCE13DF22F96616E1B3982643BCD1F70A2CF9D44F293BBF13C2535B6EED11",
+      "previousSha256": null
+    },
+    {
+      "path": "docs/ASSISTANT-IA-V1.3.md",
+      "status": "Added",
+      "sha256": "C865E95F64E69AC4D431FA78B99CFE612E419237B770099F04FA1D84AFFAC5A3",
+      "previousSha256": null
+    },
+    {
+      "path": "docs/comparison-verification-v12.json",
+      "status": "Modified",
+      "sha256": "0C5CF85B2E7B53670F42DA376CF98F6AA53D5714EDB5DE5D859A9A8516668400",
+      "previousSha256": "18997C4BD2F3C0F22D20EEB7ECD70A732B25CA42BF29BD89DC5B9DC011124A19"
+    },
+    {
+      "path": "docs/MISE-A-JOUR-V1.3.md",
+      "status": "Added",
+      "sha256": "88267F1408B6E35B1CAB017DB474586DA4D17C0297C375D49FE67E24A1EDAF66",
+      "previousSha256": null
+    },
+    {
+      "path": "docs/QUESTIONS-V1.3.md",
+      "status": "Added",
+      "sha256": "27205B48DBC2B051C3421B6E71CD564D9B9BF79CBD7452294C54BAD67B9713CF",
+      "previousSha256": null
+    },
+    {
+      "path": "docs/VERIFICATION-V1.3.md",
+      "status": "Added",
+      "sha256": "2E31FE6A368D1853A47E611F0DE3448034D872150263D9285FAF09C2AB92B06B",
+      "previousSha256": null
+    },
+    {
+      "path": "backend/Application/SchemaGuard.cs",
+      "status": "Added",
+      "sha256": "59FAE9BE96E2178197F217E98BA4CEC39F735DE3A9EF975AFCFF4D088BC3CBAD",
+      "previousSha256": null
+    }
+  ]
+}

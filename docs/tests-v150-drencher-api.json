@@ -1,0 +1,382 @@
+{
+  "date": "2026-10-15T19:37:13.853Z",
+  "success": true,
+  "database": "vitasouss_test_dr1321_d8cb566d86964a1b89acf9bf5fb0a617",
+  "host": "127.0.0.1",
+  "port": 33307,
+  "productionAccess": false,
+  "results": [
+    {
+      "name": "Version API 1.3.2.1",
+      "passed": true
+    },
+    {
+      "name": "Migration réexécutée : 14 tables Drencher InnoDB",
+      "passed": true
+    },
+    {
+      "name": "Hicham fictif : ancien droit groupé conservé sans donner programmes",
+      "passed": true
+    },
+    {
+      "name": "Rôles Qualité restent Gestionnaire",
+      "passed": true
+    },
+    {
+      "name": "Hicham : catalogue programmes actifs lisible",
+      "passed": true
+    },
+    {
+      "name": "Hicham : sélection palettes autorisée sans droits référentiels globaux",
+      "passed": true
+    },
+    {
+      "name": "Sélection bornée à la station : palette DIAF refusée",
+      "passed": true
+    },
+    {
+      "name": "Voir seul : pas d’élargissement automatique des lookups",
+      "passed": true
+    },
+    {
+      "name": "Hicham : filtres palettes autorisés",
+      "passed": true
+    },
+    {
+      "name": "Hicham : journal stock refusé",
+      "passed": true
+    },
+    {
+      "name": "Hicham : documents stock refusés",
+      "passed": true
+    },
+    {
+      "name": "Hicham : création programme refusée en API",
+      "passed": true
+    },
+    {
+      "name": "Hicham : réception stock refusée en API",
+      "passed": true
+    },
+    {
+      "name": "Samira : administration refusée",
+      "passed": true
+    },
+    {
+      "name": "Mbark : administration refusée",
+      "passed": true
+    },
+    {
+      "name": "SQL012 idempotent : trois lignes fermées par utilisateur",
+      "passed": true
+    },
+    {
+      "name": "SQL012 conserve droits anciens et mots de passe/utilisateurs",
+      "passed": true
+    },
+    {
+      "name": "Opérateur ne gère pas les produits",
+      "passed": true
+    },
+    {
+      "name": "Produit ancien contrat visible par défaut",
+      "passed": true
+    },
+    {
+      "name": "MA et option F04 relues en base",
+      "passed": true
+    },
+    {
+      "name": "Unité immuable",
+      "passed": true
+    },
+    {
+      "name": "Hicham : modification programme refusée",
+      "passed": true
+    },
+    {
+      "name": "Hicham : activation/désactivation refusée",
+      "passed": true
+    },
+    {
+      "name": "Hicham : modification produit refusée",
+      "passed": true
+    },
+    {
+      "name": "Samira gère programmes sans Admin",
+      "passed": true
+    },
+    {
+      "name": "Brouillon aucun débit",
+      "passed": true
+    },
+    {
+      "name": "Hicham : brouillon créé réellement en base",
+      "passed": true
+    },
+    {
+      "name": "Hicham : validation qualité interdite en API",
+      "passed": true
+    },
+    {
+      "name": "Palette réservée empêchant autre cycle",
+      "passed": true
+    },
+    {
+      "name": "Deux soumissions concurrentes : une réussite, une 409",
+      "passed": true
+    },
+    {
+      "name": "Consommation immédiate 50 moins 3 égale 47",
+      "passed": true
+    },
+    {
+      "name": "Mouvements réels uniquement",
+      "passed": true
+    },
+    {
+      "name": "Stale opérateur refusé après soumission",
+      "passed": true
+    },
+    {
+      "name": "Appel direct opérateur version courante refusé",
+      "passed": true
+    },
+    {
+      "name": "Correction qualité interdite opérateur",
+      "passed": true
+    },
+    {
+      "name": "Suppression interdite opérateur",
+      "passed": true
+    },
+    {
+      "name": "Correction 3 vers 2,5 restitue 0,5",
+      "passed": true
+    },
+    {
+      "name": "Seconde correction débit complémentaire 1,5",
+      "passed": true
+    },
+    {
+      "name": "Validation sans nouvelle sortie",
+      "passed": true
+    },
+    {
+      "name": "Correction après validation différentielle",
+      "passed": true
+    },
+    {
+      "name": "Historique correction auteur motif anciennes valeurs",
+      "passed": true
+    },
+    {
+      "name": "Archive V1.3.1 sans SQL011 consultable",
+      "passed": true
+    },
+    {
+      "name": "Archive sans extension : F04 historique consultable",
+      "passed": true
+    },
+    {
+      "name": "Consultation écriture refusée",
+      "passed": true
+    },
+    {
+      "name": "Archive écriture refusée",
+      "passed": true
+    },
+    {
+      "name": "Stock insuffisant 409",
+      "passed": true
+    },
+    {
+      "name": "Rollback multi-produits : solde état mouvements inchangés",
+      "passed": true
+    },
+    {
+      "name": "Migration additive sur données : aucun solde ni cycle modifié",
+      "passed": true
+    },
+    {
+      "name": "Produit modifié sans rétroactivité snapshot",
+      "passed": true
+    },
+    {
+      "name": "PDF reel authentifié sans cache",
+      "passed": true
+    },
+    {
+      "name": "PDF theorique authentifié sans cache",
+      "passed": true
+    },
+    {
+      "name": "PDF machine authentifié sans cache",
+      "passed": true
+    },
+    {
+      "name": "PDF trois modes strictement sans mutation",
+      "passed": true
+    },
+    {
+      "name": "Mode arbitraire refusé",
+      "passed": true
+    },
+    {
+      "name": "Produit masqué conservé dans rapports internes",
+      "passed": true
+    },
+    {
+      "name": "Document stock stock cohérent et sans erreur",
+      "passed": true
+    },
+    {
+      "name": "Document stock fiche cohérent et sans erreur",
+      "passed": true
+    },
+    {
+      "name": "Document stock entrees cohérent et sans erreur",
+      "passed": true
+    },
+    {
+      "name": "Document stock consommations cohérent et sans erreur",
+      "passed": true
+    },
+    {
+      "name": "Document stock mouvements cohérent et sans erreur",
+      "passed": true
+    },
+    {
+      "name": "Consommations incluent cycles soumis",
+      "passed": true
+    },
+    {
+      "name": "Confirmation suppression obligatoire",
+      "passed": true
+    },
+    {
+      "name": "Motif suppression obligatoire",
+      "passed": true
+    },
+    {
+      "name": "Suppression soumis restitution exacte",
+      "passed": true
+    },
+    {
+      "name": "Palettes soumis libérées",
+      "passed": true
+    },
+    {
+      "name": "Suppression répétée 409 sans restitution supplémentaire",
+      "passed": true
+    },
+    {
+      "name": "Suppression brouillon sans mouvements",
+      "passed": true
+    },
+    {
+      "name": "Suppression validé restitution exacte des corrections",
+      "passed": true
+    },
+    {
+      "name": "Réservations et validations libérées",
+      "passed": true
+    },
+    {
+      "name": "Révisions antérieures conservées",
+      "passed": true
+    },
+    {
+      "name": "Audit suppression motif acteur snapshot conservés",
+      "passed": true
+    },
+    {
+      "name": "Cycles supprimés exclus opérationnel",
+      "passed": true
+    },
+    {
+      "name": "Historique admin contient trois suppressions",
+      "passed": true
+    },
+    {
+      "name": "Historique admin interdit Consultation",
+      "passed": true
+    },
+    {
+      "name": "Cycle supprimé consultation non admin refusée",
+      "passed": true
+    },
+    {
+      "name": "F04 supprimé archive clairement identifié",
+      "passed": true
+    },
+    {
+      "name": "Hicham ne modifie pas brouillon d’un autre auteur",
+      "passed": true
+    },
+    {
+      "name": "Hicham ne soumet pas brouillon d’un autre auteur",
+      "passed": true
+    },
+    {
+      "name": "Brouillon d’autrui : bouton de modification fermé",
+      "passed": true
+    },
+    {
+      "name": "Samira correction et validation réelles, stock différentiel",
+      "passed": true
+    },
+    {
+      "name": "Samira ne supprime pas administrativement",
+      "passed": true
+    },
+    {
+      "name": "Mbark ne supprime pas administrativement",
+      "passed": true
+    },
+    {
+      "name": "État programme opérateur interdit",
+      "passed": true
+    },
+    {
+      "name": "Désactivation confirmation obligatoire",
+      "passed": true
+    },
+    {
+      "name": "Programme inactif bloque nouveau cycle",
+      "passed": true
+    },
+    {
+      "name": "Version historique programme conservée",
+      "passed": true
+    },
+    {
+      "name": "Réactivation nouvelle version",
+      "passed": true
+    },
+    {
+      "name": "Transition historique soumis sans débit : une consommation à validation",
+      "passed": true
+    },
+    {
+      "name": "Transition historique validé : correction uniquement différence",
+      "passed": true
+    },
+    {
+      "name": "Legacy suppression restaure seulement net comptabilisé",
+      "passed": true
+    },
+    {
+      "name": "Journal incohérent bloque suppression sans réparer implicitement",
+      "passed": true
+    },
+    {
+      "name": "Toutes tables historiques inchangées",
+      "passed": true
+    },
+    {
+      "name": "Solde physique égale cumul ledger",
+      "passed": true
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "date": "2026-10-08T16:57:38.574Z",
+  "passed": 17,
+  "failed": 0,
+  "scope": "Rendu réel React/Mantine serveur et calculs. Aucun test visuel navigateur ni interaction DOM.",
+  "results": [
+    {
+      "name": "Calcul initial et final exact et arrondi à six décimales",
+      "passed": true
+    },
+    {
+      "name": "Écran opérateur unique avec eaux et lots",
+      "passed": true
+    },
+    {
+      "name": "Recherche réception et pagination disponibles",
+      "passed": true
+    },
+    {
+      "name": "Quatre colonnes et champs machine/réel indépendants",
+      "passed": true
+    },
+    {
+      "name": "Plusieurs lots fabricants visibles",
+      "passed": true
+    },
+    {
+      "name": "Correction qualité impose motif dans l’interface",
+      "passed": true
+    },
+    {
+      "name": "Produit supplémentaire sélectionnable",
+      "passed": true
+    },
+    {
+      "name": "Impression groupée avec eau, dosages, lots et validation",
+      "passed": true
+    },
+    {
+      "name": "Impression conserve les anciennes consommations révisées",
+      "passed": true
+    },
+    {
+      "name": "Poids sans unité ne devient pas un tonnage inventé",
+      "passed": true
+    },
+    {
+      "name": "Modèle F04 non fourni annoncé",
+      "passed": true
+    },
+    {
+      "name": "Relations et consommations nulles rendues sans erreur",
+      "passed": true
+    },
+    {
+      "name": "Hors programme, dosage modifié et lot périmé signalés",
+      "passed": true
+    },
+    {
+      "name": "Stock et bon de transfert présents, écriture désactivée sans droits",
+      "passed": true
+    },
+    {
+      "name": "Interface DIAF explique la restriction",
+      "passed": true
+    },
+    {
+      "name": "Entrée Drencher opérationnelle sans changer sa route",
+      "passed": true
+    },
+    {
+      "name": "Impression multipage avec en-têtes répétés",
+      "passed": true
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "passed": 6,
+  "failed": 0,
+  "results": [
+    {
+      "name": "Service et HTTP : classeurs Excel ouverts sans réparation",
+      "passed": true
+    },
+    {
+      "name": "Service et HTTP : 213 lignes de données",
+      "passed": true
+    },
+    {
+      "name": "Service et HTTP : somme officielle 1809096 kg",
+      "passed": true
+    },
+    {
+      "name": "Service et HTTP : dates Excel natives",
+      "passed": true
+    },
+    {
+      "name": "Service et HTTP : en-tête figé et filtres",
+      "passed": true
+    },
+    {
+      "name": "Service et HTTP : aucune formule injectée",
+      "passed": true
+    }
+  ]
+}

@@ -1,0 +1,112 @@
+{
+  "date": "2026-10-14T00:48:03.463Z",
+  "scope": "Filtre Mantine réel, contrat, rendu React serveur et navigation. Aucun navigateur automatisé ; responsive/focus/animation à valider visuellement si accès refusé.",
+  "passed": 26,
+  "failed": 0,
+  "results": [
+    {
+      "name": "Erreur toLowerCase reproduite dans le vrai filtre Mantine",
+      "passed": true
+    },
+    {
+      "name": "Tous les catalogues connus ont un libellé",
+      "passed": true
+    },
+    {
+      "name": "Filtre Mantine accepte les seize référentiels",
+      "passed": true
+    },
+    {
+      "name": "Recherche pays dans le vrai filtre Mantine",
+      "passed": true
+    },
+    {
+      "name": "Référentiel futur garde un libellé exploitable",
+      "passed": true
+    },
+    {
+      "name": "Permissions sans verger : sélection autorisée",
+      "passed": true
+    },
+    {
+      "name": "Catalogue vide : aucun référentiel inventé",
+      "passed": true
+    },
+    {
+      "name": "Rapport avec valeurs SQL nulles accepté",
+      "passed": true
+    },
+    {
+      "name": "Structure de rapport absente refusée proprement",
+      "passed": true
+    },
+    {
+      "name": "Compteur absent détecté",
+      "passed": true
+    },
+    {
+      "name": "Libellé de différence absent détecté",
+      "passed": true
+    },
+    {
+      "name": "Lignes absentes détectées",
+      "passed": true
+    },
+    {
+      "name": "Écran comparaison réel rendu avec catalogue complet",
+      "passed": true
+    },
+    {
+      "name": "Écran réel sans permission verger rendu",
+      "passed": true
+    },
+    {
+      "name": "Écran réel catalogue vide explique les droits",
+      "passed": true
+    },
+    {
+      "name": "Clés de navigation uniques",
+      "passed": true
+    },
+    {
+      "name": "Toutes les clés V1.4 conservées",
+      "passed": true
+    },
+    {
+      "name": "Marchés ajouté au commerce",
+      "passed": true
+    },
+    {
+      "name": "Défauts et écarts regroupés sous Qualité",
+      "passed": true
+    },
+    {
+      "name": "Gestionnaire ne voit pas la configuration Admin",
+      "passed": true
+    },
+    {
+      "name": "Permission restreinte supprime les groupes vides",
+      "passed": true
+    },
+    {
+      "name": "Sidebar réel contient des boutons de groupe accessibles",
+      "passed": true
+    },
+    {
+      "name": "Page active indiquée au lecteur d’écran",
+      "passed": true
+    },
+    {
+      "name": "Mode compact conserve les noms accessibles",
+      "passed": true
+    },
+    {
+      "name": "Rendu de repli ne divulgue pas une exception",
+      "passed": true
+    },
+    {
+      "name": "Assistant conservé, seule la présentation date pilote sécurisée",
+      "passed": true
+    }
+  ]
+}

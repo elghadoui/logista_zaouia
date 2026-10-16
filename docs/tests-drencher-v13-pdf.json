@@ -1,0 +1,161 @@
+{
+  "passed": 30,
+  "failed": 0,
+  "browserInteractive": false,
+  "physicalPrint": false,
+  "method": "Poppler PNG + pypdf structure/text; visual review of contact sheets separately",
+  "files": [
+    {
+      "file": "output\\pdf\\drencher-v13-consommations.pdf",
+      "pages": 1,
+      "sha256": "d3ae3835941c1dace8e035a8fea53b9914bb8d00f6afa2c859851583a57a619c"
+    },
+    {
+      "file": "output\\pdf\\drencher-v13-entrees.pdf",
+      "pages": 1,
+      "sha256": "f16e5978ac4cb6db6eb5883f9a2e97f318b785f5526f4ccb44038154a696328c"
+    },
+    {
+      "file": "output\\pdf\\drencher-v13-f04.pdf",
+      "pages": 15,
+      "sha256": "379d9afd9aaa122fd5f6e4a6bf7f0d8bc489ab81d16646037526ef72b9d28f1a"
+    },
+    {
+      "file": "output\\pdf\\drencher-v13-fiche.pdf",
+      "pages": 1,
+      "sha256": "a629cb501d556f1c6f582d4399134aeec48e1d9be10f797efceb5a0211f79c50"
+    },
+    {
+      "file": "output\\pdf\\drencher-v13-mouvements.pdf",
+      "pages": 1,
+      "sha256": "35dd5634447d277ff6c621aa48e256afc4758d23d5aedcb1087dad8dddd07c7f"
+    },
+    {
+      "file": "output\\pdf\\drencher-v13-stock.pdf",
+      "pages": 1,
+      "sha256": "68fd3a9738b8bb1d18fd0ed475f6e4b155313c8ff423758d52140af8f1ba86ea"
+    }
+  ],
+  "results": [
+    {
+      "name": "drencher-v13-consommations A4 paysage",
+      "passed": true
+    },
+    {
+      "name": "drencher-v13-consommations en-têtes et Recette sur toutes les pages",
+      "passed": true
+    },
+    {
+      "name": "drencher-v13-consommations pagination et identité répétées",
+      "passed": true
+    },
+    {
+      "name": "drencher-v13-consommations sans code actif PDF",
+      "passed": true
+    },
+    {
+      "name": "drencher-v13-entrees A4 paysage",
+      "passed": true
+    },
+    {
+      "name": "drencher-v13-entrees en-têtes et Recette sur toutes les pages",
+      "passed": true
+    },
+    {
+      "name": "drencher-v13-entrees pagination et identité répétées",
+      "passed": true
+    },
+    {
+      "name": "drencher-v13-entrees sans code actif PDF",
+      "passed": true
+    },
+    {
+      "name": "drencher-v13-f04 A4 paysage",
+      "passed": true
+    },
+    {
+      "name": "drencher-v13-f04 en-têtes et Recette sur toutes les pages",
+      "passed": true
+    },
+    {
+      "name": "drencher-v13-f04 pagination et identité répétées",
+      "passed": true
+    },
+    {
+      "name": "drencher-v13-f04 sans code actif PDF",
+      "passed": true
+    },
+    {
+      "name": "F04 multi-pages, cycle et V06 répétés",
+      "passed": true
+    },
+    {
+      "name": "F04 produits, écarts, totaux et visas présents",
+      "passed": true
+    },
+    {
+      "name": "F04 tableaux de palettes avec en-têtes répétés",
+      "passed": true
+    },
+    {
+      "name": "drencher-v13-fiche A4 paysage",
+      "passed": true
+    },
+    {
+      "name": "drencher-v13-fiche en-têtes et Recette sur toutes les pages",
+      "passed": true
+    },
+    {
+      "name": "drencher-v13-fiche pagination et identité répétées",
+      "passed": true
+    },
+    {
+      "name": "drencher-v13-fiche sans code actif PDF",
+      "passed": true
+    },
+    {
+      "name": "drencher-v13-mouvements A4 paysage",
+      "passed": true
+    },
+    {
+      "name": "drencher-v13-mouvements en-têtes et Recette sur toutes les pages",
+      "passed": true
+    },
+    {
+      "name": "drencher-v13-mouvements pagination et identité répétées",
+      "passed": true
+    },
+    {
+      "name": "drencher-v13-mouvements sans code actif PDF",
+      "passed": true
+    },
+    {
+      "name": "drencher-v13-stock A4 paysage",
+      "passed": true
+    },
+    {
+      "name": "drencher-v13-stock en-têtes et Recette sur toutes les pages",
+      "passed": true
+    },
+    {
+      "name": "drencher-v13-stock pagination et identité répétées",
+      "passed": true
+    },
+    {
+      "name": "drencher-v13-stock sans code actif PDF",
+      "passed": true
+    },
+    {
+      "name": "Six documents PDF générés",
+      "passed": true
+    },
+    {
+      "name": "Original Excel préservé F04 MPS-01 Suivi du traitement au niveau du drencher V05 (2).xlsx",
+      "passed": true
+    },
+    {
+      "name": "Original Excel préservé l'état Clémentine Oranges 2026 2026.xlsx",
+      "passed": true
+    }
+  ]
+}

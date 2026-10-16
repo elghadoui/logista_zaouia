@@ -1,0 +1,59 @@
+{
+  "passed": 13,
+  "failed": 0,
+  "productionDeploy": false,
+  "results": [
+    {
+      "name": "IIS : configurations privées et clés exclues",
+      "passed": true
+    },
+    {
+      "name": "IIS : aucune clé OpenAI réelle en texte",
+      "passed": true
+    },
+    {
+      "name": "IIS : archive intègre",
+      "passed": true
+    },
+    {
+      "name": "Sources : configurations privées et clés exclues",
+      "passed": true
+    },
+    {
+      "name": "Sources : aucune clé OpenAI réelle en texte",
+      "passed": true
+    },
+    {
+      "name": "Sources : archive intègre",
+      "passed": true
+    },
+    {
+      "name": "Paquet contient backend, frontend, logo F04 et SQL séparé",
+      "passed": true
+    },
+    {
+      "name": "SQL absent du dossier update",
+      "passed": true
+    },
+    {
+      "name": "Candidat explicitement sans validation API/MySQL",
+      "passed": true
+    },
+    {
+      "name": "DLL emballée identique à la DLL vérifiée",
+      "passed": true
+    },
+    {
+      "name": "Manifest exact de tous fichiers update",
+      "passed": true
+    },
+    {
+      "name": "Copie additive : config IIS, DP et secrets fictifs conservés",
+      "passed": true
+    },
+    {
+      "name": "Trois PDF de démonstration livrés",
+      "passed": true
+    }
+  ]
+}

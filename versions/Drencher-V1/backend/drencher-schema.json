@@ -1,0 +1,401 @@
+[
+  {
+    "table": "vit_dr_admin_historique",
+    "name": "id",
+    "type": "bigint(20)",
+    "nullable": "NO",
+    "extra": "auto_increment"
+  },
+  {
+    "table": "vit_dr_admin_historique",
+    "name": "objet",
+    "type": "varchar(30)",
+    "nullable": "NO",
+    "extra": ""
+  },
+  {
+    "table": "vit_dr_admin_historique",
+    "name": "objet_id",
+    "type": "int(11)",
+    "nullable": "NO",
+    "extra": ""
+  },
+  {
+    "table": "vit_dr_admin_historique",
+    "name": "avant",
+    "type": "longtext",
+    "nullable": "YES",
+    "extra": ""
+  },
+  {
+    "table": "vit_dr_admin_historique",
+    "name": "apres",
+    "type": "longtext",
+    "nullable": "NO",
+    "extra": ""
+  },
+  {
+    "table": "vit_dr_admin_historique",
+    "name": "auteur",
+    "type": "varchar(120)",
+    "nullable": "NO",
+    "extra": ""
+  },
+  {
+    "table": "vit_dr_admin_historique",
+    "name": "date_creation",
+    "type": "datetime",
+    "nullable": "NO",
+    "extra": ""
+  },
+  {
+    "table": "vit_dr_cycle",
+    "name": "id",
+    "type": "int(11)",
+    "nullable": "NO",
+    "extra": "auto_increment"
+  },
+  {
+    "table": "vit_dr_cycle",
+    "name": "statut",
+    "type": "varchar(30)",
+    "nullable": "NO",
+    "extra": ""
+  },
+  {
+    "table": "vit_dr_cycle",
+    "name": "version",
+    "type": "int(11)",
+    "nullable": "NO",
+    "extra": ""
+  },
+  {
+    "table": "vit_dr_cycle",
+    "name": "date_traitement",
+    "type": "date",
+    "nullable": "NO",
+    "extra": ""
+  },
+  {
+    "table": "vit_dr_cycle",
+    "name": "debut",
+    "type": "varchar(5)",
+    "nullable": "NO",
+    "extra": ""
+  },
+  {
+    "table": "vit_dr_cycle",
+    "name": "fin",
+    "type": "varchar(5)",
+    "nullable": "NO",
+    "extra": ""
+  },
+  {
+    "table": "vit_dr_cycle",
+    "name": "auteur_id",
+    "type": "int(11)",
+    "nullable": "NO",
+    "extra": ""
+  },
+  {
+    "table": "vit_dr_cycle",
+    "name": "auteur",
+    "type": "varchar(120)",
+    "nullable": "NO",
+    "extra": ""
+  },
+  {
+    "table": "vit_dr_cycle",
+    "name": "date_creation",
+    "type": "datetime",
+    "nullable": "NO",
+    "extra": ""
+  },
+  {
+    "table": "vit_dr_cycle",
+    "name": "validateur",
+    "type": "varchar(120)",
+    "nullable": "YES",
+    "extra": ""
+  },
+  {
+    "table": "vit_dr_cycle",
+    "name": "date_validation",
+    "type": "datetime",
+    "nullable": "YES",
+    "extra": ""
+  },
+  {
+    "table": "vit_dr_mouvement",
+    "name": "id",
+    "type": "bigint(20)",
+    "nullable": "NO",
+    "extra": "auto_increment"
+  },
+  {
+    "table": "vit_dr_mouvement",
+    "name": "lot_id",
+    "type": "int(11)",
+    "nullable": "NO",
+    "extra": ""
+  },
+  {
+    "table": "vit_dr_mouvement",
+    "name": "cycle_id",
+    "type": "int(11)",
+    "nullable": "YES",
+    "extra": ""
+  },
+  {
+    "table": "vit_dr_mouvement",
+    "name": "revision",
+    "type": "int(11)",
+    "nullable": "YES",
+    "extra": ""
+  },
+  {
+    "table": "vit_dr_mouvement",
+    "name": "nature",
+    "type": "varchar(30)",
+    "nullable": "NO",
+    "extra": ""
+  },
+  {
+    "table": "vit_dr_mouvement",
+    "name": "quantite",
+    "type": "decimal(18,6)",
+    "nullable": "NO",
+    "extra": ""
+  },
+  {
+    "table": "vit_dr_mouvement",
+    "name": "bon",
+    "type": "varchar(100)",
+    "nullable": "NO",
+    "extra": ""
+  },
+  {
+    "table": "vit_dr_mouvement",
+    "name": "date_reception",
+    "type": "date",
+    "nullable": "YES",
+    "extra": ""
+  },
+  {
+    "table": "vit_dr_mouvement",
+    "name": "auteur",
+    "type": "varchar(120)",
+    "nullable": "NO",
+    "extra": ""
+  },
+  {
+    "table": "vit_dr_mouvement",
+    "name": "date_creation",
+    "type": "datetime",
+    "nullable": "NO",
+    "extra": ""
+  },
+  {
+    "table": "vit_dr_mutex",
+    "name": "id",
+    "type": "int(11)",
+    "nullable": "NO",
+    "extra": ""
+  },
+  {
+    "table": "vit_dr_palette_validee",
+    "name": "numpal",
+    "type": "int(11)",
+    "nullable": "NO",
+    "extra": ""
+  },
+  {
+    "table": "vit_dr_palette_validee",
+    "name": "cycle_id",
+    "type": "int(11)",
+    "nullable": "NO",
+    "extra": ""
+  },
+  {
+    "table": "vit_dr_programme",
+    "name": "id",
+    "type": "int(11)",
+    "nullable": "NO",
+    "extra": "auto_increment"
+  },
+  {
+    "table": "vit_dr_programme",
+    "name": "nom",
+    "type": "varchar(120)",
+    "nullable": "NO",
+    "extra": ""
+  },
+  {
+    "table": "vit_dr_programme",
+    "name": "actif",
+    "type": "tinyint(4)",
+    "nullable": "NO",
+    "extra": ""
+  },
+  {
+    "table": "vit_dr_programme",
+    "name": "version",
+    "type": "int(11)",
+    "nullable": "NO",
+    "extra": ""
+  },
+  {
+    "table": "vit_dr_programme_revision",
+    "name": "programme_id",
+    "type": "int(11)",
+    "nullable": "NO",
+    "extra": ""
+  },
+  {
+    "table": "vit_dr_programme_revision",
+    "name": "version",
+    "type": "int(11)",
+    "nullable": "NO",
+    "extra": ""
+  },
+  {
+    "table": "vit_dr_programme_revision",
+    "name": "contenu",
+    "type": "longtext",
+    "nullable": "NO",
+    "extra": ""
+  },
+  {
+    "table": "vit_dr_programme_revision",
+    "name": "auteur",
+    "type": "varchar(120)",
+    "nullable": "NO",
+    "extra": ""
+  },
+  {
+    "table": "vit_dr_programme_revision",
+    "name": "date_creation",
+    "type": "datetime",
+    "nullable": "NO",
+    "extra": ""
+  },
+  {
+    "table": "vit_dr_revision",
+    "name": "cycle_id",
+    "type": "int(11)",
+    "nullable": "NO",
+    "extra": ""
+  },
+  {
+    "table": "vit_dr_revision",
+    "name": "version",
+    "type": "int(11)",
+    "nullable": "NO",
+    "extra": ""
+  },
+  {
+    "table": "vit_dr_revision",
+    "name": "contenu",
+    "type": "longtext",
+    "nullable": "NO",
+    "extra": ""
+  },
+  {
+    "table": "vit_dr_revision",
+    "name": "action",
+    "type": "varchar(30)",
+    "nullable": "NO",
+    "extra": ""
+  },
+  {
+    "table": "vit_dr_revision",
+    "name": "motif",
+    "type": "varchar(1000)",
+    "nullable": "NO",
+    "extra": ""
+  },
+  {
+    "table": "vit_dr_revision",
+    "name": "auteur",
+    "type": "varchar(120)",
+    "nullable": "NO",
+    "extra": ""
+  },
+  {
+    "table": "vit_dr_revision",
+    "name": "date_creation",
+    "type": "datetime",
+    "nullable": "NO",
+    "extra": ""
+  },
+  {
+    "table": "vit_dr_stock_lot",
+    "name": "id",
+    "type": "int(11)",
+    "nullable": "NO",
+    "extra": "auto_increment"
+  },
+  {
+    "table": "vit_dr_stock_lot",
+    "name": "produit_id",
+    "type": "int(11)",
+    "nullable": "NO",
+    "extra": ""
+  },
+  {
+    "table": "vit_dr_stock_lot",
+    "name": "lot",
+    "type": "varchar(100)",
+    "nullable": "NO",
+    "extra": ""
+  },
+  {
+    "table": "vit_dr_stock_lot",
+    "name": "peremption",
+    "type": "date",
+    "nullable": "YES",
+    "extra": ""
+  },
+  {
+    "table": "vit_dr_stock_lot",
+    "name": "solde",
+    "type": "decimal(18,6)",
+    "nullable": "NO",
+    "extra": ""
+  },
+  {
+    "table": "vit_traitement_produit",
+    "name": "id",
+    "type": "int(11)",
+    "nullable": "NO",
+    "extra": "auto_increment"
+  },
+  {
+    "table": "vit_traitement_produit",
+    "name": "reference",
+    "type": "varchar(40)",
+    "nullable": "NO",
+    "extra": ""
+  },
+  {
+    "table": "vit_traitement_produit",
+    "name": "nom",
+    "type": "varchar(120)",
+    "nullable": "NO",
+    "extra": ""
+  },
+  {
+    "table": "vit_traitement_produit",
+    "name": "unite",
+    "type": "varchar(8)",
+    "nullable": "NO",
+    "extra": ""
+  },
+  {
+    "table": "vit_traitement_produit",
+    "name": "actif",
+    "type": "tinyint(4)",
+    "nullable": "NO",
+    "extra": ""
+  }
+]

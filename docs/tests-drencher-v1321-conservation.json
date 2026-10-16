@@ -1,0 +1,379 @@
+{
+  "date": "2026-10-14T17:29:05.286Z",
+  "passed": 12,
+  "failed": 0,
+  "productionAccess": false,
+  "assemblySha256": "0F8D7B5B27D3A385AF6773E1F3E5D191BCDBFBB5D250D66DA06C467D047C7FE2",
+  "results": [
+    {
+      "name": "80 sources conservées à l'identique hors autorisations",
+      "passed": true
+    },
+    {
+      "name": "Authentification et initialisation inchangées hors numéro Drencher",
+      "passed": true
+    },
+    {
+      "name": "DrencherF04Pdf.cs : source identique à V1.3.2",
+      "passed": true
+    },
+    {
+      "name": "DrencherPdf.cs : source identique à V1.3.2",
+      "passed": true
+    },
+    {
+      "name": "DrencherReports.cs : source identique à V1.3.2",
+      "passed": true
+    },
+    {
+      "name": "DrencherStockPlan.cs : source identique à V1.3.2",
+      "passed": true
+    },
+    {
+      "name": "DrencherV132.cs : source identique à V1.3.2",
+      "passed": true
+    },
+    {
+      "name": "DrencherRecette.cs : source identique à V1.3.2",
+      "passed": true
+    },
+    {
+      "name": "DrencherReservations.cs : source identique à V1.3.2",
+      "passed": true
+    },
+    {
+      "name": "010_drencher_reservations.sql : migration métier inchangée",
+      "passed": true
+    },
+    {
+      "name": "011_drencher_v132.sql : migration métier inchangée",
+      "passed": true
+    },
+    {
+      "name": "DLL de politique testée identique à la publication finale",
+      "passed": true
+    }
+  ],
+  "unchanged": [
+    {
+      "file": "backend/Application/AssistantConversations.cs",
+      "sha256": "ce0ea2e2cf7ec83a6e92be282283581058672535d7e38c1f3a280a79a108a1d6"
+    },
+    {
+      "file": "backend/Application/AssistantService.cs",
+      "sha256": "8c439278630ed6225e97d7a2254042a8b44db611910f7f98a428058725e7170f"
+    },
+    {
+      "file": "backend/Application/ComparisonService.cs",
+      "sha256": "911ef39675e93aadefd7ae679c3c2bbbb7085a80608c790d7896d3dbf2508c67"
+    },
+    {
+      "file": "backend/Application/ComplementaryRules.cs",
+      "sha256": "c63ec2d9649c0b4191f34de9ac678aa56327baa3a2d5f5bb04aa787ca7daa8cd"
+    },
+    {
+      "file": "backend/Application/ComplementaryService.cs",
+      "sha256": "7f81f3e1e2dc561b0c7a4d536d15e37ffc023ce70128adff49d111eb4072c1b8"
+    },
+    {
+      "file": "backend/Application/DrencherDates.cs",
+      "sha256": "e1e2bbc79adc8db07af4947424311b89abf6196d353b73db2cb4bf94db9ecf2d"
+    },
+    {
+      "file": "backend/Application/DrencherF04Pdf.cs",
+      "sha256": "7f7ba9e11c7cd862e05a0d434c390361ffd38c154ae23604789b77989b75bb45"
+    },
+    {
+      "file": "backend/Application/DrencherModels.cs",
+      "sha256": "c6992efacff33bc3d26c5ca5db875ee5959eaaf2a2fa880587c2d84745238dfb"
+    },
+    {
+      "file": "backend/Application/DrencherPdf.cs",
+      "sha256": "4fd3483df776dc6484e484baddb7d8ed24e96a083d79b8bdc50af0e773cd1a14"
+    },
+    {
+      "file": "backend/Application/DrencherRecette.cs",
+      "sha256": "9bf74df6584121ad1a5064d2776373679ec2a7b67aef8ba3da5249e3572280df"
+    },
+    {
+      "file": "backend/Application/DrencherReports.cs",
+      "sha256": "4a8125a5a6f08b0102814cd4c84193f2bb2adaae9c0146d381b1a0473b4d2250"
+    },
+    {
+      "file": "backend/Application/DrencherReservations.cs",
+      "sha256": "1b64dd76cb2dcea20117b51c120df61f6c7bd571ca4053760581b5d0c984bf6b"
+    },
+    {
+      "file": "backend/Application/DrencherService.cs",
+      "sha256": "dac158fb61f1a1ac71bbab9b4ee4e28a253e1c3457d1f4278941394f1bfbc6a0"
+    },
+    {
+      "file": "backend/Application/DrencherStockPlan.cs",
+      "sha256": "85c5a3304bb669235715b97727f1e06652bf34cb6dbbd605eea507bb19d25cf3"
+    },
+    {
+      "file": "backend/Application/DrencherV132.cs",
+      "sha256": "b470c611d83b748f5ef169f5d0d3cb6261eb4c0f1a1c4c8c2ca5a17e52d9baf3"
+    },
+    {
+      "file": "backend/Application/IntegrityService.cs",
+      "sha256": "c972ce83ebc296350ae644d9e86ecf45c1fa79f452f728d19f51c4872ca4f9f3"
+    },
+    {
+      "file": "backend/Application/KpiService.cs",
+      "sha256": "661f945f531ea64173172d70e35f4bc7d5c3785ef1e87d42a7e413626934a6b1"
+    },
+    {
+      "file": "backend/Application/ListFilters.cs",
+      "sha256": "835f57694a674c61df170552ef7ed0195b93da901516405bbfdd7edc25a3a066"
+    },
+    {
+      "file": "backend/Application/Models.cs",
+      "sha256": "928e0c64ebabe56314c6f9eaf8e215e68ebb835f67f11cfd2f7078ca1ee8c5f8"
+    },
+    {
+      "file": "backend/Application/OpenAiAssistantProvider.cs",
+      "sha256": "5eb9a6f8f9c98e18189a856c752e41d9309eb4d6067069ef8c5ead44ad50dc98"
+    },
+    {
+      "file": "backend/Application/PilotService.cs",
+      "sha256": "8535a5cdc0aca75a558197bb5c4282e27994d3f5f5bf36f332172fec68544291"
+    },
+    {
+      "file": "backend/Application/PresentationService.cs",
+      "sha256": "03c2edd6865389fddc9151a23bcf5f9c3d1432e843da6c19608416d6cfa04be3"
+    },
+    {
+      "file": "backend/Application/ReferentialService.cs",
+      "sha256": "3e7bd4bf423b658fe7a359042b8d7e09959981c58258474839f889f5aa7459d8"
+    },
+    {
+      "file": "backend/Application/RelationService.cs",
+      "sha256": "59a6db9cb8c597ae5ec94d6f605ba4b6c890f50dfff4fe7aeb9eb56cfb803e8f"
+    },
+    {
+      "file": "backend/Application/SchemaGuard.cs",
+      "sha256": "43ba4461f0f277e92ccba89c24090c6202d4c9cbea59f3d6e845b7f2bea2fb92"
+    },
+    {
+      "file": "backend/Application/SyncService.cs",
+      "sha256": "09757a677cc76d0a1db6e7c2ef237da5367aa52eee51573ae2c1ff740dcb84b0"
+    },
+    {
+      "file": "backend/appsettings.json",
+      "sha256": "5f271a43489847026babddfce10f2cf9841f4691338c5aa7951af3dad1d37085"
+    },
+    {
+      "file": "backend/drencher-schema.json",
+      "sha256": "fd5abea59e6eed396091ef9057e9d9de005526c8c3f2f6305e129a83d2ada11c"
+    },
+    {
+      "file": "backend/Infrastructure/AssistantAudit.cs",
+      "sha256": "5be3b6d88d895948929cf582e6528d8c20c8a60e04a345ade1c57dad111b2ee3"
+    },
+    {
+      "file": "backend/Infrastructure/Connections.cs",
+      "sha256": "7cd640a1fd51df3aa05613890b13576d22662e56d35fc7508f5bd1fad441f7fa"
+    },
+    {
+      "file": "backend/Infrastructure/OpenAiSecretStore.cs",
+      "sha256": "1d16d4b36f90703f90fd5cca2ee924bc84c4b1933b436bb306966d6d1e8bd873"
+    },
+    {
+      "file": "backend/pdf-assets/f04-zaouia.png",
+      "sha256": "80e741e138740d3154ee605572b31156c10cb44bcae99f850dcfb8e2862fc06b"
+    },
+    {
+      "file": "backend/pilot-schema.json",
+      "sha256": "84314c1e294d24444ed2bf436d4e62c68f4cf2f1cfe72830c5e005345ff06d9a"
+    },
+    {
+      "file": "backend/schema.json",
+      "sha256": "c2f7123f1725248efdff4e4d13ee4d5c0f167b1c7c6da38c48bb9d056f98aa92"
+    },
+    {
+      "file": "backend/Vitasouss.Api.csproj",
+      "sha256": "36cd9eb431b131cb4c4fdf136d58def2f2c6d38d62c0c462279487f95fb0ebd0"
+    },
+    {
+      "file": "frontend/src/Administration.tsx",
+      "sha256": "9e98cc4c1a0ce8ee2600efc57487121be445417cf7c27864dcf11ce5a41c6700"
+    },
+    {
+      "file": "frontend/src/api.ts",
+      "sha256": "dc24f4e02a04cf277099ef8bde1d0105ea47bb649bc1ee89465ff05a3074f3c0"
+    },
+    {
+      "file": "frontend/src/App.tsx",
+      "sha256": "c2ff62e24ff987c0a5300066522f79d0a88c23b421b7ed45363e5705b78ef9e2"
+    },
+    {
+      "file": "frontend/src/AssistantPanel.tsx",
+      "sha256": "2d788fb8f98d20356150fbb5b06332eddf162b4a1de57672e5af15c61968d399"
+    },
+    {
+      "file": "frontend/src/BulkDelete.tsx",
+      "sha256": "651fa73e8a1f92891ae3e42f15d66fe9a5375d5c11f5900416f68426a4d8d71b"
+    },
+    {
+      "file": "frontend/src/ComparisonApply.tsx",
+      "sha256": "12798c80a41399a21f88967b988033158b8f840657f8b9ed19cd3aaab2156eb4"
+    },
+    {
+      "file": "frontend/src/comparisonContract.ts",
+      "sha256": "2b061f41967411c054f9cc258bddbbce46d895bdd11869975b375631bf07f077"
+    },
+    {
+      "file": "frontend/src/ComplementaryPanel.tsx",
+      "sha256": "a3bb3aa9d00a0cf62e5e4ff5d5b654572fdfc7bf7e1389bf9772dfbe17789d4f"
+    },
+    {
+      "file": "frontend/src/components.tsx",
+      "sha256": "0b8836957a565b25208466abf81138523e326f99d0f835b91f77e25a5ff475fb"
+    },
+    {
+      "file": "frontend/src/Dashboard.tsx",
+      "sha256": "4b3d3220cfd5b463218bc6b248e79610ff8af9cd5e7ac737f995df45acc4432c"
+    },
+    {
+      "file": "frontend/src/declarations.d.ts",
+      "sha256": "ee85de33db8c104bae760f41bbc1a0dc2030d720d3ff2189a364e8ee065a2c1a"
+    },
+    {
+      "file": "frontend/src/Drencher.css",
+      "sha256": "f28861ddd26f8a1fe24592588187e68fdcd72eb68fa411f2ba76f4935703c9ba"
+    },
+    {
+      "file": "frontend/src/DrencherCycleAdmin.tsx",
+      "sha256": "871026da0fe9cb881fc770eba97f34d243e2d8ad99a1ede7141e6df6e2a18ccd"
+    },
+    {
+      "file": "frontend/src/drencherDates.ts",
+      "sha256": "1e529643f0333c767bb999768d95b46737e236e2b2265a877b8e1ca4c7e58a8c"
+    },
+    {
+      "file": "frontend/src/drencherDocumentClient.ts",
+      "sha256": "3f627d40f4832de5ab00d42262e85d66fe71b736899a629fc4526d9f54c04652"
+    },
+    {
+      "file": "frontend/src/DrencherDocuments.tsx",
+      "sha256": "f282a3bb1fb7bba35f30f1f12c327d1eb56c265bcdf7a9fbc3e4bd8e964c8f7b"
+    },
+    {
+      "file": "frontend/src/DrencherEditor.tsx",
+      "sha256": "2b63abfc0792e3c26c2582c4dce8b8a8be96577952ec0f024702202d0c145a5c"
+    },
+    {
+      "file": "frontend/src/DrencherPalettePicker.tsx",
+      "sha256": "308345cfa88018c1c63fb2823b6e3c56c2e32de8017cdccabd37f0366e039051"
+    },
+    {
+      "file": "frontend/src/DrencherPrint.tsx",
+      "sha256": "676c2941f80e92c944717917b3ea940c2975196bba768eb68892c4549d31e32e"
+    },
+    {
+      "file": "frontend/src/DrencherProducts.tsx",
+      "sha256": "6feee634157233324ded1e6782184f7db747d509da4d9aea9961ff4e3f0f571c"
+    },
+    {
+      "file": "frontend/src/DrencherPrograms.tsx",
+      "sha256": "a17ccb8409005d46f5ff2abcb61361985f1632eef798b4c56b7f94d0fdec8640"
+    },
+    {
+      "file": "frontend/src/DrencherRecette.tsx",
+      "sha256": "fe9ee5786443a1ea3882d2fbe2a0a4a9e5171daec8a4a1886edc18f47bfba824"
+    },
+    {
+      "file": "frontend/src/DrencherReservationAdmin.tsx",
+      "sha256": "1b5f39c95bc6225adbff24c9afd08b87a0f381385ce204d79ff61a656bed4c60"
+    },
+    {
+      "file": "frontend/src/DrencherStock.tsx",
+      "sha256": "8addf94a5f11318d075db43dfed81753970718dfbce9470e9afcc0563a3a66ec"
+    },
+    {
+      "file": "frontend/src/EntityList.tsx",
+      "sha256": "0ac9ffaede6aaa301caa3434c254323dce6925374270c20744e9f2c714b9242e"
+    },
+    {
+      "file": "frontend/src/FormSyncOffer.tsx",
+      "sha256": "e6b2b1b9a5d5458fef21d57aa6e147b804f86a10ef99e2832e7c183f1d2aafd8"
+    },
+    {
+      "file": "frontend/src/Hierarchy.tsx",
+      "sha256": "94f506b2130f3959febe4e40e147a504481c20bab1771051abc7c59cffaf31c7"
+    },
+    {
+      "file": "frontend/src/icons.ts",
+      "sha256": "e29200baa89274c2dac8fcc774a32e430928946ee6fefc2d2c6fda57dbca3a17"
+    },
+    {
+      "file": "frontend/src/JournalSync.tsx",
+      "sha256": "8c58489e3751f6dd06594f0bab4d2e9d2f8da203af7122fe30f669e03437e921"
+    },
+    {
+      "file": "frontend/src/ListControls.tsx",
+      "sha256": "07907b721ee08e70e775b694eec0744363a2a6805c2783617eb98bf699cdaf81"
+    },
+    {
+      "file": "frontend/src/ListKpis.tsx",
+      "sha256": "fd4730100032cdfe6b9095b9d62a29a214f2658f7813e96cbd1ae9d576d5f198"
+    },
+    {
+      "file": "frontend/src/main.tsx",
+      "sha256": "432c3be1cb2dddd3b281b97cfec42801c78dc62f28dce13fc192278fa5c5496c"
+    },
+    {
+      "file": "frontend/src/navigation.ts",
+      "sha256": "f36f93a1ceeb9da81e0febbfb18393cf666daabd0966da295036a42adf8d5f2d"
+    },
+    {
+      "file": "frontend/src/PageErrorBoundary.tsx",
+      "sha256": "24964026de890c46e282c4a0065387a090bd5b72c1ae162788da8097c61c4297"
+    },
+    {
+      "file": "frontend/src/PilotViews.tsx",
+      "sha256": "eaa1a711c03b7b88fa127c8310434883a79bc97619a3ee082d707f7447be17f8"
+    },
+    {
+      "file": "frontend/src/RecordActions.tsx",
+      "sha256": "b7de44b3f003063c3c5254a7e233d40e1da28fd4d7282cb4459ed1f006e0a191"
+    },
+    {
+      "file": "frontend/src/RecordSummary.tsx",
+      "sha256": "668e059be24c30c085936bff342f7ae0bf6fffaeddb1c95ad00898bcc388a380"
+    },
+    {
+      "file": "frontend/src/RecordView.tsx",
+      "sha256": "bc071f20a602c9cf70bf5dcc6591a65c4c481159961f4199c7bb87f2b09a4ff6"
+    },
+    {
+      "file": "frontend/src/ReferenceInput.tsx",
+      "sha256": "c854dd376cf0d098b45281804bbbc971228108c9cf1d04c487a4be942e23af46"
+    },
+    {
+      "file": "frontend/src/ReferentialComparison.tsx",
+      "sha256": "b5c8d28313e39ddca81639e82b7bd92d9e9a24681e8281a5a7cf1001a3b63da4"
+    },
+    {
+      "file": "frontend/src/Sidebar.module.css",
+      "sha256": "feced0ef26ad1ffcba44fd861649587c08c32d1df965731c806b9321edc789aa"
+    },
+    {
+      "file": "frontend/src/Sidebar.tsx",
+      "sha256": "3097600625fdc612a26716ab997cbf88fda1be1073ec0540f3384b14b296576b"
+    },
+    {
+      "file": "frontend/src/style-modules.d.ts",
+      "sha256": "c4387a8b3a19464901ad321d481b8a0d4ee5f963411e68273f98d180f2fe4641"
+    },
+    {
+      "file": "frontend/src/style.css",
+      "sha256": "afc97c7f8fb4d677858ea6d629540bcbf51aaf450d596e2b4ee53254cc5a4a42"
+    },
+    {
+      "file": "frontend/src/SyncReview.tsx",
+      "sha256": "3f5f28e3f5538791c381e95cb55aa3b46cc4cee7fdad8ca16d549b01c02b95ff"
+    }
+  ]
+}

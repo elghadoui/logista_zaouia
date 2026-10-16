@@ -1,0 +1,23 @@
+import assert from 'node:assert/strict';
+import {readFileSync,writeFileSync} from 'node:fs';
+import {createHash} from 'node:crypto';
+const hash=p=>createHash('sha256').update(readFileSync(p)).digest('hex').toUpperCase();
+const suites=['api','legacy','recette','frontend','regression','navigation','assistant','assistant-http'].map(n=>{const name='tests-drencher-v12-'+n,r=JSON.parse(readFileSync('docs/'+name+'.json','utf8').replace(/^\uFEFF/,''));assert.equal(r.failed??0,0);assert.ok(r.results.every(t=>t.passed));return{name,passed:r.results.length,date:r.date??r.testedAt};});
+const preserved=['frontend/src/DrencherProducts.tsx','frontend/src/DrencherManagement.tsx','backend/Application/AssistantService.cs','backend/Application/OpenAiAssistantProvider.cs','backend/Infrastructure/Connections.cs','backend/Application/ComplementaryService.cs','backend/Application/ComplementaryRules.cs','backend/Application/SyncService.cs','backend/Application/PermissionService.cs'];
+const unchanged=preserved.map(file=>{assert.equal(hash(file),hash('versions/Drencher-V1.1/'+file),file);return{file,sha256:hash(file)};});
+const report={date:new Date().toISOString(),version:'VITASOUSS V1.4.1 + Drencher V1.2',passed:suites.reduce((n,s)=>n+s.passed,0),failed:0,assemblySha256:hash('publish/Vitasouss.Api.dll'),frontendIndexSha256:hash('frontend/dist/index.html'),suites,unchanged,productionAccess:false,productionDeploy:false,browserInteractionsTested:false,realOpenAiCalls:0};
+writeFileSync('docs/tests-drencher-v12-summary.json',JSON.stringify(report,null,2));
+const lines=[
+ '# Drencher V1.2 — tests vérifiables','',report.date,'',
+ `**${report.passed} contrôles automatisés réussis**, aucun échec dans les dernières suites livrées. .NET 10 Release sans avertissement/erreur ; TypeScript/Vite, 853 modules. API et MySQL 5.7.44 exclusivement locaux, données synthétiques. Aucun accès, migration ou déploiement sur les VM.`,
+ '', '| Suite | Résultats |','|---|---:|',...suites.map(s=>`| ${s.name}.json | ${s.passed} réussis |`),'',
+ 'Origine du crash reproduite par le JSON réel de MySqlDateTime. Tests DATE avec et sans péremption, chaînes ISO au rechargement, rendu Stock avec anciennes dates objets, dates impossibles/nulles/zéro, dates civiles sans décalage et recherches des slice de dates. Aucun mouvement ou solde modifié pour ce correctif.', '',
+ 'Réservations : scénario legacy 10/11/12 dans deux cycles, diagnostic avant SQL, initialisation en conflit refusée sans réécrire les cycles, arbitrage explicite avec historique, remplissage du registre, brouillon/soumis/validé indisponibles, cycle courant autorisé, modification et libération, deux utilisateurs distincts enregistrant simultanément une palette, contrainte/transaction, stock réel et calculs préservés. Nettoyages Recette : libération et restitution, cinq tables historiques inchangées par CHECKSUM.', '',
+ 'Sélection : pagination serveur 25/50 sur 160 palettes, lot global au-delà des pages visibles, métadonnées remplacées par identifiants+résumé, multi-réceptions et groupes vérifiés. Tests logiques de conservation entre pages, dédoublonnage et annulation ; vrai rendu React/Mantine du formulaire compact et de Stock. Les erreurs API ne réinitialisent pas les champs de saisie.', '',
+ 'Non-régression : CRUD/synchronisation/comparaison/permissions/archives/sessions, Recette interdite sur logista, confirmations/motifs/audit/récupération, Assistant en lecture seule, SQL arbitraire et mutations interdits. Aucun appel OpenAI réel. Empreintes des fichiers préservés dans tests-drencher-v12-summary.json.', '',
+ 'Les premiers tests ont révélé une inspection de schéma sans transaction active : ajout d’un paramètre transaction optionnel, sans changer la règle d’inspection. Le compte local historique manquait de DELETE sur le nouveau registre : droit ajouté seulement à cette table de test. Les assertions V1 acceptant deux brouillons avec les mêmes palettes ont été adaptées à la nouvelle règle. La limite de connexion reste active ; une suite cumulative a reçu 429 avant reprise après relance du seul serveur local.', '',
+ '**Aucune recette interactive/visuelle navigateur ou impression physique revendiquée.** L’accès local avait été refusé lors des travaux précédents ; aucun contournement. La fiche opérateur décrit les contrôles à réaliser sur les équipements de station.', '',
+ `SHA256 DLL : ${report.assemblySha256}. Le manifeste update/ et la vérification de ZIP garantissent les empreintes et la conservation de marqueurs simulant configurations/clés/secrets.`
+];
+writeFileSync('docs/DRENCHER-V1.2-TESTS.md',lines.join('\n')+'\n');
+console.log(JSON.stringify({passed:report.passed,failed:0,assemblySha256:report.assemblySha256}));

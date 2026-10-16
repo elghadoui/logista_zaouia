@@ -1,0 +1,256 @@
+{
+  "testedAt": "2026-10-07T11:39:39.986Z",
+  "sourceDb": "vitasouss_test_v14_src_1791373173771",
+  "targetDb": "vitasouss_test_v14_dst_1791373173771",
+  "realOpenAiCalls": 0,
+  "results": [
+    {
+      "name": "Version 1.4",
+      "passed": true
+    },
+    {
+      "name": "Matrice Admin complète",
+      "passed": true
+    },
+    {
+      "name": "Consultation sans écriture",
+      "passed": true
+    },
+    {
+      "name": "Modification droits révoque la session",
+      "passed": true
+    },
+    {
+      "name": "API directe interdite retourne 403",
+      "passed": true
+    },
+    {
+      "name": "Modifier sans permission refusé",
+      "passed": true
+    },
+    {
+      "name": "Supprimer sans permission refusé",
+      "passed": true
+    },
+    {
+      "name": "Consultation ne crée pas",
+      "passed": true
+    },
+    {
+      "name": "Nombre articles liés",
+      "passed": true
+    },
+    {
+      "name": "Fiche groupe affiche articles",
+      "passed": true
+    },
+    {
+      "name": "Combo groupe par libellé",
+      "passed": true
+    },
+    {
+      "name": "Liste article affiche groupe",
+      "passed": true
+    },
+    {
+      "name": "Suppression groupe utilisé refusée",
+      "passed": true
+    },
+    {
+      "name": "Correction libellé groupe utilisée autorisée",
+      "passed": true
+    },
+    {
+      "name": "Création attribue code côté maître",
+      "passed": true
+    },
+    {
+      "name": "Suppression groupe inutilisé contrôlée",
+      "passed": true
+    },
+    {
+      "name": "Relation existante structurelle protégée",
+      "passed": true
+    },
+    {
+      "name": "Correction référence article autorisée",
+      "passed": true
+    },
+    {
+      "name": "Groupe absent refusé",
+      "passed": true
+    },
+    {
+      "name": "Code groupe SQL injecté refusé",
+      "passed": true
+    },
+    {
+      "name": "Nouveau référentiel DIAF direct refusé",
+      "passed": true
+    },
+    {
+      "name": "Relation historique utilisée protégée",
+      "passed": true
+    },
+    {
+      "name": "Déclarations : sélections métier",
+      "passed": true
+    },
+    {
+      "name": "Déclaration verger réel égal déclaré autorisée",
+      "passed": true
+    },
+    {
+      "name": "Déclaration affiche libellés",
+      "passed": true
+    },
+    {
+      "name": "Déclaration modification protégée",
+      "passed": true
+    },
+    {
+      "name": "Déclaration suppression protégée",
+      "passed": true
+    },
+    {
+      "name": "Création pays sûre",
+      "passed": true
+    },
+    {
+      "name": "Libellé pays corrigeable",
+      "passed": true
+    },
+    {
+      "name": "Suppression pays non prouvée protégée",
+      "passed": true
+    },
+    {
+      "name": "Création destination sûre",
+      "passed": true
+    },
+    {
+      "name": "Libellé destination corrigeable",
+      "passed": true
+    },
+    {
+      "name": "Suppression destination non prouvée protégée",
+      "passed": true
+    },
+    {
+      "name": "Création partenaire sûre",
+      "passed": true
+    },
+    {
+      "name": "Libellé partenaire corrigeable",
+      "passed": true
+    },
+    {
+      "name": "Suppression partenaire non prouvée protégée",
+      "passed": true
+    },
+    {
+      "name": "Création defaut sûre",
+      "passed": true
+    },
+    {
+      "name": "Libellé defaut corrigeable",
+      "passed": true
+    },
+    {
+      "name": "Suppression defaut non prouvée protégée",
+      "passed": true
+    },
+    {
+      "name": "Création typeecart sûre",
+      "passed": true
+    },
+    {
+      "name": "Libellé typeecart corrigeable",
+      "passed": true
+    },
+    {
+      "name": "Suppression typeecart non prouvée protégée",
+      "passed": true
+    },
+    {
+      "name": "Même libellé autre code maître interdit",
+      "passed": true
+    },
+    {
+      "name": "Correction abréviation seule autorisée",
+      "passed": true
+    },
+    {
+      "name": "Comparaison complémentaire absente DIAF",
+      "passed": true
+    },
+    {
+      "name": "Parent pays manquant protège réplication",
+      "passed": true
+    },
+    {
+      "name": "Aperçu humain pays",
+      "passed": true
+    },
+    {
+      "name": "Aperçu humain destination",
+      "passed": true
+    },
+    {
+      "name": "Identifiant maître conservé",
+      "passed": true
+    },
+    {
+      "name": "Référence synchronisée devient identique",
+      "passed": true
+    },
+    {
+      "name": "Aperçu humain grpemb",
+      "passed": true
+    },
+    {
+      "name": "Groupe sans PK formelle synchronisable",
+      "passed": true
+    },
+    {
+      "name": "Même libellé autre code détecté",
+      "passed": true
+    },
+    {
+      "name": "Codes DIAF du conflit explicitement retournés",
+      "passed": true
+    },
+    {
+      "name": "Conflit bloque synchronisation",
+      "passed": true
+    },
+    {
+      "name": "Aucune suppression DIAF",
+      "passed": true
+    },
+    {
+      "name": "Archive toujours en lecture seule",
+      "passed": true
+    },
+    {
+      "name": "Assistant conservé strictement lecture seule",
+      "passed": true
+    },
+    {
+      "name": "Impossible augmenter rôle Consultation",
+      "passed": true
+    },
+    {
+      "name": "Migration permissions idempotente",
+      "passed": true
+    },
+    {
+      "name": "Droits personnalisés conservés à migration",
+      "passed": true
+    },
+    {
+      "name": "Schéma Logista sans nouvelle PK",
+      "passed": true
+    }
+  ]
+}

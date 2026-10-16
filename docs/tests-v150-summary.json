@@ -1,0 +1,1516 @@
+{
+  "date": "2026-10-15T19:39:27.704367+00:00",
+  "version": "1.5.0",
+  "drencherVersion": "1.3.2.1",
+  "candidate": false,
+  "passed": 300,
+  "failed": 0,
+  "httpValidated": true,
+  "productionAccess": false,
+  "productionDeploy": false,
+  "realDiafVerified": false,
+  "realArchivesVerified": false,
+  "assemblySha256": "7260A5358F1E3499B0934AB7FE44FEA24A7F0A917A97A7AD7F3162AA8922AB2F",
+  "results": [
+    {
+      "suite": "service",
+      "name": "Audit réel importé : source disponible",
+      "passed": true
+    },
+    {
+      "suite": "service",
+      "name": "Net officiel 1 809 096 kg sans duplication des 215 détails",
+      "passed": true
+    },
+    {
+      "suite": "service",
+      "name": "Sommes variété et producteur égales au net officiel",
+      "passed": true
+    },
+    {
+      "suite": "service",
+      "name": "Séries quotidiennes et ISO réconciliées",
+      "passed": true
+    },
+    {
+      "suite": "service",
+      "name": "Détails paginés 25",
+      "passed": true
+    },
+    {
+      "suite": "service",
+      "name": "Estimation explicitement non rattachée campagne",
+      "passed": true
+    },
+    {
+      "suite": "service",
+      "name": "471 mouvements de caisserie",
+      "passed": true
+    },
+    {
+      "suite": "service",
+      "name": "E 95 208 caisses ; S 136 218 ; aucun solde physique déduit",
+      "passed": true
+    },
+    {
+      "suite": "service",
+      "name": "Filtrage E et type caisse",
+      "passed": true
+    },
+    {
+      "suite": "service",
+      "name": "Filtre date réelle inclusif",
+      "passed": true
+    },
+    {
+      "suite": "service",
+      "name": "Filtre variété exact",
+      "passed": true
+    },
+    {
+      "suite": "service",
+      "name": "Filtre producteur exact",
+      "passed": true
+    },
+    {
+      "suite": "service",
+      "name": "Excel 213 lignes de données, cellules numériques, aucune formule",
+      "passed": true
+    },
+    {
+      "suite": "service",
+      "name": "Permissions consultation conservées",
+      "passed": true
+    },
+    {
+      "suite": "service",
+      "name": "Module arbitraire refusé API/service",
+      "passed": true
+    },
+    {
+      "suite": "service",
+      "name": "Page et tri arbitraire refusés",
+      "passed": true
+    },
+    {
+      "suite": "service",
+      "name": "Date invalide refusée",
+      "passed": true
+    },
+    {
+      "suite": "service",
+      "name": "Consolidation : numrec identiques distincts par station",
+      "passed": true
+    },
+    {
+      "suite": "service",
+      "name": "Station locale bornée même dans base contenant autre station",
+      "passed": true
+    },
+    {
+      "suite": "service",
+      "name": "Estimation consolidée volontairement indisponible",
+      "passed": true
+    },
+    {
+      "suite": "service",
+      "name": "Campagnes courantes incompatibles refusées",
+      "passed": true
+    },
+    {
+      "suite": "service",
+      "name": "Poids net nul et date absente ne donnent pas un faux total complet",
+      "passed": true
+    },
+    {
+      "suite": "service",
+      "name": "Rattachements manquants conservés en catégorie inconnue",
+      "passed": true
+    },
+    {
+      "suite": "service",
+      "name": "Parcelles ambiguës exclues du calcul, absences non assimilées zéro",
+      "passed": true
+    },
+    {
+      "suite": "service",
+      "name": "Pagination consolidée stable sans collision ou perte",
+      "passed": true
+    },
+    {
+      "suite": "service",
+      "name": "Source DIAF absente : total incomplet et totalKg NULL",
+      "passed": true
+    },
+    {
+      "suite": "service",
+      "name": "Comparaison avec deux archives synthétiques",
+      "passed": true
+    },
+    {
+      "suite": "service",
+      "name": "Alignement archive même nombre de jours depuis début campagne",
+      "passed": true
+    },
+    {
+      "suite": "service",
+      "name": "Archive comparative future exclue et courant limité aujourd'hui",
+      "passed": true
+    },
+    {
+      "suite": "service",
+      "name": "Consolidation comparative sans deuxième archive refusée",
+      "passed": true
+    },
+    {
+      "suite": "service",
+      "name": "Année ISO semaine 53 : 31 décembre et 1 janvier regroupés",
+      "passed": true
+    },
+    {
+      "suite": "service",
+      "name": "Recherche paramétrée sans injection",
+      "passed": true
+    },
+    {
+      "suite": "service",
+      "name": "Produit non agrume et catégorie filtrables",
+      "passed": true
+    },
+    {
+      "suite": "service",
+      "name": "Net officiel distinct poids brut, aucun double comptage détails",
+      "passed": true
+    },
+    {
+      "suite": "service",
+      "name": "Consultation sur contexte autorisé",
+      "passed": true
+    },
+    {
+      "suite": "service",
+      "name": "DIAF non autorisé refusé avant consolidation",
+      "passed": true
+    },
+    {
+      "suite": "service",
+      "name": "Archive non autorisée refusée",
+      "passed": true
+    },
+    {
+      "suite": "service",
+      "name": "Module Caisserie absent refusé",
+      "passed": true
+    },
+    {
+      "suite": "service",
+      "name": "Export volumineux refusé sans troncature",
+      "passed": true
+    },
+    {
+      "suite": "service",
+      "name": "Export texte dangereux stocké comme texte, jamais formule",
+      "passed": true
+    },
+    {
+      "suite": "service",
+      "name": "Toutes les sources Drencher et SQL010/011 inchangées",
+      "passed": true
+    },
+    {
+      "suite": "ui",
+      "name": "Réceptions : vrai composant Mantine, indicateurs et recherche",
+      "passed": true
+    },
+    {
+      "suite": "ui",
+      "name": "Choix des contextes et consolidation visibles",
+      "passed": true
+    },
+    {
+      "suite": "ui",
+      "name": "Archive autorisée sélectionnable et aucune archive inventée",
+      "passed": true
+    },
+    {
+      "suite": "ui",
+      "name": "Graphique accessible, détail et export Excel présents",
+      "passed": true
+    },
+    {
+      "suite": "ui",
+      "name": "Filtres catégories et groupes produits présents",
+      "passed": true
+    },
+    {
+      "suite": "ui",
+      "name": "Trois besoins caisserie distincts et limites explicites",
+      "passed": true
+    },
+    {
+      "suite": "ui",
+      "name": "Historique par type et quantités sans faux solde",
+      "passed": true
+    },
+    {
+      "suite": "ui",
+      "name": "Total incomplet visible sans écran blanc",
+      "passed": true
+    },
+    {
+      "suite": "ui",
+      "name": "Sidebar respecte permission Réceptions sans Caisserie",
+      "passed": true
+    },
+    {
+      "suite": "ui",
+      "name": "Navigation Drencher historique conservée",
+      "passed": true
+    },
+    {
+      "suite": "excel",
+      "name": "Service et HTTP : classeurs Excel ouverts sans réparation",
+      "passed": true
+    },
+    {
+      "suite": "excel",
+      "name": "Service et HTTP : 213 lignes de données",
+      "passed": true
+    },
+    {
+      "suite": "excel",
+      "name": "Service et HTTP : somme officielle 1809096 kg",
+      "passed": true
+    },
+    {
+      "suite": "excel",
+      "name": "Service et HTTP : dates Excel natives",
+      "passed": true
+    },
+    {
+      "suite": "excel",
+      "name": "Service et HTTP : en-tête figé et filtres",
+      "passed": true
+    },
+    {
+      "suite": "excel",
+      "name": "Service et HTTP : aucune formule injectée",
+      "passed": true
+    },
+    {
+      "suite": "drencher-ui",
+      "name": "Hicham : vrai bouton Nouveau cycle actif",
+      "passed": true
+    },
+    {
+      "suite": "drencher-ui",
+      "name": "Hicham : aucun accès gestion des programmes via ancien droit groupé",
+      "passed": true
+    },
+    {
+      "suite": "drencher-ui",
+      "name": "Admin peut cocher Ajouter saisie Gestionnaire",
+      "passed": true
+    },
+    {
+      "suite": "drencher-ui",
+      "name": "Admin peut cocher Modifier saisie Gestionnaire",
+      "passed": true
+    },
+    {
+      "suite": "drencher-ui",
+      "name": "Consultation reste grisée",
+      "passed": true
+    },
+    {
+      "suite": "drencher-ui",
+      "name": "Voir requis avant attribution",
+      "passed": true
+    },
+    {
+      "suite": "drencher-ui",
+      "name": "Suppression saisie reste grisée",
+      "passed": true
+    },
+    {
+      "suite": "drencher-ui",
+      "name": "Opérateur : aucun bouton Ajouter/Modifier/Activer programme",
+      "passed": true
+    },
+    {
+      "suite": "drencher-ui",
+      "name": "Mbark : gestion programme active",
+      "passed": true
+    },
+    {
+      "suite": "drencher-ui",
+      "name": "Mbark : droits programme ne donnent pas gestion produits",
+      "passed": true
+    },
+    {
+      "suite": "drencher-ui",
+      "name": "Samira : gestion programme active",
+      "passed": true
+    },
+    {
+      "suite": "drencher-ui",
+      "name": "Samira : droits programme ne donnent pas gestion produits",
+      "passed": true
+    },
+    {
+      "suite": "drencher-ui",
+      "name": "Qualité sans droit saisie : Nouveau cycle désactivé",
+      "passed": true
+    },
+    {
+      "suite": "drencher-ui",
+      "name": "Admin conserve Nouveau cycle",
+      "passed": true
+    },
+    {
+      "suite": "drencher-permissions",
+      "name": "Hicham saisie view",
+      "passed": true
+    },
+    {
+      "suite": "drencher-permissions",
+      "name": "Hicham saisie add",
+      "passed": true
+    },
+    {
+      "suite": "drencher-permissions",
+      "name": "Hicham saisie modify",
+      "passed": true
+    },
+    {
+      "suite": "drencher-permissions",
+      "name": "Opérateur refus drencher_quality / add",
+      "passed": true
+    },
+    {
+      "suite": "drencher-permissions",
+      "name": "Opérateur refus drencher_quality / modify",
+      "passed": true
+    },
+    {
+      "suite": "drencher-permissions",
+      "name": "Opérateur refus drencher_quality / delete",
+      "passed": true
+    },
+    {
+      "suite": "drencher-permissions",
+      "name": "Opérateur refus drencher_programs / add",
+      "passed": true
+    },
+    {
+      "suite": "drencher-permissions",
+      "name": "Opérateur refus drencher_programs / modify",
+      "passed": true
+    },
+    {
+      "suite": "drencher-permissions",
+      "name": "Opérateur refus drencher_programs / delete",
+      "passed": true
+    },
+    {
+      "suite": "drencher-permissions",
+      "name": "Opérateur refus drencher_products / add",
+      "passed": true
+    },
+    {
+      "suite": "drencher-permissions",
+      "name": "Opérateur refus drencher_products / modify",
+      "passed": true
+    },
+    {
+      "suite": "drencher-permissions",
+      "name": "Opérateur refus drencher_products / delete",
+      "passed": true
+    },
+    {
+      "suite": "drencher-permissions",
+      "name": "Opérateur refus drencher_stock / add",
+      "passed": true
+    },
+    {
+      "suite": "drencher-permissions",
+      "name": "Opérateur refus drencher_stock / modify",
+      "passed": true
+    },
+    {
+      "suite": "drencher-permissions",
+      "name": "Opérateur refus drencher_stock / delete",
+      "passed": true
+    },
+    {
+      "suite": "drencher-permissions",
+      "name": "Mbark validation/correction",
+      "passed": true
+    },
+    {
+      "suite": "drencher-permissions",
+      "name": "Mbark drencher_programs / add",
+      "passed": true
+    },
+    {
+      "suite": "drencher-permissions",
+      "name": "Mbark drencher_products / add",
+      "passed": true
+    },
+    {
+      "suite": "drencher-permissions",
+      "name": "Mbark drencher_programs / modify",
+      "passed": true
+    },
+    {
+      "suite": "drencher-permissions",
+      "name": "Mbark drencher_products / modify",
+      "passed": true
+    },
+    {
+      "suite": "drencher-permissions",
+      "name": "Mbark entrée stock",
+      "passed": true
+    },
+    {
+      "suite": "drencher-permissions",
+      "name": "Mbark aucune suppression administrative",
+      "passed": true
+    },
+    {
+      "suite": "drencher-permissions",
+      "name": "Mbark pas de saisie implicitement accordée",
+      "passed": true
+    },
+    {
+      "suite": "drencher-permissions",
+      "name": "Samira validation/correction",
+      "passed": true
+    },
+    {
+      "suite": "drencher-permissions",
+      "name": "Samira drencher_programs / add",
+      "passed": true
+    },
+    {
+      "suite": "drencher-permissions",
+      "name": "Samira drencher_products / add",
+      "passed": true
+    },
+    {
+      "suite": "drencher-permissions",
+      "name": "Samira drencher_programs / modify",
+      "passed": true
+    },
+    {
+      "suite": "drencher-permissions",
+      "name": "Samira drencher_products / modify",
+      "passed": true
+    },
+    {
+      "suite": "drencher-permissions",
+      "name": "Samira entrée stock",
+      "passed": true
+    },
+    {
+      "suite": "drencher-permissions",
+      "name": "Samira aucune suppression administrative",
+      "passed": true
+    },
+    {
+      "suite": "drencher-permissions",
+      "name": "Samira pas de saisie implicitement accordée",
+      "passed": true
+    },
+    {
+      "suite": "drencher-permissions",
+      "name": "Admin conserve drencher / view",
+      "passed": true
+    },
+    {
+      "suite": "drencher-permissions",
+      "name": "Admin conserve drencher / add",
+      "passed": true
+    },
+    {
+      "suite": "drencher-permissions",
+      "name": "Admin conserve drencher / modify",
+      "passed": true
+    },
+    {
+      "suite": "drencher-permissions",
+      "name": "Admin conserve drencher / delete",
+      "passed": true
+    },
+    {
+      "suite": "drencher-permissions",
+      "name": "Admin conserve drencher_quality / view",
+      "passed": true
+    },
+    {
+      "suite": "drencher-permissions",
+      "name": "Admin conserve drencher_quality / add",
+      "passed": true
+    },
+    {
+      "suite": "drencher-permissions",
+      "name": "Admin conserve drencher_quality / modify",
+      "passed": true
+    },
+    {
+      "suite": "drencher-permissions",
+      "name": "Admin conserve drencher_quality / delete",
+      "passed": true
+    },
+    {
+      "suite": "drencher-permissions",
+      "name": "Admin conserve drencher_programs / view",
+      "passed": true
+    },
+    {
+      "suite": "drencher-permissions",
+      "name": "Admin conserve drencher_programs / add",
+      "passed": true
+    },
+    {
+      "suite": "drencher-permissions",
+      "name": "Admin conserve drencher_programs / modify",
+      "passed": true
+    },
+    {
+      "suite": "drencher-permissions",
+      "name": "Admin conserve drencher_programs / delete",
+      "passed": true
+    },
+    {
+      "suite": "drencher-permissions",
+      "name": "Admin conserve drencher_products / view",
+      "passed": true
+    },
+    {
+      "suite": "drencher-permissions",
+      "name": "Admin conserve drencher_products / add",
+      "passed": true
+    },
+    {
+      "suite": "drencher-permissions",
+      "name": "Admin conserve drencher_products / modify",
+      "passed": true
+    },
+    {
+      "suite": "drencher-permissions",
+      "name": "Admin conserve drencher_products / delete",
+      "passed": true
+    },
+    {
+      "suite": "drencher-permissions",
+      "name": "Admin conserve drencher_stock / view",
+      "passed": true
+    },
+    {
+      "suite": "drencher-permissions",
+      "name": "Admin conserve drencher_stock / add",
+      "passed": true
+    },
+    {
+      "suite": "drencher-permissions",
+      "name": "Admin conserve drencher_stock / modify",
+      "passed": true
+    },
+    {
+      "suite": "drencher-permissions",
+      "name": "Admin conserve drencher_stock / delete",
+      "passed": true
+    },
+    {
+      "suite": "drencher-permissions",
+      "name": "Module absent fermé",
+      "passed": true
+    },
+    {
+      "suite": "drencher-permissions",
+      "name": "Ajouter sans Voir refusé",
+      "passed": true
+    },
+    {
+      "suite": "drencher-permissions",
+      "name": "Consultation reste lecture seule",
+      "passed": true
+    },
+    {
+      "suite": "drencher-permissions",
+      "name": "Propriétaire peut modifier/soumettre son brouillon",
+      "passed": true
+    },
+    {
+      "suite": "drencher-permissions",
+      "name": "Autre opérateur ne peut modifier le brouillon",
+      "passed": true
+    },
+    {
+      "suite": "drencher-permissions",
+      "name": "Admin conserve accès brouillons d'autrui",
+      "passed": true
+    },
+    {
+      "suite": "drencher-permissions",
+      "name": "Contrôle propriétaire API : 403",
+      "passed": true
+    },
+    {
+      "suite": "drencher-permissions",
+      "name": "Matrice complète sans migration ni écriture",
+      "passed": true
+    },
+    {
+      "suite": "drencher-permissions",
+      "name": "Ancien droit groupé conservé à l'identique",
+      "passed": true
+    },
+    {
+      "suite": "drencher-permissions",
+      "name": "Nouveaux droits absents tous false",
+      "passed": true
+    },
+    {
+      "suite": "drencher-permissions",
+      "name": "Matrice ne modifie pas les données d'entrée",
+      "passed": true
+    },
+    {
+      "suite": "drencher-permissions",
+      "name": "Aucune attribution de saisie automatique",
+      "passed": true
+    },
+    {
+      "suite": "drencher-permissions",
+      "name": "Saisie autorise les seuls lookups nécessaires au cycle",
+      "passed": true
+    },
+    {
+      "suite": "drencher-permissions",
+      "name": "Qualité autorise les lookups de correction",
+      "passed": true
+    },
+    {
+      "suite": "drencher-permissions",
+      "name": "Ancien Voir seul n'élargit pas les lookups",
+      "passed": true
+    },
+    {
+      "suite": "drencher-permissions",
+      "name": "Programme spécifique indépendant des produits/stock",
+      "passed": true
+    },
+    {
+      "suite": "assistant",
+      "name": "Provider non configuré",
+      "passed": true
+    },
+    {
+      "suite": "assistant",
+      "name": "Non configuré sans requête réseau",
+      "passed": true
+    },
+    {
+      "suite": "assistant",
+      "name": "Clé invalide : erreur publique sans corps ni secret",
+      "passed": true
+    },
+    {
+      "suite": "assistant",
+      "name": "Timeout OpenAI",
+      "passed": true
+    },
+    {
+      "suite": "assistant",
+      "name": "Outil interdit",
+      "passed": true
+    },
+    {
+      "suite": "assistant",
+      "name": "Aucune exécution d'outil interdit",
+      "passed": true
+    },
+    {
+      "suite": "assistant",
+      "name": "SQL arbitraire refusé",
+      "passed": true
+    },
+    {
+      "suite": "assistant",
+      "name": "Limitation du nombre d'appels",
+      "passed": true
+    },
+    {
+      "suite": "assistant",
+      "name": "Maximum exact d'exécutions",
+      "passed": true
+    },
+    {
+      "suite": "assistant",
+      "name": "Mutation interdite INSERT",
+      "passed": true
+    },
+    {
+      "suite": "assistant",
+      "name": "Mutation interdite UPDATE",
+      "passed": true
+    },
+    {
+      "suite": "assistant",
+      "name": "Mutation interdite DELETE",
+      "passed": true
+    },
+    {
+      "suite": "assistant",
+      "name": "Mutation interdite ALTER",
+      "passed": true
+    },
+    {
+      "suite": "assistant",
+      "name": "Mutation interdite DROP",
+      "passed": true
+    },
+    {
+      "suite": "assistant",
+      "name": "Mutation interdite sync",
+      "passed": true
+    },
+    {
+      "suite": "assistant",
+      "name": "Argument SQL injecté refusé",
+      "passed": true
+    },
+    {
+      "suite": "assistant",
+      "name": "Argument de contexte non autorisé",
+      "passed": true
+    },
+    {
+      "suite": "assistant",
+      "name": "Date invalide",
+      "passed": true
+    },
+    {
+      "suite": "assistant",
+      "name": "Endpoint officiel fixe 0",
+      "passed": true
+    },
+    {
+      "suite": "assistant",
+      "name": "store false / modèle serveur 0",
+      "passed": true
+    },
+    {
+      "suite": "assistant",
+      "name": "Clé exclusivement en en-tête 0",
+      "passed": true
+    },
+    {
+      "suite": "assistant",
+      "name": "Fonctions strictes seulement 0",
+      "passed": true
+    },
+    {
+      "suite": "assistant",
+      "name": "Endpoint officiel fixe 1",
+      "passed": true
+    },
+    {
+      "suite": "assistant",
+      "name": "store false / modèle serveur 1",
+      "passed": true
+    },
+    {
+      "suite": "assistant",
+      "name": "Clé exclusivement en en-tête 1",
+      "passed": true
+    },
+    {
+      "suite": "assistant",
+      "name": "Fonctions strictes seulement 1",
+      "passed": true
+    },
+    {
+      "suite": "assistant",
+      "name": "Résultat relié au call_id",
+      "passed": true
+    },
+    {
+      "suite": "assistant",
+      "name": "Tool calling puis réponse avec tokens cumulés",
+      "passed": true
+    },
+    {
+      "suite": "assistant",
+      "name": "Limite contexte avant envoi",
+      "passed": true
+    },
+    {
+      "suite": "assistant",
+      "name": "Conversation isolée par utilisateur",
+      "passed": true
+    },
+    {
+      "suite": "assistant",
+      "name": "Conversation isolée par exercice",
+      "passed": true
+    },
+    {
+      "suite": "assistant",
+      "name": "Nouvelle conversation efface le précédent historique",
+      "passed": true
+    },
+    {
+      "suite": "assistant",
+      "name": "Timeout englobe l'outil",
+      "passed": true
+    },
+    {
+      "suite": "api",
+      "name": "Version HTTP V1.5.0 et Drencher 1.3.2.1",
+      "passed": true
+    },
+    {
+      "suite": "api",
+      "name": "Accès anonyme refusé",
+      "passed": true
+    },
+    {
+      "suite": "api",
+      "name": "Module absent refusé",
+      "passed": true
+    },
+    {
+      "suite": "api",
+      "name": "Consultation avec filtres par défaut",
+      "passed": true
+    },
+    {
+      "suite": "api",
+      "name": "Autre station non autorisée refusée",
+      "passed": true
+    },
+    {
+      "suite": "api",
+      "name": "Archive non autorisée refusée",
+      "passed": true
+    },
+    {
+      "suite": "api",
+      "name": "Caisserie sans permission refusée",
+      "passed": true
+    },
+    {
+      "suite": "api",
+      "name": "Export sans droit module refusé",
+      "passed": true
+    },
+    {
+      "suite": "api",
+      "name": "HTTP consolidation 5,5 tonnes, trois lots sans collision",
+      "passed": true
+    },
+    {
+      "suite": "api",
+      "name": "HTTP comparaison quatre contextes autorisés",
+      "passed": true
+    },
+    {
+      "suite": "api",
+      "name": "HTTP source indisponible : total global NULL et alerte",
+      "passed": true
+    },
+    {
+      "suite": "api",
+      "name": "Paramètre SQL libre refusé",
+      "passed": true
+    },
+    {
+      "suite": "api",
+      "name": "Tri arbitraire refusé",
+      "passed": true
+    },
+    {
+      "suite": "api",
+      "name": "Paramètres répétés refusés",
+      "passed": true
+    },
+    {
+      "suite": "api",
+      "name": "Page négative refusée",
+      "passed": true
+    },
+    {
+      "suite": "api",
+      "name": "Date invalide refusée",
+      "passed": true
+    },
+    {
+      "suite": "api",
+      "name": "Recherche malveillante reste paramétrée",
+      "passed": true
+    },
+    {
+      "suite": "api",
+      "name": "Aucune mutation analytique POST",
+      "passed": true
+    },
+    {
+      "suite": "api",
+      "name": "Aucune mutation analytique PUT",
+      "passed": true
+    },
+    {
+      "suite": "api",
+      "name": "Aucune mutation analytique DELETE",
+      "passed": true
+    },
+    {
+      "suite": "api",
+      "name": "Export HTTP Excel valide, noms et type de contenu",
+      "passed": true
+    },
+    {
+      "suite": "api",
+      "name": "HTTP caisserie filtrée : 213 mouvements E",
+      "passed": true
+    },
+    {
+      "suite": "api",
+      "name": "HTTP audit officiel 1809,096 tonnes",
+      "passed": true
+    },
+    {
+      "suite": "api",
+      "name": "Empreintes métier inchangées après toutes lectures/exports",
+      "passed": true
+    },
+    {
+      "suite": "drencher-api",
+      "name": "Version API 1.3.2.1",
+      "passed": true
+    },
+    {
+      "suite": "drencher-api",
+      "name": "Migration réexécutée : 14 tables Drencher InnoDB",
+      "passed": true
+    },
+    {
+      "suite": "drencher-api",
+      "name": "Hicham fictif : ancien droit groupé conservé sans donner programmes",
+      "passed": true
+    },
+    {
+      "suite": "drencher-api",
+      "name": "Rôles Qualité restent Gestionnaire",
+      "passed": true
+    },
+    {
+      "suite": "drencher-api",
+      "name": "Hicham : catalogue programmes actifs lisible",
+      "passed": true
+    },
+    {
+      "suite": "drencher-api",
+      "name": "Hicham : sélection palettes autorisée sans droits référentiels globaux",
+      "passed": true
+    },
+    {
+      "suite": "drencher-api",
+      "name": "Sélection bornée à la station : palette DIAF refusée",
+      "passed": true
+    },
+    {
+      "suite": "drencher-api",
+      "name": "Voir seul : pas d’élargissement automatique des lookups",
+      "passed": true
+    },
+    {
+      "suite": "drencher-api",
+      "name": "Hicham : filtres palettes autorisés",
+      "passed": true
+    },
+    {
+      "suite": "drencher-api",
+      "name": "Hicham : journal stock refusé",
+      "passed": true
+    },
+    {
+      "suite": "drencher-api",
+      "name": "Hicham : documents stock refusés",
+      "passed": true
+    },
+    {
+      "suite": "drencher-api",
+      "name": "Hicham : création programme refusée en API",
+      "passed": true
+    },
+    {
+      "suite": "drencher-api",
+      "name": "Hicham : réception stock refusée en API",
+      "passed": true
+    },
+    {
+      "suite": "drencher-api",
+      "name": "Samira : administration refusée",
+      "passed": true
+    },
+    {
+      "suite": "drencher-api",
+      "name": "Mbark : administration refusée",
+      "passed": true
+    },
+    {
+      "suite": "drencher-api",
+      "name": "SQL012 idempotent : trois lignes fermées par utilisateur",
+      "passed": true
+    },
+    {
+      "suite": "drencher-api",
+      "name": "SQL012 conserve droits anciens et mots de passe/utilisateurs",
+      "passed": true
+    },
+    {
+      "suite": "drencher-api",
+      "name": "Opérateur ne gère pas les produits",
+      "passed": true
+    },
+    {
+      "suite": "drencher-api",
+      "name": "Produit ancien contrat visible par défaut",
+      "passed": true
+    },
+    {
+      "suite": "drencher-api",
+      "name": "MA et option F04 relues en base",
+      "passed": true
+    },
+    {
+      "suite": "drencher-api",
+      "name": "Unité immuable",
+      "passed": true
+    },
+    {
+      "suite": "drencher-api",
+      "name": "Hicham : modification programme refusée",
+      "passed": true
+    },
+    {
+      "suite": "drencher-api",
+      "name": "Hicham : activation/désactivation refusée",
+      "passed": true
+    },
+    {
+      "suite": "drencher-api",
+      "name": "Hicham : modification produit refusée",
+      "passed": true
+    },
+    {
+      "suite": "drencher-api",
+      "name": "Samira gère programmes sans Admin",
+      "passed": true
+    },
+    {
+      "suite": "drencher-api",
+      "name": "Brouillon aucun débit",
+      "passed": true
+    },
+    {
+      "suite": "drencher-api",
+      "name": "Hicham : brouillon créé réellement en base",
+      "passed": true
+    },
+    {
+      "suite": "drencher-api",
+      "name": "Hicham : validation qualité interdite en API",
+      "passed": true
+    },
+    {
+      "suite": "drencher-api",
+      "name": "Palette réservée empêchant autre cycle",
+      "passed": true
+    },
+    {
+      "suite": "drencher-api",
+      "name": "Deux soumissions concurrentes : une réussite, une 409",
+      "passed": true
+    },
+    {
+      "suite": "drencher-api",
+      "name": "Consommation immédiate 50 moins 3 égale 47",
+      "passed": true
+    },
+    {
+      "suite": "drencher-api",
+      "name": "Mouvements réels uniquement",
+      "passed": true
+    },
+    {
+      "suite": "drencher-api",
+      "name": "Stale opérateur refusé après soumission",
+      "passed": true
+    },
+    {
+      "suite": "drencher-api",
+      "name": "Appel direct opérateur version courante refusé",
+      "passed": true
+    },
+    {
+      "suite": "drencher-api",
+      "name": "Correction qualité interdite opérateur",
+      "passed": true
+    },
+    {
+      "suite": "drencher-api",
+      "name": "Suppression interdite opérateur",
+      "passed": true
+    },
+    {
+      "suite": "drencher-api",
+      "name": "Correction 3 vers 2,5 restitue 0,5",
+      "passed": true
+    },
+    {
+      "suite": "drencher-api",
+      "name": "Seconde correction débit complémentaire 1,5",
+      "passed": true
+    },
+    {
+      "suite": "drencher-api",
+      "name": "Validation sans nouvelle sortie",
+      "passed": true
+    },
+    {
+      "suite": "drencher-api",
+      "name": "Correction après validation différentielle",
+      "passed": true
+    },
+    {
+      "suite": "drencher-api",
+      "name": "Historique correction auteur motif anciennes valeurs",
+      "passed": true
+    },
+    {
+      "suite": "drencher-api",
+      "name": "Archive V1.3.1 sans SQL011 consultable",
+      "passed": true
+    },
+    {
+      "suite": "drencher-api",
+      "name": "Archive sans extension : F04 historique consultable",
+      "passed": true
+    },
+    {
+      "suite": "drencher-api",
+      "name": "Consultation écriture refusée",
+      "passed": true
+    },
+    {
+      "suite": "drencher-api",
+      "name": "Archive écriture refusée",
+      "passed": true
+    },
+    {
+      "suite": "drencher-api",
+      "name": "Stock insuffisant 409",
+      "passed": true
+    },
+    {
+      "suite": "drencher-api",
+      "name": "Rollback multi-produits : solde état mouvements inchangés",
+      "passed": true
+    },
+    {
+      "suite": "drencher-api",
+      "name": "Migration additive sur données : aucun solde ni cycle modifié",
+      "passed": true
+    },
+    {
+      "suite": "drencher-api",
+      "name": "Produit modifié sans rétroactivité snapshot",
+      "passed": true
+    },
+    {
+      "suite": "drencher-api",
+      "name": "PDF reel authentifié sans cache",
+      "passed": true
+    },
+    {
+      "suite": "drencher-api",
+      "name": "PDF theorique authentifié sans cache",
+      "passed": true
+    },
+    {
+      "suite": "drencher-api",
+      "name": "PDF machine authentifié sans cache",
+      "passed": true
+    },
+    {
+      "suite": "drencher-api",
+      "name": "PDF trois modes strictement sans mutation",
+      "passed": true
+    },
+    {
+      "suite": "drencher-api",
+      "name": "Mode arbitraire refusé",
+      "passed": true
+    },
+    {
+      "suite": "drencher-api",
+      "name": "Produit masqué conservé dans rapports internes",
+      "passed": true
+    },
+    {
+      "suite": "drencher-api",
+      "name": "Document stock stock cohérent et sans erreur",
+      "passed": true
+    },
+    {
+      "suite": "drencher-api",
+      "name": "Document stock fiche cohérent et sans erreur",
+      "passed": true
+    },
+    {
+      "suite": "drencher-api",
+      "name": "Document stock entrees cohérent et sans erreur",
+      "passed": true
+    },
+    {
+      "suite": "drencher-api",
+      "name": "Document stock consommations cohérent et sans erreur",
+      "passed": true
+    },
+    {
+      "suite": "drencher-api",
+      "name": "Document stock mouvements cohérent et sans erreur",
+      "passed": true
+    },
+    {
+      "suite": "drencher-api",
+      "name": "Consommations incluent cycles soumis",
+      "passed": true
+    },
+    {
+      "suite": "drencher-api",
+      "name": "Confirmation suppression obligatoire",
+      "passed": true
+    },
+    {
+      "suite": "drencher-api",
+      "name": "Motif suppression obligatoire",
+      "passed": true
+    },
+    {
+      "suite": "drencher-api",
+      "name": "Suppression soumis restitution exacte",
+      "passed": true
+    },
+    {
+      "suite": "drencher-api",
+      "name": "Palettes soumis libérées",
+      "passed": true
+    },
+    {
+      "suite": "drencher-api",
+      "name": "Suppression répétée 409 sans restitution supplémentaire",
+      "passed": true
+    },
+    {
+      "suite": "drencher-api",
+      "name": "Suppression brouillon sans mouvements",
+      "passed": true
+    },
+    {
+      "suite": "drencher-api",
+      "name": "Suppression validé restitution exacte des corrections",
+      "passed": true
+    },
+    {
+      "suite": "drencher-api",
+      "name": "Réservations et validations libérées",
+      "passed": true
+    },
+    {
+      "suite": "drencher-api",
+      "name": "Révisions antérieures conservées",
+      "passed": true
+    },
+    {
+      "suite": "drencher-api",
+      "name": "Audit suppression motif acteur snapshot conservés",
+      "passed": true
+    },
+    {
+      "suite": "drencher-api",
+      "name": "Cycles supprimés exclus opérationnel",
+      "passed": true
+    },
+    {
+      "suite": "drencher-api",
+      "name": "Historique admin contient trois suppressions",
+      "passed": true
+    },
+    {
+      "suite": "drencher-api",
+      "name": "Historique admin interdit Consultation",
+      "passed": true
+    },
+    {
+      "suite": "drencher-api",
+      "name": "Cycle supprimé consultation non admin refusée",
+      "passed": true
+    },
+    {
+      "suite": "drencher-api",
+      "name": "F04 supprimé archive clairement identifié",
+      "passed": true
+    },
+    {
+      "suite": "drencher-api",
+      "name": "Hicham ne modifie pas brouillon d’un autre auteur",
+      "passed": true
+    },
+    {
+      "suite": "drencher-api",
+      "name": "Hicham ne soumet pas brouillon d’un autre auteur",
+      "passed": true
+    },
+    {
+      "suite": "drencher-api",
+      "name": "Brouillon d’autrui : bouton de modification fermé",
+      "passed": true
+    },
+    {
+      "suite": "drencher-api",
+      "name": "Samira correction et validation réelles, stock différentiel",
+      "passed": true
+    },
+    {
+      "suite": "drencher-api",
+      "name": "Samira ne supprime pas administrativement",
+      "passed": true
+    },
+    {
+      "suite": "drencher-api",
+      "name": "Mbark ne supprime pas administrativement",
+      "passed": true
+    },
+    {
+      "suite": "drencher-api",
+      "name": "État programme opérateur interdit",
+      "passed": true
+    },
+    {
+      "suite": "drencher-api",
+      "name": "Désactivation confirmation obligatoire",
+      "passed": true
+    },
+    {
+      "suite": "drencher-api",
+      "name": "Programme inactif bloque nouveau cycle",
+      "passed": true
+    },
+    {
+      "suite": "drencher-api",
+      "name": "Version historique programme conservée",
+      "passed": true
+    },
+    {
+      "suite": "drencher-api",
+      "name": "Réactivation nouvelle version",
+      "passed": true
+    },
+    {
+      "suite": "drencher-api",
+      "name": "Transition historique soumis sans débit : une consommation à validation",
+      "passed": true
+    },
+    {
+      "suite": "drencher-api",
+      "name": "Transition historique validé : correction uniquement différence",
+      "passed": true
+    },
+    {
+      "suite": "drencher-api",
+      "name": "Legacy suppression restaure seulement net comptabilisé",
+      "passed": true
+    },
+    {
+      "suite": "drencher-api",
+      "name": "Journal incohérent bloque suppression sans réparer implicitement",
+      "passed": true
+    },
+    {
+      "suite": "drencher-api",
+      "name": "Toutes tables historiques inchangées",
+      "passed": true
+    },
+    {
+      "suite": "drencher-api",
+      "name": "Solde physique égale cumul ledger",
+      "passed": true
+    },
+    {
+      "suite": "drencher-guard",
+      "name": "Hicham seul droit saisie crée son brouillon réel",
+      "passed": true
+    },
+    {
+      "suite": "drencher-guard",
+      "name": "Hicham modifie son brouillon en API",
+      "passed": true
+    },
+    {
+      "suite": "drencher-guard",
+      "name": "Édition de son brouillon visible",
+      "passed": true
+    },
+    {
+      "suite": "drencher-guard",
+      "name": "Brouillon autre auteur modification refusée",
+      "passed": true
+    },
+    {
+      "suite": "drencher-guard",
+      "name": "Brouillon autre auteur soumission refusée",
+      "passed": true
+    },
+    {
+      "suite": "drencher-guard",
+      "name": "Propriétaire peut soumettre son brouillon",
+      "passed": true
+    },
+    {
+      "suite": "drencher-guard",
+      "name": "Après soumission son propre brouillon est verrouillé",
+      "passed": true
+    },
+    {
+      "suite": "drencher-guard",
+      "name": "Aucune écriture sur stock pour consommations réelles zéro",
+      "passed": true
+    },
+    {
+      "suite": "drencher-guard",
+      "name": "Ajouter absent : création POST refusée",
+      "passed": true
+    },
+    {
+      "suite": "drencher-guard",
+      "name": "PUT cycles/0 ne contourne pas Ajouter",
+      "passed": true
+    },
+    {
+      "suite": "drencher-guard",
+      "name": "PUT cycle négatif refusé",
+      "passed": true
+    },
+    {
+      "suite": "drencher-guard",
+      "name": "Aucun cycle créé par contournement",
+      "passed": true
+    }
+  ]
+}

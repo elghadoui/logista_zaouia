@@ -1,0 +1,12 @@
+-- V1.3 pilote : aucune migration obligatoire, aucune instruction active.
+-- Propositions à étudier par le DBA sur copie avec EXPLAIN et volumétrie réelle.
+-- Vérifier d'abord les index déjà présents pour éviter doublons et surcoûts.
+-- Ne pas appliquer automatiquement ni modifier les archives.
+-- Les filtres de période utilisent >= début et < lendemain de fin.
+-- reception dispose déjà de idx_dterec_refver dans le dump ; le conserver.
+-- Si les scans de périodes deviennent coûteux, considérer séparément :
+-- CREATE INDEX idx_v13_caisserie_dtecai ON caisserie(dtecai);
+-- CREATE INDEX idx_v13_versement_datver ON versement(datver);
+-- CREATE INDEX idx_v13_dossier_dtedep ON dossier(dtedep);
+-- CREATE INDEX idx_v13_ecart_e_dtepal ON ecart_e(dtepal);
+-- Aucun changement de PK, moteur, données, droits ou referentiels_admin proposé.

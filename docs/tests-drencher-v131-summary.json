@@ -1,0 +1,56 @@
+{
+  "version": "VITASOUSS V1.4.1 + Drencher V1.3.1",
+  "assemblySha256": "05992E3FA7D38C375C815551C65FFC3C33C2743CE54198DAD39D3FA65DE19736",
+  "passed": 58,
+  "failed": 0,
+  "mysqlWrites": 0,
+  "productionAccess": false,
+  "productionDeploy": false,
+  "approvedExamples": {
+    "F04-V06-V1.3.1-SIMPLE.pdf": "BEB5ACCA7D349B4A3A6AD201CD7DFF0B312FEBB7A0BB2265D94183320FE81C87",
+    "F04-V06-V1.3.1-COMPLEXE.pdf": "EE3999560B830423FA72DE374785B1BC349BD231305368022BE403BBE7EC4E6C"
+  },
+  "validatedLayoutPreserved": true,
+  "frontendUnchanged": true,
+  "suites": [
+    {
+      "name": "layout",
+      "passed": 5
+    },
+    {
+      "name": "visual",
+      "passed": 48
+    },
+    {
+      "name": "stock-final",
+      "passed": 5
+    }
+  ],
+  "results": [
+    {
+      "name": "État stock identique pixel par pixel à V1.3",
+      "passed": true,
+      "pages": 1
+    },
+    {
+      "name": "État fiche identique pixel par pixel à V1.3",
+      "passed": true,
+      "pages": 1
+    },
+    {
+      "name": "État entrees identique pixel par pixel à V1.3",
+      "passed": true,
+      "pages": 1
+    },
+    {
+      "name": "État consommations identique pixel par pixel à V1.3",
+      "passed": true,
+      "pages": 1
+    },
+    {
+      "name": "État mouvements identique pixel par pixel à V1.3",
+      "passed": true,
+      "pages": 1
+    }
+  ]
+}

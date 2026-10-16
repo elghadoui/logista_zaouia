@@ -1,0 +1,71 @@
+{
+  "date": "2026-10-07T23:16:59.898Z",
+  "version": "1.4.1",
+  "passed": 415,
+  "failed": 0,
+  "realOpenAiCalls": 0,
+  "visualBrowserStatus": "Non validé : accès navigateur local refusé par préférence enregistrée",
+  "assemblySha256": "9DAB83A69744C3417C14764EB0AABE24D7D1CE208CACB2104765586A22FE1E5E",
+  "suites": [
+    {
+      "title": "Métier et synchronisation",
+      "file": "api-verification-v141.json",
+      "passed": 141,
+      "date": "2026-10-07T23:08:02.341Z"
+    },
+    {
+      "title": "Frontend : contrat, rendu React serveur, navigation",
+      "file": "frontend-verification-v141.json",
+      "passed": 26,
+      "date": "2026-10-07T22:48:36.201Z"
+    },
+    {
+      "title": "Opérations, relations, absence de cascade et inspection",
+      "file": "boards-verification-v141.json",
+      "passed": 16,
+      "date": "2026-10-07T23:03:57.770Z"
+    },
+    {
+      "title": "Assistant provider et outils locaux",
+      "file": "assistant-verification-v141.json",
+      "passed": 46,
+      "date": "2026-10-07T23:15:21.8130729Z"
+    },
+    {
+      "title": "Assistant HTTP et fichiers statiques",
+      "file": "assistant-http-verification-v141.json",
+      "passed": 14,
+      "date": "2026-10-07T23:16:59.683Z"
+    },
+    {
+      "title": "CRUD historiques, sécurité, sessions",
+      "file": "core-verification-v141.json",
+      "passed": 27,
+      "date": null
+    },
+    {
+      "title": "Présentations et relations historiques",
+      "file": "presentation-verification-v141.json",
+      "passed": 24,
+      "date": "2026-10-07T22:40:58.419Z"
+    },
+    {
+      "title": "Transferts et suppressions historiques",
+      "file": "operations-core-verification-v141.json",
+      "passed": 46,
+      "date": "2026-10-07T23:13:10.059Z"
+    },
+    {
+      "title": "Réceptions et suppressions par lots",
+      "file": "receipt-protection-verification-v141.json",
+      "passed": 50,
+      "date": "2026-10-07T23:14:09.114Z"
+    },
+    {
+      "title": "Comparaison et exports historiques",
+      "file": "comparison-core-verification-v141.json",
+      "passed": 25,
+      "date": "2026-10-07T22:46:41.750Z"
+    }
+  ]
+}

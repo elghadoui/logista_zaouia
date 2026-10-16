@@ -1,0 +1,46 @@
+import assert from 'node:assert/strict';
+import {readFileSync,writeFileSync,mkdirSync,rmSync} from 'node:fs';
+import path from 'node:path';
+import {createRequire} from 'node:module';
+import {createHash} from 'node:crypto';
+const require=createRequire(path.resolve('frontend/package.json'));const {build}=require('esbuild'),React=require('react'),{renderToStaticMarkup}=require('react-dom/server'),{MantineProvider}=require('@mantine/core');
+const dir=path.resolve('frontend/.test-drencher-v11');mkdirSync(dir,{recursive:true});writeFileSync(path.join(dir,'package.json'),'{"type":"commonjs"}');
+const results=[];function check(name,yes){assert.ok(yes,name);results.push({name,passed:true});console.log('PASS '+name);}
+await build({entryPoints:['frontend/src/DrencherProducts.tsx','frontend/src/DrencherPrograms.tsx','frontend/src/DrencherStock.tsx','frontend/src/DrencherRecette.tsx','frontend/src/DrencherPrint.tsx','frontend/src/DrencherManagement.tsx'],bundle:true,platform:'node',format:'cjs',outdir:dir,external:['react','react-dom','@mantine/core','@mantine/hooks','@mantine/notifications'],loader:{'.css':'empty'}});
+const components=Object.fromEntries(['DrencherProducts','DrencherPrograms','DrencherStock','DrencherRecette','DrencherPrint','DrencherManagement'].map(n=>[n,require(path.join(dir,n+'.js'))[n]]));
+const render=(n,props)=>renderToStaticMarkup(React.createElement(MantineProvider,null,React.createElement(components[n],props)));
+try {
+ const catalog={produits:[{id:1,reference:'REC-A',nom:'Produit alpha',unite:'L',actif:true},{id:2,reference:'REC-B',nom:'Produit beta',unite:'kg',actif:false}],programmes:[{id:1,version:2,nom:'Programme alpha',actif:true,produits:[{produitId:1,dose:2.5}]},{id:2,version:3,nom:'Programme beta',actif:false,produits:[{produitId:2,dose:1}]}],lots:[{id:1,produitId:1,nom:'Produit alpha',unite:'L',lot:'FAB-1',peremption:null,solde:2},{id:2,produitId:1,nom:'Produit alpha',unite:'L',lot:'FAB-2',peremption:'2020-01-01',solde:3}],unitePoids:'kg'};
+ const props={path:'/test',catalog,canAdd:true,canModify:true,refresh:()=>{}};
+ const preservedTab=render('DrencherManagement',{...props,activeTab:'programs',onTabChange:()=>{}});
+ check('Onglet Programmes conservé lors du remontage après enregistrement',/aria-selected="true"[^>]*id="[^"]*tab-programs"/.test(preservedTab)||/id="[^"]*tab-programs"[^>]*aria-selected="true"/.test(preservedTab));
+ let html=render('DrencherProducts',props);
+ check('Tableau produits avec références, noms, unités et statuts',html.includes('REC-A')&&html.includes('Produit alpha')&&html.includes('REC-B')&&html.includes('Inactif')&&html.includes('Unité'));
+ check('Recherche et filtre produit accessibles',html.includes('Recherche par référence ou nom')&&html.includes('Statut du produit'));
+ check('Actions produit ajouter, modifier, désactiver et réactiver',html.includes('Ajouter un produit')&&html.includes('Modifier')&&html.includes('Désactiver')&&html.includes('Réactiver'));
+ check('Actions produit désactivées sans autorisation',render('DrencherProducts',{...props,canAdd:false,canModify:false}).includes('disabled'));
+ check('Liste vide produits affiche un message utile',render('DrencherProducts',{...props,catalog:{...catalog,produits:[]}}).includes('Aucun produit ne correspond'));
+ html=render('DrencherPrograms',props);
+ check('Tableau programmes affiche nom, version et statut',html.includes('Programme alpha')&&html.includes('Programme beta')&&html.includes('v2')&&html.includes('v3')&&html.includes('Inactif'));
+ check('Consultation des versions et modification disponibles',html.includes('Consulter les versions')&&html.includes('Modifier')&&html.includes('Ajouter un programme'));
+ check('Recherche et filtre programme accessibles',html.includes('Rechercher un programme')&&html.includes('Statut du programme'));
+ check('Liste vide programmes affiche un message utile',render('DrencherPrograms',{...props,catalog:{...catalog,programmes:[]}}).includes('Aucun programme ne correspond'));
+ html=render('DrencherStock',props);
+ check('Stock agrégé par produit conserve les unités',html.includes('REC-A')&&html.includes('Produit alpha')&&html.includes('5 L'));
+ check('Lots fabricants et dates séparés des stocks produits',html.includes('Détail des lots fabricants')&&html.includes('FAB-1')&&html.includes('FAB-2')&&html.includes('Périmé'));
+ check('Recherche, disponibilité et filtre mouvements accessibles',html.includes('Rechercher produit')&&html.includes('Disponibilité')&&html.includes('Filtrer la nature des mouvements'));
+ check('Réception est une action claire',html.includes('Réceptionner des produits')&&html.includes('Réceptions et mouvements'));
+ check('Réception non autorisée désactivée',render('DrencherStock',{...props,canAdd:false}).includes('disabled'));
+ const production={mode:'Production',registered:false,eligible:false,installation:true};html=render('DrencherRecette',{path:'/test',mode:production,refresh:()=>{}});
+ check('Production annonce suppressions désactivées',html.includes('suppressions sont désactivées')&&html.includes('logista')&&!html.includes('Voir l&#x27;aperçu de suppression'));
+ const recette={mode:'Recette',registered:true,eligible:false,installation:true};html=render('DrencherRecette',{path:'/test',mode:recette,refresh:()=>{}});
+ check('Recette propose nettoyage individuel et remises à zéro distinctes',html.includes('Supprimer un cycle de test')&&html.includes('Réinitialiser cycles et stock')&&html.includes('Tout réinitialiser'));
+ check('Recette annonce conservation des traces administratives',html.includes('Historique des nettoyages')&&html.includes('identifiants ne sont jamais réattribués'));
+ check('Base isolée exige activation explicite',render('DrencherRecette',{path:'/test',mode:{...production,eligible:true},refresh:()=>{}}).includes('Saisir ACTIVER RECETTE'));
+ const snap={date:'2026-10-08',debut:'08:00',fin:'09:00',programmeId:1,programmeVersion:1,programmeNom:'DEMO',eauInitiale:1200,eauConsommee:1000,unitePoids:'kg',palettes:[{numpal:1,numrec:1,codvar:104,variete:'DEMO',refver:101,verger:'DEMO',refadh:1,adherent:'DEMO',poids:500,cycleTraite:null}],produits:[],observations:''};const detail={id:1,version:1,statut:'Brouillon',auteur:'DEMO',dateCreation:'2026-10-08',validateur:null,dateValidation:null,revisions:[{version:1,action:'Enregistrement',motif:'',auteur:'DEMO',dateCreation:'2026-10-08',snapshot:snap}]};
+ check('Poids kg converti en tonnage dans impression existante',render('DrencherPrint',{detail}).includes('0,5 t'));
+ check('Ancien cycle sans unité garde avertissement sans rétroactivité',render('DrencherPrint',{detail:{...detail,revisions:[{...detail.revisions[0],snapshot:{...snap,unitePoids:''}}]}}).includes('unité/poids à confirmer'));
+ const hash=p=>createHash('sha256').update(readFileSync(p)).digest('hex');check('Nouveau cycle strictement inchangé',hash('frontend/src/DrencherEditor.tsx')===hash('versions/Drencher-V1/frontend/src/DrencherEditor.tsx'));
+ check('Impression existante inchangée',hash('frontend/src/DrencherPrint.tsx')===hash('versions/Drencher-V1/frontend/src/DrencherPrint.tsx'));
+ writeFileSync('docs/tests-drencher-v11-frontend.json',JSON.stringify({date:new Date().toISOString(),passed:results.length,failed:0,scope:'Rendu réel React/Mantine serveur ; pas de capture ni interaction navigateur.',results},null,2));
+}finally{if(!dir.startsWith(path.resolve('frontend')+path.sep)||path.basename(dir)!=='.test-drencher-v11')throw Error('Nettoyage hors test refusé');rmSync(dir,{recursive:true,force:true});}

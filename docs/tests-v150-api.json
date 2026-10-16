@@ -1,0 +1,105 @@
+{
+  "date": "2026-10-15T19:27:36.838Z",
+  "passed": 24,
+  "failed": 0,
+  "success": true,
+  "productionAccess": false,
+  "results": [
+    {
+      "name": "Version HTTP V1.5.0 et Drencher 1.3.2.1",
+      "passed": true
+    },
+    {
+      "name": "Accès anonyme refusé",
+      "passed": true
+    },
+    {
+      "name": "Module absent refusé",
+      "passed": true
+    },
+    {
+      "name": "Consultation avec filtres par défaut",
+      "passed": true
+    },
+    {
+      "name": "Autre station non autorisée refusée",
+      "passed": true
+    },
+    {
+      "name": "Archive non autorisée refusée",
+      "passed": true
+    },
+    {
+      "name": "Caisserie sans permission refusée",
+      "passed": true
+    },
+    {
+      "name": "Export sans droit module refusé",
+      "passed": true
+    },
+    {
+      "name": "HTTP consolidation 5,5 tonnes, trois lots sans collision",
+      "passed": true
+    },
+    {
+      "name": "HTTP comparaison quatre contextes autorisés",
+      "passed": true
+    },
+    {
+      "name": "HTTP source indisponible : total global NULL et alerte",
+      "passed": true
+    },
+    {
+      "name": "Paramètre SQL libre refusé",
+      "passed": true
+    },
+    {
+      "name": "Tri arbitraire refusé",
+      "passed": true
+    },
+    {
+      "name": "Paramètres répétés refusés",
+      "passed": true
+    },
+    {
+      "name": "Page négative refusée",
+      "passed": true
+    },
+    {
+      "name": "Date invalide refusée",
+      "passed": true
+    },
+    {
+      "name": "Recherche malveillante reste paramétrée",
+      "passed": true
+    },
+    {
+      "name": "Aucune mutation analytique POST",
+      "passed": true
+    },
+    {
+      "name": "Aucune mutation analytique PUT",
+      "passed": true
+    },
+    {
+      "name": "Aucune mutation analytique DELETE",
+      "passed": true
+    },
+    {
+      "name": "Export HTTP Excel valide, noms et type de contenu",
+      "passed": true
+    },
+    {
+      "name": "HTTP caisserie filtrée : 213 mouvements E",
+      "passed": true
+    },
+    {
+      "name": "HTTP audit officiel 1809,096 tonnes",
+      "passed": true
+    },
+    {
+      "name": "Empreintes métier inchangées après toutes lectures/exports",
+      "passed": true
+    }
+  ]
+}

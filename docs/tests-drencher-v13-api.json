@@ -1,0 +1,172 @@
+{
+  "date": "2026-10-09T14:55:03.664Z",
+  "host": "127.0.0.1",
+  "port": 33307,
+  "productionAccess": false,
+  "db": "vitasouss_recette_drencher_412ad848c6654b5e849ed7f51bcf2cca",
+  "contextId": 126,
+  "passed": 40,
+  "failed": 0,
+  "results": [
+    {
+      "name": "F04 mono réception en Recette non validé",
+      "passed": true
+    },
+    {
+      "name": "Quatre quantités et écarts déclarés",
+      "passed": true
+    },
+    {
+      "name": "Matières actives jamais importées du modèle",
+      "passed": true
+    },
+    {
+      "name": "Lot périmé et produit supplémentaire visibles",
+      "passed": true
+    },
+    {
+      "name": "PDF authentifié f04",
+      "passed": true
+    },
+    {
+      "name": "F04 multi réception, variétés, produits et palettes",
+      "passed": true
+    },
+    {
+      "name": "Conversion exacte poids kg et tonnage",
+      "passed": true
+    },
+    {
+      "name": "Poids et libellés absents historiques sans valeurs inventées",
+      "passed": true
+    },
+    {
+      "name": "Cycle validé historique indépendant du programme actuel",
+      "passed": true
+    },
+    {
+      "name": "Ouverture reconstruite depuis mouvements antérieurs",
+      "passed": true
+    },
+    {
+      "name": "Correction restitution puis remplacement dans journal brut",
+      "passed": true
+    },
+    {
+      "name": "Solde final imprimé égale MySQL",
+      "passed": true
+    },
+    {
+      "name": "Consommations nettes sans double compte des anciennes versions",
+      "passed": true
+    },
+    {
+      "name": "Les quatre unités restent distinctes",
+      "passed": true
+    },
+    {
+      "name": "Stock nul produit sans mouvement inclus",
+      "passed": true
+    },
+    {
+      "name": "Écart stock journal signalé sans réparation implicite",
+      "passed": true
+    },
+    {
+      "name": "Péremption réelle et unité du lot",
+      "passed": true
+    },
+    {
+      "name": "Journal entrées date réception, bon, auteur",
+      "passed": true
+    },
+    {
+      "name": "Période sans mouvements préserve ouverture et clôture",
+      "passed": true
+    },
+    {
+      "name": "Fiche produit sans mouvement garde zéro",
+      "passed": true
+    },
+    {
+      "name": "Filtre nature ne fausse pas le solde",
+      "passed": true
+    },
+    {
+      "name": "Filtre lot limité au bon produit",
+      "passed": true
+    },
+    {
+      "name": "Produit obligatoire pour fiche",
+      "passed": true
+    },
+    {
+      "name": "Période inversée refusée",
+      "passed": true
+    },
+    {
+      "name": "Injection et type de rapport arbitraire refusés",
+      "passed": true
+    },
+    {
+      "name": "Cycle absent refusé",
+      "passed": true
+    },
+    {
+      "name": "Historique révision validée remplacée identifié",
+      "passed": true
+    },
+    {
+      "name": "PDF authentifié stock",
+      "passed": true
+    },
+    {
+      "name": "PDF authentifié fiche",
+      "passed": true
+    },
+    {
+      "name": "PDF authentifié entrees",
+      "passed": true
+    },
+    {
+      "name": "PDF authentifié consommations",
+      "passed": true
+    },
+    {
+      "name": "PDF authentifié mouvements",
+      "passed": true
+    },
+    {
+      "name": "Tous les rapports strictement sans mutation",
+      "passed": true
+    },
+    {
+      "name": "Contexte non Recette distingué sans accéder à logista",
+      "passed": true
+    },
+    {
+      "name": "Lecture Consultation autorisée dans contexte attribué",
+      "passed": true
+    },
+    {
+      "name": "Exercice non attribué et Recette réservée Admin",
+      "passed": true
+    },
+    {
+      "name": "Permission module retirée bloque PDF",
+      "passed": true
+    },
+    {
+      "name": "PDF anonyme refusé",
+      "passed": true
+    },
+    {
+      "name": "Aucun POST de génération ou de mutation PDF",
+      "passed": true
+    },
+    {
+      "name": "Rapports ne modifient ni cycles ni données historiques",
+      "passed": true
+    }
+  ]
+}

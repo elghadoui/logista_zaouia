@@ -1,0 +1,13 @@
+{
+  "date": "2026-10-09T16:11:56.5655995Z",
+  "assemblySha256": "05992E3FA7D38C375C815551C65FFC3C33C2743CE54198DAD39D3FA65DE19736",
+  "mysqlWrites": 0,
+  "productionAccess": false,
+  "documents": [
+    "stock",
+    "fiche",
+    "entrees",
+    "consommations",
+    "mouvements"
+  ]
+}

@@ -1,0 +1,384 @@
+[
+  {
+    "label": "nomgrv",
+    "name": "grpvar",
+    "keys": [
+      "codgrv"
+    ],
+    "ddl": "CREATE TABLE IF NOT EXISTS `grpvar` (\r\n  `codgrv` smallint(6) NOT NULL DEFAULT '0',\r\n  `nomgrv` char(25) DEFAULT NULL,\r\n  `lier` char(1) DEFAULT '1',\r\n  PRIMARY KEY (`codgrv`)\r\n) ENGINE=InnoDB DEFAULT CHARSET=latin1;",
+    "columns": [
+      {
+        "name": "codgrv",
+        "definition": "smallint(6) NOT NULL DEFAULT '0'"
+      },
+      {
+        "name": "nomgrv",
+        "definition": "char(25) DEFAULT NULL"
+      },
+      {
+        "name": "lier",
+        "definition": "char(1) DEFAULT '1'"
+      }
+    ]
+  },
+  {
+    "label": "nomadh",
+    "name": "adherent",
+    "keys": [
+      "refadh"
+    ],
+    "ddl": "CREATE TABLE IF NOT EXISTS `adherent` (\r\n  `refadh` smallint(6) NOT NULL DEFAULT '0',\r\n  `nomadh` varchar(100) DEFAULT NULL,\r\n  `cinadh` char(50) DEFAULT NULL,\r\n  `adradh` char(250) DEFAULT NULL,\r\n  `viladh` char(200) DEFAULT NULL,\r\n  `teladh` char(50) DEFAULT NULL,\r\n  `faxadh` char(50) DEFAULT NULL,\r\n  `lier` char(1) NOT NULL DEFAULT '',\r\n  `certif` varchar(30) DEFAULT '',\r\n  `Type` varchar(50) DEFAULT NULL,\r\n  `nompro` varchar(100) DEFAULT '',\r\n  `txtref` varchar(50) DEFAULT NULL,\r\n  PRIMARY KEY (`refadh`),\r\n  KEY `idx_refadh` (`refadh`)\r\n) ENGINE=InnoDB DEFAULT CHARSET=latin1;",
+    "columns": [
+      {
+        "name": "refadh",
+        "definition": "smallint(6) NOT NULL DEFAULT '0'"
+      },
+      {
+        "name": "nomadh",
+        "definition": "varchar(100) DEFAULT NULL"
+      },
+      {
+        "name": "cinadh",
+        "definition": "char(50) DEFAULT NULL"
+      },
+      {
+        "name": "adradh",
+        "definition": "char(250) DEFAULT NULL"
+      },
+      {
+        "name": "viladh",
+        "definition": "char(200) DEFAULT NULL"
+      },
+      {
+        "name": "teladh",
+        "definition": "char(50) DEFAULT NULL"
+      },
+      {
+        "name": "faxadh",
+        "definition": "char(50) DEFAULT NULL"
+      },
+      {
+        "name": "lier",
+        "definition": "char(1) NOT NULL DEFAULT ''"
+      },
+      {
+        "name": "certif",
+        "definition": "varchar(30) DEFAULT ''"
+      },
+      {
+        "name": "Type",
+        "definition": "varchar(50) DEFAULT NULL"
+      },
+      {
+        "name": "nompro",
+        "definition": "varchar(100) DEFAULT ''"
+      },
+      {
+        "name": "txtref",
+        "definition": "varchar(50) DEFAULT NULL"
+      }
+    ]
+  },
+  {
+    "label": "nomvar",
+    "name": "variete",
+    "keys": [
+      "codvar"
+    ],
+    "ddl": "CREATE TABLE IF NOT EXISTS `variete` (\r\n  `codvar` int(11) NOT NULL DEFAULT '0',\r\n  `nomvar` char(40) DEFAULT NULL,\r\n  `codgrv` smallint(6) DEFAULT NULL,\r\n  `codcul` smallint(6) DEFAULT NULL,\r\n  `lier` char(1) NOT NULL DEFAULT '1',\r\n  `nomimp` varchar(50) DEFAULT NULL,\r\n  `catII` int(11) DEFAULT '0',\r\n  `prixmoy` decimal(10,2) DEFAULT '1.00',\r\n  PRIMARY KEY (`codvar`),\r\n  KEY `idx_variete_codvar` (`codvar`),\r\n  KEY `idx_codvar` (`codvar`)\r\n) ENGINE=InnoDB DEFAULT CHARSET=latin1;",
+    "columns": [
+      {
+        "name": "codvar",
+        "definition": "int(11) NOT NULL DEFAULT '0'"
+      },
+      {
+        "name": "nomvar",
+        "definition": "char(40) DEFAULT NULL"
+      },
+      {
+        "name": "codgrv",
+        "definition": "smallint(6) DEFAULT NULL"
+      },
+      {
+        "name": "codcul",
+        "definition": "smallint(6) DEFAULT NULL"
+      },
+      {
+        "name": "lier",
+        "definition": "char(1) NOT NULL DEFAULT '1'"
+      },
+      {
+        "name": "nomimp",
+        "definition": "varchar(50) DEFAULT NULL"
+      },
+      {
+        "name": "catII",
+        "definition": "int(11) DEFAULT '0'"
+      },
+      {
+        "name": "prixmoy",
+        "definition": "decimal(10,2) DEFAULT '1.00'"
+      }
+    ]
+  },
+  {
+    "label": "refpar",
+    "name": "parcelle",
+    "keys": [
+      "idparcelle",
+      "refpar",
+      "numcul",
+      "refver"
+    ],
+    "ddl": "CREATE TABLE IF NOT EXISTS `parcelle` (\r\n  `refpar` char(10) NOT NULL DEFAULT '0',\r\n  `numcul` smallint(6) NOT NULL DEFAULT '0',\r\n  `refver` int(11) NOT NULL DEFAULT '0',\r\n  `codvar` smallint(6) DEFAULT NULL,\r\n  `suppar` decimal(8,4) DEFAULT NULL,\r\n  `nbrarb` int(10) unsigned DEFAULT NULL,\r\n  `ecarte` decimal(6,2) DEFAULT NULL,\r\n  `espace` decimal(6,2) DEFAULT NULL,\r\n  `irriga` char(15) DEFAULT NULL,\r\n  `portgref` varchar(250) DEFAULT NULL,\r\n  `dtepln` date DEFAULT NULL,\r\n  `dtearr` date DEFAULT NULL,\r\n  `traite` char(3) DEFAULT NULL,\r\n  `certif` char(10) DEFAULT NULL,\r\n  `lier` char(1) NOT NULL DEFAULT '',\r\n  `codsvar` smallint(6) DEFAULT NULL,\r\n  `idparcelle` int(11) NOT NULL AUTO_INCREMENT,\r\n  `latitude` varchar(50) DEFAULT '0',\r\n  `longitude` varchar(50) DEFAULT '0',\r\n  `codvar2` int(11) DEFAULT '0',\r\n  `souvar2` int(11) DEFAULT '0',\r\n  `couverture` char(50) DEFAULT 'N',\r\n  `typefilet` varchar(50) DEFAULT '0',\r\n  `estimation` double DEFAULT '0',\r\n  `UpdatedAt` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,\r\n  PRIMARY KEY (`idparcelle`,`refpar`,`numcul`,`refver`) USING BTREE,\r\n  KEY `idx_refver_refpar_numcul` (`refver`,`refpar`,`numcul`),\r\n  KEY `idx_codsvar` (`codsvar`)\r\n) ENGINE=InnoDB AUTO_INCREMENT=1025 DEFAULT CHARSET=latin1;",
+    "columns": [
+      {
+        "name": "refpar",
+        "definition": "char(10) NOT NULL DEFAULT '0'"
+      },
+      {
+        "name": "numcul",
+        "definition": "smallint(6) NOT NULL DEFAULT '0'"
+      },
+      {
+        "name": "refver",
+        "definition": "int(11) NOT NULL DEFAULT '0'"
+      },
+      {
+        "name": "codvar",
+        "definition": "smallint(6) DEFAULT NULL"
+      },
+      {
+        "name": "suppar",
+        "definition": "decimal(8,4) DEFAULT NULL"
+      },
+      {
+        "name": "nbrarb",
+        "definition": "int(10) unsigned DEFAULT NULL"
+      },
+      {
+        "name": "ecarte",
+        "definition": "decimal(6,2) DEFAULT NULL"
+      },
+      {
+        "name": "espace",
+        "definition": "decimal(6,2) DEFAULT NULL"
+      },
+      {
+        "name": "irriga",
+        "definition": "char(15) DEFAULT NULL"
+      },
+      {
+        "name": "portgref",
+        "definition": "varchar(250) DEFAULT NULL"
+      },
+      {
+        "name": "dtepln",
+        "definition": "date DEFAULT NULL"
+      },
+      {
+        "name": "dtearr",
+        "definition": "date DEFAULT NULL"
+      },
+      {
+        "name": "traite",
+        "definition": "char(3) DEFAULT NULL"
+      },
+      {
+        "name": "certif",
+        "definition": "char(10) DEFAULT NULL"
+      },
+      {
+        "name": "lier",
+        "definition": "char(1) NOT NULL DEFAULT ''"
+      },
+      {
+        "name": "codsvar",
+        "definition": "smallint(6) DEFAULT NULL"
+      },
+      {
+        "name": "idparcelle",
+        "definition": "int(11) NOT NULL AUTO_INCREMENT"
+      },
+      {
+        "name": "latitude",
+        "definition": "varchar(50) DEFAULT '0'"
+      },
+      {
+        "name": "longitude",
+        "definition": "varchar(50) DEFAULT '0'"
+      },
+      {
+        "name": "codvar2",
+        "definition": "int(11) DEFAULT '0'"
+      },
+      {
+        "name": "souvar2",
+        "definition": "int(11) DEFAULT '0'"
+      },
+      {
+        "name": "couverture",
+        "definition": "char(50) DEFAULT 'N'"
+      },
+      {
+        "name": "typefilet",
+        "definition": "varchar(50) DEFAULT '0'"
+      },
+      {
+        "name": "estimation",
+        "definition": "double DEFAULT '0'"
+      },
+      {
+        "name": "UpdatedAt",
+        "definition": "timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP"
+      }
+    ]
+  },
+  {
+    "label": "nomsvar",
+    "name": "souvar",
+    "keys": [
+      "codsvar",
+      "codvar"
+    ],
+    "ddl": "CREATE TABLE IF NOT EXISTS `souvar` (\r\n  `codsvar` int(10) unsigned DEFAULT NULL,\r\n  `nomsvar` char(15) DEFAULT NULL,\r\n  `codvar` int(10) unsigned DEFAULT NULL,\r\n  KEY `idx_codsvar` (`codsvar`)\r\n) ENGINE=MyISAM DEFAULT CHARSET=latin1;",
+    "columns": [
+      {
+        "name": "codsvar",
+        "definition": "int(10) unsigned DEFAULT NULL"
+      },
+      {
+        "name": "nomsvar",
+        "definition": "char(15) DEFAULT NULL"
+      },
+      {
+        "name": "codvar",
+        "definition": "int(10) unsigned DEFAULT NULL"
+      }
+    ]
+  },
+  {
+    "label": "nomver",
+    "name": "verger",
+    "keys": [
+      "refver"
+    ],
+    "ddl": "CREATE TABLE IF NOT EXISTS `verger` (\r\n  `refver` int(11) NOT NULL DEFAULT '0',\r\n  `letver` char(1) DEFAULT NULL,\r\n  `refadh` smallint(6) DEFAULT NULL,\r\n  `refsta` smallint(6) DEFAULT NULL,\r\n  `nomver` char(50) DEFAULT NULL,\r\n  `supver` decimal(8,2) DEFAULT NULL,\r\n  `region` char(50) DEFAULT NULL,\r\n  `locver` char(50) DEFAULT NULL,\r\n  `tecver` char(50) DEFAULT NULL,\r\n  `disvera` smallint(5) unsigned DEFAULT '0',\r\n  `disverf` smallint(5) unsigned DEFAULT '0',\r\n  `tarif` decimal(8,2) DEFAULT '0.00',\r\n  `coment` char(50) DEFAULT NULL,\r\n  `lier` char(1) NOT NULL DEFAULT '',\r\n  `codggn` varchar(50) DEFAULT NULL,\r\n  `certif` char(3) DEFAULT 'NON',\r\n  `geoloc` varchar(100) DEFAULT NULL,\r\n  `libelle` varchar(500) DEFAULT NULL,\r\n  `blocker` char(1) DEFAULT 'N',\r\n  `refremp` int(11) DEFAULT '0',\r\n  `technicien` varchar(50) DEFAULT NULL,\r\n  `douar` varchar(50) DEFAULT NULL,\r\n  `UpdatedAt` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,\r\n  PRIMARY KEY (`refver`),\r\n  KEY `idx_refver` (`refver`),\r\n  KEY `idx_refadh` (`refadh`)\r\n) ENGINE=InnoDB DEFAULT CHARSET=latin1;",
+    "columns": [
+      {
+        "name": "refver",
+        "definition": "int(11) NOT NULL DEFAULT '0'"
+      },
+      {
+        "name": "letver",
+        "definition": "char(1) DEFAULT NULL"
+      },
+      {
+        "name": "refadh",
+        "definition": "smallint(6) DEFAULT NULL"
+      },
+      {
+        "name": "refsta",
+        "definition": "smallint(6) DEFAULT NULL"
+      },
+      {
+        "name": "nomver",
+        "definition": "char(50) DEFAULT NULL"
+      },
+      {
+        "name": "supver",
+        "definition": "decimal(8,2) DEFAULT NULL"
+      },
+      {
+        "name": "region",
+        "definition": "char(50) DEFAULT NULL"
+      },
+      {
+        "name": "locver",
+        "definition": "char(50) DEFAULT NULL"
+      },
+      {
+        "name": "tecver",
+        "definition": "char(50) DEFAULT NULL"
+      },
+      {
+        "name": "disvera",
+        "definition": "smallint(5) unsigned DEFAULT '0'"
+      },
+      {
+        "name": "disverf",
+        "definition": "smallint(5) unsigned DEFAULT '0'"
+      },
+      {
+        "name": "tarif",
+        "definition": "decimal(8,2) DEFAULT '0.00'"
+      },
+      {
+        "name": "coment",
+        "definition": "char(50) DEFAULT NULL"
+      },
+      {
+        "name": "lier",
+        "definition": "char(1) NOT NULL DEFAULT ''"
+      },
+      {
+        "name": "codggn",
+        "definition": "varchar(50) DEFAULT NULL"
+      },
+      {
+        "name": "certif",
+        "definition": "char(3) DEFAULT 'NON'"
+      },
+      {
+        "name": "geoloc",
+        "definition": "varchar(100) DEFAULT NULL"
+      },
+      {
+        "name": "libelle",
+        "definition": "varchar(500) DEFAULT NULL"
+      },
+      {
+        "name": "blocker",
+        "definition": "char(1) DEFAULT 'N'"
+      },
+      {
+        "name": "refremp",
+        "definition": "int(11) DEFAULT '0'"
+      },
+      {
+        "name": "technicien",
+        "definition": "varchar(50) DEFAULT NULL"
+      },
+      {
+        "name": "douar",
+        "definition": "varchar(50) DEFAULT NULL"
+      },
+      {
+        "name": "UpdatedAt",
+        "definition": "timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP"
+      }
+    ]
+  },
+  {
+    "label": "nomcul",
+    "name": "culture",
+    "keys": [
+      "codcul"
+    ],
+    "ddl": "CREATE TABLE IF NOT EXISTS `culture` (\r\n  `codcul` int(11) NOT NULL DEFAULT '0',\r\n  `nomcul` char(30) DEFAULT '0',\r\n  `lier` char(1) DEFAULT '0',\r\n  PRIMARY KEY (`codcul`)\r\n) ENGINE=InnoDB DEFAULT CHARSET=latin1;",
+    "columns": [
+      {
+        "name": "codcul",
+        "definition": "int(11) NOT NULL DEFAULT '0'"
+      },
+      {
+        "name": "nomcul",
+        "definition": "char(30) DEFAULT '0'"
+      },
+      {
+        "name": "lier",
+        "definition": "char(1) DEFAULT '0'"
+      }
+    ]
+  }
+]

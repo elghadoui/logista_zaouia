@@ -1,0 +1,1287 @@
+{
+  "date": "2026-10-16T16:36:57.508793+00:00",
+  "version": "1.6.0",
+  "drencherVersion": "1.3.2.1",
+  "candidate": true,
+  "passed": 254,
+  "failed": 0,
+  "productionAccess": false,
+  "productionDeploy": false,
+  "visualValidated": false,
+  "realDiafVerified": false,
+  "realArchivesVerified": false,
+  "businessDefinitionProvisional": false,
+  "assemblySha256": "1A769EDF1E1964431FB03367DBA8D54A6B4300455F0C59969A864949DF13121B",
+  "results": [
+    {
+      "suite": "export",
+      "name": "Audit importé : quatre dossiers et quatre bons de quai",
+      "passed": true
+    },
+    {
+      "suite": "export",
+      "name": "Poids net enregistré distinct du commercial et pesé",
+      "passed": true
+    },
+    {
+      "suite": "export",
+      "name": "21 palettes déclarées, pas les 31 palettes créées",
+      "passed": true
+    },
+    {
+      "suite": "export",
+      "name": "Audit codmaj 0 : aucun export officiel, client destination confirmé",
+      "passed": true
+    },
+    {
+      "suite": "export",
+      "name": "Agrégats journaliers, ISO, variétés et destinations réconciliés",
+      "passed": true
+    },
+    {
+      "suite": "export",
+      "name": "Filtre variété",
+      "passed": true
+    },
+    {
+      "suite": "export",
+      "name": "Filtre destination",
+      "passed": true
+    },
+    {
+      "suite": "export",
+      "name": "Filtre emballage",
+      "passed": true
+    },
+    {
+      "suite": "export",
+      "name": "Recherche SQL paramétrée",
+      "passed": true
+    },
+    {
+      "suite": "export",
+      "name": "Calibre : 756 colis réels, net non ventilé NULL",
+      "passed": true
+    },
+    {
+      "suite": "export",
+      "name": "État technique 2 sans résultat, aucune confirmation inventée",
+      "passed": true
+    },
+    {
+      "suite": "export",
+      "name": "Détail dossier en lecture seule",
+      "passed": true
+    },
+    {
+      "suite": "export",
+      "name": "Bornes de période inclusives",
+      "passed": true
+    },
+    {
+      "suite": "export",
+      "name": "Année ISO 53 préservée",
+      "passed": true
+    },
+    {
+      "suite": "export",
+      "name": "Station locale strictement bornée",
+      "passed": true
+    },
+    {
+      "suite": "export",
+      "name": "Consolidation sans collision des numéros dossier",
+      "passed": true
+    },
+    {
+      "suite": "export",
+      "name": "Comparaison archives réelles configurées, durée équivalente",
+      "passed": true
+    },
+    {
+      "suite": "export",
+      "name": "Campagnes incompatibles refusées",
+      "passed": true
+    },
+    {
+      "suite": "export",
+      "name": "Poids NULL et palette négative ne deviennent jamais zéro",
+      "passed": true
+    },
+    {
+      "suite": "export",
+      "name": "Clé de bon de quai ambiguë : agrégats suspendus",
+      "passed": true
+    },
+    {
+      "suite": "export",
+      "name": "Source absente : total consolidé indisponible",
+      "passed": true
+    },
+    {
+      "suite": "export",
+      "name": "Export incomplet refusé",
+      "passed": true
+    },
+    {
+      "suite": "export",
+      "name": "Pagination stable 25 puis 9, aucun doublon",
+      "passed": true
+    },
+    {
+      "suite": "export",
+      "name": "Tri numérique du poids",
+      "passed": true
+    },
+    {
+      "suite": "export",
+      "name": "Statuts 0/1/2/9 distincts sans compter les deux BDQ comme deux dossiers",
+      "passed": true
+    },
+    {
+      "suite": "export",
+      "name": "Poids officiel pdscom uniquement codmaj 2, sans net secondaire",
+      "passed": true
+    },
+    {
+      "suite": "export",
+      "name": "Graphiques officiels quotidien/ISO/client/pays/variété réconciliés",
+      "passed": true
+    },
+    {
+      "suite": "export",
+      "name": "Filtre statut 0 sans contamination des exports",
+      "passed": true
+    },
+    {
+      "suite": "export",
+      "name": "Filtre statut 1 sans contamination des exports",
+      "passed": true
+    },
+    {
+      "suite": "export",
+      "name": "Filtre statut 2 sans contamination des exports",
+      "passed": true
+    },
+    {
+      "suite": "export",
+      "name": "Filtre statut -1 sans contamination des exports",
+      "passed": true
+    },
+    {
+      "suite": "export",
+      "name": "Libellés métier et informations de transport",
+      "passed": true
+    },
+    {
+      "suite": "export",
+      "name": "Statut NULL jamais considéré expédié",
+      "passed": true
+    },
+    {
+      "suite": "export",
+      "name": "Consolidation officielle : 15478 kg, deux dossiers distincts entre stations",
+      "passed": true
+    },
+    {
+      "suite": "export",
+      "name": "Comparaison archives officielle pdscom et statuts identiques",
+      "passed": true
+    },
+    {
+      "suite": "export",
+      "name": "SQL statut NULL : dossier visible inconnu mais non exporté",
+      "passed": true
+    },
+    {
+      "suite": "export",
+      "name": "Filtre calibre ne substitue jamais palette_d au poids officiel BDQ",
+      "passed": true
+    },
+    {
+      "suite": "export",
+      "name": "Poids officiel NULL reste indisponible, aucun repli pdsnet",
+      "passed": true
+    },
+    {
+      "suite": "export",
+      "name": "Consultation Export autorisée",
+      "passed": true
+    },
+    {
+      "suite": "export",
+      "name": "Module absent refusé",
+      "passed": true
+    },
+    {
+      "suite": "export",
+      "name": "Station et exercice non attribués refusés",
+      "passed": true
+    },
+    {
+      "suite": "export",
+      "name": "Tri et pagination invalides refusés",
+      "passed": true
+    },
+    {
+      "suite": "export",
+      "name": "Excel typé, 24 colonnes et pas de formule",
+      "passed": true
+    },
+    {
+      "suite": "export",
+      "name": "HTTP anonyme refusé",
+      "passed": true
+    },
+    {
+      "suite": "export",
+      "name": "HTTP module Export sans droit refusé",
+      "passed": true
+    },
+    {
+      "suite": "export",
+      "name": "HTTP vrai contrat de lecture et net audit",
+      "passed": true
+    },
+    {
+      "suite": "export",
+      "name": "HTTP officiel codmaj 2 et pdscom avec détail filtré",
+      "passed": true
+    },
+    {
+      "suite": "export",
+      "name": "HTTP export statut 1 sans contamination",
+      "passed": true
+    },
+    {
+      "suite": "export",
+      "name": "HTTP sources sans duplication de toutes les lignes brutes",
+      "passed": true
+    },
+    {
+      "suite": "export",
+      "name": "HTTP autre station non autorisée refusée",
+      "passed": true
+    },
+    {
+      "suite": "export",
+      "name": "HTTP paramètres SQL libres et répétés refusés",
+      "passed": true
+    },
+    {
+      "suite": "export",
+      "name": "HTTP aucune mutation",
+      "passed": true
+    },
+    {
+      "suite": "export",
+      "name": "HTTP Excel et type MIME",
+      "passed": true
+    },
+    {
+      "suite": "export",
+      "name": "HTTP Excel interdit sans permission",
+      "passed": true
+    },
+    {
+      "suite": "export",
+      "name": "Données audit inchangées après lectures/Excel/HTTP",
+      "passed": true
+    },
+    {
+      "suite": "export",
+      "name": "Drencher et SQL010/011 inchangés",
+      "passed": true
+    },
+    {
+      "suite": "ui",
+      "name": "Page Export intégrée avec quatre KPI et unités enregistrées",
+      "passed": true
+    },
+    {
+      "suite": "ui",
+      "name": "Aucun export réel ou client fictivement certifié",
+      "passed": true
+    },
+    {
+      "suite": "ui",
+      "name": "Détails lisibles et export Excel présents",
+      "passed": true
+    },
+    {
+      "suite": "ui",
+      "name": "Filtres repliables, période et calibre présents",
+      "passed": true
+    },
+    {
+      "suite": "ui",
+      "name": "Choix net/palettes/colis sans mélange d’unités",
+      "passed": true
+    },
+    {
+      "suite": "ui",
+      "name": "Source manquante visible sans total garanti",
+      "passed": true
+    },
+    {
+      "suite": "ui",
+      "name": "État vide sans observation fabriquée",
+      "passed": true
+    },
+    {
+      "suite": "ui",
+      "name": "ISO : tonnes et palettes avec axes et infobulles corrects",
+      "passed": true
+    },
+    {
+      "suite": "ui",
+      "name": "Menu Export respecte le droit existant",
+      "passed": true
+    },
+    {
+      "suite": "ui",
+      "name": "Pas de mutation frontend Export",
+      "passed": true
+    },
+    {
+      "suite": "excel",
+      "name": "service : 4 lignes, 24 colonnes, totaux nets et colis",
+      "passed": true
+    },
+    {
+      "suite": "excel",
+      "name": "service : palettes des bons de quai, pas palettes créées",
+      "passed": true
+    },
+    {
+      "suite": "excel",
+      "name": "service : poids net, commercial et pesé séparés",
+      "passed": true
+    },
+    {
+      "suite": "excel",
+      "name": "service : dates natives, filtres et absence de formules",
+      "passed": true
+    },
+    {
+      "suite": "excel",
+      "name": "service : définition et contexte traçables",
+      "passed": true
+    },
+    {
+      "suite": "excel",
+      "name": "http : 4 lignes, 24 colonnes, totaux nets et colis",
+      "passed": true
+    },
+    {
+      "suite": "excel",
+      "name": "http : palettes des bons de quai, pas palettes créées",
+      "passed": true
+    },
+    {
+      "suite": "excel",
+      "name": "http : poids net, commercial et pesé séparés",
+      "passed": true
+    },
+    {
+      "suite": "excel",
+      "name": "http : dates natives, filtres et absence de formules",
+      "passed": true
+    },
+    {
+      "suite": "excel",
+      "name": "http : définition et contexte traçables",
+      "passed": true
+    },
+    {
+      "suite": "excel",
+      "name": "Officiel : deux BDQ, un dossier, filtre codmaj 2",
+      "passed": true
+    },
+    {
+      "suite": "excel",
+      "name": "Officiel : somme pdscom 7739 kg, 9 palettes, 3362 colis",
+      "passed": true
+    },
+    {
+      "suite": "excel",
+      "name": "Officiel : client, statut et exportateur séparés",
+      "passed": true
+    },
+    {
+      "suite": "excel",
+      "name": "Officiel : récapitulatif exactement égal aux lignes filtrées",
+      "passed": true
+    },
+    {
+      "suite": "regression-analytics",
+      "name": "Audit réel importé : source disponible",
+      "passed": true
+    },
+    {
+      "suite": "regression-analytics",
+      "name": "Net officiel 1 809 096 kg sans duplication des 215 détails",
+      "passed": true
+    },
+    {
+      "suite": "regression-analytics",
+      "name": "Sommes variété et producteur égales au net officiel",
+      "passed": true
+    },
+    {
+      "suite": "regression-analytics",
+      "name": "Séries quotidiennes et ISO réconciliées",
+      "passed": true
+    },
+    {
+      "suite": "regression-analytics",
+      "name": "Détails paginés 25",
+      "passed": true
+    },
+    {
+      "suite": "regression-analytics",
+      "name": "Estimation explicitement non rattachée campagne",
+      "passed": true
+    },
+    {
+      "suite": "regression-analytics",
+      "name": "471 mouvements de caisserie",
+      "passed": true
+    },
+    {
+      "suite": "regression-analytics",
+      "name": "E 95 208 caisses ; S 136 218 ; aucun solde physique déduit",
+      "passed": true
+    },
+    {
+      "suite": "regression-analytics",
+      "name": "Situation producteur: 75 = 5 079/6 660 caisses et 110/120 palettes",
+      "passed": true
+    },
+    {
+      "suite": "regression-analytics",
+      "name": "Situation par type: total caisses et palettes réconcilié",
+      "passed": true
+    },
+    {
+      "suite": "regression-analytics",
+      "name": "Balance producteur ignore le filtre mono-sens et calcule E/S ensemble",
+      "passed": true
+    },
+    {
+      "suite": "regression-analytics",
+      "name": "Recherche de situation par code producteur",
+      "passed": true
+    },
+    {
+      "suite": "regression-analytics",
+      "name": "Pagination situation producteur",
+      "passed": true
+    },
+    {
+      "suite": "regression-analytics",
+      "name": "Excel situation complète, totaux typés et sans formule",
+      "passed": true
+    },
+    {
+      "suite": "regression-analytics",
+      "name": "Balances de mouvement positives, négatives et nulles",
+      "passed": true
+    },
+    {
+      "suite": "regression-analytics",
+      "name": "Filtrage E et type caisse",
+      "passed": true
+    },
+    {
+      "suite": "regression-analytics",
+      "name": "Filtre date réelle inclusif",
+      "passed": true
+    },
+    {
+      "suite": "regression-analytics",
+      "name": "Filtre variété exact",
+      "passed": true
+    },
+    {
+      "suite": "regression-analytics",
+      "name": "Filtre producteur exact",
+      "passed": true
+    },
+    {
+      "suite": "regression-analytics",
+      "name": "Excel 213 lignes de données, cellules numériques, aucune formule",
+      "passed": true
+    },
+    {
+      "suite": "regression-analytics",
+      "name": "Permissions consultation conservées",
+      "passed": true
+    },
+    {
+      "suite": "regression-analytics",
+      "name": "Module arbitraire refusé API/service",
+      "passed": true
+    },
+    {
+      "suite": "regression-analytics",
+      "name": "Page et tri arbitraire refusés",
+      "passed": true
+    },
+    {
+      "suite": "regression-analytics",
+      "name": "Date invalide refusée",
+      "passed": true
+    },
+    {
+      "suite": "regression-analytics",
+      "name": "Consolidation : numrec identiques distincts par station",
+      "passed": true
+    },
+    {
+      "suite": "regression-analytics",
+      "name": "Station locale bornée même dans base contenant autre station",
+      "passed": true
+    },
+    {
+      "suite": "regression-analytics",
+      "name": "Estimation consolidée volontairement indisponible",
+      "passed": true
+    },
+    {
+      "suite": "regression-analytics",
+      "name": "Campagnes courantes incompatibles refusées",
+      "passed": true
+    },
+    {
+      "suite": "regression-analytics",
+      "name": "Poids net nul et date absente ne donnent pas un faux total complet",
+      "passed": true
+    },
+    {
+      "suite": "regression-analytics",
+      "name": "Rattachements manquants conservés en catégorie inconnue",
+      "passed": true
+    },
+    {
+      "suite": "regression-analytics",
+      "name": "Parcelles ambiguës exclues du calcul, absences non assimilées zéro",
+      "passed": true
+    },
+    {
+      "suite": "regression-analytics",
+      "name": "Pagination consolidée stable sans collision ou perte",
+      "passed": true
+    },
+    {
+      "suite": "regression-analytics",
+      "name": "Source DIAF absente : total incomplet et totalKg NULL",
+      "passed": true
+    },
+    {
+      "suite": "regression-analytics",
+      "name": "Comparaison avec deux archives synthétiques",
+      "passed": true
+    },
+    {
+      "suite": "regression-analytics",
+      "name": "Alignement archive même nombre de jours depuis début campagne",
+      "passed": true
+    },
+    {
+      "suite": "regression-analytics",
+      "name": "Archive comparative future exclue et courant limité aujourd'hui",
+      "passed": true
+    },
+    {
+      "suite": "regression-analytics",
+      "name": "Consolidation comparative sans deuxième archive refusée",
+      "passed": true
+    },
+    {
+      "suite": "regression-analytics",
+      "name": "Année ISO semaine 53 : 31 décembre et 1 janvier regroupés",
+      "passed": true
+    },
+    {
+      "suite": "regression-analytics",
+      "name": "Recherche paramétrée sans injection",
+      "passed": true
+    },
+    {
+      "suite": "regression-analytics",
+      "name": "Produit non agrume et catégorie filtrables",
+      "passed": true
+    },
+    {
+      "suite": "regression-analytics",
+      "name": "Net officiel distinct poids brut, aucun double comptage détails",
+      "passed": true
+    },
+    {
+      "suite": "regression-analytics",
+      "name": "Consultation sur contexte autorisé",
+      "passed": true
+    },
+    {
+      "suite": "regression-analytics",
+      "name": "DIAF non autorisé refusé avant consolidation",
+      "passed": true
+    },
+    {
+      "suite": "regression-analytics",
+      "name": "Archive non autorisée refusée",
+      "passed": true
+    },
+    {
+      "suite": "regression-analytics",
+      "name": "Module Caisserie absent refusé",
+      "passed": true
+    },
+    {
+      "suite": "regression-analytics",
+      "name": "Situation producteur soumise aux permissions Caisserie",
+      "passed": true
+    },
+    {
+      "suite": "regression-analytics",
+      "name": "Variation physique auditée E−S = −41 010, aucune dette déduite",
+      "passed": true
+    },
+    {
+      "suite": "regression-analytics",
+      "name": "Types de caisses jamais interchangeables",
+      "passed": true
+    },
+    {
+      "suite": "regression-analytics",
+      "name": "Mouvement inconnu et quantité négative : variation indisponible",
+      "passed": true
+    },
+    {
+      "suite": "regression-analytics",
+      "name": "Situation invalide signalée au lieu d'un faux solde",
+      "passed": true
+    },
+    {
+      "suite": "regression-analytics",
+      "name": "Incohérence producteur/verger détectée sans réattribution",
+      "passed": true
+    },
+    {
+      "suite": "regression-analytics",
+      "name": "Inventaire : propriété seule ne remplit pas le physique",
+      "passed": true
+    },
+    {
+      "suite": "regression-analytics",
+      "name": "Inventaire sans confirmation refusé",
+      "passed": true
+    },
+    {
+      "suite": "regression-analytics",
+      "name": "Inventaire : physique supérieur à propriété refusé",
+      "passed": true
+    },
+    {
+      "suite": "regression-analytics",
+      "name": "Inventaire : dettes + physique supérieurs à propriété refusés",
+      "passed": true
+    },
+    {
+      "suite": "regression-analytics",
+      "name": "Inventaire : doublons producteurs/vergers refusés",
+      "passed": true
+    },
+    {
+      "suite": "regression-analytics",
+      "name": "Inventaires interdits à Consultation et Gestionnaire",
+      "passed": true
+    },
+    {
+      "suite": "regression-analytics",
+      "name": "Inventaire stocké dans administration uniquement",
+      "passed": true
+    },
+    {
+      "suite": "regression-analytics",
+      "name": "Révision concurrente périmée refusée",
+      "passed": true
+    },
+    {
+      "suite": "regression-analytics",
+      "name": "Historique : révisions préservées et physique inconnu NULL",
+      "passed": true
+    },
+    {
+      "suite": "regression-analytics",
+      "name": "Inventaire archive interdit",
+      "passed": true
+    },
+    {
+      "suite": "regression-analytics",
+      "name": "Inventaire verger incompatible refusé",
+      "passed": true
+    },
+    {
+      "suite": "regression-analytics",
+      "name": "Inventaire type absent refusé",
+      "passed": true
+    },
+    {
+      "suite": "regression-analytics",
+      "name": "Inventaire hors campagne refusé",
+      "passed": true
+    },
+    {
+      "suite": "regression-analytics",
+      "name": "Contexte masqué absent des sélecteurs Admin",
+      "passed": true
+    },
+    {
+      "suite": "regression-analytics",
+      "name": "Contexte masqué absent des sélecteurs Consultation",
+      "passed": true
+    },
+    {
+      "suite": "regression-analytics",
+      "name": "Visibilité distincte du droit : résolution directe autorisée",
+      "passed": true
+    },
+    {
+      "suite": "regression-analytics",
+      "name": "Visibilité ne donne aucun droit DIAF",
+      "passed": true
+    },
+    {
+      "suite": "regression-analytics",
+      "name": "Droits et utilisateurs préservés après masquage",
+      "passed": true
+    },
+    {
+      "suite": "regression-analytics",
+      "name": "Réactivation visible sans réattribution des droits",
+      "passed": true
+    },
+    {
+      "suite": "regression-analytics",
+      "name": "Export volumineux refusé sans troncature",
+      "passed": true
+    },
+    {
+      "suite": "regression-analytics",
+      "name": "Export texte dangereux stocké comme texte, jamais formule",
+      "passed": true
+    },
+    {
+      "suite": "regression-analytics",
+      "name": "Toutes les sources Drencher et SQL010/011 inchangées",
+      "passed": true
+    },
+    {
+      "suite": "regression-drencher",
+      "name": "Hicham saisie view",
+      "passed": true
+    },
+    {
+      "suite": "regression-drencher",
+      "name": "Hicham saisie add",
+      "passed": true
+    },
+    {
+      "suite": "regression-drencher",
+      "name": "Hicham saisie modify",
+      "passed": true
+    },
+    {
+      "suite": "regression-drencher",
+      "name": "Opérateur refus drencher_quality / add",
+      "passed": true
+    },
+    {
+      "suite": "regression-drencher",
+      "name": "Opérateur refus drencher_quality / modify",
+      "passed": true
+    },
+    {
+      "suite": "regression-drencher",
+      "name": "Opérateur refus drencher_quality / delete",
+      "passed": true
+    },
+    {
+      "suite": "regression-drencher",
+      "name": "Opérateur refus drencher_programs / add",
+      "passed": true
+    },
+    {
+      "suite": "regression-drencher",
+      "name": "Opérateur refus drencher_programs / modify",
+      "passed": true
+    },
+    {
+      "suite": "regression-drencher",
+      "name": "Opérateur refus drencher_programs / delete",
+      "passed": true
+    },
+    {
+      "suite": "regression-drencher",
+      "name": "Opérateur refus drencher_products / add",
+      "passed": true
+    },
+    {
+      "suite": "regression-drencher",
+      "name": "Opérateur refus drencher_products / modify",
+      "passed": true
+    },
+    {
+      "suite": "regression-drencher",
+      "name": "Opérateur refus drencher_products / delete",
+      "passed": true
+    },
+    {
+      "suite": "regression-drencher",
+      "name": "Opérateur refus drencher_stock / add",
+      "passed": true
+    },
+    {
+      "suite": "regression-drencher",
+      "name": "Opérateur refus drencher_stock / modify",
+      "passed": true
+    },
+    {
+      "suite": "regression-drencher",
+      "name": "Opérateur refus drencher_stock / delete",
+      "passed": true
+    },
+    {
+      "suite": "regression-drencher",
+      "name": "Mbark validation/correction",
+      "passed": true
+    },
+    {
+      "suite": "regression-drencher",
+      "name": "Mbark drencher_programs / add",
+      "passed": true
+    },
+    {
+      "suite": "regression-drencher",
+      "name": "Mbark drencher_products / add",
+      "passed": true
+    },
+    {
+      "suite": "regression-drencher",
+      "name": "Mbark drencher_programs / modify",
+      "passed": true
+    },
+    {
+      "suite": "regression-drencher",
+      "name": "Mbark drencher_products / modify",
+      "passed": true
+    },
+    {
+      "suite": "regression-drencher",
+      "name": "Mbark entrée stock",
+      "passed": true
+    },
+    {
+      "suite": "regression-drencher",
+      "name": "Mbark aucune suppression administrative",
+      "passed": true
+    },
+    {
+      "suite": "regression-drencher",
+      "name": "Mbark pas de saisie implicitement accordée",
+      "passed": true
+    },
+    {
+      "suite": "regression-drencher",
+      "name": "Samira validation/correction",
+      "passed": true
+    },
+    {
+      "suite": "regression-drencher",
+      "name": "Samira drencher_programs / add",
+      "passed": true
+    },
+    {
+      "suite": "regression-drencher",
+      "name": "Samira drencher_products / add",
+      "passed": true
+    },
+    {
+      "suite": "regression-drencher",
+      "name": "Samira drencher_programs / modify",
+      "passed": true
+    },
+    {
+      "suite": "regression-drencher",
+      "name": "Samira drencher_products / modify",
+      "passed": true
+    },
+    {
+      "suite": "regression-drencher",
+      "name": "Samira entrée stock",
+      "passed": true
+    },
+    {
+      "suite": "regression-drencher",
+      "name": "Samira aucune suppression administrative",
+      "passed": true
+    },
+    {
+      "suite": "regression-drencher",
+      "name": "Samira pas de saisie implicitement accordée",
+      "passed": true
+    },
+    {
+      "suite": "regression-drencher",
+      "name": "Admin conserve drencher / view",
+      "passed": true
+    },
+    {
+      "suite": "regression-drencher",
+      "name": "Admin conserve drencher / add",
+      "passed": true
+    },
+    {
+      "suite": "regression-drencher",
+      "name": "Admin conserve drencher / modify",
+      "passed": true
+    },
+    {
+      "suite": "regression-drencher",
+      "name": "Admin conserve drencher / delete",
+      "passed": true
+    },
+    {
+      "suite": "regression-drencher",
+      "name": "Admin conserve drencher_quality / view",
+      "passed": true
+    },
+    {
+      "suite": "regression-drencher",
+      "name": "Admin conserve drencher_quality / add",
+      "passed": true
+    },
+    {
+      "suite": "regression-drencher",
+      "name": "Admin conserve drencher_quality / modify",
+      "passed": true
+    },
+    {
+      "suite": "regression-drencher",
+      "name": "Admin conserve drencher_quality / delete",
+      "passed": true
+    },
+    {
+      "suite": "regression-drencher",
+      "name": "Admin conserve drencher_programs / view",
+      "passed": true
+    },
+    {
+      "suite": "regression-drencher",
+      "name": "Admin conserve drencher_programs / add",
+      "passed": true
+    },
+    {
+      "suite": "regression-drencher",
+      "name": "Admin conserve drencher_programs / modify",
+      "passed": true
+    },
+    {
+      "suite": "regression-drencher",
+      "name": "Admin conserve drencher_programs / delete",
+      "passed": true
+    },
+    {
+      "suite": "regression-drencher",
+      "name": "Admin conserve drencher_products / view",
+      "passed": true
+    },
+    {
+      "suite": "regression-drencher",
+      "name": "Admin conserve drencher_products / add",
+      "passed": true
+    },
+    {
+      "suite": "regression-drencher",
+      "name": "Admin conserve drencher_products / modify",
+      "passed": true
+    },
+    {
+      "suite": "regression-drencher",
+      "name": "Admin conserve drencher_products / delete",
+      "passed": true
+    },
+    {
+      "suite": "regression-drencher",
+      "name": "Admin conserve drencher_stock / view",
+      "passed": true
+    },
+    {
+      "suite": "regression-drencher",
+      "name": "Admin conserve drencher_stock / add",
+      "passed": true
+    },
+    {
+      "suite": "regression-drencher",
+      "name": "Admin conserve drencher_stock / modify",
+      "passed": true
+    },
+    {
+      "suite": "regression-drencher",
+      "name": "Admin conserve drencher_stock / delete",
+      "passed": true
+    },
+    {
+      "suite": "regression-drencher",
+      "name": "Module absent fermé",
+      "passed": true
+    },
+    {
+      "suite": "regression-drencher",
+      "name": "Ajouter sans Voir refusé",
+      "passed": true
+    },
+    {
+      "suite": "regression-drencher",
+      "name": "Consultation reste lecture seule",
+      "passed": true
+    },
+    {
+      "suite": "regression-drencher",
+      "name": "Propriétaire peut modifier/soumettre son brouillon",
+      "passed": true
+    },
+    {
+      "suite": "regression-drencher",
+      "name": "Autre opérateur ne peut modifier le brouillon",
+      "passed": true
+    },
+    {
+      "suite": "regression-drencher",
+      "name": "Admin conserve accès brouillons d'autrui",
+      "passed": true
+    },
+    {
+      "suite": "regression-drencher",
+      "name": "Contrôle propriétaire API : 403",
+      "passed": true
+    },
+    {
+      "suite": "regression-drencher",
+      "name": "Matrice complète sans migration ni écriture",
+      "passed": true
+    },
+    {
+      "suite": "regression-drencher",
+      "name": "Ancien droit groupé conservé à l'identique",
+      "passed": true
+    },
+    {
+      "suite": "regression-drencher",
+      "name": "Nouveaux droits absents tous false",
+      "passed": true
+    },
+    {
+      "suite": "regression-drencher",
+      "name": "Matrice ne modifie pas les données d'entrée",
+      "passed": true
+    },
+    {
+      "suite": "regression-drencher",
+      "name": "Aucune attribution de saisie automatique",
+      "passed": true
+    },
+    {
+      "suite": "regression-drencher",
+      "name": "Saisie autorise les seuls lookups nécessaires au cycle",
+      "passed": true
+    },
+    {
+      "suite": "regression-drencher",
+      "name": "Qualité autorise les lookups de correction",
+      "passed": true
+    },
+    {
+      "suite": "regression-drencher",
+      "name": "Ancien Voir seul n'élargit pas les lookups",
+      "passed": true
+    },
+    {
+      "suite": "regression-drencher",
+      "name": "Programme spécifique indépendant des produits/stock",
+      "passed": true
+    },
+    {
+      "suite": "regression-ui",
+      "name": "Réceptions : vrai composant Mantine, indicateurs et recherche",
+      "passed": true
+    },
+    {
+      "suite": "regression-ui",
+      "name": "Choix des contextes et consolidation visibles",
+      "passed": true
+    },
+    {
+      "suite": "regression-ui",
+      "name": "Archive autorisée sélectionnable et aucune archive inventée",
+      "passed": true
+    },
+    {
+      "suite": "regression-ui",
+      "name": "Graphique accessible, détail et export Excel présents",
+      "passed": true
+    },
+    {
+      "suite": "regression-ui",
+      "name": "Filtres catégories et groupes produits présents",
+      "passed": true
+    },
+    {
+      "suite": "regression-ui",
+      "name": "Caisserie : quatre indicateurs compacts et limites de solde visibles",
+      "passed": true
+    },
+    {
+      "suite": "regression-ui",
+      "name": "Flux E/S par type, quantités séparées et aucun faux solde",
+      "passed": true
+    },
+    {
+      "suite": "regression-ui",
+      "name": "Source absente visible sans afficher de faux zéro",
+      "passed": true
+    },
+    {
+      "suite": "regression-ui",
+      "name": "Sidebar respecte permission Réceptions sans Caisserie",
+      "passed": true
+    },
+    {
+      "suite": "regression-ui",
+      "name": "Navigation Drencher historique conservée",
+      "passed": true
+    },
+    {
+      "suite": "regression-ui",
+      "name": "Filtres repliés par défaut et commande accessible",
+      "passed": true
+    },
+    {
+      "suite": "regression-ui",
+      "name": "V1.5.1 affiche une rangée compacte de quatre KPI et un graphique SVG sans NaN",
+      "passed": true
+    },
+    {
+      "suite": "regression-ui",
+      "name": "Variation E−S par type et absence de dette inventée",
+      "passed": true
+    },
+    {
+      "suite": "regression-ui",
+      "name": "Variation invalide indiquée à vérifier sans inventer de solde",
+      "passed": true
+    },
+    {
+      "suite": "regression-ui",
+      "name": "Administration conserve les contextes masqués et permet leur réactivation",
+      "passed": true
+    },
+    {
+      "suite": "regression-ui",
+      "name": "Inventaire accessible dans administration, sans nouvel accès opérateur",
+      "passed": true
+    },
+    {
+      "suite": "regression-ui",
+      "name": "Comparaison et formulaires : cible masquée retirée sans ajout de route",
+      "passed": true
+    },
+    {
+      "suite": "regression-ui",
+      "name": "Ancienne sélection masquée remplacée par une cible visible seulement",
+      "passed": true
+    },
+    {
+      "suite": "regression-ui",
+      "name": "Aucune cible si la liste visible est indisponible",
+      "passed": true
+    },
+    {
+      "suite": "regression-ui",
+      "name": "Répartition négative suspendue sans pourcentage trompeur",
+      "passed": true
+    },
+    {
+      "suite": "regression-ui",
+      "name": "Courbe quotidienne garde les dates manquantes en rupture",
+      "passed": true
+    },
+    {
+      "suite": "regression-ui",
+      "name": "Graphique ISO combiné : unités, axes, légendes et valeurs réelles",
+      "passed": true
+    },
+    {
+      "suite": "regression-ui",
+      "name": "Poids manquant sans barre zéro ; semaines ISO absentes sans interpolation",
+      "passed": true
+    },
+    {
+      "suite": "regression-ui",
+      "name": "Caisserie filtrée : quantité déplacée et mouvements, aucun vocabulaire de stock",
+      "passed": true
+    },
+    {
+      "suite": "regression-ui",
+      "name": "Caisserie sans type : mouvements seuls, aucun total de types mélangés",
+      "passed": true
+    },
+    {
+      "suite": "regression-ui",
+      "name": "Graphique Caisserie compare les quantités E/S et affiche S−E dans l’infobulle",
+      "passed": true
+    },
+    {
+      "suite": "regression-ui",
+      "name": "Quantités de caisses cachées sans type sélectionné",
+      "passed": true
+    },
+    {
+      "suite": "regression-ui",
+      "name": "Situation producteur affiche les soldes et palettes séparées",
+      "passed": true
+    },
+    {
+      "suite": "regression-ui",
+      "name": "Typographie agrandie, contraste renforcé et responsive bureau/tablette/mobile",
+      "passed": true
+    },
+    {
+      "suite": "regression-ui",
+      "name": "Graphiques calibrés à la largeur réelle de leur panneau",
+      "passed": true
+    },
+    {
+      "suite": "regression-ui",
+      "name": "Libellés français conservés sans altération d’encodage",
+      "passed": true
+    },
+    {
+      "suite": "regression-ui",
+      "name": "Masquage autre station retire aussi son archive comparative",
+      "passed": true
+    },
+    {
+      "suite": "regression-ui",
+      "name": "Retrait archive principale retire l’archive associée",
+      "passed": true
+    },
+    {
+      "suite": "regression-ui",
+      "name": "Comparaison complète conserve ses quatre contextes",
+      "passed": true
+    }
+  ]
+}

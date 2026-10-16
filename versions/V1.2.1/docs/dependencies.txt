@@ -1,0 +1,176 @@
+adherent : refadh
+aff_d : codvar
+aff_dd : codvar
+aff_e : codvar
+asup : idparcelle
+at_lot_e : codvar
+barcode : codvar
+bdq : codvar
+bdq_t : codvar
+bdqref : codvar
+br : codvar, refver, refadh
+caisserie : refver, refadh, codvar
+calibre : codvar
+certifications : refver
+codeautorise : codvar
+codsvar : refadh, refver, refpar, codvar
+cpv_d : codvar
+culture : codcul
+d_ecart : codvar
+declaration_verger : codvar
+decompt : refver, codvar
+decompte : codvar
+decomptproducteur : codvar, refver
+decvnt : codvar
+detail_charg_dossier : codvar
+detailpal : codvar
+detver : refver, refpar, numcul, codvar
+dossierafrique_detail : codvar
+ecart_d : refver
+ecart_e : codvar
+ecart_vers : refver
+encecart_e : codvar
+estimation : refver, codvar
+estimparc : refpar, numcul, refver, codvar
+estimver : refver, codvar
+etiq_recep : refadh, refver
+etiqcolis : refver
+exp_g : codvar, refver
+exp_g1 : codvar
+fac_transp : refver
+facmer : codvar
+fertil : refver, refpar, numcul, codvar
+frais : codvar
+fraisest : codvar
+frstation : codvar
+gav_estimation_producteur : codvar
+grp_var : codvar, codgrv
+grpvar : codgrv
+gumming : refver
+lot_d : codvar
+lot_dp : refver, codvar
+lot_e : codvar
+lot_exp : refver, codvar
+lot_exp_parcelle : refver, codvar, refpar
+lot_vers : refver, codvar
+lotchg : codvar
+lotdpa : refver, codvar
+model_fab_pal : codvar
+noncomm : refadh, refver, refpar, numcul, codvar
+oper_frigo : codvar
+palbrut : refadh, refver, codvar, codsvar
+palbrut_t : refadh, refver, codvar, codsvar
+palbrut_vers : refver, codvar
+palette : codvar
+palette_d : refver
+palette_d_t : refver
+palette_e : refver
+palpre_d : refver
+palpre_e : codvar
+palref : codvar
+palref_d : refver
+parcelle : refpar, numcul, refver, codvar, codsvar, idparcelle
+pecart : codvar
+pecart_d : refver
+pre_echantillon : refver
+precal : codvar, refver, refadh
+precala : codvar, refver, refadh
+prix : codvar
+realisation : refver, codvar
+realisationrec : refver, codvar
+realisationver : refver, codvar
+rec_g : codvar
+recap_motif_ecart : codvar, refver
+rece_vers_parce : refver, codvar, refpar
+reception : codvar, refver
+reception_d : refver, refpar, numcul
+reception_sousvariete : refver, codvar, codsvar
+reception_t : codvar, refver
+reception_vergers : refadh, refver, codvar
+resanalyse : refver, refadh, refpar, numcul, codvar
+rpt_detailvers : refver, codvar
+rpt_emb_destin_exp1 : codvar
+rptencaissementecart : codvar
+rptentetetb : codvar
+sauvbdq : codvar
+sauvbdq27032013 : codvar
+sauvcai : refver, refadh
+sauvebdq : codvar
+sauvelot_d : codvar
+sauvelot_dp : refver, codvar
+sauvelot_e : codvar
+sauvlot27032013 : codvar
+sauvpal : codvar
+sauvpalette : codvar
+sauvpalette27032013 : codvar
+sauvreception_d : refver, refpar, numcul
+sondarb : refadh, refver, refpar, numcul, codvar
+sondparc : refver, refpar, numcul
+souvar : codsvar, codvar
+tabcertificat : codgrv
+tabchg : codvar
+tabchg2 : codvar
+tabcmr : codvar
+tabdecvnt : codvar
+tabdum : codvar
+tabestim : codvar, refver
+tabestimgrv : codgrv, refver
+tabetiq : refver
+tabetiq_e : codvar
+table1 : refver, refadh, codvar
+tabmarqua : codvar
+tabpack_e : codvar
+tabprod : refver, codvar
+tabrecver : codvar
+tabver2 : refver, refpar, numcul
+tb_cond : refver
+tb_reception : refver, codvar
+tbl_par_cond : codvar
+temp_table : refver, refpar, numcul, codvar
+tempnbrfr : refver
+tempver : refver, refpar
+tmp1 : refver, codvar
+tmp2 : refver, codvar
+tmpcai : refver
+tmpcai1 : refver
+tmpcais : refver
+tmpcais1 : refver
+tmpcais2 : refver, refadh
+tmpcondit : refver, codvar
+tmpevolution : refver, codvar
+tmpevolution1 : refver, codvar
+tmpevolution2 : refver, codvar
+tmplistpal : codvar
+tmprec : refver, refpar
+tmptabbdq : codvar
+tmptabbdq1 : codvar
+tmpvar : codvar
+tpalette : codvar
+tpalette2 : codvar
+tpalettea : codvar
+traite : codcul
+transfr_e : codvar
+transport : refver, codvar
+trtver : refver, refpar, numcul, codvar
+vaff_e : codvar
+variete : codvar, codgrv, codcul
+vdecvnt : codvar
+vente_e : codvar
+verger : refver, refadh
+verger_certif : refver
+versement : codvar, refver
+versement_e : codvar, refver
+view1 : codvar, refver
+view3 : refver
+vinstaff : codvar
+vinstaffcal : codvar
+vinstdec : codvar
+vinstdec1 : codvar
+vntsansd : codvar
+xpalette : codvar
+xvnt_e : codvar
+xvntdetail : codvar
+xxpalbrut : refadh, refver, codvar, codsvar
+xxpar : refpar, refver
+xxtmp1 : codvar
+xxtmp2 : codvar

@@ -1,0 +1,145 @@
+{
+  "version": "1.2.1",
+  "baseline": "versions/V1.2",
+  "generatedAt": "2026-10-06T17:02:04.4223377Z",
+  "files": [
+    {
+      "path": "README.md",
+      "status": "Modified",
+      "sha256": "E445BE82726958AB857B70704502E00A3A811E12190DEECDFEAEE5C981093CF4",
+      "previousSha256": "CA247DCA991F6FDAFCA44D9D618B2EDE2AE16916FB53479DE06279154B85C3D7"
+    },
+    {
+      "path": "CHANGELOG.md",
+      "status": "Modified",
+      "sha256": "BB9414C2B43E0F6ECCE28D8E948A5522FB522260CFA91D5A79285CF299818E2E",
+      "previousSha256": "09AD1CE3BE329A3EF86C9D174AF49A97FBF4906775B93960AE16EBBD72876D2E"
+    },
+    {
+      "path": "backend/Program.cs",
+      "status": "Modified",
+      "sha256": "85D59DFED2A4C5BDAD62047859567017D686DD4323048E0A25DBD0469500E039",
+      "previousSha256": "85B050C3C3DE773658162BB40F93377EFCB0D5239C9670F7C5B29AD2D556276A"
+    },
+    {
+      "path": "backend/Vitasouss.Api.csproj",
+      "status": "Modified",
+      "sha256": "C0C0BF4EB90C3B1C4F500B74A18E632BE3574C7064BD25A9662D8CE61FB30A1E",
+      "previousSha256": "F7BB09666A9A706D3EAD74EB8D648967629B7427A67073C650D54E4DDC576C93"
+    },
+    {
+      "path": "backend/Application/Models.cs",
+      "status": "Modified",
+      "sha256": "97EFE24A4937A2F32C66D1A9259238423BF7369946C3C9DA0051EE6574BA9FD8",
+      "previousSha256": "DA5129773428DB20420A5B51B49DB24FDFC6D55C0442DFC979A57EA73474659E"
+    },
+    {
+      "path": "backend/Application/IntegrityService.cs",
+      "status": "Modified",
+      "sha256": "C972CE83EBC296350AE644D9E86ECF45C1FA79F452F728D19F51C4872CA4F9F3",
+      "previousSha256": "C0AE33AEE0654E06CF885AD97605A687E32DD5B0D5555340448174F32D15002C"
+    },
+    {
+      "path": "frontend/package.json",
+      "status": "Modified",
+      "sha256": "50471C10F874B0424C59D93C1D8DEF0E53FA3B198279D949F34D2CCDF02ACEB2",
+      "previousSha256": "31DD13837FD7186287372B5E7FE8AA0E792B7CF65C306C2602BA160B7877E7CB"
+    },
+    {
+      "path": "frontend/package-lock.json",
+      "status": "Modified",
+      "sha256": "A8FE5C921ED7D832FB12490EC35C0D2DD03AC5C4506FE63F407675848EA0BADB",
+      "previousSha256": "1A1D820EE5E42062B2EC8D63C8CCC2E5AC11ACAD37BBE1C229523F8BDDA38332"
+    },
+    {
+      "path": "frontend/src/App.tsx",
+      "status": "Modified",
+      "sha256": "D895C73BEF37312A5C98F61551B342980A9F445A2D33CF7BEA77509AC01B56C4",
+      "previousSha256": "5E85E315BCCF3371AA3300BDE20A8CA5F7E06852D4684BA4BED3BFBBB90396B2"
+    },
+    {
+      "path": "frontend/src/EntityList.tsx",
+      "status": "Modified",
+      "sha256": "7AE88B292DE52F2C2D4DB0A0B0C4D8D1C48FFD78D546D20708E92B87DA888B4A",
+      "previousSha256": "974DE98A53FB22654E1453FEE22914892CADBE8DA52ECC1CA523CAFF3E70A1A4"
+    },
+    {
+      "path": "frontend/src/RecordActions.tsx",
+      "status": "Modified",
+      "sha256": "4D16D4F49A7E6864BCA26C6FAB9B286C060D3C253BA0ECD40A7A88EED22FE7D8",
+      "previousSha256": "8F1CE06F19F252D13FC88400CB6D297B53CD60A60BED1CCDE32AD29DC12C3C39"
+    },
+    {
+      "path": "frontend/src/RecordView.tsx",
+      "status": "Modified",
+      "sha256": "0AB7D8B00F407EEB7319839A0B5E5241E9C411AB9C9C91A19C27C50357FC608D",
+      "previousSha256": "26AEE25C0C0611D9E10AB3C8EA2DDE00C3FAF26BE84718A9D6BC87C444CD15D0"
+    },
+    {
+      "path": "frontend/src/BulkDelete.tsx",
+      "status": "Added",
+      "sha256": "651FA73E8A1F92891AE3E42F15D66FE9A5375D5C11F5900416F68426A4D8D71B",
+      "previousSha256": null
+    },
+    {
+      "path": "tools/pack.ps1",
+      "status": "Modified",
+      "sha256": "3A5929DBF23E73A7FC0D8966A28AC2C4EC821E690FD81D93B5FDDB079C4C70B3",
+      "previousSha256": "994D1010F49D1D56159E652E466F5235C64053C3F1884C01611E5B06BE6690E7"
+    },
+    {
+      "path": "tools/verify-api-v12.mjs",
+      "status": "Modified",
+      "sha256": "0B67599E7085E60583BEA25238A915E7403D97CB945D8F60907DD9E56BE6C0D5",
+      "previousSha256": "8B17828614B56B1AF29AD241FF59508AD58FDBCC29713499DD74359F15D3D5C5"
+    },
+    {
+      "path": "tools/verify-api-v121.mjs",
+      "status": "Added",
+      "sha256": "D02EB9EBA32AD8C6EB7AB2E7F55383D14F3ED18CB7B065FAB153A86902D96FA3",
+      "previousSha256": null
+    },
+    {
+      "path": "docs/MISE-A-JOUR-V1.2.1.md",
+      "status": "Added",
+      "sha256": "4380CB4D0C9E5124C07D9F3DB2FFE8386B8A30A009ED853B5C4C8F0F0DEFCA5A",
+      "previousSha256": null
+    },
+    {
+      "path": "docs/VERIFICATION-V1.2.1.md",
+      "status": "Added",
+      "sha256": "CA9322D77B5584B2DAC69E80DE9AC30F26980790C735769820235EFD579E874A",
+      "previousSha256": null
+    },
+    {
+      "path": "docs/api-verification-v121.json",
+      "status": "Added",
+      "sha256": "4076B3E98DADB0FB865DFDDD78FCC78081EB85E0CE7454FC5EDA79907FA7EB31",
+      "previousSha256": null
+    },
+    {
+      "path": "docs/api-verification-v12.json",
+      "status": "Modified",
+      "sha256": "4119B486CA9328E05C3D9922A8E9AB462B5EC879D071C665350A55D641571ACF",
+      "previousSha256": "4A5E0643676CFF38EFDCE4B29FD32A28FDFFBAA1F9C5A09E6F1A3743FF5D2F02"
+    },
+    {
+      "path": "docs/api-verification-v11.json",
+      "status": "Modified",
+      "sha256": "5115252F3564CD9AA358F8498D90BDD60D238E21A2DE1916842D1C7462AD1289",
+      "previousSha256": "BCA9A0A82173D6B227AE2A8EAE97357B19FCA3EB3E4D38FA621ACD1D68A7B1DE"
+    },
+    {
+      "path": "docs/api-verification.json",
+      "status": "Modified",
+      "sha256": "9E27D7FAD488EFCDA12F996E4F31DA889CDABD4A4753A0364C9554B0BF781738",
+      "previousSha256": "9E27D7FAD488EFCDA12F996E4F31DA889CDABD4A4753A0364C9554B0BF781738"
+    },
+    {
+      "path": "docs/comparison-verification-v12.json",
+      "status": "Modified",
+      "sha256": "18997C4BD2F3C0F22D20EEB7ECD70A732B25CA42BF29BD89DC5B9DC011124A19",
+      "previousSha256": "9CFE9BB753A6CC19FC5384A872DC01FF84C5DC63DAB6028C9BC977376B9A9B6B"
+    }
+  ]
+}

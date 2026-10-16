@@ -1,0 +1,789 @@
+{
+  "date": "2026-10-14T00:48:30.6759602Z",
+  "version": "1.4.1",
+  "drencherVersion": "1.3.2",
+  "status": "Candidat compilé : tests transactionnels API/MySQL non validés",
+  "passed": 155,
+  "failed": 0,
+  "apiMySqlValidated": false,
+  "productionAccess": false,
+  "productionDeploy": false,
+  "assemblySha256": "A74A04E366EA38C8188D68D2C3A0206874BC524A9DF2F6AFE222BC2A2642DE8A",
+  "results": [
+    {
+      "suite": "tests-drencher-v132-assistant.json",
+      "name": "Provider non configuré",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v132-assistant.json",
+      "name": "Non configuré sans requête réseau",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v132-assistant.json",
+      "name": "Clé invalide : erreur publique sans corps ni secret",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v132-assistant.json",
+      "name": "Timeout OpenAI",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v132-assistant.json",
+      "name": "Outil interdit",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v132-assistant.json",
+      "name": "Aucune exécution d'outil interdit",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v132-assistant.json",
+      "name": "SQL arbitraire refusé",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v132-assistant.json",
+      "name": "Limitation du nombre d'appels",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v132-assistant.json",
+      "name": "Maximum exact d'exécutions",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v132-assistant.json",
+      "name": "Mutation interdite INSERT",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v132-assistant.json",
+      "name": "Mutation interdite UPDATE",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v132-assistant.json",
+      "name": "Mutation interdite DELETE",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v132-assistant.json",
+      "name": "Mutation interdite ALTER",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v132-assistant.json",
+      "name": "Mutation interdite DROP",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v132-assistant.json",
+      "name": "Mutation interdite sync",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v132-assistant.json",
+      "name": "Argument SQL injecté refusé",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v132-assistant.json",
+      "name": "Argument de contexte non autorisé",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v132-assistant.json",
+      "name": "Date invalide",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v132-assistant.json",
+      "name": "Endpoint officiel fixe 0",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v132-assistant.json",
+      "name": "store false / modèle serveur 0",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v132-assistant.json",
+      "name": "Clé exclusivement en en-tête 0",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v132-assistant.json",
+      "name": "Fonctions strictes seulement 0",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v132-assistant.json",
+      "name": "Endpoint officiel fixe 1",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v132-assistant.json",
+      "name": "store false / modèle serveur 1",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v132-assistant.json",
+      "name": "Clé exclusivement en en-tête 1",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v132-assistant.json",
+      "name": "Fonctions strictes seulement 1",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v132-assistant.json",
+      "name": "Résultat relié au call_id",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v132-assistant.json",
+      "name": "Tool calling puis réponse avec tokens cumulés",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v132-assistant.json",
+      "name": "Limite contexte avant envoi",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v132-assistant.json",
+      "name": "Conversation isolée par utilisateur",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v132-assistant.json",
+      "name": "Conversation isolée par exercice",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v132-assistant.json",
+      "name": "Nouvelle conversation efface le précédent historique",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v132-assistant.json",
+      "name": "Timeout englobe l'outil",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v132-frontend.json",
+      "name": "Trois actions F04 réelles Mantine",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v132-frontend.json",
+      "name": "Bouton stock Impressions et états intégré",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v132-frontend.json",
+      "name": "URL API avec contexte et session correcte",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v132-frontend.json",
+      "name": "Identité PDF et contenu reçus sans transformation",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v132-frontend.json",
+      "name": "Erreur permission lisible",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v132-frontend.json",
+      "name": "Connexion HTML jamais présentée comme PDF",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v132-frontend.json",
+      "name": "Panne propre sans exception technique",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v132-frontend.json",
+      "name": "Annulation du téléchargement conservée",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v132-frontend.json",
+      "name": "Même PDF temporaire pour aperçu export et impression",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v132-frontend.json",
+      "name": "Révocation Blob et annulation au démontage",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v132-frontend.json",
+      "name": "Cinq documents et filtres adaptés",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v132-navigation.json",
+      "name": "Erreur toLowerCase reproduite dans le vrai filtre Mantine",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v132-navigation.json",
+      "name": "Tous les catalogues connus ont un libellé",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v132-navigation.json",
+      "name": "Filtre Mantine accepte les seize référentiels",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v132-navigation.json",
+      "name": "Recherche pays dans le vrai filtre Mantine",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v132-navigation.json",
+      "name": "Référentiel futur garde un libellé exploitable",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v132-navigation.json",
+      "name": "Permissions sans verger : sélection autorisée",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v132-navigation.json",
+      "name": "Catalogue vide : aucun référentiel inventé",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v132-navigation.json",
+      "name": "Rapport avec valeurs SQL nulles accepté",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v132-navigation.json",
+      "name": "Structure de rapport absente refusée proprement",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v132-navigation.json",
+      "name": "Compteur absent détecté",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v132-navigation.json",
+      "name": "Libellé de différence absent détecté",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v132-navigation.json",
+      "name": "Lignes absentes détectées",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v132-navigation.json",
+      "name": "Écran comparaison réel rendu avec catalogue complet",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v132-navigation.json",
+      "name": "Écran réel sans permission verger rendu",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v132-navigation.json",
+      "name": "Écran réel catalogue vide explique les droits",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v132-navigation.json",
+      "name": "Clés de navigation uniques",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v132-navigation.json",
+      "name": "Toutes les clés V1.4 conservées",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v132-navigation.json",
+      "name": "Marchés ajouté au commerce",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v132-navigation.json",
+      "name": "Défauts et écarts regroupés sous Qualité",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v132-navigation.json",
+      "name": "Gestionnaire ne voit pas la configuration Admin",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v132-navigation.json",
+      "name": "Permission restreinte supprime les groupes vides",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v132-navigation.json",
+      "name": "Sidebar réel contient des boutons de groupe accessibles",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v132-navigation.json",
+      "name": "Page active indiquée au lecteur d’écran",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v132-navigation.json",
+      "name": "Mode compact conserve les noms accessibles",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v132-navigation.json",
+      "name": "Rendu de repli ne divulgue pas une exception",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v132-navigation.json",
+      "name": "Assistant conservé, seule la présentation date pilote sécurisée",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v132-palette-frontend.json",
+      "name": "Plantage slice reproduit sur vraie forme MySqlDateTime",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v132-palette-frontend.json",
+      "name": "Chaînes civiles et ISO normalisées",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v132-palette-frontend.json",
+      "name": "Objet MySqlDateTime et variante majuscule normalisés",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v132-palette-frontend.json",
+      "name": "Dates nulles absentes et impossibles sans erreur",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v132-palette-frontend.json",
+      "name": "Date valide bissextile sans décalage de jour",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v132-palette-frontend.json",
+      "name": "Sélections de pages conservées jusqu’à 164 palettes",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v132-palette-frontend.json",
+      "name": "Sélection page rejouée sans doublon",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v132-palette-frontend.json",
+      "name": "Annuler ne modifie pas la sélection précédente",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v132-palette-frontend.json",
+      "name": "Palette réservée ailleurs bloquée, propre cycle autorisé",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v132-palette-frontend.json",
+      "name": "Résumé compact poids réceptions groupes exacts",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v132-palette-frontend.json",
+      "name": "Poids manquant non inventé",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v132-palette-frontend.json",
+      "name": "Vrai Stock rendu avec date objet et date absente",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v132-palette-frontend.json",
+      "name": "Formulaire principal bouton sans liste longue",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v132-palette-frontend.json",
+      "name": "Quatre colonnes produits conservées",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v132-palette-frontend.json",
+      "name": "Fenêtre dédiée pagination serveur, sélection page et globale",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v132-palette-frontend.json",
+      "name": "Confirmation et annulation distinctes dans la fenêtre",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v132-palette-frontend.json",
+      "name": "Dates Drencher sans slice dangereux",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v132-palette-frontend.json",
+      "name": "Impression robuste dates objets avec calcul kg/tonnes",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v132-pdf.json",
+      "name": "simple : rendu identique à présentation validée",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v132-pdf.json",
+      "name": "simple : une page sans débordement",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v132-pdf.json",
+      "name": "complexe : rendu identique à présentation validée",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v132-pdf.json",
+      "name": "complexe : une page sans débordement",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v132-pdf.json",
+      "name": "stock : rendu identique à présentation validée",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v132-pdf.json",
+      "name": "stock : une page sans débordement",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v132-pdf.json",
+      "name": "fiche : rendu identique à présentation validée",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v132-pdf.json",
+      "name": "fiche : une page sans débordement",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v132-pdf.json",
+      "name": "entrees : rendu identique à présentation validée",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v132-pdf.json",
+      "name": "entrees : une page sans débordement",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v132-pdf.json",
+      "name": "consommations : rendu identique à présentation validée",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v132-pdf.json",
+      "name": "consommations : une page sans débordement",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v132-pdf.json",
+      "name": "mouvements : rendu identique à présentation validée",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v132-pdf.json",
+      "name": "mouvements : une page sans débordement",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v132-pdf.json",
+      "name": "Valeurs historiques physiques inchangées",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v132-pdf.json",
+      "name": "REEL : type de quantité explicite",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v132-pdf.json",
+      "name": "REEL : matière active imprimée",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v132-pdf.json",
+      "name": "REEL : aucune matière active masquée",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v132-pdf.json",
+      "name": "REEL : aucune ligne ni total produit masqué",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v132-pdf.json",
+      "name": "REEL : dimensions A4 paysage",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v132-pdf.json",
+      "name": "REEL : quantité principale correspond à la valeur historisée",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v132-pdf.json",
+      "name": "REEL : texte contenu dans la page",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v132-pdf.json",
+      "name": "THEORIQUE : type de quantité explicite",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v132-pdf.json",
+      "name": "THEORIQUE : matière active imprimée",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v132-pdf.json",
+      "name": "THEORIQUE : aucune matière active masquée",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v132-pdf.json",
+      "name": "THEORIQUE : aucune ligne ni total produit masqué",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v132-pdf.json",
+      "name": "THEORIQUE : dimensions A4 paysage",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v132-pdf.json",
+      "name": "THEORIQUE : quantité principale correspond à la valeur historisée",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v132-pdf.json",
+      "name": "THEORIQUE : texte contenu dans la page",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v132-pdf.json",
+      "name": "MACHINE : type de quantité explicite",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v132-pdf.json",
+      "name": "MACHINE : matière active imprimée",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v132-pdf.json",
+      "name": "MACHINE : aucune matière active masquée",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v132-pdf.json",
+      "name": "MACHINE : aucune ligne ni total produit masqué",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v132-pdf.json",
+      "name": "MACHINE : dimensions A4 paysage",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v132-pdf.json",
+      "name": "MACHINE : quantité principale correspond à la valeur historisée",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v132-pdf.json",
+      "name": "MACHINE : texte contenu dans la page",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v132-pdf.json",
+      "name": "Tous produits masqués : aucun nom dans formulaire ni annexe",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v132-pdf.json",
+      "name": "Volume : pagination et annexes conservées",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v132-pdf.json",
+      "name": "Volume : type machine sur toutes pages",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v132-renderer.json",
+      "name": "Ancien instantané : produits visibles par défaut, MA absente",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v132-renderer.json",
+      "name": "Ancien contrat fiche produit : visible par défaut",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v132-renderer.json",
+      "name": "Aucune mutation des quatre quantités ou paramètres par génération",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v132-renderer.json",
+      "name": "Compression palettes fidèle",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v132-renderer.json",
+      "name": "Arrondi métier six décimales",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v132-renderer.json",
+      "name": "Stock différentiel séquence 3",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v132-renderer.json",
+      "name": "Stock différentiel séquence 2.5",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v132-renderer.json",
+      "name": "Stock différentiel séquence 4",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v132-renderer.json",
+      "name": "Stock différentiel séquence 3",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v132-renderer.json",
+      "name": "Stock différentiel séquence 0",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v132-renderer.json",
+      "name": "Rejeu même consommation : delta nul",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v132-renderer.json",
+      "name": "Changement lot : restitution source et sortie destination",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v132-renderer.json",
+      "name": "Stock insuffisant refusé",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v132-renderer.json",
+      "name": "Restitution excessive historique refusée",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v132-renderer.json",
+      "name": "Capacité DECIMAL18,6 protégée",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v132-renderer.json",
+      "name": "Précision micro-unités préservée",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v132-renderer.json",
+      "name": "Plusieurs lots : conservation des quantités",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v132-sources.json",
+      "name": "70 fichiers hors changement : empreintes identiques à V1.3.1",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v132-sources.json",
+      "name": "Initialisation, authentification, sessions et routes hors Drencher inchangées",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v132-sources.json",
+      "name": "PDF validé V1.3.1 SIMPLE conservé",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v132-sources.json",
+      "name": "PDF validé V1.3.1 COMPLEXE conservé",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v132-ui.json",
+      "name": "Table produits : MA et visibilité lisibles",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v132-ui.json",
+      "name": "Produit MA absent sans invention",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v132-ui.json",
+      "name": "Actions directes Activer et Désactiver",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v132-ui.json",
+      "name": "Versions antérieures restent consultables",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v132-ui.json",
+      "name": "Action administrative de suppression disponible",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v132-ui.json",
+      "name": "Action administrative désactivée archive",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v132-ui.json",
+      "name": "Éditeur soumis utilise correction qualité, pas brouillon",
+      "passed": true
+    }
+  ]
+}

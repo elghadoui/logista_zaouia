@@ -1,0 +1,62 @@
+{
+  "testedAt": "2026-10-09T00:49:02.862Z",
+  "realOpenAiCalls": 0,
+  "results": [
+    {
+      "name": "Assistant non configuré : écran disponible",
+      "passed": true
+    },
+    {
+      "name": "Lecture Consultation autorisée",
+      "passed": true
+    },
+    {
+      "name": "Panne isolée sans diagnostic Consultation",
+      "passed": true
+    },
+    {
+      "name": "Diagnostic accessible administrateur",
+      "passed": true
+    },
+    {
+      "name": "Exercice non autorisé",
+      "passed": true
+    },
+    {
+      "name": "SQL libre refusé",
+      "passed": true
+    },
+    {
+      "name": "CSRF conversation obligatoire",
+      "passed": true
+    },
+    {
+      "name": "Question trop longue refusée",
+      "passed": true
+    },
+    {
+      "name": "Corps volumineux refusé",
+      "passed": true
+    },
+    {
+      "name": "Modules référentiels continuent",
+      "passed": true
+    },
+    {
+      "name": "Santé VITASOUSS conservée",
+      "passed": true
+    },
+    {
+      "name": "Nouvelle interface publiée",
+      "passed": true
+    },
+    {
+      "name": "Ressource interface accessible",
+      "passed": true
+    },
+    {
+      "name": "Limitation des messages utilisateur",
+      "passed": true
+    }
+  ]
+}

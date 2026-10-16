@@ -1,0 +1,62 @@
+{
+  "passed": 14,
+  "failed": 0,
+  "results": [
+    {
+      "name": "service : 4 lignes, 24 colonnes, totaux nets et colis",
+      "passed": true
+    },
+    {
+      "name": "service : palettes des bons de quai, pas palettes créées",
+      "passed": true
+    },
+    {
+      "name": "service : poids net, commercial et pesé séparés",
+      "passed": true
+    },
+    {
+      "name": "service : dates natives, filtres et absence de formules",
+      "passed": true
+    },
+    {
+      "name": "service : définition et contexte traçables",
+      "passed": true
+    },
+    {
+      "name": "http : 4 lignes, 24 colonnes, totaux nets et colis",
+      "passed": true
+    },
+    {
+      "name": "http : palettes des bons de quai, pas palettes créées",
+      "passed": true
+    },
+    {
+      "name": "http : poids net, commercial et pesé séparés",
+      "passed": true
+    },
+    {
+      "name": "http : dates natives, filtres et absence de formules",
+      "passed": true
+    },
+    {
+      "name": "http : définition et contexte traçables",
+      "passed": true
+    },
+    {
+      "name": "Officiel : deux BDQ, un dossier, filtre codmaj 2",
+      "passed": true
+    },
+    {
+      "name": "Officiel : somme pdscom 7739 kg, 9 palettes, 3362 colis",
+      "passed": true
+    },
+    {
+      "name": "Officiel : client, statut et exportateur séparés",
+      "passed": true
+    },
+    {
+      "name": "Officiel : récapitulatif exactement égal aux lignes filtrées",
+      "passed": true
+    }
+  ]
+}

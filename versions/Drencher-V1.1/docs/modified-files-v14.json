@@ -1,0 +1,246 @@
+{
+  "version": "1.4",
+  "createdAt": "2026-10-07T12:02:12.8416895Z",
+  "files": [
+    {
+      "path": "backend/Program.cs",
+      "status": "modified",
+      "sha256": "CADD9B70533AAB36E3C32A0A4935902959732963CCA7530EA5CF478C8D06DB90"
+    },
+    {
+      "path": "backend/Vitasouss.Api.csproj",
+      "status": "modified",
+      "sha256": "67B13D074632B775F32C8083BEEB552AAC683CE682F29213A5A459A7B31C4C48"
+    },
+    {
+      "path": "backend/Api/AdminEndpoints.cs",
+      "status": "modified",
+      "sha256": "A20834CA257C79D45C5C4362CF98932C5DFF81C12D500384E578D4139CAB45E9"
+    },
+    {
+      "path": "backend/Application/AssistantService.cs",
+      "status": "modified",
+      "sha256": "8C439278630ED6225E97D7A2254042A8B44DB611910F7F98A428058725E7170F"
+    },
+    {
+      "path": "backend/Application/ComparisonService.cs",
+      "status": "modified",
+      "sha256": "687A47B5E1B7AD91FFCD01972D31D88A64506E7B6AF612BF2EC7490759958ABB"
+    },
+    {
+      "path": "backend/Application/ComplementaryService.cs",
+      "status": "added",
+      "sha256": "39ACA79C1BBC1D91E9136C5F689E9781576C76E77BE678DDE8EF7223F23E9147"
+    },
+    {
+      "path": "backend/Application/PermissionService.cs",
+      "status": "added",
+      "sha256": "9AB2B1E4E9AA6AD7F266DF59FA53D42712AA5283756988F4D04436C1BA8E086B"
+    },
+    {
+      "path": "backend/Application/PilotService.cs",
+      "status": "modified",
+      "sha256": "70E6318FD42773CC00B46ABF56EED81F7D452107E71F83EA573856B1A9E99415"
+    },
+    {
+      "path": "backend/Application/ReferentialService.cs",
+      "status": "modified",
+      "sha256": "ED33A720378AE1C870334890296FCB6A3A0AD15BBC91777293D3B2067025D28D"
+    },
+    {
+      "path": "backend/Application/RelationService.cs",
+      "status": "added",
+      "sha256": "0F53847E9F1AED8E1782C1C70DD5B2B57211069E4E5623E688E046FF21FF5E73"
+    },
+    {
+      "path": "backend/Application/SyncService.cs",
+      "status": "modified",
+      "sha256": "4CB8059F114B4DEA618916669B15E47FFA40FC3782AC768B7D7FA66340A0CEF7"
+    },
+    {
+      "path": "frontend/package-lock.json",
+      "status": "modified",
+      "sha256": "1489FFB7248DB8D061BB782A4FCBE763E429F0D92DB68A0ED12FF6DFC77BA1CC"
+    },
+    {
+      "path": "frontend/package.json",
+      "status": "modified",
+      "sha256": "8468C7E3B0EFDA7B41EE83E0C84E87E6106BA35E3D011E0678C4FED21F6670C2"
+    },
+    {
+      "path": "frontend/tsconfig.tsbuildinfo",
+      "status": "modified",
+      "sha256": "FEC5E6A3582B81ECFAAB727317595658033F8D22AFA3D521655370531703DA18"
+    },
+    {
+      "path": "frontend/src/Administration.tsx",
+      "status": "modified",
+      "sha256": "9E98CC4C1A0CE8EE2600EFC57487121BE445417CF7C27864DCF11CE5A41C6700"
+    },
+    {
+      "path": "frontend/src/App.tsx",
+      "status": "modified",
+      "sha256": "F500B662D462F4A1E98E2F1D5D05A570F28E24FC9AF6BFFFA0C3E555FF23689F"
+    },
+    {
+      "path": "frontend/src/ComplementaryPanel.tsx",
+      "status": "added",
+      "sha256": "EC013674A61586067D34DF97B805D2A73F6A390666C144764B5C3F2B7F3E1466"
+    },
+    {
+      "path": "frontend/src/components.tsx",
+      "status": "modified",
+      "sha256": "0B8836957A565B25208466ABF81138523E326F99D0F835B91F77E25A5FF475FB"
+    },
+    {
+      "path": "frontend/src/EntityList.tsx",
+      "status": "modified",
+      "sha256": "0AC9FFAEDE6AAA301CAA3434C254323DCE6925374270C20744E9F2C714B9242E"
+    },
+    {
+      "path": "frontend/src/Hierarchy.tsx",
+      "status": "modified",
+      "sha256": "94F506B2130F3959FEBE4E40E147A504481C20BAB1771051ABC7C59CFFAF31C7"
+    },
+    {
+      "path": "frontend/src/Permissions.tsx",
+      "status": "added",
+      "sha256": "85328263D33813FEAAE4302E48141B4831583E4F3ACDCC34995485C626460507"
+    },
+    {
+      "path": "frontend/src/PilotViews.tsx",
+      "status": "modified",
+      "sha256": "EE19BB86AD06567E255E3634342C451ACB093856C7E57155C9F1B4178F6CA1B1"
+    },
+    {
+      "path": "frontend/src/RecordActions.tsx",
+      "status": "modified",
+      "sha256": "B7DE44B3F003063C3C5254A7E233D40E1DA28FD4D7282CB4459ED1F006E0A191"
+    },
+    {
+      "path": "frontend/src/RecordView.tsx",
+      "status": "modified",
+      "sha256": "D6B974E36A0FC4868EE2C680E617A2CD3AA0994469FAB8470820C7861C0F0C68"
+    },
+    {
+      "path": "frontend/src/ReferenceInput.tsx",
+      "status": "modified",
+      "sha256": "C854DD376CF0D098B45281804BBBC971228108C9CF1D04C487A4BE942E23AF46"
+    },
+    {
+      "path": "frontend/src/ReferentialComparison.tsx",
+      "status": "modified",
+      "sha256": "047C49B294D8C064AA945B4E31EC5690E7EEC42A94B4F293E94E07D9C05BCDB2"
+    },
+    {
+      "path": "docs/api-verification-v11.json",
+      "status": "modified",
+      "sha256": "E67657F60DFA247F803609181755AC055DC0421DCC5C112BC90ABF605D2CBD11"
+    },
+    {
+      "path": "docs/api-verification-v12.json",
+      "status": "modified",
+      "sha256": "137ACC6B710A6E3A41060E8E1B33F6C9A166DFE93C88475FA4CBED5BB8965C5D"
+    },
+    {
+      "path": "docs/api-verification-v121.json",
+      "status": "modified",
+      "sha256": "61D3FEBFE14951CE7171BC3A10AEB32E6F112EC0D225C2D591A2FFD50DAF6493"
+    },
+    {
+      "path": "docs/api-verification-v13.json",
+      "status": "modified",
+      "sha256": "B862AEC698EA6C7EE063A7CF23599CFBCE3EE4A514659BF35EA593D044F556C0"
+    },
+    {
+      "path": "docs/api-verification-v14.json",
+      "status": "added",
+      "sha256": "0EF8CC459337E75DA26321994336F13F41AA6AFF45AFE3A5C4308489FF3AAF52"
+    },
+    {
+      "path": "docs/assistant-http-verification.json",
+      "status": "modified",
+      "sha256": "13585F5EE5D5C95546B58E265DC4C93BB4DDB4F2BBE471B843D8BE11B838A9BF"
+    },
+    {
+      "path": "docs/assistant-verification.json",
+      "status": "modified",
+      "sha256": "F72C1074BAE7E17CDE1B702EDDA1F5145C2D09AE6FF2F086320A5B419BD666CA"
+    },
+    {
+      "path": "docs/CARTOGRAPHIE-METIER.md",
+      "status": "added",
+      "sha256": "51C2D916689C7E5FD31E259250FDD28E2100FA9A097D63039D065ACB3B5BCDD3"
+    },
+    {
+      "path": "docs/comparison-verification-v12.json",
+      "status": "modified",
+      "sha256": "C481F3FFBFA1291B81DA5363EA0FEA19A05DF2EA241D6C02D78E344F68BC32A2"
+    },
+    {
+      "path": "docs/MISE-A-JOUR-V1.4.md",
+      "status": "added",
+      "sha256": "5E39A61149A47001CF565762091BDA28BC0C1FB578913092368BCA67BBC337E5"
+    },
+    {
+      "path": "docs/PERMISSIONS-V1.4.md",
+      "status": "added",
+      "sha256": "B3E281812503A224FB366C8104AF07572AE0BCAF74F5D69BAEA79E8B14F38DF7"
+    },
+    {
+      "path": "docs/QUESTIONS-V1.4.md",
+      "status": "added",
+      "sha256": "006D59640FD2AE50030C50BE55543E383E0D0985249690B57A1290D9B2B1AE78"
+    },
+    {
+      "path": "docs/SYNCHRONISATION-V1.4.md",
+      "status": "added",
+      "sha256": "F6929D39B9BFD2D10BC1D02B5EC5C016A52D08816274DC928DA3373DEB37DC55"
+    },
+    {
+      "path": "docs/VERIFICATION-V1.4.md",
+      "status": "added",
+      "sha256": "DB0B182BE015AF67268D7969B0389737186AD7F570C073F1485BAB29D2ED4666"
+    },
+    {
+      "path": "sql/002_permissions_v14.sql",
+      "status": "added",
+      "sha256": "5097566BCCEBF19971A354C53D42EEF24AD28778243A7D07356CBBCA25D629AF"
+    },
+    {
+      "path": "tools/pack-v14.ps1",
+      "status": "added",
+      "sha256": "7E6ECAD060E6A9E8072E4710E227E136F771099F3D9FC27AA30326996D29C4EB"
+    },
+    {
+      "path": "tools/verify-api-v11.mjs",
+      "status": "modified",
+      "sha256": "E58B0C62F77367CC802430CA88C9C6028163316C6FCBD0F99BE8DA834F3E9853"
+    },
+    {
+      "path": "tools/verify-api-v13.mjs",
+      "status": "modified",
+      "sha256": "610D466B23CE49FE074FD9570F88E89D15A448BA6DD0BCDB9B55159D9E7B569C"
+    },
+    {
+      "path": "tools/verify-api-v14.mjs",
+      "status": "added",
+      "sha256": "310FCFF493B560A2CAF9901BAEFD28BC4E72E35A16915DC4DBD8D8F3E3A5AF6E"
+    },
+    {
+      "path": "tools/verify-assistant-http.mjs",
+      "status": "modified",
+      "sha256": "5F76B1A2C0F28EE93AECE94CCEDB8B20CE4E0CE51A342B4DF92056DBFC8A4F00"
+    },
+    {
+      "path": "tools/verify-comparison-v12.mjs",
+      "status": "modified",
+      "sha256": "711832F82800AF14E3294CA6EC50D1DBEBB3A93AD72F3D579D296A9DDAB75192"
+    },
+    {
+      "path": "tests/AssistantTests/Program.cs",
+      "status": "modified",
+      "sha256": "C2509C1282512CDB97D15E432282E2DBEF890C9CA5605E2D2937D7AECBEAA962"
+    }
+  ]
+}

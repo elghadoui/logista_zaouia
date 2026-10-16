@@ -1,0 +1,29 @@
+{
+  "date": "2026-10-09T15:45:49.9332818Z",
+  "passed": 5,
+  "failed": 0,
+  "mysqlWrites": 0,
+  "productionAccess": false,
+  "results": [
+    {
+      "name": "Instantan\u00E9 source inchang\u00E9 par les impressions",
+      "passed": true
+    },
+    {
+      "name": "Compression palettes sans inventer les num\u00E9ros manquants",
+      "passed": true
+    },
+    {
+      "name": "Compression d\u00E9doublonne et trie seulement l\u0027affichage",
+      "passed": true
+    },
+    {
+      "name": "Quatre quantit\u00E9s sources inchang\u00E9es",
+      "passed": true
+    },
+    {
+      "name": "Donn\u00E9es F04 internes absentes du contrat JSON g\u00E9n\u00E9rique",
+      "passed": true
+    }
+  ]
+}

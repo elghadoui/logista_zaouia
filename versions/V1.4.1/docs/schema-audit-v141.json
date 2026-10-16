@@ -1,0 +1,1143 @@
+{
+  "date": "2026-10-07",
+  "source": "DDL du dump fourni, sans données de production",
+  "tables": [
+    {
+      "name": "agreage",
+      "columns": [
+        {
+          "name": "numrec",
+          "definition": "int(11) NOT NULL DEFAULT '0'"
+        },
+        {
+          "name": "coddef",
+          "definition": "smallint(6) NOT NULL DEFAULT '0'"
+        },
+        {
+          "name": "pource",
+          "definition": "decimal(10,2) DEFAULT '0.00'"
+        },
+        {
+          "name": "poids",
+          "definition": "decimal(16,2) DEFAULT '0.00'"
+        },
+        {
+          "name": "refsta",
+          "definition": "smallint(5) unsigned NOT NULL DEFAULT '0'"
+        },
+        {
+          "name": "dateagr",
+          "definition": "datetime DEFAULT NULL"
+        }
+      ],
+      "indexes": [
+        "  PRIMARY KEY (`numrec`,`refsta`,`coddef`)"
+      ],
+      "engine": "InnoDB DEFAULT CHARSET=latin1"
+    },
+    {
+      "name": "declaration_verger",
+      "columns": [
+        {
+          "name": "refver_reel",
+          "definition": "int(11) DEFAULT NULL"
+        },
+        {
+          "name": "refver_nreel",
+          "definition": "int(11) NOT NULL"
+        },
+        {
+          "name": "codvar",
+          "definition": "int(11) NOT NULL"
+        },
+        {
+          "name": "refstat",
+          "definition": "int(11) NOT NULL"
+        },
+        {
+          "name": "id",
+          "definition": "int(11) NOT NULL AUTO_INCREMENT"
+        }
+      ],
+      "indexes": [
+        "  PRIMARY KEY (`id`)"
+      ],
+      "engine": "MyISAM AUTO_INCREMENT=296 DEFAULT CHARSET=utf8 COLLATE=utf8_bin"
+    },
+    {
+      "name": "defaut",
+      "columns": [
+        {
+          "name": "coddef",
+          "definition": "smallint(5) unsigned NOT NULL DEFAULT '0'"
+        },
+        {
+          "name": "intdef",
+          "definition": "char(30) DEFAULT NULL"
+        },
+        {
+          "name": "famdef",
+          "definition": "char(25) DEFAULT NULL"
+        },
+        {
+          "name": "catdef",
+          "definition": "char(25) DEFAULT NULL"
+        },
+        {
+          "name": "lier",
+          "definition": "char(1) DEFAULT '1'"
+        },
+        {
+          "name": "culture",
+          "definition": "int(11) DEFAULT '0'"
+        }
+      ],
+      "indexes": [
+        "  PRIMARY KEY (`coddef`)"
+      ],
+      "engine": "InnoDB DEFAULT CHARSET=latin1"
+    },
+    {
+      "name": "destination",
+      "columns": [
+        {
+          "name": "coddes",
+          "definition": "smallint(6) DEFAULT NULL"
+        },
+        {
+          "name": "vildes",
+          "definition": "char(100) DEFAULT NULL"
+        },
+        {
+          "name": "codpay",
+          "definition": "smallint(6) DEFAULT NULL"
+        },
+        {
+          "name": "lier",
+          "definition": "char(1) DEFAULT '1'"
+        },
+        {
+          "name": "adresse",
+          "definition": "varchar(250) DEFAULT NULL"
+        },
+        {
+          "name": "adresse2",
+          "definition": "varchar(250) DEFAULT NULL"
+        },
+        {
+          "name": "nomFact",
+          "definition": "varchar(150) DEFAULT NULL"
+        }
+      ],
+      "indexes": [
+        "  UNIQUE KEY `ix106_1` (`coddes`),",
+        "  KEY `idx_destination_coddes` (`coddes`),",
+        "  KEY `idx_destination_codpay` (`codpay`)"
+      ],
+      "engine": "InnoDB DEFAULT CHARSET=latin1"
+    },
+    {
+      "name": "dossier",
+      "columns": [
+        {
+          "name": "numdos",
+          "definition": "int(11) NOT NULL DEFAULT '0'"
+        },
+        {
+          "name": "refexp",
+          "definition": "smallint(6) DEFAULT NULL"
+        },
+        {
+          "name": "reftm",
+          "definition": "smallint(6) DEFAULT NULL"
+        },
+        {
+          "name": "refte",
+          "definition": "smallint(6) DEFAULT NULL"
+        },
+        {
+          "name": "coddes",
+          "definition": "smallint(6) DEFAULT NULL"
+        },
+        {
+          "name": "reftrp",
+          "definition": "smallint(6) DEFAULT NULL"
+        },
+        {
+          "name": "refgrp",
+          "definition": "int(11) DEFAULT NULL"
+        },
+        {
+          "name": "dtedep",
+          "definition": "date DEFAULT NULL"
+        },
+        {
+          "name": "dtearr",
+          "definition": "date DEFAULT NULL"
+        },
+        {
+          "name": "numper",
+          "definition": "int(11) DEFAULT NULL"
+        },
+        {
+          "name": "numcmr",
+          "definition": "char(10) DEFAULT NULL"
+        },
+        {
+          "name": "coddev",
+          "definition": "char(3) DEFAULT NULL"
+        },
+        {
+          "name": "cours",
+          "definition": "decimal(16,4) DEFAULT NULL"
+        },
+        {
+          "name": "herdep",
+          "definition": "char(5) DEFAULT NULL"
+        },
+        {
+          "name": "montan",
+          "definition": "decimal(16,2) DEFAULT NULL"
+        },
+        {
+          "name": "typtrp",
+          "definition": "char(2) DEFAULT NULL"
+        },
+        {
+          "name": "vildep",
+          "definition": "char(30) DEFAULT NULL"
+        },
+        {
+          "name": "numrem",
+          "definition": "char(15) DEFAULT NULL"
+        },
+        {
+          "name": "numtra",
+          "definition": "char(15) DEFAULT NULL"
+        },
+        {
+          "name": "hfrg",
+          "definition": "int(11) DEFAULT NULL"
+        },
+        {
+          "name": "tcharg",
+          "definition": "int(11) DEFAULT NULL"
+        },
+        {
+          "name": "nomchf",
+          "definition": "char(50) DEFAULT NULL"
+        },
+        {
+          "name": "numtel",
+          "definition": "char(15) DEFAULT NULL"
+        },
+        {
+          "name": "docdou",
+          "definition": "char(10) DEFAULT NULL"
+        },
+        {
+          "name": "traction",
+          "definition": "char(15) DEFAULT NULL"
+        },
+        {
+          "name": "numplo",
+          "definition": "char(30) DEFAULT NULL"
+        },
+        {
+          "name": "codmaj",
+          "definition": "smallint(6) DEFAULT NULL"
+        },
+        {
+          "name": "destk",
+          "definition": "char(1) DEFAULT NULL"
+        },
+        {
+          "name": "portdech",
+          "definition": "int(11) DEFAULT NULL"
+        },
+        {
+          "name": "numfac",
+          "definition": "varchar(50) DEFAULT '0'"
+        },
+        {
+          "name": "fret",
+          "definition": "varchar(50) DEFAULT 'PREPAID'"
+        },
+        {
+          "name": "client",
+          "definition": "varchar(50) DEFAULT 'PREPAID'"
+        },
+        {
+          "name": "mnlettre",
+          "definition": "varchar(255) DEFAULT ''"
+        },
+        {
+          "name": "EACCE",
+          "definition": "varchar(50) DEFAULT ''"
+        },
+        {
+          "name": "remarq",
+          "definition": "varchar(250) DEFAULT ''"
+        },
+        {
+          "name": "dtdepsta",
+          "definition": "date DEFAULT NULL"
+        }
+      ],
+      "indexes": [
+        "  PRIMARY KEY (`numdos`),",
+        "  KEY `idx_dossier_numdos` (`numdos`),",
+        "  KEY `idx_dossier_coddes` (`coddes`)"
+      ],
+      "engine": "InnoDB DEFAULT CHARSET=latin1"
+    },
+    {
+      "name": "ecart_e",
+      "columns": [
+        {
+          "name": "numpal",
+          "definition": "int(10) unsigned NOT NULL DEFAULT '0'"
+        },
+        {
+          "name": "dtepal",
+          "definition": "date NOT NULL DEFAULT '0000-00-00'"
+        },
+        {
+          "name": "caipal",
+          "definition": "smallint(6) NOT NULL DEFAULT '0'"
+        },
+        {
+          "name": "codvar",
+          "definition": "smallint(6) NOT NULL DEFAULT '0'"
+        },
+        {
+          "name": "codtype",
+          "definition": "smallint(6) NOT NULL DEFAULT '0'"
+        },
+        {
+          "name": "tarpal",
+          "definition": "int(11) NOT NULL DEFAULT '0'"
+        },
+        {
+          "name": "pdspes",
+          "definition": "int(11) NOT NULL DEFAULT '0'"
+        },
+        {
+          "name": "pdsfru",
+          "definition": "int(11) NOT NULL DEFAULT '0'"
+        },
+        {
+          "name": "etat",
+          "definition": "char(1) NOT NULL DEFAULT ''"
+        },
+        {
+          "name": "frigo",
+          "definition": "char(1) DEFAULT NULL"
+        },
+        {
+          "name": "typorg",
+          "definition": "char(1) DEFAULT NULL"
+        },
+        {
+          "name": "numorg",
+          "definition": "int(10) unsigned DEFAULT NULL"
+        },
+        {
+          "name": "numvnt",
+          "definition": "int(10) unsigned DEFAULT NULL"
+        },
+        {
+          "name": "refsta1",
+          "definition": "smallint(6) DEFAULT NULL"
+        },
+        {
+          "name": "refsta2",
+          "definition": "smallint(6) DEFAULT NULL"
+        },
+        {
+          "name": "numtrf",
+          "definition": "int(11) DEFAULT '0'"
+        },
+        {
+          "name": "pdEpis",
+          "definition": "int(11) DEFAULT NULL"
+        }
+      ],
+      "indexes": [
+        "  PRIMARY KEY (`numpal`)"
+      ],
+      "engine": "InnoDB DEFAULT CHARSET=latin1"
+    },
+    {
+      "name": "groupart",
+      "columns": [
+        {
+          "name": "codgrp",
+          "definition": "smallint(6) DEFAULT NULL"
+        },
+        {
+          "name": "type",
+          "definition": "char(20) DEFAULT NULL"
+        },
+        {
+          "name": "codgre",
+          "definition": "smallint(6) DEFAULT NULL"
+        }
+      ],
+      "indexes": [
+        "  UNIQUE KEY `ix344_1` (`codgrp`)"
+      ],
+      "engine": "InnoDB DEFAULT CHARSET=latin1"
+    },
+    {
+      "name": "grpemb",
+      "columns": [
+        {
+          "name": "codgre",
+          "definition": "smallint(6) DEFAULT NULL"
+        },
+        {
+          "name": "nomgre",
+          "definition": "char(20) DEFAULT NULL"
+        }
+      ],
+      "indexes": [],
+      "engine": "InnoDB DEFAULT CHARSET=latin1"
+    },
+    {
+      "name": "marche",
+      "columns": [
+        {
+          "name": "codmar",
+          "definition": "smallint(6) NOT NULL DEFAULT '0'"
+        },
+        {
+          "name": "nommar",
+          "definition": "char(10) NOT NULL DEFAULT ''"
+        },
+        {
+          "name": "gest",
+          "definition": "char(2) NOT NULL DEFAULT ''"
+        }
+      ],
+      "indexes": [],
+      "engine": "InnoDB DEFAULT CHARSET=latin1"
+    },
+    {
+      "name": "palette",
+      "columns": [
+        {
+          "name": "numpal",
+          "definition": "int(11) NOT NULL DEFAULT '0'"
+        },
+        {
+          "name": "dtepal",
+          "definition": "date DEFAULT NULL"
+        },
+        {
+          "name": "colpal",
+          "definition": "smallint(6) DEFAULT NULL"
+        },
+        {
+          "name": "tarpal",
+          "definition": "decimal(16,2) DEFAULT NULL"
+        },
+        {
+          "name": "pdspro",
+          "definition": "decimal(16,2) DEFAULT NULL"
+        },
+        {
+          "name": "pdspes",
+          "definition": "decimal(16,2) DEFAULT NULL"
+        },
+        {
+          "name": "pdscom",
+          "definition": "decimal(16,2) DEFAULT NULL"
+        },
+        {
+          "name": "pdsfru",
+          "definition": "decimal(16,2) DEFAULT NULL"
+        },
+        {
+          "name": "codtyp",
+          "definition": "char(50) DEFAULT NULL"
+        },
+        {
+          "name": "numbdq",
+          "definition": "int(11) DEFAULT NULL"
+        },
+        {
+          "name": "codmar",
+          "definition": "smallint(6) DEFAULT NULL"
+        },
+        {
+          "name": "codvar",
+          "definition": "smallint(6) DEFAULT NULL"
+        },
+        {
+          "name": "codgrp",
+          "definition": "smallint(6) DEFAULT NULL"
+        },
+        {
+          "name": "frigo",
+          "definition": "char(1) DEFAULT NULL"
+        },
+        {
+          "name": "numbat",
+          "definition": "char(5) DEFAULT NULL"
+        },
+        {
+          "name": "numfda",
+          "definition": "char(5) DEFAULT NULL"
+        },
+        {
+          "name": "codcom",
+          "definition": "int(10) unsigned DEFAULT NULL"
+        },
+        {
+          "name": "catego",
+          "definition": "char(4) DEFAULT NULL"
+        },
+        {
+          "name": "codexp",
+          "definition": "bigint(20) DEFAULT NULL"
+        },
+        {
+          "name": "codetiq",
+          "definition": "varchar(50) DEFAULT NULL"
+        }
+      ],
+      "indexes": [
+        "  PRIMARY KEY (`numpal`)"
+      ],
+      "engine": "InnoDB DEFAULT CHARSET=latin1"
+    },
+    {
+      "name": "partenaire",
+      "columns": [
+        {
+          "name": "ref",
+          "definition": "bigint(20) DEFAULT NULL"
+        },
+        {
+          "name": "nom",
+          "definition": "char(60) DEFAULT NULL"
+        },
+        {
+          "name": "type",
+          "definition": "char(15) DEFAULT NULL"
+        },
+        {
+          "name": "rue",
+          "definition": "char(100) DEFAULT NULL"
+        },
+        {
+          "name": "adresse",
+          "definition": "char(255) DEFAULT NULL"
+        },
+        {
+          "name": "ville",
+          "definition": "char(30) DEFAULT NULL"
+        },
+        {
+          "name": "pays",
+          "definition": "char(30) DEFAULT NULL"
+        },
+        {
+          "name": "codpay",
+          "definition": "int(11) DEFAULT NULL"
+        },
+        {
+          "name": "cp",
+          "definition": "char(10) DEFAULT NULL"
+        },
+        {
+          "name": "tel",
+          "definition": "char(17) DEFAULT NULL"
+        },
+        {
+          "name": "fax",
+          "definition": "char(17) DEFAULT NULL"
+        },
+        {
+          "name": "plafond",
+          "definition": "int(11) DEFAULT NULL"
+        },
+        {
+          "name": "tauxfact",
+          "definition": "decimal(16,2) DEFAULT NULL"
+        },
+        {
+          "name": "unitefact",
+          "definition": "char(25) DEFAULT NULL"
+        },
+        {
+          "name": "rep",
+          "definition": "char(30) DEFAULT NULL"
+        },
+        {
+          "name": "coment",
+          "definition": "char(50) DEFAULT NULL"
+        },
+        {
+          "name": "lier",
+          "definition": "char(1) DEFAULT '1'"
+        },
+        {
+          "name": "codgrp",
+          "definition": "varchar(4) DEFAULT NULL"
+        }
+      ],
+      "indexes": [
+        "  UNIQUE KEY `ix154_1` (`ref`)"
+      ],
+      "engine": "InnoDB DEFAULT CHARSET=latin1"
+    },
+    {
+      "name": "pays",
+      "columns": [
+        {
+          "name": "codpay",
+          "definition": "smallint(6) NOT NULL DEFAULT '0'"
+        },
+        {
+          "name": "nompay",
+          "definition": "char(20) NOT NULL DEFAULT ''"
+        },
+        {
+          "name": "abrpay",
+          "definition": "char(8) NOT NULL DEFAULT ''"
+        },
+        {
+          "name": "coddev",
+          "definition": "char(3) DEFAULT NULL"
+        },
+        {
+          "name": "codmar",
+          "definition": "smallint(6) DEFAULT NULL"
+        }
+      ],
+      "indexes": [
+        "  PRIMARY KEY (`codpay`),",
+        "  KEY `idx_pays_codpay` (`codpay`)"
+      ],
+      "engine": "InnoDB DEFAULT CHARSET=latin1"
+    },
+    {
+      "name": "reception",
+      "columns": [
+        {
+          "name": "numrec",
+          "definition": "int(11) NOT NULL DEFAULT '0'"
+        },
+        {
+          "name": "refsta",
+          "definition": "smallint(6) DEFAULT NULL"
+        },
+        {
+          "name": "codvar",
+          "definition": "smallint(6) DEFAULT NULL"
+        },
+        {
+          "name": "varrec",
+          "definition": "smallint(6) DEFAULT NULL"
+        },
+        {
+          "name": "refver",
+          "definition": "int(11) DEFAULT NULL"
+        },
+        {
+          "name": "numveh",
+          "definition": "varchar(20) DEFAULT NULL"
+        },
+        {
+          "name": "numcai",
+          "definition": "int(11) DEFAULT NULL"
+        },
+        {
+          "name": "numtrs",
+          "definition": "int(11) DEFAULT NULL"
+        },
+        {
+          "name": "numbl",
+          "definition": "int(11) DEFAULT NULL"
+        },
+        {
+          "name": "dterec",
+          "definition": "date DEFAULT NULL"
+        },
+        {
+          "name": "herrec",
+          "definition": "varchar(5) DEFAULT NULL"
+        },
+        {
+          "name": "dtecue",
+          "definition": "date DEFAULT NULL"
+        },
+        {
+          "name": "hercue",
+          "definition": "varchar(5) DEFAULT NULL"
+        },
+        {
+          "name": "typcai",
+          "definition": "smallint(6) DEFAULT NULL"
+        },
+        {
+          "name": "nbrcai",
+          "definition": "int(11) DEFAULT NULL"
+        },
+        {
+          "name": "nbrpal",
+          "definition": "int(11) DEFAULT NULL"
+        },
+        {
+          "name": "pdspes",
+          "definition": "decimal(10,2) DEFAULT NULL"
+        },
+        {
+          "name": "brurec",
+          "definition": "decimal(10,2) DEFAULT NULL"
+        },
+        {
+          "name": "tarrec",
+          "definition": "decimal(10,2) DEFAULT NULL"
+        },
+        {
+          "name": "netrec",
+          "definition": "decimal(10,2) DEFAULT NULL"
+        },
+        {
+          "name": "moycai",
+          "definition": "decimal(6,2) DEFAULT NULL"
+        },
+        {
+          "name": "coment",
+          "definition": "varchar(25) DEFAULT NULL"
+        },
+        {
+          "name": "certif",
+          "definition": "char(3) DEFAULT NULL"
+        },
+        {
+          "name": "codmaj",
+          "definition": "char(1) DEFAULT NULL"
+        },
+        {
+          "name": "numbou",
+          "definition": "int(10) unsigned DEFAULT '0'"
+        },
+        {
+          "name": "codaff",
+          "definition": "smallint(5) unsigned DEFAULT '0'"
+        },
+        {
+          "name": "pdsech",
+          "definition": "decimal(10,2) DEFAULT '0.00'"
+        },
+        {
+          "name": "nbrfru",
+          "definition": "smallint(5) unsigned DEFAULT '0'"
+        },
+        {
+          "name": "tmprec",
+          "definition": "decimal(10,2) DEFAULT '0.00'"
+        },
+        {
+          "name": "numr",
+          "definition": "int(10) unsigned DEFAULT '0'"
+        },
+        {
+          "name": "numpes",
+          "definition": "int(11) DEFAULT '0'"
+        },
+        {
+          "name": "numord",
+          "definition": "int(11) DEFAULT '0'"
+        },
+        {
+          "name": "numcaisor",
+          "definition": "int(11) DEFAULT '0'"
+        },
+        {
+          "name": "nbrcailiv",
+          "definition": "int(11) DEFAULT '0'"
+        },
+        {
+          "name": "nbrpalliv",
+          "definition": "int(11) DEFAULT '0'"
+        },
+        {
+          "name": "codtrj",
+          "definition": "int(11) DEFAULT '0'"
+        },
+        {
+          "name": "listpar",
+          "definition": "varchar(50) DEFAULT NULL"
+        },
+        {
+          "name": "comagri",
+          "definition": "varchar(50) DEFAULT NULL"
+        },
+        {
+          "name": "affect",
+          "definition": "smallint(6) DEFAULT NULL"
+        },
+        {
+          "name": "typetrns",
+          "definition": "char(1) DEFAULT 'K'"
+        },
+        {
+          "name": "mttrans",
+          "definition": "double DEFAULT '0'"
+        },
+        {
+          "name": "dttare",
+          "definition": "date DEFAULT '0000-00-00'"
+        },
+        {
+          "name": "pese",
+          "definition": "char(1) DEFAULT '0'"
+        },
+        {
+          "name": "pdsNet",
+          "definition": "double DEFAULT '0'"
+        },
+        {
+          "name": "etatpal",
+          "definition": "varchar(50) DEFAULT NULL"
+        },
+        {
+          "name": "decisiondef",
+          "definition": "varchar(50) DEFAULT NULL"
+        },
+        {
+          "name": "decisionbrx",
+          "definition": "varchar(50) DEFAULT NULL"
+        },
+        {
+          "name": "refverreel",
+          "definition": "int(11) DEFAULT NULL"
+        }
+      ],
+      "indexes": [
+        "  PRIMARY KEY (`numrec`),",
+        "  KEY `idx_dterec_refver` (`dterec`,`refver`),",
+        "  KEY `idx_numrec` (`numrec`)"
+      ],
+      "engine": "InnoDB DEFAULT CHARSET=latin1"
+    },
+    {
+      "name": "tpalette",
+      "columns": [
+        {
+          "name": "codtyp",
+          "definition": "varchar(50) NOT NULL DEFAULT ''"
+        },
+        {
+          "name": "modtrp",
+          "definition": "char(2) DEFAULT NULL"
+        },
+        {
+          "name": "natpal",
+          "definition": "char(2) DEFAULT NULL"
+        },
+        {
+          "name": "codmar",
+          "definition": "smallint(6) DEFAULT NULL"
+        },
+        {
+          "name": "codvar",
+          "definition": "smallint(6) DEFAULT NULL"
+        },
+        {
+          "name": "codgrp",
+          "definition": "smallint(6) DEFAULT NULL"
+        },
+        {
+          "name": "indice",
+          "definition": "char(1) DEFAULT NULL"
+        },
+        {
+          "name": "pdcomc",
+          "definition": "decimal(16,2) DEFAULT NULL"
+        },
+        {
+          "name": "pdproc",
+          "definition": "decimal(16,2) DEFAULT NULL"
+        },
+        {
+          "name": "pdnetc",
+          "definition": "decimal(16,2) DEFAULT NULL"
+        },
+        {
+          "name": "prxemb",
+          "definition": "decimal(16,4) DEFAULT NULL"
+        },
+        {
+          "name": "prxcon",
+          "definition": "decimal(16,4) DEFAULT NULL"
+        },
+        {
+          "name": "prxpal",
+          "definition": "decimal(16,4) DEFAULT NULL"
+        },
+        {
+          "name": "tarcol",
+          "definition": "decimal(16,2) DEFAULT NULL"
+        },
+        {
+          "name": "nomemb",
+          "definition": "varchar(30) DEFAULT NULL"
+        },
+        {
+          "name": "pdsfil",
+          "definition": "decimal(16,2) DEFAULT NULL"
+        },
+        {
+          "name": "nbrfil",
+          "definition": "int(11) DEFAULT NULL"
+        },
+        {
+          "name": "tarpal",
+          "definition": "decimal(16,2) DEFAULT NULL"
+        },
+        {
+          "name": "lier",
+          "definition": "char(1) DEFAULT '1'"
+        },
+        {
+          "name": "codebar",
+          "definition": "varchar(25) DEFAULT NULL"
+        }
+      ],
+      "indexes": [
+        "  PRIMARY KEY (`codtyp`),",
+        "  KEY `idx_tpalette_codtyp` (`codtyp`)"
+      ],
+      "engine": "InnoDB DEFAULT CHARSET=latin1"
+    },
+    {
+      "name": "typeecart",
+      "columns": [
+        {
+          "name": "codtype",
+          "definition": "int(10) unsigned NOT NULL DEFAULT '0'"
+        },
+        {
+          "name": "destype",
+          "definition": "char(35) DEFAULT NULL"
+        },
+        {
+          "name": "lier",
+          "definition": "char(1) DEFAULT NULL"
+        }
+      ],
+      "indexes": [
+        "  PRIMARY KEY (`codtype`)"
+      ],
+      "engine": "InnoDB DEFAULT CHARSET=latin1"
+    }
+  ],
+  "candidates": {
+    "coddes": [
+      "at_dossier",
+      "debardage",
+      "destination",
+      "detailpal",
+      "detail_charg_dossier",
+      "dossier",
+      "exp_g",
+      "facmer",
+      "fraisest",
+      "model_fab_pal",
+      "palettedetail",
+      "sauvdos",
+      "sauvdos217",
+      "sauvdos220",
+      "sauvdoss",
+      "sauvdossier",
+      "sdestinationf",
+      "tabcmr",
+      "vdecvnt"
+    ],
+    "codpay": [
+      "cession_e",
+      "commis",
+      "destination",
+      "dossierafrique",
+      "model_fab_pal",
+      "partenaire",
+      "pays",
+      "sdestinationf"
+    ],
+    "codgre": [
+      "groupart",
+      "grpemb",
+      "tabcertificat"
+    ],
+    "codgrp": [
+      "article",
+      "at_lot_e",
+      "bdq",
+      "bdqref",
+      "bdq_t",
+      "decompte",
+      "detailpal",
+      "detail_charg_dossier",
+      "facmer",
+      "frstation",
+      "groupart",
+      "grpfrs",
+      "lot_e",
+      "model_fab_pal",
+      "palette",
+      "palref",
+      "partenaire",
+      "sauvarticle",
+      "sauvbdq",
+      "sauvbdq27032013",
+      "sauvebdq",
+      "sauvelot_e",
+      "sauvlot27032013",
+      "sauvpal",
+      "sauvpalette",
+      "sauvpalette27032013",
+      "tabchg",
+      "tabchg2",
+      "tabcmr",
+      "tabdecvnt",
+      "tabetiq_e",
+      "tabmarqua",
+      "tabpack_e",
+      "tmptabbdq",
+      "tmptabbdq1",
+      "tpalette",
+      "tpalette2",
+      "tpalettea",
+      "vdecvnt",
+      "vinstaff",
+      "vinstdec",
+      "vinstdec1",
+      "xpalette",
+      "xxtmp1",
+      "xxtmp2"
+    ],
+    "coddef": [
+      "agreage",
+      "causeeca",
+      "defaut",
+      "motref",
+      "recap_motif_ecart",
+      "sondparc"
+    ],
+    "codtype": [
+      "d_ecart",
+      "ecart_d",
+      "ecart_e",
+      "pecart",
+      "pecart_d",
+      "typeecart",
+      "vente_e",
+      "vntsansd",
+      "xvntdetail",
+      "xvnt_e"
+    ],
+    "refexp": [
+      "at_dossier",
+      "detailpal",
+      "dossier",
+      "exp_g",
+      "model_fab_pal",
+      "rpt_emb_destin_exp1",
+      "sauvdos",
+      "sauvdos217",
+      "sauvdos220",
+      "sauvdoss",
+      "sauvdossier",
+      "tabchg",
+      "tabchg2",
+      "tpalette2"
+    ],
+    "refte": [
+      "at_dossier",
+      "dossier",
+      "sauvdos",
+      "sauvdos217",
+      "sauvdos220",
+      "sauvdoss",
+      "sauvdossier"
+    ],
+    "reftrp": [
+      "at_dossier",
+      "dossier",
+      "sauvdos",
+      "sauvdos217",
+      "sauvdos220",
+      "sauvdoss",
+      "sauvdossier"
+    ],
+    "reftm": [
+      "at_dossier",
+      "dossier",
+      "sauvdos",
+      "sauvdos217",
+      "sauvdos220",
+      "sauvdoss",
+      "sauvdossier"
+    ],
+    "codexp": [
+      "emballage",
+      "palette",
+      "palref",
+      "sauvpal",
+      "sauvpalette",
+      "sauvpalette27032013",
+      "tabetiq_e",
+      "tabpack_e"
+    ],
+    "codmar": [
+      "aff_e",
+      "at_lot_e",
+      "barcode",
+      "bdq",
+      "bdqref",
+      "bdq_t",
+      "detailpal",
+      "detail_charg_dossier",
+      "facmer",
+      "lot_e",
+      "marche",
+      "marque",
+      "model_fab_pal",
+      "palette",
+      "palref",
+      "pays",
+      "sauvbdq",
+      "sauvbdq27032013",
+      "sauvebdq",
+      "sauvelot_e",
+      "sauvlot27032013",
+      "sauvpal",
+      "sauvpalette",
+      "sauvpalette27032013",
+      "tabchg",
+      "tabchg2",
+      "tabcmr",
+      "tabetiq_e",
+      "tabmarqua",
+      "tabpack_e",
+      "tmptabbdq",
+      "tmptabbdq1",
+      "tpalette",
+      "tpalette2",
+      "tpalettea",
+      "vaff_e",
+      "vinstaff",
+      "vinstdec",
+      "vinstdec1",
+      "xpalette",
+      "xxtmp1",
+      "xxtmp2"
+    ]
+  }
+}

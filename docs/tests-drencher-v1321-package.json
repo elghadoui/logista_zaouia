@@ -1,0 +1,47 @@
+{
+  "passed": 10,
+  "failed": 0,
+  "productionDeploy": false,
+  "results": [
+    {
+      "name": "Archive intègre",
+      "passed": true
+    },
+    {
+      "name": "Backend/frontend et SQL séparé présents",
+      "passed": true
+    },
+    {
+      "name": "Aucun SQL métier dans update",
+      "passed": true
+    },
+    {
+      "name": "Configurations, secrets, clés et web.config exclus",
+      "passed": true
+    },
+    {
+      "name": "Aucune clé OpenAI dans textes",
+      "passed": true
+    },
+    {
+      "name": "Tests API/MySQL et version finale attestés",
+      "passed": true
+    },
+    {
+      "name": "DLL testée identique dans ZIP",
+      "passed": true
+    },
+    {
+      "name": "Tous fichiers update correspondent au manifeste",
+      "passed": true
+    },
+    {
+      "name": "PDF, modèles et dépendances non remplacés",
+      "passed": true
+    },
+    {
+      "name": "Copie additive préserve config IIS, DP, OpenAI et MySQL fictifs",
+      "passed": true
+    }
+  ]
+}

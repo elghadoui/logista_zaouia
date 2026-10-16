@@ -1,0 +1,80 @@
+{
+  "date": "2026-10-09T14:43:52.134Z",
+  "passed": 18,
+  "failed": 0,
+  "scope": "Rendu réel React/Mantine, calculs de sélection et dates. Pas d’interaction DOM ni capture navigateur.",
+  "results": [
+    {
+      "name": "Plantage slice reproduit sur vraie forme MySqlDateTime",
+      "passed": true
+    },
+    {
+      "name": "Chaînes civiles et ISO normalisées",
+      "passed": true
+    },
+    {
+      "name": "Objet MySqlDateTime et variante majuscule normalisés",
+      "passed": true
+    },
+    {
+      "name": "Dates nulles absentes et impossibles sans erreur",
+      "passed": true
+    },
+    {
+      "name": "Date valide bissextile sans décalage de jour",
+      "passed": true
+    },
+    {
+      "name": "Sélections de pages conservées jusqu’à 164 palettes",
+      "passed": true
+    },
+    {
+      "name": "Sélection page rejouée sans doublon",
+      "passed": true
+    },
+    {
+      "name": "Annuler ne modifie pas la sélection précédente",
+      "passed": true
+    },
+    {
+      "name": "Palette réservée ailleurs bloquée, propre cycle autorisé",
+      "passed": true
+    },
+    {
+      "name": "Résumé compact poids réceptions groupes exacts",
+      "passed": true
+    },
+    {
+      "name": "Poids manquant non inventé",
+      "passed": true
+    },
+    {
+      "name": "Vrai Stock rendu avec date objet et date absente",
+      "passed": true
+    },
+    {
+      "name": "Formulaire principal bouton sans liste longue",
+      "passed": true
+    },
+    {
+      "name": "Quatre colonnes produits conservées",
+      "passed": true
+    },
+    {
+      "name": "Fenêtre dédiée pagination serveur, sélection page et globale",
+      "passed": true
+    },
+    {
+      "name": "Confirmation et annulation distinctes dans la fenêtre",
+      "passed": true
+    },
+    {
+      "name": "Dates Drencher sans slice dangereux",
+      "passed": true
+    },
+    {
+      "name": "Impression robuste dates objets avec calcul kg/tonnes",
+      "passed": true
+    }
+  ]
+}

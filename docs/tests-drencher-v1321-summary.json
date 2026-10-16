@@ -1,0 +1,1043 @@
+{
+  "date": "2026-10-14T17:29:21.3726594Z",
+  "version": "1.4.1",
+  "drencherVersion": "1.3.2.1",
+  "passed": 206,
+  "failed": 0,
+  "apiMySqlValidated": true,
+  "productionAccess": false,
+  "productionDeploy": false,
+  "assemblySha256": "0F8D7B5B27D3A385AF6773E1F3E5D191BCDBFBB5D250D66DA06C467D047C7FE2",
+  "results": [
+    {
+      "suite": "tests-drencher-v1321-api.json",
+      "name": "Version API 1.3.2.1",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v1321-api.json",
+      "name": "Migration réexécutée : 14 tables Drencher InnoDB",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v1321-api.json",
+      "name": "Hicham fictif : ancien droit groupé conservé sans donner programmes",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v1321-api.json",
+      "name": "Rôles Qualité restent Gestionnaire",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v1321-api.json",
+      "name": "Hicham : catalogue programmes actifs lisible",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v1321-api.json",
+      "name": "Hicham : sélection palettes autorisée sans droits référentiels globaux",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v1321-api.json",
+      "name": "Sélection bornée à la station : palette DIAF refusée",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v1321-api.json",
+      "name": "Voir seul : pas d’élargissement automatique des lookups",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v1321-api.json",
+      "name": "Hicham : filtres palettes autorisés",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v1321-api.json",
+      "name": "Hicham : journal stock refusé",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v1321-api.json",
+      "name": "Hicham : documents stock refusés",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v1321-api.json",
+      "name": "Hicham : création programme refusée en API",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v1321-api.json",
+      "name": "Hicham : réception stock refusée en API",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v1321-api.json",
+      "name": "Samira : administration refusée",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v1321-api.json",
+      "name": "Mbark : administration refusée",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v1321-api.json",
+      "name": "SQL012 idempotent : trois lignes fermées par utilisateur",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v1321-api.json",
+      "name": "SQL012 conserve droits anciens et mots de passe/utilisateurs",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v1321-api.json",
+      "name": "Opérateur ne gère pas les produits",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v1321-api.json",
+      "name": "Produit ancien contrat visible par défaut",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v1321-api.json",
+      "name": "MA et option F04 relues en base",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v1321-api.json",
+      "name": "Unité immuable",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v1321-api.json",
+      "name": "Hicham : modification programme refusée",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v1321-api.json",
+      "name": "Hicham : activation/désactivation refusée",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v1321-api.json",
+      "name": "Hicham : modification produit refusée",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v1321-api.json",
+      "name": "Samira gère programmes sans Admin",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v1321-api.json",
+      "name": "Brouillon aucun débit",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v1321-api.json",
+      "name": "Hicham : brouillon créé réellement en base",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v1321-api.json",
+      "name": "Hicham : validation qualité interdite en API",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v1321-api.json",
+      "name": "Palette réservée empêchant autre cycle",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v1321-api.json",
+      "name": "Deux soumissions concurrentes : une réussite, une 409",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v1321-api.json",
+      "name": "Consommation immédiate 50 moins 3 égale 47",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v1321-api.json",
+      "name": "Mouvements réels uniquement",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v1321-api.json",
+      "name": "Stale opérateur refusé après soumission",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v1321-api.json",
+      "name": "Appel direct opérateur version courante refusé",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v1321-api.json",
+      "name": "Correction qualité interdite opérateur",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v1321-api.json",
+      "name": "Suppression interdite opérateur",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v1321-api.json",
+      "name": "Correction 3 vers 2,5 restitue 0,5",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v1321-api.json",
+      "name": "Seconde correction débit complémentaire 1,5",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v1321-api.json",
+      "name": "Validation sans nouvelle sortie",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v1321-api.json",
+      "name": "Correction après validation différentielle",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v1321-api.json",
+      "name": "Historique correction auteur motif anciennes valeurs",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v1321-api.json",
+      "name": "Archive V1.3.1 sans SQL011 consultable",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v1321-api.json",
+      "name": "Archive sans extension : F04 historique consultable",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v1321-api.json",
+      "name": "Consultation écriture refusée",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v1321-api.json",
+      "name": "Archive écriture refusée",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v1321-api.json",
+      "name": "Stock insuffisant 409",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v1321-api.json",
+      "name": "Rollback multi-produits : solde état mouvements inchangés",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v1321-api.json",
+      "name": "Migration additive sur données : aucun solde ni cycle modifié",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v1321-api.json",
+      "name": "Produit modifié sans rétroactivité snapshot",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v1321-api.json",
+      "name": "PDF reel authentifié sans cache",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v1321-api.json",
+      "name": "PDF theorique authentifié sans cache",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v1321-api.json",
+      "name": "PDF machine authentifié sans cache",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v1321-api.json",
+      "name": "PDF trois modes strictement sans mutation",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v1321-api.json",
+      "name": "Mode arbitraire refusé",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v1321-api.json",
+      "name": "Produit masqué conservé dans rapports internes",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v1321-api.json",
+      "name": "Document stock stock cohérent et sans erreur",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v1321-api.json",
+      "name": "Document stock fiche cohérent et sans erreur",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v1321-api.json",
+      "name": "Document stock entrees cohérent et sans erreur",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v1321-api.json",
+      "name": "Document stock consommations cohérent et sans erreur",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v1321-api.json",
+      "name": "Document stock mouvements cohérent et sans erreur",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v1321-api.json",
+      "name": "Consommations incluent cycles soumis",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v1321-api.json",
+      "name": "Confirmation suppression obligatoire",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v1321-api.json",
+      "name": "Motif suppression obligatoire",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v1321-api.json",
+      "name": "Suppression soumis restitution exacte",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v1321-api.json",
+      "name": "Palettes soumis libérées",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v1321-api.json",
+      "name": "Suppression répétée 409 sans restitution supplémentaire",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v1321-api.json",
+      "name": "Suppression brouillon sans mouvements",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v1321-api.json",
+      "name": "Suppression validé restitution exacte des corrections",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v1321-api.json",
+      "name": "Réservations et validations libérées",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v1321-api.json",
+      "name": "Révisions antérieures conservées",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v1321-api.json",
+      "name": "Audit suppression motif acteur snapshot conservés",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v1321-api.json",
+      "name": "Cycles supprimés exclus opérationnel",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v1321-api.json",
+      "name": "Historique admin contient trois suppressions",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v1321-api.json",
+      "name": "Historique admin interdit Consultation",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v1321-api.json",
+      "name": "Cycle supprimé consultation non admin refusée",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v1321-api.json",
+      "name": "F04 supprimé archive clairement identifié",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v1321-api.json",
+      "name": "Hicham ne modifie pas brouillon d’un autre auteur",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v1321-api.json",
+      "name": "Hicham ne soumet pas brouillon d’un autre auteur",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v1321-api.json",
+      "name": "Brouillon d’autrui : bouton de modification fermé",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v1321-api.json",
+      "name": "Samira correction et validation réelles, stock différentiel",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v1321-api.json",
+      "name": "Samira ne supprime pas administrativement",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v1321-api.json",
+      "name": "Mbark ne supprime pas administrativement",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v1321-api.json",
+      "name": "État programme opérateur interdit",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v1321-api.json",
+      "name": "Désactivation confirmation obligatoire",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v1321-api.json",
+      "name": "Programme inactif bloque nouveau cycle",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v1321-api.json",
+      "name": "Version historique programme conservée",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v1321-api.json",
+      "name": "Réactivation nouvelle version",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v1321-api.json",
+      "name": "Transition historique soumis sans débit : une consommation à validation",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v1321-api.json",
+      "name": "Transition historique validé : correction uniquement différence",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v1321-api.json",
+      "name": "Legacy suppression restaure seulement net comptabilisé",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v1321-api.json",
+      "name": "Journal incohérent bloque suppression sans réparer implicitement",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v1321-api.json",
+      "name": "Toutes tables historiques inchangées",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v1321-api.json",
+      "name": "Solde physique égale cumul ledger",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v1321-own-draft.json",
+      "name": "Hicham seul droit saisie crée son brouillon réel",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v1321-own-draft.json",
+      "name": "Hicham modifie son brouillon en API",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v1321-own-draft.json",
+      "name": "Édition de son brouillon visible",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v1321-own-draft.json",
+      "name": "Brouillon autre auteur modification refusée",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v1321-own-draft.json",
+      "name": "Brouillon autre auteur soumission refusée",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v1321-own-draft.json",
+      "name": "Propriétaire peut soumettre son brouillon",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v1321-own-draft.json",
+      "name": "Après soumission son propre brouillon est verrouillé",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v1321-own-draft.json",
+      "name": "Aucune écriture sur stock pour consommations réelles zéro",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v1321-final-api.json",
+      "name": "Hicham seul droit saisie crée son brouillon réel",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v1321-final-api.json",
+      "name": "Hicham modifie son brouillon en API",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v1321-final-api.json",
+      "name": "Édition de son brouillon visible",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v1321-final-api.json",
+      "name": "Brouillon autre auteur modification refusée",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v1321-final-api.json",
+      "name": "Brouillon autre auteur soumission refusée",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v1321-final-api.json",
+      "name": "Propriétaire peut soumettre son brouillon",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v1321-final-api.json",
+      "name": "Après soumission son propre brouillon est verrouillé",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v1321-final-api.json",
+      "name": "Aucune écriture sur stock pour consommations réelles zéro",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v1321-final-api.json",
+      "name": "Ajouter absent : création POST refusée",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v1321-final-api.json",
+      "name": "PUT cycles/0 ne contourne pas Ajouter",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v1321-final-api.json",
+      "name": "PUT cycle négatif refusé",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v1321-final-api.json",
+      "name": "Aucun cycle créé par contournement",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v1321-permissions.json",
+      "name": "Hicham saisie view",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v1321-permissions.json",
+      "name": "Hicham saisie add",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v1321-permissions.json",
+      "name": "Hicham saisie modify",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v1321-permissions.json",
+      "name": "Opérateur refus drencher_quality / add",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v1321-permissions.json",
+      "name": "Opérateur refus drencher_quality / modify",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v1321-permissions.json",
+      "name": "Opérateur refus drencher_quality / delete",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v1321-permissions.json",
+      "name": "Opérateur refus drencher_programs / add",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v1321-permissions.json",
+      "name": "Opérateur refus drencher_programs / modify",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v1321-permissions.json",
+      "name": "Opérateur refus drencher_programs / delete",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v1321-permissions.json",
+      "name": "Opérateur refus drencher_products / add",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v1321-permissions.json",
+      "name": "Opérateur refus drencher_products / modify",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v1321-permissions.json",
+      "name": "Opérateur refus drencher_products / delete",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v1321-permissions.json",
+      "name": "Opérateur refus drencher_stock / add",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v1321-permissions.json",
+      "name": "Opérateur refus drencher_stock / modify",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v1321-permissions.json",
+      "name": "Opérateur refus drencher_stock / delete",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v1321-permissions.json",
+      "name": "Mbark validation/correction",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v1321-permissions.json",
+      "name": "Mbark drencher_programs / add",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v1321-permissions.json",
+      "name": "Mbark drencher_products / add",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v1321-permissions.json",
+      "name": "Mbark drencher_programs / modify",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v1321-permissions.json",
+      "name": "Mbark drencher_products / modify",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v1321-permissions.json",
+      "name": "Mbark entrée stock",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v1321-permissions.json",
+      "name": "Mbark aucune suppression administrative",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v1321-permissions.json",
+      "name": "Mbark pas de saisie implicitement accordée",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v1321-permissions.json",
+      "name": "Samira validation/correction",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v1321-permissions.json",
+      "name": "Samira drencher_programs / add",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v1321-permissions.json",
+      "name": "Samira drencher_products / add",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v1321-permissions.json",
+      "name": "Samira drencher_programs / modify",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v1321-permissions.json",
+      "name": "Samira drencher_products / modify",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v1321-permissions.json",
+      "name": "Samira entrée stock",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v1321-permissions.json",
+      "name": "Samira aucune suppression administrative",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v1321-permissions.json",
+      "name": "Samira pas de saisie implicitement accordée",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v1321-permissions.json",
+      "name": "Admin conserve drencher / view",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v1321-permissions.json",
+      "name": "Admin conserve drencher / add",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v1321-permissions.json",
+      "name": "Admin conserve drencher / modify",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v1321-permissions.json",
+      "name": "Admin conserve drencher / delete",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v1321-permissions.json",
+      "name": "Admin conserve drencher_quality / view",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v1321-permissions.json",
+      "name": "Admin conserve drencher_quality / add",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v1321-permissions.json",
+      "name": "Admin conserve drencher_quality / modify",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v1321-permissions.json",
+      "name": "Admin conserve drencher_quality / delete",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v1321-permissions.json",
+      "name": "Admin conserve drencher_programs / view",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v1321-permissions.json",
+      "name": "Admin conserve drencher_programs / add",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v1321-permissions.json",
+      "name": "Admin conserve drencher_programs / modify",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v1321-permissions.json",
+      "name": "Admin conserve drencher_programs / delete",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v1321-permissions.json",
+      "name": "Admin conserve drencher_products / view",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v1321-permissions.json",
+      "name": "Admin conserve drencher_products / add",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v1321-permissions.json",
+      "name": "Admin conserve drencher_products / modify",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v1321-permissions.json",
+      "name": "Admin conserve drencher_products / delete",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v1321-permissions.json",
+      "name": "Admin conserve drencher_stock / view",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v1321-permissions.json",
+      "name": "Admin conserve drencher_stock / add",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v1321-permissions.json",
+      "name": "Admin conserve drencher_stock / modify",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v1321-permissions.json",
+      "name": "Admin conserve drencher_stock / delete",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v1321-permissions.json",
+      "name": "Module absent fermé",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v1321-permissions.json",
+      "name": "Ajouter sans Voir refusé",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v1321-permissions.json",
+      "name": "Consultation reste lecture seule",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v1321-permissions.json",
+      "name": "Propriétaire peut modifier/soumettre son brouillon",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v1321-permissions.json",
+      "name": "Autre opérateur ne peut modifier le brouillon",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v1321-permissions.json",
+      "name": "Admin conserve accès brouillons d'autrui",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v1321-permissions.json",
+      "name": "Contrôle propriétaire API : 403",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v1321-permissions.json",
+      "name": "Matrice complète sans migration ni écriture",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v1321-permissions.json",
+      "name": "Ancien droit groupé conservé à l'identique",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v1321-permissions.json",
+      "name": "Nouveaux droits absents tous false",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v1321-permissions.json",
+      "name": "Matrice ne modifie pas les données d'entrée",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v1321-permissions.json",
+      "name": "Aucune attribution de saisie automatique",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v1321-permissions.json",
+      "name": "Saisie autorise les seuls lookups nécessaires au cycle",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v1321-permissions.json",
+      "name": "Qualité autorise les lookups de correction",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v1321-permissions.json",
+      "name": "Ancien Voir seul n'élargit pas les lookups",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v1321-permissions.json",
+      "name": "Programme spécifique indépendant des produits/stock",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v1321-ui.json",
+      "name": "Hicham : vrai bouton Nouveau cycle actif",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v1321-ui.json",
+      "name": "Hicham : aucun accès gestion des programmes via ancien droit groupé",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v1321-ui.json",
+      "name": "Admin peut cocher Ajouter saisie Gestionnaire",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v1321-ui.json",
+      "name": "Admin peut cocher Modifier saisie Gestionnaire",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v1321-ui.json",
+      "name": "Consultation reste grisée",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v1321-ui.json",
+      "name": "Voir requis avant attribution",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v1321-ui.json",
+      "name": "Suppression saisie reste grisée",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v1321-ui.json",
+      "name": "Opérateur : aucun bouton Ajouter/Modifier/Activer programme",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v1321-ui.json",
+      "name": "Mbark : gestion programme active",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v1321-ui.json",
+      "name": "Mbark : droits programme ne donnent pas gestion produits",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v1321-ui.json",
+      "name": "Samira : gestion programme active",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v1321-ui.json",
+      "name": "Samira : droits programme ne donnent pas gestion produits",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v1321-ui.json",
+      "name": "Qualité sans droit saisie : Nouveau cycle désactivé",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v1321-ui.json",
+      "name": "Admin conserve Nouveau cycle",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v1321-conservation.json",
+      "name": "80 sources conservées à l'identique hors autorisations",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v1321-conservation.json",
+      "name": "Authentification et initialisation inchangées hors numéro Drencher",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v1321-conservation.json",
+      "name": "DrencherF04Pdf.cs : source identique à V1.3.2",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v1321-conservation.json",
+      "name": "DrencherPdf.cs : source identique à V1.3.2",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v1321-conservation.json",
+      "name": "DrencherReports.cs : source identique à V1.3.2",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v1321-conservation.json",
+      "name": "DrencherStockPlan.cs : source identique à V1.3.2",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v1321-conservation.json",
+      "name": "DrencherV132.cs : source identique à V1.3.2",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v1321-conservation.json",
+      "name": "DrencherRecette.cs : source identique à V1.3.2",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v1321-conservation.json",
+      "name": "DrencherReservations.cs : source identique à V1.3.2",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v1321-conservation.json",
+      "name": "010_drencher_reservations.sql : migration métier inchangée",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v1321-conservation.json",
+      "name": "011_drencher_v132.sql : migration métier inchangée",
+      "passed": true
+    },
+    {
+      "suite": "tests-drencher-v1321-conservation.json",
+      "name": "DLL de politique testée identique à la publication finale",
+      "passed": true
+    }
+  ]
+}

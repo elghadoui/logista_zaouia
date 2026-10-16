@@ -1,0 +1,146 @@
+import assert from 'node:assert/strict';
+import {execFileSync} from 'node:child_process';
+import {readFileSync,writeFileSync,mkdirSync} from 'node:fs';
+import {randomUUID} from 'node:crypto';
+import path from 'node:path';
+const base='http://127.0.0.1:5080/api',password=process.env.VITASOUSS_TEST_PASSWORD;
+assert.ok(password,'Mot de passe de test local requis via variable environnement');
+const mysql=path.resolve('.local-mysql/mysql-5.7.44-winx64/bin/mysql.exe');
+const sql=q=>execFileSync(mysql,['--host=127.0.0.1','--port=33307','--user=root','--default-character-set=utf8mb4','--batch','--raw','--skip-column-names'],{input:"SET SESSION sql_mode='';\n"+q,encoding:'utf8',env:{...process.env,MYSQL_PWD:''}}).trim();
+const results=[];function check(name,value){assert.ok(value,name);results.push({name,passed:true});console.log('PASS '+name);}
+async function login(username='admin'){const r=await fetch(base+'/auth/login',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({username,password})});assert.equal(r.status,200,await r.clone().text());const d=await r.json();return{cookie:r.headers.get('set-cookie').split(';')[0],csrf:d.csrf};}
+const admin=await login();
+async function call(uri,method='GET',body,actor=admin,csrf=true){const r=await fetch(base+uri,{method,headers:{Cookie:actor.cookie,'Content-Type':'application/json',...(csrf?{'X-CSRF-Token':actor.csrf}:{})},body:body===undefined?undefined:JSON.stringify(body)});return{status:r.status,data:await r.json().catch(()=>null)};}
+async function ok(...args){const r=await call(...args);assert.equal(r.status,200,JSON.stringify(r.data));return r.data;}
+const cfg=await ok('/admin/configuration'),station=cfg.stations.find(s=>s.code==='ZAOUIA'),server=cfg.servers.find(s=>s.id===station.server_id);
+assert.equal(server.host,'127.0.0.1');assert.equal(server.port,33307);
+const nonce=randomUUID().replaceAll('-',''),db='vitasouss_test_dr1321_'+nonce;
+assert.match(db,/^vitasouss_test_dr1321_[a-f0-9]{32}$/);assert.equal(sql(`SELECT COUNT(*) FROM information_schema.SCHEMATA WHERE SCHEMA_NAME='${db}'`),'0');
+const dump=readFileSync(process.env.VITASOUSS_TEST_DDL_DUMP??'tests/DrencherV132Tests/fixtures/logista-schema-only.sql','utf8');
+const ddl=[...dump.matchAll(/CREATE TABLE IF NOT EXISTS `([^`]+)` \(([\s\S]*?)\) ENGINE=[^;]+;/g)].filter(m=>['palbrut','reception','variete','verger','adherent'].includes(m[1])).map(m=>m[0]);assert.equal(ddl.length,5);
+const extensions=['vit_dr_produit_document','vit_dr_cycle_v132'];
+const tables=['vit_traitement_produit','vit_dr_programme','vit_dr_programme_revision','vit_dr_mutex','vit_dr_stock_lot','vit_dr_cycle','vit_dr_revision','vit_dr_palette_validee','vit_dr_mouvement','vit_dr_admin_historique','vit_dr_palette_reservee','vit_dr_reservation_etat',...extensions];
+const migration=['004_drencher_business.sql','010_drencher_reservations.sql','011_drencher_v132.sql'].map(f=>readFileSync('sql/'+f,'utf8')).join('\n');
+sql(`CREATE DATABASE ${db} CHARACTER SET latin1;USE ${db};`+ddl.join('\n')+migration+`GRANT SELECT ON ${db}.* TO 'vitasouss_test'@'127.0.0.1';`+tables.map(t=>`GRANT INSERT,UPDATE,DELETE,TRIGGER ON ${db}.${t} TO 'vitasouss_test'@'127.0.0.1';`).join('\n'));
+const contexts=[],users=[];let success=false;
+async function context(name,label,readOnly=false){await ok('/admin/contexts','POST',{stationId:station.id,databaseName:name,label,readOnly,localRefsta:7816});const c=(await ok('/admin/configuration')).contexts.find(c=>c.database_name===name&&c.label===label);contexts.push(c.id);return c.id;}
+const cid=await context(db,'TEST LOCAL V1321 '+nonce),pre=`/contexts/${cid}/drencher`;
+const archive=await context(db+'_archive','ARCHIVE SYNTHETIQUE '+nonce,true);
+async function makeUser(label,role,flags){const username='dr1321_'+label+'_'+nonce;await ok('/admin/users','POST',{username,displayName:'TEST V1321 '+label,password,role,contextIds:[cid,archive]});const u=(await ok('/admin/configuration')).users.find(u=>u.username===username);users.push(u);const permissions=await ok('/admin/users/'+u.id+'/permissions');await ok('/admin/users/'+u.id+'/permissions','PUT',{permissions:permissions.map(p=>({...p,view:!!flags[p.module]?.view,add:!!flags[p.module]?.add,modify:!!flags[p.module]?.modify,delete:false}))});return login(username);}
+const views={drencher:{view:true}};
+const fingerprint=()=>sql(`USE ${db};CHECKSUM TABLE palbrut,reception,variete,verger,adherent;`);
+const scalar=q=>sql(`USE ${db};`+q);
+try {
+ check('Version API 1.3.2.1',(await ok('/health')).drencherVersion==='1.3.2.1');
+ sql(`USE ${db};`+migration);check('Migration réexécutée : 14 tables Drencher InnoDB',scalar("SELECT COUNT(*) FROM information_schema.TABLES WHERE TABLE_SCHEMA=DATABASE() AND TABLE_NAME LIKE 'vit_%' AND ENGINE='InnoDB'")==='14');
+ await ok(pre+'/reservations/initialize','POST',{confirmation:'INITIALISER RESERVATIONS'});
+ sql(`USE ${db};INSERT INTO adherent(refadh,nomadh) VALUES(1,'PRODUCTEUR FICTIF');INSERT INTO verger(refver,nomver,refadh) VALUES(101,'VERGER FICTIF',1);INSERT INTO variete(codvar,nomvar) VALUES(104,'CLEMENTINE FICTIVE');INSERT INTO reception(numrec,refsta,codvar,refver,dterec) VALUES(1,7816,104,101,'2026-10-14'),(2,7702,104,101,'2026-10-14');INSERT INTO palbrut(numpal,numrec,codvar,refver,refadh,pdsfru) VALUES `+Array.from({length:180},(_,i)=>`(${i+1},1,104,101,1,500)`).join(',')+',(999,2,104,101,1,500);');
+ const historicalBefore=fingerprint();
+ const op=await makeUser('operateur','Gestionnaire',{...views,drencher:{view:true,add:true,modify:true},drencher_manage:{view:true,add:true,modify:true}}),quality=await makeUser('qualite','Gestionnaire',{...views,drencher_quality:{view:true,modify:true},drencher_products:{view:true,add:true,modify:true},drencher_programs:{view:true,add:true,modify:true},drencher_stock:{view:true,add:true}}),consult=await makeUser('lecture','Consultation',views);
+ const samira=await makeUser('samira','Gestionnaire',{...views,drencher_quality:{view:true,modify:true},drencher_products:{view:true,add:true,modify:true},drencher_programs:{view:true,add:true,modify:true},drencher_stock:{view:true,add:true}});
+ const operatorId=users[0].id;
+ const opPermissions=await ok('/admin/users/'+operatorId+'/permissions');
+ check('Hicham fictif : ancien droit groupé conservé sans donner programmes',opPermissions.find(p=>p.module==='drencher_manage').add&& !opPermissions.find(p=>p.module==='drencher_programs').add);
+ check('Rôles Qualité restent Gestionnaire',users[1].role==='Gestionnaire'&&users[3].role==='Gestionnaire');
+ check('Hicham : catalogue programmes actifs lisible',(await ok(pre+'/catalog','GET',undefined,op)).programmes.length===0);
+ check('Hicham : sélection palettes autorisée sans droits référentiels globaux',(await ok(pre+'/palettes/choices?page=1','GET',undefined,op)).rows.length>0);
+ check('Sélection bornée à la station : palette DIAF refusée',(await call(pre+'/palettes/selection','POST',{cycleId:null,ids:[999],ajouterLot:null},op)).status===409);
+ check('Voir seul : pas d’élargissement automatique des lookups',(await call(pre+'/palettes/choices?page=1','GET',undefined,consult)).status===403);
+ check('Hicham : filtres palettes autorisés',(await call(pre+'/palettes/filters','GET',undefined,op)).status===200);
+ check('Hicham : journal stock refusé',(await call(pre+'/stock?page=1','GET',undefined,op)).status===403);
+ check('Hicham : documents stock refusés',(await call(pre+'/reports/stock?type=stock','GET',undefined,op)).status===403);
+ check('Hicham : création programme refusée en API',(await call(pre+'/programs','POST',{id:0,version:0,nom:'NO',actif:true,produits:[]},op)).status===403);
+ check('Hicham : réception stock refusée en API',(await call(pre+'/stock','POST',{produitId:1,lot:'NO',peremption:null,quantite:1,bon:'NO',date:'2026-10-14'},op)).status===403);
+ check('Samira : administration refusée',(await call('/admin/configuration','GET',undefined,samira)).status===403);
+ check('Mbark : administration refusée',(await call('/admin/configuration','GET',undefined,quality)).status===403);
+ // SQL 012 tested twice only in a disposable LOCAL administration fixture, never the live admin schema.
+ const adminFixture='vt_dr1321_perm_'+nonce;
+ sql(`CREATE DATABASE ${adminFixture};CREATE TABLE ${adminFixture}.app_users LIKE referentiels_admin.app_users;CREATE TABLE ${adminFixture}.app_module_permissions LIKE referentiels_admin.app_module_permissions;INSERT INTO ${adminFixture}.app_users SELECT * FROM referentiels_admin.app_users WHERE id IN (${users.map(u=>u.id).join(',')});INSERT INTO ${adminFixture}.app_module_permissions SELECT * FROM referentiels_admin.app_module_permissions WHERE user_id IN (${users.map(u=>u.id).join(',')});DELETE FROM ${adminFixture}.app_module_permissions WHERE module IN ('drencher_products','drencher_programs','drencher_stock');`);
+ const oldPermissions=sql(`SELECT user_id,module,can_view,can_add,can_modify,can_delete FROM ${adminFixture}.app_module_permissions ORDER BY user_id,module`),usersChecksum=sql(`CHECKSUM TABLE ${adminFixture}.app_users;`);
+ for(let i=0;i<2;i++)sql(`USE ${adminFixture};`+readFileSync('sql/012_drencher_permissions_v1321.sql','utf8'));
+ check('SQL012 idempotent : trois lignes fermées par utilisateur',sql(`SELECT COUNT(*) FROM ${adminFixture}.app_module_permissions WHERE module IN ('drencher_products','drencher_programs','drencher_stock') AND can_view=0 AND can_add=0 AND can_modify=0 AND can_delete=0`)==='12');
+ check('SQL012 conserve droits anciens et mots de passe/utilisateurs',oldPermissions===sql(`SELECT user_id,module,can_view,can_add,can_modify,can_delete FROM ${adminFixture}.app_module_permissions WHERE module NOT IN ('drencher_products','drencher_programs','drencher_stock') ORDER BY user_id,module`)&&usersChecksum===sql(`CHECKSUM TABLE ${adminFixture}.app_users;`));
+ check('Opérateur ne gère pas les produits',(await call(pre+'/products','POST',{id:0,reference:'NO',nom:'NO',unite:'L',actif:true},op)).status===403);
+ const a=await ok(pre+'/products','POST',{id:0,reference:'A',nom:'PRODUIT VISIBLE',unite:'L',actif:true,matiereActive:'MA FICTIVE A',afficherF04:true},quality);
+ const b=await ok(pre+'/products','POST',{id:0,reference:'B',nom:'PRODUIT MASQUE',unite:'kg',actif:true,matiereActive:'MA SECRETE FICTIVE',afficherF04:false},quality);
+ const c=await ok(pre+'/products','POST',{id:0,reference:'C',nom:'LEGACY DEFAULT',unite:'mL',actif:true},quality);
+ let catalog=await ok(pre+'/catalog');check('Produit ancien contrat visible par défaut',catalog.produits.find(p=>p.id===c.id).afficherF04===true);check('MA et option F04 relues en base',catalog.produits.find(p=>p.id===a.id).matiereActive==='MA FICTIVE A'&&catalog.produits.find(p=>p.id===b.id).afficherF04===false);
+ check('Unité immuable',(await call(pre+'/products','POST',{...catalog.produits.find(p=>p.id===a.id),unite:'kg'},quality)).status===409);
+ const program=await ok(pre+'/programs','POST',{id:0,version:0,nom:'PROGRAMME FICTIF',actif:true,produits:[{produitId:a.id,dose:2.5},{produitId:b.id,dose:1}]},quality);
+ check('Hicham : modification programme refusée',(await call(pre+'/programs','POST',{id:program.id,version:1,nom:'NO',actif:true,produits:[{produitId:a.id,dose:9}]},op)).status===403);
+ check('Hicham : activation/désactivation refusée',(await call(`${pre}/programs/${program.id}/state`,'POST',{version:1,actif:false,confirmation:`DESACTIVER PROGRAMME ${program.id}`},op)).status===403);
+ check('Hicham : modification produit refusée',(await call(pre+'/products','POST',{...catalog.produits.find(p=>p.id===a.id),nom:'NO'},op)).status===403);
+ const samiraProgram=await ok(pre+'/programs','POST',{id:0,version:0,nom:'SAMIRA FICTIVE',actif:true,produits:[{produitId:a.id,dose:1}]},samira);
+ await ok(`${pre}/programs/${samiraProgram.id}/state`,'POST',{version:1,actif:false,confirmation:`DESACTIVER PROGRAMME ${samiraProgram.id}`},samira);
+ await ok(`${pre}/programs/${samiraProgram.id}/state`,'POST',{version:2,actif:true,confirmation:''},samira);
+ check('Samira gère programmes sans Admin',(await ok(`${pre}/programs/${samiraProgram.id}/versions`)).length===3);
+ for(const p of [a,b])await ok(pre+'/stock','POST',{produitId:p.id,lot:'FAB-'+p.id,peremption:'2027-12-31',quantite:50,bon:'BON-'+p.id,date:'2026-10-14'},quality);
+ catalog=await ok(pre+'/catalog');const lot=id=>catalog.lots.find(p=>p.produitId===id).id;
+ const balance=id=>Number(scalar(`SELECT solde FROM vit_dr_stock_lot WHERE id=${lot(id)}`));
+ const rq=(pal,real=3,second=2)=>({version:0,date:'2026-10-14',debut:'08:00',fin:'09:00',programmeId:program.id,programmeVersion:1,eauInitiale:1200,eauConsommee:1000,palettes:[pal],produits:[{produitId:a.id,dose:2.5,machine:2.6,reel:real,lots:[{lotId:lot(a.id),quantite:real}]},{produitId:b.id,dose:1,machine:1.2,reel:second,lots:[{lotId:lot(b.id),quantite:second}]}],observations:'TEST FICTIF LOCAL',motif:''});
+ const create=async (pal,real=3,second=2)=>ok(pre+'/cycles','POST',rq(pal,real,second),op);
+ const submit=(id,version,actor=op)=>ok(`${pre}/cycles/${id}/submit`,'POST',{version,motif:''},actor);
+ const validate=(id,version)=>ok(`${pre}/cycles/${id}/validate`,'POST',{version,motif:'Validation FICTIVE'},quality);
+ const correct=(id,pal,version,real,second=2)=>ok(`${pre}/cycles/${id}/correct`,'POST',{...rq(pal,real,second),version,motif:'Correction FICTIVE'},quality);
+ const remove=(id,version)=>ok(`${pre}/cycles/${id}/delete`,'POST',{version,confirmation:`SUPPRIMER CYCLE ${id}`,motif:'Suppression de test FICTIF'});
+ const draft=await create(1);check('Brouillon aucun débit',balance(a.id)===50&&balance(b.id)===50&&scalar(`SELECT COUNT(*) FROM vit_dr_mouvement WHERE cycle_id=${draft.id}`)==='0');
+ check('Hicham : brouillon créé réellement en base',Number(scalar(`SELECT auteur_id FROM vit_dr_cycle WHERE id=${draft.id}`))===operatorId&&(await ok(`${pre}/cycles/${draft.id}`,'GET',undefined,op)).canEditDraft===true);
+ check('Hicham : validation qualité interdite en API',(await call(`${pre}/cycles/${draft.id}/validate`,'POST',{version:1,motif:'NO'},op)).status===403);
+ check('Palette réservée empêchant autre cycle',(await call(pre+'/cycles','POST',rq(1),op)).status===409);
+ const race=await Promise.all([call(`${pre}/cycles/${draft.id}/submit`,'POST',{version:1,motif:''},op),call(`${pre}/cycles/${draft.id}/submit`,'POST',{version:1,motif:''},op)]);
+ check('Deux soumissions concurrentes : une réussite, une 409',race.map(r=>r.status).sort().join(',')==='200,409');check('Consommation immédiate 50 moins 3 égale 47',balance(a.id)===47&&balance(b.id)===48);check('Mouvements réels uniquement',scalar(`SELECT GROUP_CONCAT(nature,':',quantite ORDER BY lot_id) FROM vit_dr_mouvement WHERE cycle_id=${draft.id}`)==='Soumission consommation:-3.000000,Soumission consommation:-2.000000');
+ check('Stale opérateur refusé après soumission',(await call(`${pre}/cycles/${draft.id}`,'PUT',{...rq(1),version:1},op)).status===409);check('Appel direct opérateur version courante refusé',(await call(`${pre}/cycles/${draft.id}`,'PUT',{...rq(1),version:2},op)).status===409);check('Correction qualité interdite opérateur',(await call(`${pre}/cycles/${draft.id}/correct`,'POST',{...rq(1),version:2,motif:'NO'},op)).status===403);check('Suppression interdite opérateur',(await call(`${pre}/cycles/${draft.id}/delete`,'POST',{version:2,confirmation:`SUPPRIMER CYCLE ${draft.id}`,motif:'NO'},op)).status===403);
+ await correct(draft.id,1,2,2.5);check('Correction 3 vers 2,5 restitue 0,5',balance(a.id)===47.5&&scalar(`SELECT quantite FROM vit_dr_mouvement WHERE cycle_id=${draft.id} AND revision=3 AND lot_id=${lot(a.id)}`)==='0.500000');
+ await correct(draft.id,1,3,4);check('Seconde correction débit complémentaire 1,5',balance(a.id)===46&&scalar(`SELECT quantite FROM vit_dr_mouvement WHERE cycle_id=${draft.id} AND revision=4 AND lot_id=${lot(a.id)}`)==='-1.500000');
+ const moves=scalar(`SELECT COUNT(*) FROM vit_dr_mouvement WHERE cycle_id=${draft.id}`);await validate(draft.id,4);check('Validation sans nouvelle sortie',balance(a.id)===46&&moves===scalar(`SELECT COUNT(*) FROM vit_dr_mouvement WHERE cycle_id=${draft.id}`));
+ await correct(draft.id,1,5,3);check('Correction après validation différentielle',balance(a.id)===47);
+ const auditSnapshot=(await ok(`${pre}/cycles/${draft.id}`)).revisions[0].snapshot;check('Historique correction auteur motif anciennes valeurs',(await ok(`${pre}/cycles/${draft.id}`)).revisions.length===6);
+ sql(`CREATE DATABASE ${db}_archive CHARACTER SET latin1;`+[...tables.filter(t=>!extensions.includes(t)),'palbrut','reception','variete','verger','adherent'].map(t=>`CREATE TABLE ${db}_archive.${t} LIKE ${db}.${t};INSERT INTO ${db}_archive.${t} SELECT * FROM ${db}.${t};GRANT SELECT,TRIGGER ON ${db}_archive.${t} TO 'vitasouss_test'@'127.0.0.1';`).join('\n'));
+ check('Archive V1.3.1 sans SQL011 consultable',(await ok(`/contexts/${archive}/drencher/catalog`,'GET',undefined,op)).produits.length===3);
+ check('Archive sans extension : F04 historique consultable',(await ok(`/contexts/${archive}/drencher/reports/f04/${draft.id}?format=json`,'GET',undefined,op)).tables.length>0);
+ check('Consultation écriture refusée',(await call(pre+'/cycles','POST',rq(2),consult)).status===403);check('Archive écriture refusée',(await call(`/contexts/${archive}/drencher/cycles`,'POST',rq(2),op)).status===403);
+ const bad=await create(2,3,100),beforeFailed=balance(a.id);const failed=await call(`${pre}/cycles/${bad.id}/submit`,'POST',{version:1,motif:''},op);check('Stock insuffisant 409',failed.status===409);check('Rollback multi-produits : solde état mouvements inchangés',balance(a.id)===beforeFailed&&balance(b.id)===48&&scalar(`SELECT statut FROM vit_dr_cycle WHERE id=${bad.id}`)==='Brouillon'&&scalar(`SELECT COUNT(*) FROM vit_dr_mouvement WHERE cycle_id=${bad.id}`)==='0');
+ const beforeSql=scalar('CHECKSUM TABLE vit_dr_cycle,vit_dr_stock_lot,vit_dr_mouvement');sql(`USE ${db};`+readFileSync('sql/011_drencher_v132.sql','utf8'));check('Migration additive sur données : aucun solde ni cycle modifié',scalar('CHECKSUM TABLE vit_dr_cycle,vit_dr_stock_lot,vit_dr_mouvement')===beforeSql);
+ const snapshotBefore=JSON.stringify(auditSnapshot);await ok(pre+'/products','POST',{...catalog.produits.find(p=>p.id===a.id),matiereActive:'MA MODIFIEE',afficherF04:false},quality);check('Produit modifié sans rétroactivité snapshot',JSON.stringify((await ok(`${pre}/cycles/${draft.id}`)).revisions[0].snapshot)===snapshotBefore);
+ mkdirSync('output/pdf/v1321-apercus',{recursive:true});
+ const docFingerprint=scalar('CHECKSUM TABLE '+tables.join(','));
+ for(const mode of ['reel','theorique','machine']){const response=await fetch(base+`${pre}/reports/f04/${draft.id}?quantite=${mode}`,{headers:{Cookie:admin.cookie}});assert.equal(response.status,200,await response.clone().text().then(t=>t.slice(0,200)));check('PDF '+mode+' authentifié sans cache',response.headers.get('cache-control').includes('no-store'));writeFileSync(`output/pdf/v1321-apercus/F04-V06-V1.3.2-${mode.toUpperCase()}.pdf`,Buffer.from(await response.arrayBuffer()));}
+ check('PDF trois modes strictement sans mutation',docFingerprint===scalar('CHECKSUM TABLE '+tables.join(',')));check('Mode arbitraire refusé',(await call(`${pre}/reports/f04/${draft.id}?quantite=sql`)).status===400);
+ const internal=await ok(`${pre}/reports/f04/${draft.id}?format=json`);check('Produit masqué conservé dans rapports internes',JSON.stringify(internal).includes('PRODUIT MASQUE'));
+ const report=type=>ok(`${pre}/reports/stock?format=json&type=${type}&produitId=${a.id}`);
+ for(const type of ['stock','fiche','entrees','consommations','mouvements']){const r=await report(type);check('Document stock '+type+' cohérent et sans erreur',r.tables.length>0);}
+ const submitted=await create(3,2,1);await submit(submitted.id,1);const net=await report('consommations');check('Consommations incluent cycles soumis',net.tables.find(t=>t.title.includes('nettes par cycle')).rows.some(r=>r[1].startsWith(submitted.id+' /')));
+ check('Confirmation suppression obligatoire',(await call(`${pre}/cycles/${submitted.id}/delete`,'POST',{version:2,confirmation:'',motif:'TEST'})).status===400);check('Motif suppression obligatoire',(await call(`${pre}/cycles/${submitted.id}/delete`,'POST',{version:2,confirmation:`SUPPRIMER CYCLE ${submitted.id}`,motif:''})).status===400);
+ await remove(submitted.id,2);check('Suppression soumis restitution exacte',balance(a.id)===47&&balance(b.id)===48);check('Palettes soumis libérées',scalar(`SELECT COUNT(*) FROM vit_dr_palette_reservee WHERE cycle_id=${submitted.id}`)==='0');
+ const countBefore=scalar(`SELECT COUNT(*) FROM vit_dr_mouvement WHERE cycle_id=${submitted.id}`);check('Suppression répétée 409 sans restitution supplémentaire',(await call(`${pre}/cycles/${submitted.id}/delete`,'POST',{version:2,confirmation:`SUPPRIMER CYCLE ${submitted.id}`,motif:'TEST'})).status===409&&balance(a.id)===47&&countBefore===scalar(`SELECT COUNT(*) FROM vit_dr_mouvement WHERE cycle_id=${submitted.id}`));
+ await remove(bad.id,1);check('Suppression brouillon sans mouvements',scalar(`SELECT COUNT(*) FROM vit_dr_mouvement WHERE cycle_id=${bad.id}`)==='0'&&balance(a.id)===47);
+ const revisions=scalar(`SELECT COUNT(*) FROM vit_dr_revision WHERE cycle_id=${draft.id}`);await remove(draft.id,6);check('Suppression validé restitution exacte des corrections',balance(a.id)===50&&balance(b.id)===50);check('Réservations et validations libérées',scalar(`SELECT COUNT(*) FROM vit_dr_palette_validee WHERE cycle_id=${draft.id}`)==='0'&&scalar(`SELECT COUNT(*) FROM vit_dr_palette_reservee WHERE cycle_id=${draft.id}`)==='0');check('Révisions antérieures conservées',Number(scalar(`SELECT COUNT(*) FROM vit_dr_revision WHERE cycle_id=${draft.id}`))===Number(revisions)+1);check('Audit suppression motif acteur snapshot conservés',scalar(`SELECT COUNT(*) FROM vit_dr_admin_historique WHERE objet='Suppression cycle' AND objet_id=${draft.id} AND avant LIKE '%PRODUIT VISIBLE%' AND apres LIKE '%Suppression de test%'`)==='1');
+ check('Cycles supprimés exclus opérationnel',(await ok(pre+'/cycles?page=1')).total===0);check('Historique admin contient trois suppressions',(await ok(pre+'/cycles/deleted?page=1')).total===3);check('Historique admin interdit Consultation',(await call(pre+'/cycles/deleted?page=1','GET',undefined,consult)).status===403);check('Cycle supprimé consultation non admin refusée',(await call(`${pre}/cycles/${draft.id}`,'GET',undefined,op)).status===403);check('F04 supprimé archive clairement identifié',(await ok(`${pre}/reports/f04/${draft.id}?format=json`)).warning.includes('SUPPRIMÉ'));
+ await ok(pre+'/products','POST',{...catalog.produits.find(p=>p.id===a.id),matiereActive:'MA FICTIVE A',afficherF04:true},quality);
+ const adminDraft=await ok(pre+'/cycles','POST',rq(8));
+ check('Hicham ne modifie pas brouillon d’un autre auteur',(await call(`${pre}/cycles/${adminDraft.id}`,'PUT',{...rq(8),version:1},op)).status===403);
+ check('Hicham ne soumet pas brouillon d’un autre auteur',(await call(`${pre}/cycles/${adminDraft.id}/submit`,'POST',{version:1,motif:''},op)).status===403);
+ check('Brouillon d’autrui : bouton de modification fermé',(await ok(`${pre}/cycles/${adminDraft.id}`,'GET',undefined,op)).canEditDraft===false);
+ await remove(adminDraft.id,1);
+ const samiraCycle=await create(9,1,1);await submit(samiraCycle.id,1);
+ await ok(`${pre}/cycles/${samiraCycle.id}/correct`,'POST',{...rq(9,0.5,1),version:2,motif:'Correction Samira FICTIVE'},samira);
+ await ok(`${pre}/cycles/${samiraCycle.id}/validate`,'POST',{version:3,motif:'Validation Samira FICTIVE'},samira);
+ check('Samira correction et validation réelles, stock différentiel',balance(a.id)===49.5&&scalar(`SELECT statut FROM vit_dr_cycle WHERE id=${samiraCycle.id}`)==='Validé');
+ check('Samira ne supprime pas administrativement',(await call(`${pre}/cycles/${samiraCycle.id}/delete`,'POST',{version:4,confirmation:`SUPPRIMER CYCLE ${samiraCycle.id}`,motif:'NO'},samira)).status===403);
+ check('Mbark ne supprime pas administrativement',(await call(`${pre}/cycles/${samiraCycle.id}/delete`,'POST',{version:4,confirmation:`SUPPRIMER CYCLE ${samiraCycle.id}`,motif:'NO'},quality)).status===403);
+ await remove(samiraCycle.id,4);
+ const stateReq={version:1,actif:false,confirmation:`DESACTIVER PROGRAMME ${program.id}`};check('État programme opérateur interdit',(await call(`${pre}/programs/${program.id}/state`,'POST',stateReq,op)).status===403);check('Désactivation confirmation obligatoire',(await call(`${pre}/programs/${program.id}/state`,'POST',{...stateReq,confirmation:''},quality)).status===400);
+ await ok(`${pre}/programs/${program.id}/state`,'POST',stateReq,quality);check('Programme inactif bloque nouveau cycle',(await call(pre+'/cycles','POST',rq(4),op)).status===409);check('Version historique programme conservée',(await ok(`${pre}/programs/${program.id}/versions`)).length===2);await ok(`${pre}/programs/${program.id}/state`,'POST',{version:2,actif:true,confirmation:''},quality);check('Réactivation nouvelle version',(await ok(pre+'/catalog')).programmes.find(p=>p.id===program.id).version===3);
+ // Simulate pre-1.3.2 bookkeeping ONLY in this synthetic local database.
+ async function legacy(pal,validated){const x=await ok(pre+'/cycles','POST',{...rq(pal),programmeVersion:3},op);await submit(x.id,1);if(validated)await validate(x.id,2);sql(`USE ${db};DELETE FROM vit_dr_cycle_v132 WHERE cycle_id=${x.id};`+(validated?`UPDATE vit_dr_mouvement SET nature='Consommation' WHERE cycle_id=${x.id};`:`UPDATE vit_dr_stock_lot l JOIN (SELECT lot_id,-SUM(quantite) q FROM vit_dr_mouvement WHERE cycle_id=${x.id} GROUP BY lot_id) m ON m.lot_id=l.id SET l.solde=l.solde+m.q;DELETE FROM vit_dr_mouvement WHERE cycle_id=${x.id};`));return x;}
+ const legacyPending=await legacy(5,false),balBefore=balance(a.id);await validate(legacyPending.id,2);check('Transition historique soumis sans débit : une consommation à validation',balance(a.id)===balBefore-3&&scalar(`SELECT COUNT(*) FROM vit_dr_mouvement WHERE cycle_id=${legacyPending.id}`)==='2');await remove(legacyPending.id,3);
+ const legacyValid=await legacy(6,true),legacyBal=balance(a.id);await ok(`${pre}/cycles/${legacyValid.id}/correct`,'POST',{...rq(6,2.5),programmeVersion:3,version:3,motif:'Legacy correction'},quality);check('Transition historique validé : correction uniquement différence',balance(a.id)===legacyBal+0.5);await remove(legacyValid.id,4);check('Legacy suppression restaure seulement net comptabilisé',balance(a.id)===50&&balance(b.id)===50);
+ const corrupted=await ok(pre+'/cycles','POST',{...rq(7),programmeVersion:3},op);sql(`USE ${db};INSERT INTO vit_dr_mouvement(lot_id,cycle_id,revision,nature,quantite,bon,auteur,date_creation) VALUES(${lot(a.id)},${corrupted.id},1,'Consommation',-1,'','TEST',UTC_TIMESTAMP());`);check('Journal incohérent bloque suppression sans réparer implicitement',(await call(`${pre}/cycles/${corrupted.id}/delete`,'POST',{version:1,confirmation:`SUPPRIMER CYCLE ${corrupted.id}`,motif:'TEST'})).status===409&&balance(a.id)===50);sql(`USE ${db};DELETE FROM vit_dr_mouvement WHERE cycle_id=${corrupted.id};`);await remove(corrupted.id,1);
+ check('Toutes tables historiques inchangées',historicalBefore===fingerprint());check('Solde physique égale cumul ledger',scalar('SELECT COUNT(*) FROM vit_dr_stock_lot l WHERE l.solde<>(SELECT COALESCE(SUM(m.quantite),0) FROM vit_dr_mouvement m WHERE m.lot_id=l.id)')==='0');
+ success=true;
+} finally {
+ for(const u of users)await call('/admin/users/'+u.id,'PUT',{displayName:u.display_name,role:u.role,active:false});
+ for(const id of contexts)await call('/admin/contexts/'+id+'/disable','POST');
+ mkdirSync('docs',{recursive:true});writeFileSync('docs/tests-v150-drencher-api.json',JSON.stringify({date:new Date().toISOString(),success,database:db,host:'127.0.0.1',port:33307,productionAccess:false,results},null,2));
+}
+

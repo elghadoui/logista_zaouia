@@ -1,0 +1,278 @@
+{
+  "date": "2026-10-16T16:36:57.3589538Z",
+  "passed": 67,
+  "failed": 0,
+  "productionAccess": false,
+  "assemblySha256": "1A769EDF1E1964431FB03367DBA8D54A6B4300455F0C59969A864949DF13121B",
+  "scope": "Politique r\u00E9elle de permissions et propri\u00E9t\u00E9 des brouillons ; aucun acc\u00E8s MySQL",
+  "results": [
+    {
+      "name": "Hicham saisie view",
+      "passed": true
+    },
+    {
+      "name": "Hicham saisie add",
+      "passed": true
+    },
+    {
+      "name": "Hicham saisie modify",
+      "passed": true
+    },
+    {
+      "name": "Op\u00E9rateur refus drencher_quality / add",
+      "passed": true
+    },
+    {
+      "name": "Op\u00E9rateur refus drencher_quality / modify",
+      "passed": true
+    },
+    {
+      "name": "Op\u00E9rateur refus drencher_quality / delete",
+      "passed": true
+    },
+    {
+      "name": "Op\u00E9rateur refus drencher_programs / add",
+      "passed": true
+    },
+    {
+      "name": "Op\u00E9rateur refus drencher_programs / modify",
+      "passed": true
+    },
+    {
+      "name": "Op\u00E9rateur refus drencher_programs / delete",
+      "passed": true
+    },
+    {
+      "name": "Op\u00E9rateur refus drencher_products / add",
+      "passed": true
+    },
+    {
+      "name": "Op\u00E9rateur refus drencher_products / modify",
+      "passed": true
+    },
+    {
+      "name": "Op\u00E9rateur refus drencher_products / delete",
+      "passed": true
+    },
+    {
+      "name": "Op\u00E9rateur refus drencher_stock / add",
+      "passed": true
+    },
+    {
+      "name": "Op\u00E9rateur refus drencher_stock / modify",
+      "passed": true
+    },
+    {
+      "name": "Op\u00E9rateur refus drencher_stock / delete",
+      "passed": true
+    },
+    {
+      "name": "Mbark validation/correction",
+      "passed": true
+    },
+    {
+      "name": "Mbark drencher_programs / add",
+      "passed": true
+    },
+    {
+      "name": "Mbark drencher_products / add",
+      "passed": true
+    },
+    {
+      "name": "Mbark drencher_programs / modify",
+      "passed": true
+    },
+    {
+      "name": "Mbark drencher_products / modify",
+      "passed": true
+    },
+    {
+      "name": "Mbark entr\u00E9e stock",
+      "passed": true
+    },
+    {
+      "name": "Mbark aucune suppression administrative",
+      "passed": true
+    },
+    {
+      "name": "Mbark pas de saisie implicitement accord\u00E9e",
+      "passed": true
+    },
+    {
+      "name": "Samira validation/correction",
+      "passed": true
+    },
+    {
+      "name": "Samira drencher_programs / add",
+      "passed": true
+    },
+    {
+      "name": "Samira drencher_products / add",
+      "passed": true
+    },
+    {
+      "name": "Samira drencher_programs / modify",
+      "passed": true
+    },
+    {
+      "name": "Samira drencher_products / modify",
+      "passed": true
+    },
+    {
+      "name": "Samira entr\u00E9e stock",
+      "passed": true
+    },
+    {
+      "name": "Samira aucune suppression administrative",
+      "passed": true
+    },
+    {
+      "name": "Samira pas de saisie implicitement accord\u00E9e",
+      "passed": true
+    },
+    {
+      "name": "Admin conserve drencher / view",
+      "passed": true
+    },
+    {
+      "name": "Admin conserve drencher / add",
+      "passed": true
+    },
+    {
+      "name": "Admin conserve drencher / modify",
+      "passed": true
+    },
+    {
+      "name": "Admin conserve drencher / delete",
+      "passed": true
+    },
+    {
+      "name": "Admin conserve drencher_quality / view",
+      "passed": true
+    },
+    {
+      "name": "Admin conserve drencher_quality / add",
+      "passed": true
+    },
+    {
+      "name": "Admin conserve drencher_quality / modify",
+      "passed": true
+    },
+    {
+      "name": "Admin conserve drencher_quality / delete",
+      "passed": true
+    },
+    {
+      "name": "Admin conserve drencher_programs / view",
+      "passed": true
+    },
+    {
+      "name": "Admin conserve drencher_programs / add",
+      "passed": true
+    },
+    {
+      "name": "Admin conserve drencher_programs / modify",
+      "passed": true
+    },
+    {
+      "name": "Admin conserve drencher_programs / delete",
+      "passed": true
+    },
+    {
+      "name": "Admin conserve drencher_products / view",
+      "passed": true
+    },
+    {
+      "name": "Admin conserve drencher_products / add",
+      "passed": true
+    },
+    {
+      "name": "Admin conserve drencher_products / modify",
+      "passed": true
+    },
+    {
+      "name": "Admin conserve drencher_products / delete",
+      "passed": true
+    },
+    {
+      "name": "Admin conserve drencher_stock / view",
+      "passed": true
+    },
+    {
+      "name": "Admin conserve drencher_stock / add",
+      "passed": true
+    },
+    {
+      "name": "Admin conserve drencher_stock / modify",
+      "passed": true
+    },
+    {
+      "name": "Admin conserve drencher_stock / delete",
+      "passed": true
+    },
+    {
+      "name": "Module absent ferm\u00E9",
+      "passed": true
+    },
+    {
+      "name": "Ajouter sans Voir refus\u00E9",
+      "passed": true
+    },
+    {
+      "name": "Consultation reste lecture seule",
+      "passed": true
+    },
+    {
+      "name": "Propri\u00E9taire peut modifier/soumettre son brouillon",
+      "passed": true
+    },
+    {
+      "name": "Autre op\u00E9rateur ne peut modifier le brouillon",
+      "passed": true
+    },
+    {
+      "name": "Admin conserve acc\u00E8s brouillons d\u0027autrui",
+      "passed": true
+    },
+    {
+      "name": "Contr\u00F4le propri\u00E9taire API : 403",
+      "passed": true
+    },
+    {
+      "name": "Matrice compl\u00E8te sans migration ni \u00E9criture",
+      "passed": true
+    },
+    {
+      "name": "Ancien droit group\u00E9 conserv\u00E9 \u00E0 l\u0027identique",
+      "passed": true
+    },
+    {
+      "name": "Nouveaux droits absents tous false",
+      "passed": true
+    },
+    {
+      "name": "Matrice ne modifie pas les donn\u00E9es d\u0027entr\u00E9e",
+      "passed": true
+    },
+    {
+      "name": "Aucune attribution de saisie automatique",
+      "passed": true
+    },
+    {
+      "name": "Saisie autorise les seuls lookups n\u00E9cessaires au cycle",
+      "passed": true
+    },
+    {
+      "name": "Qualit\u00E9 autorise les lookups de correction",
+      "passed": true
+    },
+    {
+      "name": "Ancien Voir seul n\u0027\u00E9largit pas les lookups",
+      "passed": true
+    },
+    {
+      "name": "Programme sp\u00E9cifique ind\u00E9pendant des produits/stock",
+      "passed": true
+    }
+  ]
+}

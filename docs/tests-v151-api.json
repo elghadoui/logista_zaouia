@@ -1,0 +1,194 @@
+{
+  "date": "2026-10-16T11:19:40.720Z",
+  "passed": 46,
+  "failed": 0,
+  "success": true,
+  "productionAccess": false,
+  "assemblySha256": "D88679717A8DD049293461D9256112A3F3266EEEF8CBA01A96A4B9702F78E874",
+  "results": [
+    {
+      "name": "Version HTTP V1.5.1 et Drencher 1.3.2.1",
+      "passed": true
+    },
+    {
+      "name": "Accès anonyme refusé",
+      "passed": true
+    },
+    {
+      "name": "Module absent refusé",
+      "passed": true
+    },
+    {
+      "name": "Consultation avec filtres par défaut",
+      "passed": true
+    },
+    {
+      "name": "Autre station non autorisée refusée",
+      "passed": true
+    },
+    {
+      "name": "Archive non autorisée refusée",
+      "passed": true
+    },
+    {
+      "name": "Caisserie sans permission refusée",
+      "passed": true
+    },
+    {
+      "name": "Export sans droit module refusé",
+      "passed": true
+    },
+    {
+      "name": "HTTP consolidation 5,5 tonnes, trois lots sans collision",
+      "passed": true
+    },
+    {
+      "name": "HTTP comparaison quatre contextes autorisés",
+      "passed": true
+    },
+    {
+      "name": "HTTP source indisponible : total global NULL et alerte",
+      "passed": true
+    },
+    {
+      "name": "Paramètre SQL libre refusé",
+      "passed": true
+    },
+    {
+      "name": "Tri arbitraire refusé",
+      "passed": true
+    },
+    {
+      "name": "Paramètres répétés refusés",
+      "passed": true
+    },
+    {
+      "name": "Page négative refusée",
+      "passed": true
+    },
+    {
+      "name": "Date invalide refusée",
+      "passed": true
+    },
+    {
+      "name": "Recherche malveillante reste paramétrée",
+      "passed": true
+    },
+    {
+      "name": "Aucune mutation analytique POST",
+      "passed": true
+    },
+    {
+      "name": "Aucune mutation analytique PUT",
+      "passed": true
+    },
+    {
+      "name": "Aucune mutation analytique DELETE",
+      "passed": true
+    },
+    {
+      "name": "Export HTTP Excel valide, noms et type de contenu",
+      "passed": true
+    },
+    {
+      "name": "HTTP caisserie filtrée : 213 mouvements E",
+      "passed": true
+    },
+    {
+      "name": "HTTP audit officiel 1809,096 tonnes",
+      "passed": true
+    },
+    {
+      "name": "Inventaires : Consultation refusée en accès direct",
+      "passed": true
+    },
+    {
+      "name": "Inventaires : Gestionnaire sans Admin refusé",
+      "passed": true
+    },
+    {
+      "name": "Inventaires : migration et types réels exposés à Admin",
+      "passed": true
+    },
+    {
+      "name": "Inventaire sans confirmation refusé API",
+      "passed": true
+    },
+    {
+      "name": "Inventaire physique excessif refusé API",
+      "passed": true
+    },
+    {
+      "name": "Inventaire création interdite Gestionnaire API",
+      "passed": true
+    },
+    {
+      "name": "Inventaire enregistré dans administration et historisé",
+      "passed": true
+    },
+    {
+      "name": "Révision périmée refusée API",
+      "passed": true
+    },
+    {
+      "name": "Aucune suppression d’inventaire fournie",
+      "passed": true
+    },
+    {
+      "name": "Masquage API : sélecteurs Admin et Consultation filtrés",
+      "passed": true
+    },
+    {
+      "name": "Masquage API : droits directs conservés",
+      "passed": true
+    },
+    {
+      "name": "Masquage API : configuration administrative conservée",
+      "passed": true
+    },
+    {
+      "name": "Masquage non attribuable par utilisateur non Admin",
+      "passed": true
+    },
+    {
+      "name": "Réaffichage sans réattribution de droits",
+      "passed": true
+    },
+    {
+      "name": "HTTP variation physique E−S = −41 010 par type, aucune dette",
+      "passed": true
+    },
+    {
+      "name": "HTTP situation producteur 75 et balances caisses/palettes",
+      "passed": true
+    },
+    {
+      "name": "HTTP recherche producteur par code",
+      "passed": true
+    },
+    {
+      "name": "HTTP pagination de situation sans perte de total",
+      "passed": true
+    },
+    {
+      "name": "HTTP balance producteur ignore le filtre E/S",
+      "passed": true
+    },
+    {
+      "name": "HTTP situation producteur sans permission refusée",
+      "passed": true
+    },
+    {
+      "name": "HTTP export Excel situation complet",
+      "passed": true
+    },
+    {
+      "name": "HTTP export situation sans permission refusé",
+      "passed": true
+    },
+    {
+      "name": "Empreintes métier inchangées après toutes lectures/exports",
+      "passed": true
+    }
+  ]
+}

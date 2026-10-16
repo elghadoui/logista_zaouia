@@ -1,0 +1,138 @@
+{
+  "version": "1.1.0",
+  "baseline": "versions/V1.0",
+  "files": [
+    {
+      "path": "backend/Program.cs",
+      "status": "Modified",
+      "v10Sha256": "DF37A10AC727FD05DF6F7FBF573A15286A41E8E25F1A9EC8F1C7DCCD5E72072B",
+      "v11Sha256": "7E1336918CB20CFB4B6BDFECF01D1909321C42D5E77C788A9314F5038A62CBF3"
+    },
+    {
+      "path": "backend/Vitasouss.Api.csproj",
+      "status": "Modified",
+      "v10Sha256": "1BC20DBB8250C12E2DD307F139543EE9EF4B3CE634C68D456AFA4903D7FB09E5",
+      "v11Sha256": "E3713AA22C59C8EA87B211B0842853F769BFC1CB01F64C751715791BE8242D8F"
+    },
+    {
+      "path": "frontend/package.json",
+      "status": "Modified",
+      "v10Sha256": "9F5D11F41D1767DE62F879874DCAA9F456D35B86998601C03BDF821961479E0D",
+      "v11Sha256": "67CC91AA76BC4F36E7B84A6A375FAB6E10B67F0F46AED57AF267B55CE260D79D"
+    },
+    {
+      "path": "frontend/package-lock.json",
+      "status": "Modified",
+      "v10Sha256": "2A1181AFAA0320E147D9475E8833C7738D6AA7A6EAB5E90A524F308BB30C3DB2",
+      "v11Sha256": "AA083190A69E4B374A6CB819308DD4086E6051470A2E23FAE4476F61FA9A787A"
+    },
+    {
+      "path": "README.md",
+      "status": "Modified",
+      "v10Sha256": "9A28FB3B46634676E6EF46403E57945E7F7A064BAFB28A83C1FDBC3B5A4A906C",
+      "v11Sha256": "43ED96E614B04261384ED1012B6C04090E8854C9867DA79594587E55A19788ED"
+    },
+    {
+      "path": "CHANGELOG.md",
+      "status": "Added",
+      "v10Sha256": null,
+      "v11Sha256": "137878BD72BBB8D5C312DE75427639E0BE2548090C1ACC7719389A29860C1509"
+    },
+    {
+      "path": "backend/Application/PresentationService.cs",
+      "status": "Added",
+      "v10Sha256": null,
+      "v11Sha256": "03C2EDD6865389FDDC9151A23BCF5F9C3D1432E843DA6C19608416D6CFA04BE3"
+    },
+    {
+      "path": "backend/Application/ReferentialService.cs",
+      "status": "Modified",
+      "v10Sha256": "EE857B2093C1708294CDF5DC0516B5AE173A9E486B960C35D9801D84DEF258A9",
+      "v11Sha256": "21975BC36A62FF8A64BC119A63ABBE14C2583DC64A4E35A5C496CBEB42BF0440"
+    },
+    {
+      "path": "frontend/src/api.ts",
+      "status": "Modified",
+      "v10Sha256": "95DE6EBF465722B554F52162E8CE0EEA63FAB514B8E21ADBDE01CDE7A1772074",
+      "v11Sha256": "ADF9E5A669F0C31113485E9582531D6965F8858D3596EFB2101FEF073829E0BB"
+    },
+    {
+      "path": "frontend/src/App.tsx",
+      "status": "Modified",
+      "v10Sha256": "1A965A1EFC8EE4B488A3E65E111772799BBFD05CC611CCB26E3D573CE20842BE",
+      "v11Sha256": "712C6357A4C7CA38165F2D2084AB6E5020FC793F25BA491F2395E8FC4B8F8180"
+    },
+    {
+      "path": "frontend/src/components.tsx",
+      "status": "Modified",
+      "v10Sha256": "813F3E3DAB32214241C231F0C9AE41B383F81573E047958DEE19322C937C9321",
+      "v11Sha256": "64CB2E675ED763836AB1C9207BCC2066A883A4ADFFB457E30B0B229F98CDC1E2"
+    },
+    {
+      "path": "frontend/src/EntityList.tsx",
+      "status": "Modified",
+      "v10Sha256": "271CB4A1EC7AB82E31E643090CCC56E678B43CB74143B338B7327E7709DEDB6A",
+      "v11Sha256": "D42FE6F2E00A430C5A432C5C2C35ADD361365B929DB8689A9837C4FE75F4D7FA"
+    },
+    {
+      "path": "frontend/src/JournalSync.tsx",
+      "status": "Modified",
+      "v10Sha256": "5A4923B58E5D26B6C9C493E9877BD4E7778A4F0E4280F9BF780B300097BCD866",
+      "v11Sha256": "088D371F03464A0C7E2ACEF3587CB273C6283930C658C5475AB756146E29DD48"
+    },
+    {
+      "path": "frontend/src/RecordSummary.tsx",
+      "status": "Added",
+      "v10Sha256": null,
+      "v11Sha256": "668E059BE24C30C085936BFF342F7AE0BF6FFFAEDDB1C95AD00898BCC388A380"
+    },
+    {
+      "path": "frontend/src/RecordView.tsx",
+      "status": "Modified",
+      "v10Sha256": "D77F68F7E2F52BC531BEDF7DA7BB73778106C55EBA6E0F95542BA050597738E9",
+      "v11Sha256": "D436CFB107BCD2AEDCE7BD3E5F02B25BFB89DAAE81BD771D225CF21730F0C7B3"
+    },
+    {
+      "path": "frontend/src/style.css",
+      "status": "Modified",
+      "v10Sha256": "22564B131AD4F2F1163343A73951A4A930AEFACA7D84B079C42E8611CF03DFF5",
+      "v11Sha256": "1E1CF7DB321116AA9E3BD10060F028258E0FA03248E75BBC7180EDDB4BDBFCF7"
+    },
+    {
+      "path": "frontend/src/SyncReview.tsx",
+      "status": "Added",
+      "v10Sha256": null,
+      "v11Sha256": "1ED0BB35400004F9805FE91FD431EDEDDD0FE453506C0EFA2686D058415224B0"
+    },
+    {
+      "path": "tools/pack.ps1",
+      "status": "Added",
+      "v10Sha256": null,
+      "v11Sha256": "5A976A2A7F864FF25CBEDD5E35DDAEE121AF43051FFFDA531C882E7CD8FA0CB2"
+    },
+    {
+      "path": "tools/verify-api-v11.mjs",
+      "status": "Added",
+      "v10Sha256": null,
+      "v11Sha256": "8CE6E7981AB6EC05021123CAE8B714E1E3A61BAC543CE42F2587B815F38656E0"
+    },
+    {
+      "path": "docs/api-verification-v11.json",
+      "status": "Added",
+      "v10Sha256": null,
+      "v11Sha256": "A8D1D34F75A6D5E0961B545627930953978D6125B3C353B205338E8FE8DAD25F"
+    },
+    {
+      "path": "docs/IIS-INSTALLATION.md",
+      "status": "Modified",
+      "v10Sha256": "32A65BFC8F1F8760B1CFED9D0C3F7427C48EB60100D6A8C0F9F1AEC215AB468E",
+      "v11Sha256": "C787908F96FEA23AB2278EFCCABFC82049AD7DC49368E0B6767E43C6DE099EDD"
+    },
+    {
+      "path": "docs/VERIFICATION-V1.1.md",
+      "status": "Added",
+      "v10Sha256": null,
+      "v11Sha256": "68716CE9D17CF154ED71164C3F121650502F9902A478BF81FE81BC7D2690E216"
+    }
+  ]
+}

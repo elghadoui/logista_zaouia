@@ -1,0 +1,105 @@
+{
+  "testedAt": "2026-10-06T16:58:15.296Z",
+  "results": [
+    {
+      "name": "Destination DIAF : route autorisée",
+      "passed": true
+    },
+    {
+      "name": "Différence de valeur identifiée",
+      "passed": true
+    },
+    {
+      "name": "Fiche absente de DIAF identifiée",
+      "passed": true
+    },
+    {
+      "name": "Fiche absente de ZAOUIA identifiée",
+      "passed": true
+    },
+    {
+      "name": "refsta et dates générées exclus des écarts",
+      "passed": true
+    },
+    {
+      "name": "Compteurs de comparaison cohérents",
+      "passed": true
+    },
+    {
+      "name": "Pagination des différences sans changer les totaux",
+      "passed": true
+    },
+    {
+      "name": "Filtre de statut",
+      "passed": true
+    },
+    {
+      "name": "Recherche dans une station ne crée pas de faux absent",
+      "passed": true
+    },
+    {
+      "name": "Export CSV : toutes les différences filtrées",
+      "passed": true
+    },
+    {
+      "name": "Export CSV : formules neutralisées",
+      "passed": true
+    },
+    {
+      "name": "Comparaison adherent : volume SQL réel",
+      "passed": true
+    },
+    {
+      "name": "Comparaison parcelle : volume SQL réel",
+      "passed": true
+    },
+    {
+      "name": "Comparaison culture : volume SQL réel",
+      "passed": true
+    },
+    {
+      "name": "Comparaison grpvar : volume SQL réel",
+      "passed": true
+    },
+    {
+      "name": "Comparaison variete : volume SQL réel",
+      "passed": true
+    },
+    {
+      "name": "Comparaison souvar : volume SQL réel",
+      "passed": true
+    },
+    {
+      "name": "Doublon historique : identité ambiguë signalée",
+      "passed": true
+    },
+    {
+      "name": "Consultation : comparaison autorisée en lecture",
+      "passed": true
+    },
+    {
+      "name": "Destination non attribuée : comparaison refusée",
+      "passed": true
+    },
+    {
+      "name": "Route non DIAF refusée",
+      "passed": true
+    },
+    {
+      "name": "Référentiel SQL non autorisé refusé",
+      "passed": true
+    },
+    {
+      "name": "État non autorisé refusé",
+      "passed": true
+    },
+    {
+      "name": "Comparaison n’écrit aucune donnée",
+      "passed": true
+    },
+    {
+      "name": "Volumes restaurés après fixtures de comparaison",
+      "passed": true
+    }
+  ]
+}

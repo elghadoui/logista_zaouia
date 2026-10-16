@@ -1,0 +1,102 @@
+{
+  "testedAt": "2026-10-07T11:27:13.740Z",
+  "base": "http://127.0.0.1:5080/api",
+  "results": [
+    {
+      "name": "Liste adherent : pagination et cardinalité conservées",
+      "passed": true
+    },
+    {
+      "name": "Liste verger : pagination et cardinalité conservées",
+      "passed": true
+    },
+    {
+      "name": "Liste parcelle : pagination et cardinalité conservées",
+      "passed": true
+    },
+    {
+      "name": "Liste culture : pagination et cardinalité conservées",
+      "passed": true
+    },
+    {
+      "name": "Liste grpvar : pagination et cardinalité conservées",
+      "passed": true
+    },
+    {
+      "name": "Liste variete : pagination et cardinalité conservées",
+      "passed": true
+    },
+    {
+      "name": "Liste souvar : pagination et cardinalité conservées",
+      "passed": true
+    },
+    {
+      "name": "Synthèse verger : propriétaire réel",
+      "passed": true
+    },
+    {
+      "name": "Synthèse verger : total parcelles réel",
+      "passed": true
+    },
+    {
+      "name": "Synthèse verger : superficie réelle",
+      "passed": true
+    },
+    {
+      "name": "Fiche brute conservée pour contrôle optimiste",
+      "passed": true
+    },
+    {
+      "name": "Synthèse adhérent : vergers et parcelles réels",
+      "passed": true
+    },
+    {
+      "name": "Synthèse adhérent : superficie réelle",
+      "passed": true
+    },
+    {
+      "name": "Résumé calculé sur toutes les parcelles, hors pagination",
+      "passed": true
+    },
+    {
+      "name": "Libellés parcelle 10MN : relations réelles",
+      "passed": true
+    },
+    {
+      "name": "Navigation parcelle 10MN : verger et adhérent",
+      "passed": true
+    },
+    {
+      "name": "Libellés parcelle 11MN : relations réelles",
+      "passed": true
+    },
+    {
+      "name": "Navigation parcelle 11MN : verger et adhérent",
+      "passed": true
+    },
+    {
+      "name": "Sélecteur : nom sélectionné résolu hors première page",
+      "passed": true
+    },
+    {
+      "name": "Cascade sous-variétés 104",
+      "passed": true
+    },
+    {
+      "name": "Cascade sous-variétés 105",
+      "passed": true
+    },
+    {
+      "name": "Sous-variétés : pas de liste globale sans variété",
+      "passed": true
+    },
+    {
+      "name": "Sélecteur : catalogue SQL strict",
+      "passed": true
+    },
+    {
+      "name": "Lecture des synthèses en archive",
+      "passed": true
+    }
+  ]
+}

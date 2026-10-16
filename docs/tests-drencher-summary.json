@@ -1,0 +1,82 @@
+{
+  "date": "2026-10-08T17:03:52.858Z",
+  "version": "V1.4.1 + Drencher V1 MVP",
+  "assemblySha256": "F573611F281632865EB22E19948BE7824CD56007D458F9E4E4614BD27C8F1C4F",
+  "frontend": {
+    "indexSha256": "CE0F4D8E6544E71F515E68AA6EE0B81E09F9EDB8362618B2F3B6C14B5654363B"
+  },
+  "passed": 287,
+  "failed": 0,
+  "suites": [
+    {
+      "name": "tests-drencher-api",
+      "passed": 56,
+      "date": "2026-10-08T16:56:31.164Z"
+    },
+    {
+      "name": "tests-drencher-frontend",
+      "passed": 17,
+      "date": "2026-10-08T16:57:38.574Z"
+    },
+    {
+      "name": "tests-drencher-regression",
+      "passed": 141,
+      "date": "2026-10-08T17:03:40.229Z"
+    },
+    {
+      "name": "tests-drencher-assistant",
+      "passed": 33,
+      "date": "2026-10-08T16:58:29.3379408Z"
+    },
+    {
+      "name": "tests-drencher-assistant-http",
+      "passed": 14,
+      "date": "2026-10-08T16:57:41.404Z"
+    },
+    {
+      "name": "tests-drencher-navigation",
+      "passed": 26,
+      "date": "2026-10-08T16:57:40.549Z"
+    }
+  ],
+  "unchanged": [
+    {
+      "file": "backend/Application/OpenAiAssistantProvider.cs",
+      "sha256": "5EB9A6F8F9C98E18189A856C752E41D9309EB4D6067069EF8C5EAD44AD50DC98",
+      "unchanged": true
+    },
+    {
+      "file": "backend/Application/AssistantService.cs",
+      "sha256": "8C439278630ED6225E97D7A2254042A8B44DB611910F7F98A428058725E7170F",
+      "unchanged": true
+    },
+    {
+      "file": "backend/Infrastructure/Connections.cs",
+      "sha256": "7CD640A1FD51DF3AA05613890B13576D22662E56D35FC7508F5BD1FAD441F7FA",
+      "unchanged": true
+    },
+    {
+      "file": "frontend/src/PilotViews.tsx",
+      "sha256": "EE19BB86AD06567E255E3634342C451ACB093856C7E57155C9F1B4178F6CA1B1",
+      "unchanged": true
+    },
+    {
+      "file": "backend/Application/ComplementaryService.cs",
+      "sha256": "7F81F3E1E2DC561B0C7A4D536D15E37FFC023CE70128ADFF49D111EB4072C1B8",
+      "unchanged": true
+    },
+    {
+      "file": "backend/Application/ComplementaryRules.cs",
+      "sha256": "C63EC2D9649C0B4191F34DE9AC678AA56327BAA3A2D5F5BB04AA787CA7DAA8CD",
+      "unchanged": true
+    },
+    {
+      "file": "backend/Application/SyncService.cs",
+      "sha256": "09757A677CC76D0A1DB6E7C2EF237DA5367AA52EEE51573AE2C1FF740DCB84B0",
+      "unchanged": true
+    }
+  ],
+  "browserTestsPerformed": false,
+  "productionDeploy": false,
+  "realOpenAiCalls": 0
+}

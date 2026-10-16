@@ -1,0 +1,17 @@
+.dotnet/
+.dotnet-home/
+.nuget/
+.local-mysql/
+.test-data/
+**/bin/
+**/obj/
+**/node_modules/
+frontend/dist/
+backend/wwwroot/
+backend/appsettings.Local.json
+backend/keys/
+publish/
+release/
+*.zip
+*.log
+dotnet-install.ps1

@@ -1,0 +1,22 @@
+{
+  "date": "2026-10-09T14:59:17.4005887Z",
+  "archive": "VITASOUSS-DRENCHER-V1.3-IIS.zip",
+  "sha256": "D42404454483F63EC52492FE92FB28F5F52D89948EE2ED02DE997B7D4660B2F4",
+  "entries": 51,
+  "updateFiles": 28,
+  "passed": true,
+  "preserved": [
+    "appsettings.Local.json",
+    "appsettings.json",
+    "web.config",
+    "keys\\existing.xml",
+    "secrets\\mysql.protected",
+    "secrets\\openai.protected"
+  ],
+  "secretsExcluded": true,
+  "manifestVerified": true,
+  "assemblyVerified": true,
+  "pdfDependenciesVerified": true,
+  "productionDeploy": false,
+  "testDirectory": "C:\\logista_zaouia\\.test-data\\update-drencher-v13-0a6d412931c74823b67f993954be83f4"
+}

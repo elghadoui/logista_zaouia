@@ -1,0 +1,136 @@
+{
+  "date": "2026-10-09T00:49:22.360Z",
+  "db": "vitasouss_recette_drencher_802f9bb8b22f451a97783db89dd44dab",
+  "contextId": 105,
+  "host": "127.0.0.1",
+  "port": 33307,
+  "productionAccess": false,
+  "passed": 31,
+  "failed": 0,
+  "results": [
+    {
+      "name": "Migration administrative additive et idempotente",
+      "passed": true
+    },
+    {
+      "name": "Cause MySqlDateTime corrigée : péremption chaîne ISO",
+      "passed": true
+    },
+    {
+      "name": "Péremption absente conservée null",
+      "passed": true
+    },
+    {
+      "name": "Dates mouvements normalisées après réception et rechargement",
+      "passed": true
+    },
+    {
+      "name": "Écriture refusée avant migration",
+      "passed": true
+    },
+    {
+      "name": "Diagnostic avant SQL révèle les doublons 10 11 12",
+      "passed": true
+    },
+    {
+      "name": "Initialisation en conflit refusée sans modifier les cycles",
+      "passed": true
+    },
+    {
+      "name": "Arbitrage sans confirmation refusé",
+      "passed": true
+    },
+    {
+      "name": "Arbitrage garde anciennes versions et consommations",
+      "passed": true
+    },
+    {
+      "name": "Migration remplit seulement le registre de réservation",
+      "passed": true
+    },
+    {
+      "name": "Pagination serveur 160 palettes en pages de 25",
+      "passed": true
+    },
+    {
+      "name": "Brouillon indisponible avec cycle et état",
+      "passed": true
+    },
+    {
+      "name": "Deuxième brouillon mêmes palettes refusé",
+      "passed": true
+    },
+    {
+      "name": "Message de conflit humain contient palette cycle et état",
+      "passed": true
+    },
+    {
+      "name": "Palettes du cycle courant restent sélectionnables",
+      "passed": true
+    },
+    {
+      "name": "Sélection globale côté API au-delà des pages visibles",
+      "passed": true
+    },
+    {
+      "name": "Sélection multi-réceptions et résumé compact regroupé",
+      "passed": true
+    },
+    {
+      "name": "Filtres variété adhérent verger réels",
+      "passed": true
+    },
+    {
+      "name": "Sélection réservée pour un autre cycle refusée",
+      "passed": true
+    },
+    {
+      "name": "Retrait de palette du brouillon libère la réservation",
+      "passed": true
+    },
+    {
+      "name": "Palette dans cycle soumis indisponible",
+      "passed": true
+    },
+    {
+      "name": "Palette validée indisponible",
+      "passed": true
+    },
+    {
+      "name": "Déstockage du réel seul, sans changer les calculs",
+      "passed": true
+    },
+    {
+      "name": "Les quatre quantités conservées",
+      "passed": true
+    },
+    {
+      "name": "Mouvements après validation lisibles et normalisés",
+      "passed": true
+    },
+    {
+      "name": "Deux utilisateurs concurrents : une réservation unique",
+      "passed": true
+    },
+    {
+      "name": "Modification brouillon vers palette validée refusée",
+      "passed": true
+    },
+    {
+      "name": "Suppression Recette restitue le stock et libère palettes",
+      "passed": true
+    },
+    {
+      "name": "Suppression brouillon libère aussi la réservation",
+      "passed": true
+    },
+    {
+      "name": "Reset complet conserve état migration et vide réservations",
+      "passed": true
+    },
+    {
+      "name": "Historique et cinq tables historiques préservés",
+      "passed": true
+    }
+  ]
+}

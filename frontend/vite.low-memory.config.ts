@@ -1,0 +1,2 @@
+import original from './vite.config';
+export default { ...original, publicDir: '.build-low-memory/public', plugins: [{ name: 'low-memory-prebundle', transformIndexHtml: { order: 'pre', handler(html: string) { return html.replace('<script type="module" src="/src/main.tsx"></script>', '<link rel="stylesheet" href="/assets/index-f289256331f8.css"><script defer src="/assets/index-692d86028bbc.js"></script>'); } } }] };

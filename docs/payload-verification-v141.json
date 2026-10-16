@@ -1,0 +1,10 @@
+{
+  "date": "2026-10-07T23:17:00.8648286Z",
+  "version": "1.4.1",
+  "configurationsExcluded": true,
+  "secretsExcluded": true,
+  "fakeMarkersPreserved": true,
+  "assemblyMatches": true,
+  "indexedAssetsPresent": true,
+  "productionDeploy": false
+}

@@ -1,0 +1,23 @@
+from pathlib import Path
+import json,datetime
+root=Path('.')
+counts={n:json.loads((root/f'docs/tests-v160-{n}.json').read_text(encoding='utf-8-sig'))['passed'] for n in ['export','ui','excel','regression-analytics','regression-drencher','regression-ui']}
+p=root/'docs/V1.6.0-ETAT-REPRISE.md';p.write_text('''# État final du candidat V1.6.0 Export
+
+Règles métier définitivement confirmées appliquées : codmaj 0/1/2 et inconnus, officiel bdq.pdscom uniquement codmaj 2, Client destination.vildes. Voir le dictionnaire des indicateurs et l'audit existant actualisé sans réaudit complet.
+
+Aucun déploiement, accès VM ou changement réseau. Le site local sur 5080 n'est ni arrêté ni relancé. Le frontend final est construit dans frontend/dist-v160; frontend/dist utilisé par le site ouvert est conservé. Backend final dans publish-v160-candidate. Les deux archives candidates racine sont reconstruites et contrôlées par SHA-256.
+
+Tests : '''+str(sum(counts.values()))+''' assertions réussies, plus contrôles du paquet séparés. Répartition : '''+str(counts)+'''. Les tests HTTP utilisent un Kestrel éphémère 127.0.0.1:0, les vrais endpoints/services et des identités synthétiques exclusivement dans le harnais. Aucun mot de passe demandé, aucune mutation des données audit. Fixtures synthétiques sous vitasouss_test_export_v160_*; comptes et contextes des tests désactivés en fin de suite.
+
+Rejouer depuis la racine si une modification le justifie : tools/prepare-v160-fixtures.py, dotnet run --project tests/ExportV160Tests/ExportV160Tests.csproj -c Release, node tools/verify-v160-ui.mjs, tools/verify-v160-excel.py. Compilation frontend sans toucher au site : définir VITASOUSS_BUILD_OUT=dist-v160 avant node tools/build-frontend-low-memory.mjs. Python fourni sous C:/Users/abdellah/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/python.exe.
+
+Revue visuelle réelle non effectuée : l'accès navigateur automatisé a précédemment été refusé par les préférences enregistrées. Aucun changement matériel ne justifie de contourner ou de répéter ce refus. Le site ouvert sur 5080 conserve son backend précédent et ne constitue pas une preuve de compatibilité visuelle V1.6.0. Tests de rendu React SSR uniquement, aucune capture fabriquée. Restent la revue réelle bureau/tablette/mobile avec frontend et backend V1.6.0, la session cookie complète et IIS; DIAF et archives réels restent non vérifiés (fixtures seulement).
+''',encoding='utf-8')
+for name in ['README.md','CHANGELOG.md']:
+ p=root/name;s=p.read_text(encoding='utf-8-sig');entry='''## V1.6.0 Export — candidat finalisé
+
+Tableau de bord Export en lecture seule : seuls les dossiers codmaj=2 alimentent les KPI et graphiques exportés, poids officiel bdq.pdscom (kg), Client destination.vildes. Statuts En cours/Chargé/Inconnu consultables séparément, détails transport et Excel filtré avec récapitulatif. Drencher 1.3.2.1, droits et migrations conservés. Aucun déploiement; revue visuelle réelle restante. Voir docs/V1.6.0-TESTS.md et docs/V1.6.0-MISE-A-JOUR.md.
+
+''';p.write_text(entry+s,encoding='utf-8')
+print(counts, sum(counts.values()))

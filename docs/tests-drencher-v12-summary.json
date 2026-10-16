@@ -1,0 +1,92 @@
+{
+  "date": "2026-10-09T00:54:32.627Z",
+  "version": "VITASOUSS V1.4.1 + Drencher V1.2",
+  "passed": 364,
+  "failed": 0,
+  "assemblySha256": "8C467E089CC18B62E3904B3ADC5F748C4CF2AFCB9054E99B01C858B011B1178D",
+  "frontendIndexSha256": "6D73F0DC83BFF15A180E18C0155ACBA856E1E8B4CF1D2D33FAFF3A8D233790BF",
+  "suites": [
+    {
+      "name": "tests-drencher-v12-api",
+      "passed": 31,
+      "date": "2026-10-09T00:49:22.360Z"
+    },
+    {
+      "name": "tests-drencher-v12-legacy",
+      "passed": 56,
+      "date": "2026-10-09T00:40:30.000Z"
+    },
+    {
+      "name": "tests-drencher-v12-recette",
+      "passed": 45,
+      "date": "2026-10-09T00:35:25.584Z"
+    },
+    {
+      "name": "tests-drencher-v12-frontend",
+      "passed": 18,
+      "date": "2026-10-09T00:38:12.866Z"
+    },
+    {
+      "name": "tests-drencher-v12-regression",
+      "passed": 141,
+      "date": "2026-10-09T00:47:56.826Z"
+    },
+    {
+      "name": "tests-drencher-v12-navigation",
+      "passed": 26,
+      "date": "2026-10-09T00:41:15.912Z"
+    },
+    {
+      "name": "tests-drencher-v12-assistant",
+      "passed": 33,
+      "date": "2026-10-09T00:41:29.5994437Z"
+    },
+    {
+      "name": "tests-drencher-v12-assistant-http",
+      "passed": 14,
+      "date": "2026-10-09T00:49:02.862Z"
+    }
+  ],
+  "unchanged": [
+    {
+      "file": "frontend/src/DrencherProducts.tsx",
+      "sha256": "ED9F9DF2880FE6DF9AF40B3BE204C751AC04F0FDBB47FA19BB018CF15ADDF18D"
+    },
+    {
+      "file": "frontend/src/DrencherManagement.tsx",
+      "sha256": "B89C3B96CCC7C3CE719B16BA34AC1318ACE8CB7178460A9AF3ED9B077A8BD3B6"
+    },
+    {
+      "file": "backend/Application/AssistantService.cs",
+      "sha256": "8C439278630ED6225E97D7A2254042A8B44DB611910F7F98A428058725E7170F"
+    },
+    {
+      "file": "backend/Application/OpenAiAssistantProvider.cs",
+      "sha256": "5EB9A6F8F9C98E18189A856C752E41D9309EB4D6067069EF8C5EAD44AD50DC98"
+    },
+    {
+      "file": "backend/Infrastructure/Connections.cs",
+      "sha256": "7CD640A1FD51DF3AA05613890B13576D22662E56D35FC7508F5BD1FAD441F7FA"
+    },
+    {
+      "file": "backend/Application/ComplementaryService.cs",
+      "sha256": "7F81F3E1E2DC561B0C7A4D536D15E37FFC023CE70128ADFF49D111EB4072C1B8"
+    },
+    {
+      "file": "backend/Application/ComplementaryRules.cs",
+      "sha256": "C63EC2D9649C0B4191F34DE9AC678AA56327BAA3A2D5F5BB04AA787CA7DAA8CD"
+    },
+    {
+      "file": "backend/Application/SyncService.cs",
+      "sha256": "09757A677CC76D0A1DB6E7C2EF237DA5367AA52EEE51573AE2C1FF740DCB84B0"
+    },
+    {
+      "file": "backend/Application/PermissionService.cs",
+      "sha256": "D45A74AFD67BD0705B60FA0A771AAA762938F43B4E6788C62153A4A44566E0C4"
+    }
+  ],
+  "productionAccess": false,
+  "productionDeploy": false,
+  "browserInteractionsTested": false,
+  "realOpenAiCalls": 0
+}
